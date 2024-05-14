@@ -1,14 +1,22 @@
-# Astro Starter Kit: Minimal
+# Pirka Astro Web Template
+
+## 1. Install dependecies
 
 ```
-npm create astro@latest -- --template minimal
+npm i
 ```
 
-1. Step
+## 2. Create git repository and set URL origin
 
+```
 git remote set-url origin git@github.com:PirkaVisualStudio/elamioYachting.git
+```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+## 3. Docs
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+[![ASTRO ](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://docs.astro.build/en/getting-started/)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
@@ -47,9 +55,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 ## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-# base_template
-# pirka2024
-# pirka2024

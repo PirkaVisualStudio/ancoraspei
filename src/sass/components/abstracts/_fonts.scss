@@ -13,13 +13,11 @@
 
 @import url("https://use.typekit.net/idf3xny.css");
 
-$headingFont: "Julius Sans One", sans-serif;
+$headingFont: "Jost", sans-serif;
 //$bodyFont: "Jost", sans-serif;
-$bodyFont: "Prompt", sans-serif;
+$bodyFont: "Jost", sans-serif;
 
-$navFont: "Mate SC", sans-serif;
-
-$scriptFont: "Satisfy", sans-serif;
+$navFont: "Jost", sans-serif;
 
 $h1size: 3.052rem;
 
@@ -155,13 +153,4 @@ $h1size: 3.052rem;
 
 .left {
   text-align: left;
-}
-
-.script-font {
-  font-family: $scriptFont;
-  font-size: 1.5rem;
-}
-
-.mate-font {
-  font-family: "Mate SC", sans-serif;
 }
