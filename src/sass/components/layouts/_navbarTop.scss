@@ -11,7 +11,7 @@ header {
   width: 100%;
   box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1);
   background-color: none;
-  background-color: rgba($color: $darkBg, $alpha: 1);
+  background-color: rgba($color: $bg-dark, $alpha: 1);
   backdrop-filter: blur(7px);
   z-index: 99;
 }
@@ -50,7 +50,7 @@ header {
 .nav-toggle-menu,
 .nav-toggle-close {
   opacity: 0;
-  color: $mainLight;
+  color: $main-light;
   pointer-events: none;
   display: none;
 
@@ -127,7 +127,7 @@ header {
 }
 
 .nav-link {
-  color: $mainLight;
+  color: $main-light;
   cursor: pointer;
   padding: 1.25rem 1rem;
   display: flex;
@@ -141,8 +141,7 @@ header {
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    //background-color: $primAcc;
-    color: $primAcc;
+    color: $prim-acc;
     scale: 1.1;
   }
 
@@ -163,14 +162,14 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: $mainLight;
+  color: $main-light;
   justify-content: flex-end;
 
   a {
-    color: $mainLight;
+    color: $main-light;
 
     &:hover {
-      color: $primAcc;
+      color: $prim-acc;
     }
   }
 
@@ -216,7 +215,7 @@ header {
 
 .dropdown-container {
   box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1);
-  background-color: $mainLight;
+  background-color: $main-light;
   height: 0;
   overflow: hidden;
   transition: height 0.4s;
@@ -245,11 +244,11 @@ header {
 .dropdown-link {
   font-weight: bold;
   padding: 0.8rem 2rem;
-  color: $mainDark;
+  color: $main-dark;
 
   &:hover {
-    background-color: $primAcc;
-    color: $mainLight;
+    background-color: $prim-acc;
+    color: $main-light;
   }
 }
 

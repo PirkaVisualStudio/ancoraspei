@@ -3,9 +3,12 @@ import compress from "astro-compress";
 
 import { defineConfig } from "astro/config";
 
+//import site data
+import siteInfo from "./src/data/siteInfo.json";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.yoursite.hr/",
+  site: `${siteInfo.map((i) => i.site_url)}`,
   integrations: [
     sitemap({
       filter: (page) =>

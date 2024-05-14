@@ -15,18 +15,18 @@
   justify-content: center;
   align-items: flex-start;
   a {
-    color: $primAcc;
+    color: $prim-acc;
     &:hover {
-      color: $mainLight;
+      color: $main-light;
     }
   }
 }
 
 footer a {
-  color: $primAcc;
+  color: $prim-acc;
   font-weight: 400;
   &:hover {
-    color: $secAcc;
+    color: $sec-acc;
   }
 }
 
@@ -39,7 +39,7 @@ footer a {
   }
 
   h3 {
-    color: $mainLight;
+    color: $main-light;
   }
 }
 
@@ -53,10 +53,10 @@ footer a {
   align-items: flex-start;
 
   a {
-    color: $mainLight;
+    color: $main-light;
     font-weight: 400;
     &:hover {
-      color: $primAcc;
+      color: $prim-acc;
     }
   }
 }

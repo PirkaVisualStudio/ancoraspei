@@ -1,28 +1,30 @@
-$mainDark: #151629;
-$mainLight: #f5f5f5;
-$lightBg: #f5f5f5;
-$darkBg: #151629;
-$primAcc: #214fde;
-$secAcc: #f2aa3c;
-$terAcc: #23ce6b;
-$quarAcc: #fff;
+$main-dark: #151629;
+$main-light: #f5f5f5;
+$bg-light: #f5f5f5;
+$bg-dark: #151629;
+$prim-acc: #214fde;
+$sec-acc: #f2aa3c;
+$ter-acc: #23ce6b;
+$quar-acc: #fff;
 $disabled: #aaaaaa;
-$txtOnDark: #f5f5f5;
-$txtOnLight: #151629;
+$txt-on-dark: #f5f5f5;
+$txt-on-light: #151629;
 $error: red;
 $success: #0350e7;
 
-$mainLight-100: color-mix(in srgb, $mainLight 80%, black);
+$main-light-5: color-mix(in srgb, $main-light 95%, black);
+$main-light-10: color-mix(in srgb, $main-light 90%, black);
+$main-light-20: color-mix(in srgb, $main-light 80%, black);
+$main-light-30: color-mix(in srgb, $main-light 70%, black);
+$main-light-40: color-mix(in srgb, $main-light 60%, black);
+$main-light-50: color-mix(in srgb, $main-light 50%, black);
 
-$mainDark-50: color-mix(in srgb, $mainDark 95%, white);
-
-$mainDark-100: color-mix(in srgb, $mainDark 80%, white);
-
-$mainDark-200: color-mix(in srgb, $mainDark 60%, white);
-
-$mainDark-300: color-mix(in srgb, $mainDark 40%, white);
-
-$primAcc-100: color-mix(in srgb, $primAcc 80%, white);
+$main-dark-5: color-mix(in srgb, $main-dark 95%, white);
+$main-dark-10: color-mix(in srgb, $main-dark 90%, white);
+$main-dark-20: color-mix(in srgb, $main-dark 80%, white);
+$main-dark-30: color-mix(in srgb, $main-dark 70%, white);
+$main-dark-40: color-mix(in srgb, $main-dark 60%, white);
+$main-dark-50: color-mix(in srgb, $main-dark 50%, white);
 
 //projects colors
 $sugBg: #eae5db;
@@ -39,55 +41,70 @@ $mytransferBg: #232a30;
 $mytransferTxt: #ffffff;
 
 .clr-main-dark {
-  color: $mainDark;
+  color: $main-dark;
 }
 
-.clr-main-dark-100 {
-  color: $mainDark-100;
+.clr-main-dark-5 {
+  color: $main-dark-5;
 }
 
-.clr-main-dark-200 {
-  color: $mainDark-200;
+.clr-main-dark-10 {
+  color: $main-dark-10;
 }
 
-.clr-main-dark-300 {
-  color: $mainDark-300;
+.clr-main-dark-20 {
+  color: $main-dark-20;
+}
+
+.clr-main-dark-30 {
+  color: $main-dark-30;
+}
+
+.clr-main-dark-40 {
+  color: $main-dark-40;
+}
+
+.clr-main-dark-50 {
+  color: $main-dark-50;
 }
 
 .clr-main-light {
-  color: $mainLight;
+  color: $main-light;
+}
+
+.clr-main-light-5 {
+  color: $main-light-5;
+}
+.clr-main-light-10 {
+  color: $main-light-10;
+}
+.clr-main-light-20 {
+  color: $main-light-20;
+}
+.clr-main-light-30 {
+  color: $main-light-30;
+}
+.clr-main-light-40 {
+  color: $main-light-40;
+}
+.clr-main-light-50 {
+  color: $main-light-50;
 }
 
 .bg-light {
-  background-color: $mainLight;
-}
-
-.bg-light-100 {
-  background-color: $mainLight-100;
+  background-color: $bg-light;
 }
 
 .bg-dark {
-  background-color: $mainDark;
-}
-
-.bg-dark-50 {
-  background-color: $mainDark-50;
-}
-
-.bg-dark-100 {
-  background-color: $mainDark-100;
-}
-
-.bg-dark-200 {
-  background-color: $mainDark-200;
+  background-color: $bg-dark;
 }
 
 .clr-prim-acc {
-  color: $primAcc;
+  color: $prim-acc;
 }
 
 .clr-sec-acc {
-  color: $secAcc;
+  color: $sec-acc;
 }
 
 .bg-white {

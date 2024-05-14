@@ -1,0 +1,22 @@
+.hidden-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s ease-in-out;
+}
+
+.show-fade {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay1 {
+  transition-delay: 100ms;
+}
+
+.delay2 {
+  transition-delay: 200ms;
+}
+
+.delay3 {
+  transition-delay: 300ms;
+}

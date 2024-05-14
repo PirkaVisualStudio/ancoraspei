@@ -4,16 +4,21 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import CookieBanner from "../components/CookieBanner.astro";
 
-const url = Astro.url;
+//import data
+import siteInfo from "../data/siteInfo.json";
+
+//image compression
+import { Image } from "astro:assets";
+import defaultImage from "../images/hero/hero4.jpg";
 
 const { pageIndex } = Astro.props;
 const { pageIndexEn } = Astro.props;
 const { lang } = Astro.props;
 
 const {
-  title = "Elamio Yachting | Luxury yach charter",
-  charset = "UTF-8",
-  description = "Elamio Yachting is luxury yacht charter in Croatia. Book a ride with us and visit most prestigious islands in Croatia.",
+  title = `${siteInfo.map((i) => i.title)}`,
+  charset = `${siteInfo.map((i) => i.charset)}`,
+  description = `${siteInfo.map((i) => i.description)}`,
   canonical = Astro.url,
   noindex,
   nofollow,
@@ -21,7 +26,7 @@ const {
     basic: {
       title: `${title}`,
       type: "website",
-      image: Astro.url + "images/default/default.jpg",
+      image: defaultImage.src,
     },
   },
   languageAlternates = [
@@ -40,7 +45,7 @@ const {
       {
         name: "keywords",
         content:
-          "charter, boats, croatia, split, vis, brac, hvar, korcula, boating, luxury charter, luxury boat, boat travels, islands croatia",
+          "keyword1, keyword2, keyword3, keyword4, keyword5, keyword6, keyword7",
       },
     ],
   },
@@ -64,7 +69,8 @@ const {
   <!-- Google Tag Manager (noscript) -->
   <noscript
     ><iframe
-      src="https://www.googletagmanager.com/ns.html?id=ID_GOES_HERE"
+      src={"https://www.googletagmanager.com/ns.html?id=" +
+        `${siteInfo.map((i) => i.google_id)}`}
       height="0"
       width="0"
       style="display:none;visibility:hidden"></iframe></noscript

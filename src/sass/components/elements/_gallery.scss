@@ -131,8 +131,8 @@
 .img-btn-prev {
   display: block;
   padding: 1rem;
-  background-color: $mainDark;
-  color: $mainLight;
+  background-color: $main-dark;
+  color: $main-light;
   position: fixed;
   top: 48vh;
   z-index: 101;
@@ -143,9 +143,9 @@
 }
 
 .img-btn-next:hover {
-  color: $primAcc;
+  color: $prim-acc;
 }
 
 .img-btn-prev:hover {
-  color: $primAcc;
+  color: $prim-acc;
 }

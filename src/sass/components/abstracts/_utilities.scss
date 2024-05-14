@@ -17,10 +17,10 @@
 }
 
 a {
-  color: $primAcc;
+  color: $prim-acc;
 
   &:hover {
-    color: $txtOnLight;
+    color: $txt-on-light;
   }
 }
 
@@ -28,10 +28,10 @@ hr {
   display: inline-block;
   width: 100%;
   max-width: 1320px;
-  border: 1px solid $primAcc;
+  border: 1px solid $prim-acc;
 }
 
 ::selection {
-  color: $txtOnLight;
-  background: $secAcc;
+  color: $txt-on-light;
+  background: $sec-acc;
 }

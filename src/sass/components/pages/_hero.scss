@@ -1,6 +1,6 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/media-queries" as *;
-@use "./navbarTop" as *;
+@use "../layouts/navbarTop" as *;
 @use "../abstracts/fonts" as *;
 
 .hero-full {
@@ -48,7 +48,7 @@
 
 .hero-social a {
   &:hover {
-    color: $secAcc;
+    color: $sec-acc;
   }
 }
 
@@ -125,11 +125,11 @@
 }
 
 .my-carousel-progress {
-  background: $secAcc;
+  background: $sec-acc;
 }
 
 .my-carousel-progress-bar {
-  background: $primAcc;
+  background: $prim-acc;
   height: 4px;
   transition: width 400ms ease;
 }
@@ -160,7 +160,7 @@
 
   margin: 0.5rem;
   border-radius: 1rem;
-  background-color: $primAcc;
+  background-color: $prim-acc;
 }
 
 .arrow-container {
@@ -178,9 +178,9 @@
   right: 20px;
   z-index: 98;
   width: 22px;
-  color: $mainDark;
-  background-color: $mainLight;
-  border: 0px solid $mainDark;
+  color: $main-dark;
+  background-color: $main-light;
+  border: 0px solid $main-dark;
   border-radius: 100%;
   padding: 10px;
   transition: all 0.2s ease-in-out;
@@ -207,11 +207,11 @@
   text-indent: 1rem;
   z-index: 81;
 
-  color: $txtOnLight;
+  color: $txt-on-light;
   width: 100%;
   padding: 1rem 0;
   border-radius: 0 0 1rem 1rem;
-  background-color: rgba($color: $mainLight, $alpha: 0.8);
+  background-color: rgba($color: $main-light, $alpha: 0.8);
 }
 
 .testimonials {
@@ -247,10 +247,10 @@
 
 .testimonial-container {
   //background-color: rgba($color: #f5f5f5, $alpha: 0.7);
-  border: solid 1px rgb($color: $primAcc, $alpha: 0.5);
+  border: solid 1px rgb($color: $prim-acc, $alpha: 0.5);
   margin: 2rem 1rem;
-  color: $mainLight;
-  box-shadow: 0px 35px 30px -20px rgb($color: $darkBg, $alpha: 0.2);
+  color: $main-light;
+  box-shadow: 0px 35px 30px -20px rgb($color: $bg-dark, $alpha: 0.2);
   height: auto;
 
   .icon {
@@ -265,13 +265,13 @@
 
   .quotes {
     width: 50px;
-    fill: $primAcc;
+    fill: $prim-acc;
   }
 
   .quotes-end {
     width: 50px;
     rotate: -180deg;
-    fill: $primAcc;
+    fill: $prim-acc;
   }
 
   .content {
@@ -291,7 +291,7 @@
     align-content: center;
     align-items: center;
     //background-color: rgb($color: #f0f1f4, $alpha: 1);
-    border-top: solid 1px rgb($color: $darkBg, $alpha: 0.15);
+    border-top: solid 1px rgb($color: $bg-dark, $alpha: 0.15);
     padding: 2rem;
 
     .user-profile {
@@ -315,7 +315,7 @@
 
   .city {
     text-align: left;
-    color: $primAcc;
+    color: $prim-acc;
   }
 }
 

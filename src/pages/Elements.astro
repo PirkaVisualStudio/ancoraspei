@@ -1,0 +1,47 @@
+---
+//main layout
+import MainLayout from "../layouts/MainLayout.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+import hero from "../images/hero/hero.jpg";
+
+//icons
+import { Icon } from "astro-icon";
+
+const {
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang="hr"
+  pageIndex="elementi"
+  title={title}
+  charset={charset}
+  description={description}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <section class="section flex-center txtOnDark padt-900 mart-900">
+    <div class="hero-container section">
+      <h1 class="h1 section">This is H1</h1>
+      <h2 class="h5">This is H5</h2>
+    </div>
+  </section>
+
+  <!-- Slider script -->
+  <script>
+    import "../scripts/slider.js";
+  </script>
+</MainLayout>
