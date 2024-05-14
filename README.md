@@ -16,7 +16,7 @@ git remote set-url origin git@github.com:PirkaVisualStudio/elamioYachting.git
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-[![ASTRO ](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://docs.astro.build/en/getting-started/)
+[![ASTRO ]](https://docs.astro.build/en/getting-started/)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
