@@ -1,0 +1,88 @@
+---
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import CookieBanner from "../components/CookieBanner.astro";
+
+const url = Astro.url;
+
+const { pageIndex } = Astro.props;
+const { pageIndexEn } = Astro.props;
+const { lang } = Astro.props;
+
+const {
+  title = "Elamio Yachting | Luxury yach charter",
+  charset = "UTF-8",
+  description = "Elamio Yachting is luxury yacht charter in Croatia. Book a ride with us and visit most prestigious islands in Croatia.",
+  canonical = Astro.url,
+  noindex,
+  nofollow,
+  openGraph = {
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: Astro.url + "images/default/default.jpg",
+    },
+  },
+  languageAlternates = [
+    {
+      href: Astro.site + `${pageIndex}`,
+      hrefLang: "en",
+    },
+  ],
+  extend = {
+    meta: [
+      {
+        name: "author",
+        content: "Pirka Visual Studio",
+      },
+
+      {
+        name: "keywords",
+        content:
+          "charter, boats, croatia, split, vis, brac, hvar, korcula, boating, luxury charter, luxury boat, boat travels, islands croatia",
+      },
+    ],
+  },
+} = Astro.props;
+---
+
+<Head
+  {lang}
+  {title}
+  {charset}
+  {description}
+  {canonical}
+  {noindex}
+  {nofollow}
+  {openGraph}
+  {languageAlternates}
+  {extend}
+/>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=ID_GOES_HERE"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"></iframe></noscript
+  >
+  <!-- End Google Tag Manager (noscript) -->
+  <CookieBanner />
+  <Nav />
+
+  <main>
+    <slot />
+  </main>
+
+  <Footer />
+
+  <script>
+    import "../scripts/navTop.js";
+    import "../scripts/animation.js";
+  </script>
+
+  <script is:inline src="/scripts/consent.js"></script>
+</body>

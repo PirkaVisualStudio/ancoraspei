@@ -1,0 +1,37 @@
+@use "./colors" as *;
+
+/*:focus {
+    outline: 2px solid $error;
+}*/
+.honeypot {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+:focus {
+  outline: none;
+}
+
+.noSelect {
+  user-select: none;
+}
+
+a {
+  color: $primAcc;
+
+  &:hover {
+    color: $txtOnLight;
+  }
+}
+
+hr {
+  display: inline-block;
+  width: 100%;
+  max-width: 1320px;
+  border: 1px solid $primAcc;
+}
+
+::selection {
+  color: $txtOnLight;
+  background: $secAcc;
+}

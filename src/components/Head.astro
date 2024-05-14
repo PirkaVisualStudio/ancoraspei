@@ -1,0 +1,85 @@
+---
+//SEO library
+import { SEO } from "astro-seo";
+
+//CSS styles
+import "../styles/global.css";
+
+//SEO variables
+const {
+  lang = "en",
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<html lang={lang}>
+  <SEO
+    {title}
+    {charset}
+    {description}
+    {canonical}
+    {noindex}
+    {nofollow}
+    {openGraph}
+    {languageAlternates}
+    {extend}
+  />
+
+  <link rel="preconnect" href={Astro.site} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta http-equiv="Permissions-Policy" content="ch-ua-form-factor=()" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+    ,=""
+    maximum-scale="1.0"
+  />
+  <meta name="generator" content={Astro.generator} />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <link href="/images/logos/kuzina_logo_icon_dark.svg" rel="apple-touch-icon" />
+  <!-- Google Captcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- Google Tag Manager -->
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+
+    if (localStorage.getItem("consentMode") === null) {
+      gtag("consent", "default", {
+        functionality_storage: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+    } else {
+      gtag(
+        "consent",
+        "default",
+        JSON.parse(localStorage.getItem("consentMode"))
+      );
+    }
+
+    (function (w, d, s, l, i) {
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "ID");
+  </script>
+  <!-- End Google Tag Manager -->
+</html>

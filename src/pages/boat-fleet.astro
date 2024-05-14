@@ -1,0 +1,103 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+//image compression
+import { Image } from "astro:assets";
+import hero from "../images/hero/hero2.jpg";
+import pershing46 from "../images/media/boats/pershing46.jpeg";
+import atlantis50 from "../images/media/boats/atlantis50.jpg";
+import princessv58 from "../images/media/boats/princessv58.jpg";
+
+//icons
+import { Icon } from "astro-icon";
+
+const {
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang="en"
+  pageIndex="boat-fleet"
+  pageIndexEn="boat-fleet"
+  title="Boat fleet | Elamio Yachting"
+  charset={charset}
+  description="Check our boat fleet | Elamio Yachting"
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+  noindex
+  nofollow
+>
+  <div class="wrapper boats mart-900 padt-900 hidden-fade center">
+    <a href="/boat-fleet/pershing46">
+      <div class="boat-overlay"></div>
+      <div class="flex-center">
+        <div class="boat-container">
+          <div class="boat-name mate-font">
+            <p>Pershing 46</p>
+            <p class="boat-label padt-100">Karla Jane</p>
+          </div>
+
+          <Image
+            src={pershing46}
+            alt="pershing46"
+            format="avif"
+            loading="lazy"
+            class=""
+          />
+        </div>
+      </div></a
+    >
+  </div>
+
+  <div class="wrapper boats hidden-fade center">
+    <a href="/boat-fleet/atlantis50">
+      <div class="flex-center">
+        <div class="boat-container">
+          <div class="boat-name mate-font">
+            <p>Atlantis 50</p>
+            <p class="boat-label padt-100">Blue Marina</p>
+          </div>
+
+          <Image
+            src={atlantis50}
+            alt="atlantis50"
+            format="avif"
+            loading="lazy"
+            class=""
+          />
+        </div>
+      </div></a
+    >
+  </div>
+
+  <div class="wrapper boats hidden-fade center">
+    <a href="/boat-fleet/atlantis50">
+      <div class="flex-center">
+        <div class="boat-container">
+          <div class="boat-name mate-font">
+            <p>Sunseeker Portofino 35</p>
+            <p class="boat-label padt-100">Tiamat</p>
+          </div>
+
+          <Image
+            src={princessv58}
+            alt="princessv58"
+            format="avif"
+            loading="lazy"
+            class=""
+          />
+        </div>
+      </div></a
+    >
+  </div>
+</MainLayout>

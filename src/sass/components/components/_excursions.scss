@@ -1,0 +1,18 @@
+@use "../abstracts/media-queries" as *;
+@use "../abstracts/colors" as *;
+
+.uk-accordion-title {
+  color: $primAcc !important;
+}
+
+.warning {
+  color: #e33636 !important;
+}
+
+.uk-open > .uk-accordion-title::before {
+  fill: red !important;
+}
+
+.boat-text-l h2 {
+  color: $primAcc !important;
+}

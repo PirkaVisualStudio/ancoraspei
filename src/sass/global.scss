@@ -1,0 +1,54 @@
+@use "components/reset";
+@use "components" as *;
+
+body {
+  font-family: $bodyFont;
+  background-color: $darkBg;
+  color: $txtOnLight;
+  height: 100%;
+}
+
+.hidden-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s ease-in-out;
+}
+
+.show-fade {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.hidden-interval {
+  transition: --num 1s;
+  animation: ease-in;
+  counter-set: num var(--num);
+
+  display: inline-block;
+}
+
+.hidden-interval::before {
+  content: counter(num);
+}
+
+.start-interval {
+  --num: 42;
+}
+
+.delay1 {
+  transition-delay: 100ms;
+}
+
+.delay2 {
+  transition-delay: 200ms;
+}
+
+.delay3 {
+  transition-delay: 300ms;
+}

@@ -1,0 +1,97 @@
+$mainDark: #171716;
+$mainLight: #edecea;
+$lightBg: #edecea;
+$darkBg: #171716;
+//$primAcc: #6e909c;
+//$primAcc: #5dc0c8;
+$primAcc: #47abb2;
+$secAcc: #9ca19c;
+$terAcc: #fff;
+$quarAcc: #fff;
+$disabled: #aaaaaa;
+$txtOnDark: #edecea;
+$txtOnLight: #171716;
+$error: red;
+$success: #0350e7;
+
+$mainLight-100: color-mix(in srgb, $mainLight 80%, black);
+
+$mainDark-50: color-mix(in srgb, $mainDark 95%, white);
+
+$mainDark-100: color-mix(in srgb, $mainDark 80%, white);
+
+$mainDark-200: color-mix(in srgb, $mainDark 60%, white);
+
+$mainDark-300: color-mix(in srgb, $mainDark 40%, white);
+
+$primAcc-100: color-mix(in srgb, $primAcc 80%, white);
+
+//projects colors
+$sugBg: #eae5db;
+$sugTxt: #1f3c44;
+$volvoBg: #253162;
+$volvoTxt: #fffffe;
+$hunkyBg: #2a57e3;
+$hunkyTxt: #ffffff;
+$sushiBg: #1c3d43;
+$sushiTxt: #e8e6e0;
+$acaiBg: #4fab9c;
+$acaiTxt: #f5f5f5;
+$mytransferBg: #232a30;
+$mytransferTxt: #ffffff;
+
+.clr-main-dark {
+  color: $mainDark;
+}
+
+.clr-main-dark-100 {
+  color: $mainDark-100;
+}
+
+.clr-main-dark-200 {
+  color: $mainDark-200;
+}
+
+.clr-main-dark-300 {
+  color: $mainDark-300;
+}
+
+.clr-main-light {
+  color: $mainLight;
+}
+
+.bg-light {
+  background-color: $mainLight;
+}
+
+.bg-light-100 {
+  background-color: $mainLight-100;
+}
+
+.bg-dark {
+  background-color: $mainDark;
+}
+
+.bg-dark-50 {
+  background-color: $mainDark-50;
+}
+
+.bg-dark-100 {
+  background-color: $mainDark-100;
+}
+
+.bg-dark-200 {
+  background-color: $mainDark-200;
+}
+
+.clr-prim-acc {
+  color: $primAcc;
+}
+
+.clr-sec-acc {
+  color: $secAcc;
+}
+
+.bg-white {
+  background-color: #fff;
+}

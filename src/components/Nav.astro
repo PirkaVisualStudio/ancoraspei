@@ -1,0 +1,97 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<header>
+  <nav class="nav wrapper center noSelect" id="navMenu">
+    <div class="nav-data">
+      <div class="logo-container">
+        <a href="/" class="nav-logo">
+          <img
+            id="headerLogo"
+            src="/images/logos/elamio_light.svg"
+            alt="kuzina logo icon dark"
+          />
+        </a>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <Icon class="nav-toggle-menu" pack="mdi" name="menu" width="28" />
+        <Icon class="nav-toggle-close" pack="mdi" name="close" width="28" />
+      </div>
+    </div>
+
+    <div class="nav-menu" id="listId">
+      <ul class="nav-list" id="navList">
+        <a href="/"><li class="nav-link">Home</li></a>
+
+        <a href="/boat-fleet/"><li class="nav-link">Boat Fleet</li></a>
+
+        <a href="/excursions/"><li class="nav-link">Excursions</li></a>
+
+        <a href="/luxury-trips/"><li class="nav-link">Tailor made</li></a>
+
+        <a href="/cruises/"><li class="nav-link">Cruises</li></a>
+
+        <a href="/gallery/"><li class="nav-link">Gallery</li></a>
+
+        <a href="/reviews/"><li class="nav-link">Reviews</li></a>
+
+        <a href="/contact/"><li class="nav-link">Contact</li></a>
+
+        <!-- ============= DROPDOWN ITEM 01 ============= 
+
+        <li class="dropdown-item">
+          <div class="nav-link dropdown-button">
+            usluge
+            <Icon
+              class="dropdown-arrow"
+              pack="mdi"
+              name="chevron-down"
+              width="20"
+            />
+          </div>
+
+          <div class="dropdown-container">
+            <div class="dropdown-content">
+              <div class="dropdown-group">
+                <ul class="dropdown-list">
+                  <a href="/usluge/videoprodukcija/" class="dropdown-link"
+                    ><li></li>Video produkcija</a
+                  >
+                  <a href="/usluge/fotografija/" class="dropdown-link"
+                    ><li></li>Fotografija</a
+                  >
+                  <a href="/usluge/dizajn/" class="dropdown-link"
+                    ><li></li>Dizajn</a
+                  >
+                  <a href="/usluge/marketing/" class="dropdown-link"
+                    ><li></li>Digitalni marketing</a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>-->
+      </ul>
+    </div>
+
+    <div class="socialNav">
+      <a href="#" target="_blank"
+        ><Icon
+          class="socialNavIcon"
+          pack="ri"
+          name="instagram-fill"
+          width="28"
+        /></a
+      >
+      <a href="#" target="_blank"
+        ><Icon
+          class="socialNavIcon"
+          pack="ant-design"
+          name="facebook-filled"
+          width="30"
+        /></a
+      >
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,30 @@
+@use "../abstracts/colors" as *;
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: $mainDark;
+  color: $primAcc;
+  cursor: pointer;
+  padding: 1rem 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  border: none;
+  outline: none;
+  transform: all 0.4s ease-in-out;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  color: $primAcc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  text-align: justify;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}

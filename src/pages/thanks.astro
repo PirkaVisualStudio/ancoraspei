@@ -1,0 +1,49 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+//icons
+import { Icon } from "astro-icon";
+
+const {
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang="en"
+  pageIndex="thanks"
+  pageIndex="thanks"
+  title="Messeage sent | Elamio Yacthing"
+  charset={charset}
+  description="Your message is sent | Elamio Yacthing"
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+  noindex
+  nofollow
+>
+  <div class="section">
+    <div class="wrapper center section">
+      <h1 class="h1 padt-900 padb-400">Thanks!</h1>
+      <h2 class="h4 padb-400">Your message is sent</h2>
+      <p class="body">
+        Nakon što zaprimimo Vaš upit pokušati ćemo na njega odgovoriti u što
+        kraćem roku. Ukoliko niste sigurni jeste li primili naš e-mail obavezno
+        provjerite Vaš spam odjeljak e-pošte.
+      </p>
+
+      <p class="body">
+        Vratite se na <a href="/" class="body-bold"> početak</a> ili pokušajte nešto
+        drugo.
+      </p>
+    </div>
+  </div>
+</MainLayout>

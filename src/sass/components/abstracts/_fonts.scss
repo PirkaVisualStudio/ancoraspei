@@ -1,0 +1,167 @@
+@use "./colors" as *;
+@use "./media-queries" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&family=Mate+SC&family=Mr+Dafoe&family=Orbitron:wght@400..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lugrasimo&family=Mate+SC&family=Mr+Dafoe&family=Orbitron:wght@400..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Yellowtail&display=swap");
+
+@import url("https://use.typekit.net/idf3xny.css");
+
+$headingFont: "Julius Sans One", sans-serif;
+//$bodyFont: "Jost", sans-serif;
+$bodyFont: "Prompt", sans-serif;
+
+$navFont: "Mate SC", sans-serif;
+
+$scriptFont: "Satisfy", sans-serif;
+
+$h1size: 3.052rem;
+
+%bold {
+  font-weight: 700;
+}
+
+.font-heading {
+  font-family: $headingFont !important;
+}
+
+.font-body {
+  font-family: $bodyFont !important;
+}
+
+.h1 {
+  font-family: $headingFont;
+  font-size: $h1size;
+  line-height: 4rem;
+  font-weight: 500;
+  //@extend %bold;
+
+  @include medium {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+}
+
+.h2 {
+  font-family: $headingFont;
+  font-size: 2.441rem;
+  line-height: 2.441rem;
+  font-weight: 500;
+  //@extend %bold;
+
+  @include medium {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.h3 {
+  font-family: $headingFont;
+  font-size: 1.953rem;
+  line-height: 2rem;
+  @extend %bold;
+
+  @include medium {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+
+.h4 {
+  font-family: $headingFont;
+  font-size: 1.563rem;
+  line-height: 1.5rem;
+  @extend %bold;
+}
+
+.h5 {
+  font-family: $headingFont;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  @extend %bold;
+}
+
+.h6 {
+  font-family: $headingFont;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  @extend %bold;
+}
+
+.body {
+  font-family: $bodyFont;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  &-bold {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    @extend %bold;
+  }
+  &-small {
+    font-family: $bodyFont;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  &-large {
+    font-family: $bodyFont;
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+    &-bold {
+      font-family: $bodyFont;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      @extend %bold;
+    }
+  }
+}
+
+.txtLabel {
+  font-family: $bodyFont;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  @extend %bold;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.txtOnDark {
+  color: $txtOnDark;
+}
+
+.txtOnLight {
+  color: $txtOnLight;
+}
+
+.thin {
+  font-weight: 100 !important;
+}
+
+.normal-weight {
+  font-weight: 400;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.left {
+  text-align: left;
+}
+
+.script-font {
+  font-family: $scriptFont;
+  font-size: 1.5rem;
+}
+
+.mate-font {
+  font-family: "Mate SC", sans-serif;
+}

@@ -1,0 +1,17 @@
+@use "../abstracts/colors" as *;
+
+#cookie-consent-banner {
+  display: none;
+  background-color: $mainLight;
+  position: fixed;
+
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.cookie-consent-button {
+  margin-right: 8px;
+}

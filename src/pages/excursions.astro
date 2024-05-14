@@ -1,0 +1,233 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+//image compression
+import { Image } from "astro:assets";
+import hero from "../images/hero/hero2.jpg";
+import excursions from "../images/media/excursions.jpg";
+
+//icons
+import { Icon } from "astro-icon";
+
+const {
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang="en"
+  pageIndex="excursions"
+  pageIndexEn="excursions"
+  title="Excursions | Elamio Yachting"
+  charset={charset}
+  description="Check out premade excursions set up just for you | Elamio Yachting"
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+  noindex
+  nofollow
+>
+  <div class="hero_content txtOnDark txt-center flex-center">
+    <div class="black"></div>
+    <Image
+      src={excursions}
+      alt="boat"
+      format="avif"
+      loading="lazy"
+      class="hero-img"
+    />
+    <div class="heroContainer-default">
+      <h1 class="h1 clr-main-light">Excursions</h1>
+
+      <h2 class="body clr-main-light">Let's get on the boat right away</h2>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div class="section txtOnDark center txt-center flex-columns wrapper">
+    <div class="flex-left boat-text-l">
+      <h2 class="h2">About</h2>
+      <div class="line-acc-full mart-200"></div>
+      <p class="body padt-200 padb-200">
+        All trips are tailor-made according to our guest’s wish list and their
+        preferences. We, at Elamio yachting, are all about the experience and
+        high-quality service which is why everything is planned thoroughly to
+        ensure that every detail is personalized and unique just for you! It’s
+        all about creating the perfect experience tailored to your preferences
+        and interests.
+      </p>
+      <a href="#trips"><div class="btnFill marb-200">VIEW ALL</div></a>
+    </div>
+
+    <div class="flex-right">
+      <Image
+        src={excursions}
+        alt="vis"
+        format="avif"
+        loading="lazy"
+        class="flex-img hidden-fade"
+      />
+    </div>
+  </div>
+
+  <div class="section wrapper txtOnDark center" id="trips">
+    <h2 class="h2 clr-prim-acc padb-200">Vis</h2>
+    <p class="body justify">
+      Visiting this military island means creating memories for a lifetime.
+      Island of Vis served as a naval and military base back in Yugoslavia.
+      Therefore, the island has remained preserved and wild. Exploring its
+      military tunnels, hidden coves and the jewel for itself, Blue Cave, will
+      make your day on this island one of a kind.
+    </p>
+    <button class="accordion">Itinerary</button>
+    <div class="panel">
+      <p class="body">
+        We are leaving Split around 10:00AM, from where we are headed towards
+        island of Vis. On our way there; you will be enjoying views of Brač and
+        Šolta while getting some tan or enjoying sipping your drink in the
+        shade. Our first stop will be Blue Cave where we are going to tie to a
+        buoy, which is a perfect time to have a swim while awaiting a chauffeur
+        to take you to the Cave. Upon return to the boat, the tour continues
+        cruising along southern side of Vis giving you the opportunity to see
+        military tunnels and magnificent cliffs Vis abounds with. En-route we
+        will visit places where ''Mamma Mia'' was shot, as well as stopping in
+        mesmerizing Stiniva cove for swimming and tanning before lunch. There is
+        a paddle board available on the boat for the ones who would like to have
+        a little exercise right before lunch. Once everyone's back on the boat,
+        we will cruise towards the beautiful lagoon with crystal clear water by
+        the little island of Budihovac. We are suggesting having a lunch at a
+        unusual restaurant that is overlooking the entire lagoon. Everything you
+        can eat in the restaurant is fresh and grown on that little island of
+        Budihovac. While eating lunch you can enjoy the beautiful views hidden
+        in the shade of Mediterranean trees and having domestic animals walking
+        around this wild oasis. This spot is perfect for snorkeling, swimming
+        and paddle boarding after lunch, due to its shallow turquoise water.
+        Once everyone is ready to go back, you will be enjoying relaxing ride
+        watching sunset on our way back to home port where we get around 6:00PM.
+      </p>
+    </div>
+  </div>
+
+  <div class="section wrapper txtOnDark center" id="trips">
+    <h2 class="h2 clr-prim-acc padb-200">Šolta and Blue Lagoon</h2>
+    <p class="body justify">
+      Island of Šolta is a perfect spot for a relaxing day on the boat. Its
+      secluded beaches, hidden coves and turquoise water are all that is needed
+      for a summer adventure. On the other hand, Blue Lagoon is really what its
+      name represents. Shallow crystal clear water will make you want jump on a
+      paddle board and paddle all around the lagoon which will take your breath
+      away.
+    </p>
+    <button class="accordion">Itinerary</button>
+    <div class="panel">
+      <p class="body">
+        Departure from Split should be around 10:00AM, from which we are headed
+        to Maslinica, typical Dalmatian little village that has a rich history.
+        It is mostly known for its Martinis Marchi castle which was built at the
+        beginning of the 18th century to defend the village from constant pirate
+        attacks. We will have a stop there, so you could go for a walk,
+        sightseeing or just have a good morning coffee while enjoying the
+        beautiful scenery. Afterwards, the tour continues towards Blue lagoon
+        where we will be having lunch at a local restaurant overlooking the
+        crystal clear water of the Blue Lagoon. The lagoon is a perfect sport
+        for swimming, snorkeling, and paddle boarding, both before and after
+        lunch. In the late afternoon hours we will slowly cruise towards home
+        port of Split while soaking up the last rays of sun and having a glass
+        of Croatian wine to seize the day. Arrival to Split is expected to be
+        around 7:00PM.
+      </p>
+    </div>
+  </div>
+
+  <div class="section wrapper txtOnDark center" id="trips">
+    <h2 class="h2 clr-prim-acc padb-200">Hvar and Pakleni islands</h2>
+    <p class="body justify">
+      Hvar has been one of the most popular summer destinations for years,
+      mostly to its charm, not many can resist to. Pakleni islands archipelago
+      which sits right in front of port of Hvar rounds it off in a perfect whole
+      that just takes your breath away. No wonder Hvar has been on the ‘’to go
+      list’’ for many people from all around the world.
+    </p>
+    <button class="accordion">Itinerary</button>
+    <div class="panel">
+      <p class="body">
+        The adventure starts around 10:00AM from Split. Relaxing on the sundeck
+        and enjoying views of Brač and Šolta will be a good way to start the day
+        while cruising towards island of Hvar. Upon arrival to a exquisite town
+        of Hvar, you will be able to have a walk around the town, climb to a
+        fortress which sits on top of the hill, or just maybe go shopping or
+        have a coffee. Once you are ready to cool off, we will be heading to
+        Pakleni islands through narrow passages and coves which are all perfect
+        for swimming, sunbathing and snorkeling. One of them stands out; It is
+        Palmižana which is known worldwide for crystal clear water, great lounge
+        bars and restaurants located in botanical gardens. After exploring this
+        amazing archipelago, we will get going towards the Southern side of the
+        island where we will show you mesmerizing cove of Dubovica and take you
+        swimming in front of fascinating Red Rocks. Eventually, we continue
+        towards hidden cove of Milna where we will tie onto a buoy from which
+        the restaurant chauffer will take you to the restaurant which is owned
+        by a local fisherman. The restaurant sits right by the water with
+        splendid views of the offing, cliffs and sunsets. After lunch you can
+        explore the hidden cove of Milna or simply enjoy on the boat and toast
+        to life! In the late afternoon hours we will be heading back to Split
+        and you will have the opportunity to soak up the beauty of Croatian
+        sunsets. Arrival to Split is expected to be around 7:00PM.
+      </p>
+    </div>
+  </div>
+
+  <div class="section wrapper txtOnDark center" id="trips">
+    <h2 class="h2 clr-prim-acc padb-200">Brac</h2>
+    <p class="body justify">
+      Besides being famous for its olive oil and stone, Brač is home to one of
+      the most beautiful beaches in the world; The Golden Horn. Its triangular
+      shape with a prominent peak in the sea, the direction which depends on the
+      direction of the current and crystal clear water, is something that will
+      definitely take your breath.
+    </p>
+    <button class="accordion">Itinerary</button>
+    <div class="panel">
+      <p class="body">
+        The tour starts around 10AM. While enjoying views of Split from the
+        offing we will be heading to our first stop. Little town of Milna is the
+        safest harbor on the island and a typical Dalmatian village, perfect for
+        a coffee, little walk around the village or capturing memories before
+        heading further. Upon return to the boat we are going to go for a swim.
+        A hidden cove nearby surrounded with woods and crickets chirping will be
+        your spot for cooling off after a nice walk. Afterwards we will be
+        heading to Bol, home of the Golden Horn. On our way there you will be
+        able to soak up the sun rays while having a glass of cold beverage as
+        long as we are driving along the mesmerizing Southern side of Brač. In
+        Bol we will be having lunch in a local tavern known for its fish
+        delicacies overlooking the island of Hvar on the other side. After
+        lunch, there will be plenty of time for swimming, sunbathing, snorkeling
+        and (wind) surfing on shores of the Golden Horn. Once everybody is set
+        we continue back to Split enjoying a view of a splendid sunset. The
+        arrival is scheduled to be around 19:30PM.
+      </p>
+    </div>
+  </div>
+
+  <div class="section wrapper txtOnDark center" id="trips">
+    <h2 class="h2 clr-prim-acc padb-200">Airport Transfer</h2>
+    <p class="body justify">
+      In case you want to have more time enjoying in beauties of the Adriatic
+      coast before heading back home, we will be happy to give you a ride.
+      Transfer directly to the airport or simply from point A to point B
+      somewhere in between the islands are something our fast boats are perfect
+      for!
+    </p>
+  </div>
+</MainLayout>
+
+<script>
+  import "../scripts/accordion.js";
+</script>

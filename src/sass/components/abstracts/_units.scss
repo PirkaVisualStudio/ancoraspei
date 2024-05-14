@@ -1,0 +1,205 @@
+@use "./media-queries" as *;
+
+//margins and paddings
+
+.padt-100 {
+  padding-top: 0.8rem;
+}
+.padt-200 {
+  padding-top: 1rem;
+}
+.padt-300 {
+  padding-top: 1.25rem;
+}
+.padt-400 {
+  padding-top: 1.5rem;
+}
+.padt-500 {
+  padding-top: 1.75rem;
+}
+.padt-600 {
+  padding-top: 2rem;
+}
+.padt-700 {
+  padding-top: 2.25rem;
+}
+.padt-800 {
+  padding-top: 2.5rem;
+}
+.padt-900 {
+  padding-top: 2.75rem;
+}
+
+.padb-100 {
+  padding-bottom: 0.8rem;
+}
+.padb-200 {
+  padding-bottom: 1rem;
+}
+.padb-300 {
+  padding-bottom: 1.25rem;
+}
+.padb-400 {
+  padding-bottom: 1.5rem;
+}
+.padb-500 {
+  padding-bottom: 1.75rem;
+}
+.padb-600 {
+  padding-bottom: 2rem;
+}
+.padb-700 {
+  padding-bottom: 2.25rem;
+}
+.padb-800 {
+  padding-bottom: 2.5rem;
+}
+.padb-900 {
+  padding-bottom: 2.75rem;
+}
+
+.padlr-100 {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.padlr-200 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padlr-300 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.padlr-400 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.padlr-500 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.padlr-600 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.padlr-700 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.padlr-800 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.padlr-900 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.mart-100 {
+  margin-top: 0.8rem;
+}
+.mart-200 {
+  margin-top: 1rem;
+}
+.mart-300 {
+  margin-top: 1.25rem;
+}
+.mart-400 {
+  margin-top: 1.5rem;
+}
+.mart-500 {
+  margin-top: 1.75rem;
+}
+.mart-600 {
+  margin-top: 2rem;
+}
+.mart-700 {
+  margin-top: 2.25rem;
+}
+.mart-800 {
+  margin-top: 2.5rem;
+}
+.mart-900 {
+  margin-top: 2.75rem;
+}
+
+.marb-100 {
+  margin-bottom: 0.8rem;
+}
+.marb-200 {
+  margin-bottom: 1rem;
+}
+.marb-300 {
+  margin-bottom: 1.25rem;
+}
+.marb-400 {
+  margin-bottom: 1.5rem;
+}
+.marb-500 {
+  margin-bottom: 1.75rem;
+}
+.marb-600 {
+  margin-bottom: 2rem;
+}
+.marb-700 {
+  margin-bottom: 2.25rem;
+}
+.marb-800 {
+  margin-bottom: 2.5rem;
+}
+.marb-900 {
+  margin-bottom: 2.75rem;
+}
+
+.marlr-100 {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.marlr-200 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.marlr-300 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.marlr-400 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.marlr-500 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
+.marlr-600 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.marlr-700 {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
+.marlr-800 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.marlr-900 {
+  margin-left: 2.75rem;
+  margin-right: 2.75rem;
+}

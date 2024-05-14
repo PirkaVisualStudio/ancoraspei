@@ -1,0 +1,230 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+//slider
+
+import TestimonialsSlider from "../components/TestimonialsSlider.astro";
+import ReviewsSlider from "../components/ReviewsSlider.astro";
+
+import GalleryGrid from "../components/GalleryGrid.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+import hero from "../images/hero/hero4.jpg";
+import services from "../images/media/services.jpg";
+import destinations from "../images/media/destinations.jpg";
+import testimonial from "../images/media/testimonial.jpg";
+import woman from "../images/media/woman-boat.jpg";
+import excursions from "../images/media/excursions.jpg";
+
+//icons
+import { Icon } from "astro-icon";
+
+const {
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang="hr"
+  pageIndex=""
+  title={title}
+  charset={charset}
+  description={description}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <div class="hero_main heroImg1 txtOnDark txt-center mart-900">
+    <div class="heroContainer">
+      <img
+        id="heroLogo"
+        src="/images/logos/elamio_full_light.svg"
+        alt="elamio yachting logo"
+        class="padt-900 padb-900 center"
+      />
+      <h1 class="h2 padb-200">Exclusive yacht travel agency from Croatia.</h1>
+
+      <h2 class="body marb-600">Enjoy the best from our islands</h2>
+
+      <a href="/contact/"
+        ><div class="btnFill mart-900 marb-100">BOOK NOW</div></a
+      >
+      <a href="#services"
+        ><div class="btnStroke marlr-400 marb-100">SERVICES</div></a
+      >
+    </div>
+
+    <ReviewsSlider />
+  </div>
+
+  <!-- cards -->
+  <div class="txtOnDark cards-container section">
+    <div class="txt-center wrapper center">
+      <div>
+        <h2 class="h2" id="services">Discover Elamio</h2>
+        <p class="body padt-400 script-font">
+          Your passport to unforgettable exclusive experience!
+        </p>
+      </div>
+    </div>
+
+    <!-- image 01 -->
+    <div class="section txtOnDark wrapper flex-columns center">
+      <div class="column4 hidden-fade">
+        <a href="/luxury-trips/">
+          <div class="arrow-container">
+            <Icon name="ic:round-keyboard-arrow-right" class="box-arrow" />
+          </div>
+          <div class="box">
+            <Image
+              src={services}
+              alt="boat services croatia"
+              format="avif"
+              loading="lazy"
+              class=""
+            /><h3 class="h5">Tailor made</h3>
+          </div></a
+        >
+      </div>
+      <div class="column4 hidden-fade delay1">
+        <a href="/boat-fleet/">
+          <div class="arrow-container">
+            <Icon name="ic:round-keyboard-arrow-right" class="box-arrow" />
+          </div>
+          <div class="box">
+            <Image
+              src={hero}
+              alt="boat"
+              format="avif"
+              loading="lazy"
+              class=""
+            /><h3 class="h5">Boat fleet</h3>
+          </div></a
+        >
+      </div>
+
+      <div class="column4 hidden-fade delay2">
+        <a href="/excursions/">
+          <div class="arrow-container">
+            <Icon name="ic:round-keyboard-arrow-right" class="box-arrow" />
+          </div>
+          <div class="box">
+            <Image
+              src={excursions}
+              alt="excursions in croatia"
+              format="avif"
+              loading="lazy"
+              class=""
+            /><h3 class="h5">Excursions</h3>
+          </div></a
+        >
+      </div>
+
+      <div class="column4 hidden-fade delay3">
+        <a href="/cruises/">
+          <div class="arrow-container">
+            <Icon name="ic:round-keyboard-arrow-right" class="box-arrow" />
+          </div>
+          <div class="box">
+            <Image
+              src={destinations}
+              alt="destinations"
+              format="avif"
+              loading="lazy"
+              class=""
+            /><h3 class="h5">Cruises</h3>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- about us -->
+  <div class="txtOnDark center txt-center wrapper flex-columns">
+    <div class="flex-left boat-text-l">
+      <h2 class="h2">About us</h2>
+      <div class="line-acc-full mart-200"></div>
+      <p class="body padt-200 padb-200">
+        Elamio Yachting is a company based in Split that specializes in
+        customized private yacht tours in Croatia, with focus on central and
+        southern Adriatic. Our fleet disposes with high end brands that will
+        make you feel both special and safe. Whether looking for only a transfer
+        from point A to point B, full day trip to the islands or even chartering
+        the boat for a longer period of time, we will be happy to arrange
+        everything for you. Our well experienced and welcoming crew will
+        introduce you to the fullest with everything our boats have to offer, as
+        well as to the beauty of the Adriatic Coast, its towns and islands with
+        interesting stories and their genuine southern hospitality.
+      </p>
+      <a href="/gallery/"><div class="btnFill marb-200">VIEW GALLERY</div></a>
+    </div>
+
+    <div class="flex-right book-container">
+      <Image
+        src={woman}
+        alt="woman smiling on a boat"
+        format="avif"
+        loading="lazy"
+        class="flex-img hidden-fade"
+      />
+    </div>
+  </div>
+
+  <!-- why us -->
+  <div class="section txtOnDark center txt-center wrapper flex-columns-reverse">
+    <div class="flex-left book-container">
+      <Image
+        src={woman}
+        alt="woman smiling on a boat"
+        format="avif"
+        loading="lazy"
+        class="flex-img hidden-fade"
+      />
+    </div>
+
+    <div class="flex-right boat-text-r">
+      <h2 class="h2">Why us?</h2>
+      <div class="line-acc-full mart-200"></div>
+      <p class="body padt-200 padb-200">
+        As a family owning the company, we have been exploring Adriatic Sea for
+        decades. Its hidden jewels have always been our passion and go to places
+        for charging our batteries before going back to everyday life. Few years
+        ago we decided to share our knowledge of Adriatic with you, our guests.
+        Whether you are coming for a relaxed family vacation, honeymoon or an
+        adventure, we are here to make your trip in Croatia memorable, unique
+        and want you to come back over and over again by sharing our first hand
+        experience. <br /><br />Swimming and playing water polo just under the
+        Dubrovnik city walls, diving in undiscovered breathtaking coves, or just
+        toasting to life with glass of wine grown on hills of our islands and
+        celebrated worldwide. We care about you and want you to truly experience
+        Croatia in unique and exquisite way that will make you fall in love with
+        it. Just like we did many years ago.
+      </p>
+      <a href="/contact/"><div class="btnFill marb-200">BOOK NOW</div></a>
+    </div>
+  </div>
+
+  <!-- reviews -->
+  <div class="section testimonials txtOnDark">
+    <h2 class="h2 padb-100 padlr-100">Testimonials</h2>
+    <div class="txt-center center">
+      <div>
+        <TestimonialsSlider />
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider script -->
+  <script>
+    import "../scripts/slider.js";
+  </script>
+</MainLayout>

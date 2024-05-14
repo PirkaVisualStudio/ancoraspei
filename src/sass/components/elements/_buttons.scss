@@ -1,0 +1,75 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/media-queries" as *;
+
+.btnFill {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  background-color: $primAcc;
+  color: $mainLight;
+  padding: 0.8rem 1rem;
+  font-weight: 500;
+  border: 2px solid $primAcc;
+
+  &:hover {
+    background: rgba($color: #000000, $alpha: 0);
+    color: $primAcc;
+    border: 2px solid $primAcc;
+    transition-duration: 0.2s;
+  }
+
+  @include medium {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.btnStroke {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  background: rgba($color: #000000, $alpha: 0);
+  color: $mainLight;
+  padding: 0.8rem 1rem;
+  font-weight: 500;
+  border: 2px solid $primAcc;
+
+  &:hover {
+    //background: rgba($color: #000000, $alpha: 0);
+    background-color: $primAcc;
+    color: $mainLight;
+    border: 2px solid $primAcc;
+    transition-duration: 0.2s;
+  }
+
+  @include medium {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.btnStroke-rounded {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  background-color: $mainLight;
+  color: $primAcc;
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  border: 2px solid $primAcc;
+  border-radius: 24px;
+
+  &:hover {
+    background-color: $primAcc;
+    color: $txtOnDark;
+    border: 2px solid $primAcc;
+  }
+
+  @include medium {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

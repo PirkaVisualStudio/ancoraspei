@@ -1,0 +1,51 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+const {
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang="en"
+  pageIndex="404"
+  pageIndexEn="404"
+  title="404 Error | Elamio Yachting"
+  charset={charset}
+  description="This page does not exist. Please return to home and try something else. | Elamio Yachting"
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+  noindex
+  nofollow
+>
+  <div class="hero">
+    <div class="container wrapper center txtOnDark">
+      <div class="section">
+        <h1 class="h1 padt-200 padb-200 marb-200">404 Error</h1>
+
+        <p class="h5">
+          Unfortunatley this page does not exist. Please returno to <a href="/">
+            home</a
+          > or try something else.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider script -->
+  <script>
+    import "../scripts/slider.js";
+  </script>
+</MainLayout>
