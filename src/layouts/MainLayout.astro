@@ -9,30 +9,41 @@ import siteInfo from "../data/siteInfo.json";
 
 //image compression
 import { Image } from "astro:assets";
-import defaultImage from "../images/hero/hero4.jpg";
+import defaultImage from "../images/default/seo.jpg";
+
+//URL for default image file
+const imageURL = new URL(
+  defaultImage.src,
+  `${siteInfo.map((i) => i.site_url)}`
+);
 
 const { pageIndex } = Astro.props;
 const { pageIndexEn } = Astro.props;
-const { lang } = Astro.props;
 
 const {
   title = `${siteInfo.map((i) => i.title)}`,
   charset = `${siteInfo.map((i) => i.charset)}`,
   description = `${siteInfo.map((i) => i.description)}`,
-  canonical = Astro.url,
+  canonical = `${siteInfo.map((i) => i.site_url)}`,
+  lang = `${siteInfo.map((i) => i.main_lang)}`,
   noindex,
   nofollow,
   openGraph = {
     basic: {
       title: `${title}`,
       type: "website",
-      image: defaultImage.src,
+      image: `${imageURL}`,
+      url: `${siteInfo.map((i) => i.site_url)}`,
     },
   },
   languageAlternates = [
     {
-      href: Astro.site + `${pageIndex}`,
+      href: `${siteInfo.map((i) => i.site_url)}` + "en/" + `${pageIndexEn}`,
       hrefLang: "en",
+    },
+    {
+      href: `${siteInfo.map((i) => i.site_url)}` + `${pageIndex}`,
+      hrefLang: "hr",
     },
   ],
   extend = {
@@ -88,7 +99,6 @@ const {
   <script>
     import "../scripts/navTop.js";
     import "../scripts/animation.js";
+    import "../scripts/consent.js";
   </script>
-
-  <script is:inline src="/scripts/consent.js"></script>
 </body>

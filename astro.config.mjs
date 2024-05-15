@@ -12,9 +12,10 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: (page) =>
-        page !== "https://yoursite.hr/kontakt/" &&
-        page !== "https://yoursite.hr/hvala/" &&
-        page !== "https://yoursite.hr/polica/",
+        page !== `${siteInfo.map((i) => i.not_included[0])}` &&
+        page !== `${siteInfo.map((i) => i.not_included[1])}` &&
+        page !== `${siteInfo.map((i) => i.not_included[2])}` &&
+        page !== `${siteInfo.map((i) => i.not_included[3])}`,
     }),
     compress({
       CSS: false,

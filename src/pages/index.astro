@@ -7,6 +7,9 @@ import ReviewsSlider from "../components/ReviewsSlider.astro";
 
 import GalleryGrid from "../components/GalleryGrid.astro";
 
+//import site data
+import siteInfo from "../data/siteInfo.json";
+
 //image compression
 import { Image } from "astro:assets";
 
@@ -22,6 +25,7 @@ import { Icon } from "astro-icon";
 
 const {
   title,
+  lang,
   charset,
   description,
   canonical,
@@ -34,8 +38,9 @@ const {
 ---
 
 <MainLayout
-  lang="hr"
+  lang={lang}
   pageIndex=""
+  pageIndexEn=""
   title={title}
   charset={charset}
   description={description}
@@ -43,10 +48,13 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <section class="section flex-center txtOnDark padt-900 mart-900">
+  <section class="section flex-center txtOnLight padt-900 mart-900">
     <div class="hero-container section">
-      <h1 class="h1 section">This is H1</h1>
-      <h2 class="h5">This is H5</h2>
+      <h1 class="h1 section">Ovo je H1</h1>
+      <h2 class="h5">Ovo je H5</h2>
+      <a href="/en/">ENGLISH</a>
+      <a href="/test/">TEST STRANICA</a>
+      <a href="/hvala/">HVALA</a>
     </div>
   </section>
 
