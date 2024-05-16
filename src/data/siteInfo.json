@@ -4,7 +4,8 @@
     "site_url": "https://pirka2.netlify.app/",
     "main_lang": "hr",
     "charset": "UTF-8",
-    "title": "This is default title | Brand name",
+    "title": "This is default title",
+    "brand_tag": " | Pirka Visual Studio", 
     "description": "This is default description",
     "not_included": ["https://www.url.com/hvala/", "2", "3", "4"]
 }

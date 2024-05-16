@@ -2,10 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 //slider
 
-import TestimonialsSlider from "../components/TestimonialsSlider.astro";
-import ReviewsSlider from "../components/ReviewsSlider.astro";
-
-import GalleryGrid from "../components/GalleryGrid.astro";
+import ReviewsSlider from "../components/Slider.astro";
 
 //image compression
 import { Image } from "astro:assets";
@@ -45,16 +42,11 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <section class="section flex-center txtOnLight padt-900 mart-900">
-    <div class="hero-container section">
-      <h1 class="h1 section">HVALA</h1>
+  <section class="section-nav wrapper">
+    <div class="">
+      <h1 class="h1">HVALA</h1>
       <h2 class="h5">Ovo je H5</h2>
       <a href="/">NATRAG</a>
     </div>
   </section>
-
-  <!-- Slider script -->
-  <script>
-    import "../scripts/slider.js";
-  </script>
 </MainLayout>

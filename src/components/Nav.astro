@@ -1,5 +1,8 @@
 ---
 import { Icon } from "astro-icon";
+
+//import menu data
+import navMenu from "../data/navMenu.json";
 ---
 
 <header>
@@ -22,21 +25,13 @@ import { Icon } from "astro-icon";
 
     <div class="nav-menu" id="listId">
       <ul class="nav-list" id="navList">
-        <a href="/"><li class="nav-link">Home</li></a>
-
-        <a href="/boat-fleet/"><li class="nav-link">Boat Fleet</li></a>
-
-        <a href="/excursions/"><li class="nav-link">Excursions</li></a>
-
-        <a href="/luxury-trips/"><li class="nav-link">Tailor made</li></a>
-
-        <a href="/cruises/"><li class="nav-link">Cruises</li></a>
-
-        <a href="/gallery/"><li class="nav-link">Gallery</li></a>
-
-        <a href="/reviews/"><li class="nav-link">Reviews</li></a>
-
-        <a href="/contact/"><li class="nav-link">Contact</li></a>
+        {
+          navMenu.map((i) => (
+            <a href={i.path}>
+              <li class="nav-link">{i.name}</li>
+            </a>
+          ))
+        }
 
         <!-- ============= DROPDOWN ITEM 01 ============= 
 

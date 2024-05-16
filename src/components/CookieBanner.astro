@@ -1,4 +1,7 @@
-<div id="cookie-consent-banner" class="cookie-consent-banner">
+<div
+  id="cookie-consent-banner"
+  class="cookie-consent-banner bg-dark txt-on-dark"
+>
   <div class="wrapper mart-500 marb-500">
     <h3 class="h3 padb-100">Cookie settings</h3>
     <p class="body-small">
@@ -6,56 +9,74 @@
       help us to analyze user behaviour.
     </p>
     <div class="padt-200">
-      <button id="btn-accept-all" class="cookie-consent-button btn-success"
+      <button
+        id="btn-accept-all"
+        class="cookie-consent-button btn-success btn-consent marr-100 marb-100"
         >Accept all</button
       >
 
-      <button id="btn-accept-some" class="cookie-consent-button btn-outline"
+      <button
+        id="btn-accept-some"
+        class="cookie-consent-button btn-outline btn-consent-outline marr-100 marb-100"
         >Accept selection</button
       >
 
-      <button id="btn-reject-all" class="cookie-consent-button btn-grayscale"
+      <button
+        id="btn-reject-all"
+        class="cookie-consent-button btn-grayscale btn-consent-outline marb-100"
         >Reject all</button
       >
     </div>
 
-    <div class="cookie-consent-options padt-100">
-      <label
-        ><input
-          id="consent-necessary"
-          type="checkbox"
-          value="Necessary"
-          checked
-          disabled
-        />Necessary</label
-      >
+    <div class="cookie-consent-options padt-100 flex">
+      <div>
+        <label
+          ><input
+            id="consent-necessary"
+            type="checkbox"
+            value="Necessary"
+            checked
+            disabled
+            class="marb-100 marr-100"
+          />Necessary</label
+        >
+      </div>
 
-      <label
-        ><input
-          id="consent-analytics"
-          type="checkbox"
-          value="Analytics"
-          checked
-        />Analytics</label
-      >
+      <div>
+        <label
+          ><input
+            id="consent-analytics"
+            type="checkbox"
+            value="Analytics"
+            checked
+            class="marb-100 marr-100"
+          />Analytics</label
+        >
+      </div>
 
-      <label
-        ><input
-          id="consent-personalization"
-          type="checkbox"
-          value="Ad personalization"
-          checked
-        />Ad personalization</label
-      >
+      <div>
+        <label
+          ><input
+            id="consent-personalization"
+            type="checkbox"
+            value="Ad personalization"
+            checked
+            class="marb-100 marr-100"
+          />Ad personalization</label
+        >
+      </div>
 
-      <label
-        ><input
-          id="consent-marketing"
-          type="checkbox"
-          value="Marketing"
-          checked
-        />Marketing</label
-      >
+      <div>
+        <label
+          ><input
+            id="consent-marketing"
+            type="checkbox"
+            value="Marketing"
+            checked
+            class="marr-100"
+          />Marketing</label
+        >
+      </div>
     </div>
   </div>
 </div>

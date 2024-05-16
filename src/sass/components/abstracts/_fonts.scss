@@ -110,7 +110,7 @@ $h1-size: 3.052rem;
   }
 }
 
-.txtLabel {
+.txt-label {
   font-family: $body-font;
   font-size: 0.8rem;
   line-height: 1rem;
@@ -121,19 +121,19 @@ $h1-size: 3.052rem;
   text-transform: uppercase;
 }
 
-.txtOnDark {
+.txt-on-dark {
   color: $txt-on-dark;
 }
 
-.txtOnLight {
+.txt-on-light {
   color: $txt-on-light;
 }
 
-.thin {
+.txt-thin {
   font-weight: 100 !important;
 }
 
-.normal-weight {
+.txt-normal-weight {
   font-weight: 400;
 }
 
@@ -141,6 +141,10 @@ $h1-size: 3.052rem;
   text-align: justify;
 }
 
-.left {
+.txt-left {
   text-align: left;
+}
+
+.txt-right {
+  text-align: right;
 }

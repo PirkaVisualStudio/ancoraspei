@@ -17,12 +17,18 @@
 }
 
 @mixin large {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin x-large {
   @media screen and (max-width: 1260px) {
     @content;
   }
 }
 
-@mixin xlarge {
+@mixin xl-large {
   @media screen and (max-width: 1320px) {
     @content;
   }

@@ -1,9 +1,9 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/media-queries" as *;
 
-.btnFill {
+.btn-fill {
   display: inline-block;
-  width: 120px;
+  width: auto;
   text-align: center;
   background-color: $prim-acc;
   color: $main-light;
@@ -23,9 +23,34 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  &-rounded {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    background-color: $prim-acc;
+    color: $main-light;
+    padding: 0.8rem 1rem;
+    font-weight: 500;
+    border: 2px solid $prim-acc;
+    border-radius: 30px;
+
+    &:hover {
+      background: rgba($color: #000000, $alpha: 0);
+      color: $prim-acc;
+      border: 2px solid $prim-acc;
+      transition-duration: 0.2s;
+    }
+
+    @include medium {
+      display: block !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
-.btnStroke {
+.btn-stroke {
   display: inline-block;
   width: 120px;
   text-align: center;
@@ -50,7 +75,7 @@
   }
 }
 
-.btnStroke-rounded {
+.btn-stroke-rounded {
   display: inline-block;
   width: 120px;
   text-align: center;

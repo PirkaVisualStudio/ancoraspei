@@ -17,25 +17,35 @@ const imageURL = new URL(
   `${siteInfo.map((i) => i.site_url)}`
 );
 
+//URL for default image file
+const canonicalURL = new URL(
+  Astro.url.pathname,
+  `${siteInfo.map((i) => i.site_url)}`
+);
 const { pageIndex } = Astro.props;
 const { pageIndexEn } = Astro.props;
 
 const {
-  title = `${siteInfo.map((i) => i.title)}`,
+  title = `${siteInfo.map((i) => i.title)}` +
+    `${siteInfo.map((i) => i.brand_tag)}`,
+
   charset = `${siteInfo.map((i) => i.charset)}`,
   description = `${siteInfo.map((i) => i.description)}`,
-  canonical = `${siteInfo.map((i) => i.site_url)}`,
+  canonical = `${canonicalURL}`,
   lang = `${siteInfo.map((i) => i.main_lang)}`,
   noindex,
   nofollow,
+
   openGraph = {
     basic: {
       title: `${title}`,
       type: "website",
       image: `${imageURL}`,
-      url: `${siteInfo.map((i) => i.site_url)}`,
+      url: `${canonicalURL}`,
+      description: `${description}`,
     },
   },
+
   languageAlternates = [
     {
       href: `${siteInfo.map((i) => i.site_url)}` + "en/" + `${pageIndexEn}`,
@@ -48,6 +58,35 @@ const {
   ],
   extend = {
     meta: [
+      {
+        property: "twitter:domain",
+        content: `${siteInfo.map((i) => i.site_url)}`,
+      },
+
+      {
+        property: "twitter:url",
+        content: `${canonicalURL}`,
+      },
+      {
+        name: "twitter:card",
+        content: "image_alt",
+      },
+
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+
+      {
+        name: "twitter:image",
+        content: `${imageURL}`,
+      },
+
       {
         name: "author",
         content: "Pirka Visual Studio",

@@ -1,26 +1,17 @@
 ---
+//Main Layout
 import MainLayout from "../layouts/MainLayout.astro";
-//slider
 
-import TestimonialsSlider from "../components/TestimonialsSlider.astro";
-import ReviewsSlider from "../components/ReviewsSlider.astro";
-
-import GalleryGrid from "../components/GalleryGrid.astro";
-
-//import site data
+//import main site data
 import siteInfo from "../data/siteInfo.json";
 
 //image compression
 import { Image } from "astro:assets";
 
+//import images
 import hero from "../images/hero/hero4.jpg";
-import services from "../images/media/services.jpg";
-import destinations from "../images/media/destinations.jpg";
-import testimonial from "../images/media/testimonial.jpg";
-import woman from "../images/media/woman-boat.jpg";
-import excursions from "../images/media/excursions.jpg";
 
-//icons
+//import icons
 import { Icon } from "astro-icon";
 
 const {
@@ -39,6 +30,7 @@ const {
 
 <MainLayout
   lang={lang}
+  brandTitle,
   pageIndex=""
   pageIndexEn=""
   title={title}
@@ -48,18 +40,14 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <section class="section flex-center txtOnLight padt-900 mart-900">
-    <div class="hero-container section">
-      <h1 class="h1 section">Ovo je H1</h1>
+  <section class="section-nav flex-center">
+    <div class="section flex-column flex-gap-05">
+      <h1 class="h1">Ovo je H1</h1>
       <h2 class="h5">Ovo je H5</h2>
       <a href="/en/">ENGLISH</a>
       <a href="/test/">TEST STRANICA</a>
       <a href="/hvala/">HVALA</a>
+      <a href="/styleguide/">STYLEGUIDE</a>
     </div>
   </section>
-
-  <!-- Slider script -->
-  <script>
-    import "../scripts/slider.js";
-  </script>
 </MainLayout>

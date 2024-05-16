@@ -89,8 +89,8 @@
   resize: none;
 }
 
-.footerForm input,
-.footerForm textarea {
+.footer-form input,
+.footer-form textarea {
   width: 100%;
   max-width: 650px;
   border-bottom: 1px solid #8486aa;
@@ -106,7 +106,7 @@
   resize: none;
 }
 
-.footerForm textarea {
+.footer-form textarea {
   display: block;
   background-color: #313353;
   border-bottom: 1px solid #8486aa;
@@ -116,15 +116,15 @@
   resize: none;
 }
 
-.footerForm input::placeholder,
-.footerForm textarea::placeholder {
+.footer-form input::placeholder,
+.footer-form textarea::placeholder {
   color: #8486aa;
 }
 
-.footerForm input:focus {
+.footer-form input:focus {
   border-bottom: solid 1px $sec-acc;
 }
 
-.footerForm textarea:focus {
+.footer-form textarea:focus {
   border-bottom: solid 1px $sec-acc;
 }
