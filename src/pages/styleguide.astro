@@ -15,12 +15,7 @@ import siteInfo from "../data/siteInfo.json";
 import { Image } from "astro:assets";
 
 //import images
-import hero from "../images/hero/hero4.jpg";
-import services from "../images/media/services.jpg";
-import destinations from "../images/media/destinations.jpg";
-import testimonial from "../images/media/testimonial.jpg";
-import woman from "../images/media/woman-boat.jpg";
-import excursions from "../images/media/excursions.jpg";
+import hero from "../images/hero/hero.jpg";
 
 //import icons
 import { Icon } from "astro-icon";
@@ -64,7 +59,7 @@ const {
     <p class="txtLabel">This is label</p>
     <p class="txtLabel upper">This is label uppercase</p>
     <Image
-      src={services}
+      src={hero}
       alt="alt"
       format="avif"
       loading="lazy"

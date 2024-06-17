@@ -15,6 +15,14 @@ Scrollbar.use(OverscrollPlugin);
 
 Scrollbar.init(elem, {
   plugins: {
-    overscroll: glow,
+    overscroll: overscrollOptions | true,
   },
 });
+
+const overscrollOptions = {
+  enable: true,
+  effect: navigator.userAgent.match(/Android/) ? "glow" : "bounce",
+  damping: 0.2,
+  maxOverscroll: 150,
+  glowColor: "#222a2d",
+};
