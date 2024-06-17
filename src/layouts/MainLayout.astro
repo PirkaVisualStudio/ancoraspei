@@ -129,15 +129,15 @@ const {
   <CookieBanner />
   <Nav />
 
-  <main>
+  <main id="my-scrollbar" data-scrollbar="true">
     <slot />
+    <Footer />
   </main>
-
-  <Footer />
 
   <script>
     import "../scripts/navTop.js";
     import "../scripts/animation.js";
     import "../scripts/consent.js";
+    import "../scripts/smoothscroll.js";
   </script>
 </body>

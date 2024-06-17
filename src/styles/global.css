@@ -219,12 +219,18 @@ html {
   background-color: #fff;
 }
 
-.txt-label, .body-large-bold, .body-bold, .h6, .h5, .h4, .h3 {
+@font-face {
+  font-family: "recoletaalt-black";
+  src: url("/fonts/recoletaalt-black.woff2") format("woff2"), url("/fonts/recoletaalt-black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.txt-label, .body-large-bold, .body-bold {
   font-weight: bold;
 }
 
 .font-heading {
-  font-family: "Jost", sans-serif !important;
+  font-family: "recoletaalt-black", sans-serif !important;
 }
 
 .font-body {
@@ -232,10 +238,9 @@ html {
 }
 
 .h1 {
-  font-family: "Jost", sans-serif;
-  font-size: 3.052rem;
+  font-family: "recoletaalt-black", sans-serif;
+  font-size: 4rem;
   line-height: 4rem;
-  font-weight: 500;
 }
 @media screen and (max-width: 480px) {
   .h1 {
@@ -245,10 +250,9 @@ html {
 }
 
 .h2 {
-  font-family: "Jost", sans-serif;
+  font-family: "recoletaalt-black", sans-serif;
   font-size: 2.441rem;
   line-height: 2.441rem;
-  font-weight: 500;
 }
 @media screen and (max-width: 480px) {
   .h2 {
@@ -258,7 +262,7 @@ html {
 }
 
 .h3 {
-  font-family: "Jost", sans-serif;
+  font-family: "recoletaalt-black", sans-serif;
   font-size: 1.953rem;
   line-height: 2rem;
 }
@@ -270,19 +274,19 @@ html {
 }
 
 .h4 {
-  font-family: "Jost", sans-serif;
+  font-family: "recoletaalt-black", sans-serif;
   font-size: 1.563rem;
   line-height: 1.5rem;
 }
 
 .h5 {
-  font-family: "Jost", sans-serif;
+  font-family: "recoletaalt-black", sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
 
 .h6 {
-  font-family: "Jost", sans-serif;
+  font-family: "recoletaalt-black", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -1410,7 +1414,7 @@ header {
   -webkit-box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1);
   background-color: none;
-  background-color: #151629;
+  background-color: rgba(245, 245, 245, 0.6);
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
   z-index: 99;
@@ -1462,7 +1466,7 @@ header {
 .nav-toggle-menu,
 .nav-toggle-close {
   opacity: 0;
-  color: #f5f5f5;
+  color: #151629;
   pointer-events: none;
   display: none;
 }
@@ -1551,7 +1555,7 @@ header {
 }
 
 .nav-link {
-  color: #f5f5f5;
+  color: #151629;
   cursor: pointer;
   padding: 1.25rem 1rem;
   display: -webkit-box;
@@ -1566,15 +1570,13 @@ header {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   font-family: "Jost", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
-  border-radius: 1rem;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .nav-link:hover {
-  color: #214fde;
-  scale: 1.1;
+  color: #f2aa3c;
 }
 @media screen and (max-width: 480px) {
   .nav-link {
@@ -1597,16 +1599,16 @@ header {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
-  color: #f5f5f5;
+  color: #214fde;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 .socialNav a {
-  color: #f5f5f5;
+  color: #214fde;
 }
 .socialNav a:hover {
-  color: #214fde;
+  color: #f2aa3c;
 }
 @media screen and (max-width: 1024px) {
   .socialNav {
@@ -1746,14 +1748,10 @@ header {
 
 .section-nav {
   margin-top: 6rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 @media screen and (max-width: 1024px) {
   .section-nav {
     margin-top: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 }
 
@@ -1812,6 +1810,14 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+@media screen and (max-width: 1024px) {
+  .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .flex-column {
@@ -2010,71 +2016,43 @@ footer a:hover {
   color: #f2aa3c;
 }
 
-.heroImg1 {
-  background-image: url(../images/hero/hero4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 380px;
-  width: 100%;
-  margin-top: 6rem;
-}
-@media screen and (max-width: 1024px) {
-  .hero_content {
-    margin-top: 4rem;
-  }
-}
-
-.hero_main {
-  display: block;
-  width: 100%;
-}
-
-.black {
-  display: block;
-  background-color: black;
-  position: absolute;
-  top: 6rem;
-  width: 100%;
-  height: 380px;
-  opacity: 0.5;
-  z-index: 97;
-}
-@media screen and (max-width: 1024px) {
-  .black {
-    top: 4rem;
-  }
-}
-
 .hero-img {
-  position: absolute;
-  top: 6rem;
+  position: relative;
+  top: 0;
   left: 0;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 380px;
+  height: calc(100vh - 6rem);
   z-index: 1;
 }
 @media screen and (max-width: 1024px) {
   .hero-img {
-    top: 4rem;
+    -o-object-position: 25% 50%;
+       object-position: 25% 50%;
   }
+}
+
+.hero-img-rounded {
+  position: relative;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: calc(100vh - 6rem);
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .hero-img-rounded {
+    -o-object-position: 25% 50%;
+       object-position: 25% 50%;
+  }
+}
+
+.img-rounded {
+  border-radius: 24px;
 }
 
 .heroContainer {
@@ -2319,4 +2297,16 @@ body {
   background-color: #f5f5f5;
   color: #151629;
   height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#my-scrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

@@ -9,7 +9,7 @@ import siteInfo from "../data/siteInfo.json";
 import { Image } from "astro:assets";
 
 //import images
-import hero from "../images/hero/hero4.jpg";
+import hero from "../images/hero/hero.jpg";
 
 //import icons
 import { Icon } from "astro-icon";
@@ -40,14 +40,39 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <section class="section-nav flex-center">
-    <div class="section flex-column flex-gap-05">
-      <h1 class="h1">Ovo je H1</h1>
-      <h2 class="h5">Ovo je H5</h2>
-      <a href="/en/">ENGLISH</a>
-      <a href="/test/">TEST STRANICA</a>
-      <a href="/hvala/">HVALA</a>
-      <a href="/styleguide/">STYLEGUIDE</a>
+  <section class="section-nav wrapper center">
+    <div class="">
+      <Image
+        src={hero}
+        alt="pirka visual design"
+        format="avif"
+        loading="eager"
+        class="hero-img img-rounded mart-900"
+      />
+    </div>
+  </section>
+
+  <section class="section wrapper center">
+    <div class="flex-row">
+      <div class="flex-left">
+        <h1 class="h1 padb-600">Pirka Visual Studio</h1>
+        <h2 class="h4 padb-600">Digitalna rješenja za vaše poslovanje</h2>
+        <p class="body padb-900">
+          Kompletna ponuda digitalnih usluga. Videoprodukcija, fotografija,
+          grafički i web dizajn te digitalni marketing sve na jednom mjestu.
+        </p>
+        <a href="#"><div class="btn-fill marr-200">ZATRAŽI PONUDU</div></a>
+        <a href="#"><div class="btn-fill">USLUGE</div></a>
+      </div>
+      <div class="flex-right">
+        <Image
+          src={hero}
+          alt="pirka visual design"
+          format="avif"
+          loading="eager"
+          class="img-rounded"
+        />
+      </div>
     </div>
   </section>
 </MainLayout>

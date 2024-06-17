@@ -22,13 +22,13 @@
   }
 }
 
-@mixin x-large {
+@mixin xl {
   @media screen and (max-width: 1260px) {
     @content;
   }
 }
 
-@mixin xl-large {
+@mixin xxl {
   @media screen and (max-width: 1320px) {
     @content;
   }

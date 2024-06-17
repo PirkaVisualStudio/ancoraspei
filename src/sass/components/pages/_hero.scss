@@ -52,60 +52,35 @@
   }
 }
 
-.heroImg1 {
-  background-image: url(../images/hero/hero4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 380px;
-  width: 100%;
-  margin-top: $navHeight;
-
-  @include large {
-    margin-top: $navHeightSmall;
-  }
-}
-
-.hero_main {
-  display: block;
-
-  width: 100%;
-}
-.black {
-  display: block;
-  background-color: black;
-  position: absolute;
-  top: $navHeight;
-  width: 100%;
-  height: 380px;
-  opacity: 0.5;
-  z-index: 97;
-
-  @include large {
-    top: $navHeightSmall;
-  }
-}
-
 .hero-img {
-  position: absolute;
-  top: $navHeight;
+  position: relative;
+  top: 0;
   left: 0;
   width: 100%;
   object-fit: cover;
-  height: 380px;
+  height: calc(100vh - $navHeight);
   z-index: 1;
   @include large {
-    top: $navHeightSmall;
+    object-position: 25% 50%;
   }
+}
+
+.hero-img-rounded {
+  position: relative;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: calc(100vh - $navHeight);
+  z-index: 1;
+  @include large {
+    object-position: 25% 50%;
+  }
+}
+
+.img-rounded {
+  border-radius: 24px;
 }
 
 .heroContainer {

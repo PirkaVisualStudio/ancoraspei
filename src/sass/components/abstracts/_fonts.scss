@@ -3,13 +3,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
-$heading-font: "Jost", sans-serif;
+@font-face {
+  font-family: "recoletaalt-black";
+  src: url("/fonts/recoletaalt-black.woff2") format("woff2"),
+    url("/fonts/recoletaalt-black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$heading-font: "recoletaalt-black", sans-serif;
 
 $body-font: "Atkinson Hyperlegible", sans-serif;
 
 $nav-font: "Jost", sans-serif;
 
-$h1-size: 3.052rem;
+$h1-size: 4rem;
 
 %bold {
   font-weight: bold;
@@ -27,8 +35,6 @@ $h1-size: 3.052rem;
   font-family: $heading-font;
   font-size: $h1-size;
   line-height: 4rem;
-  font-weight: 500;
-  //@extend %bold;
 
   @include medium {
     font-size: 2.2rem;
@@ -40,8 +46,6 @@ $h1-size: 3.052rem;
   font-family: $heading-font;
   font-size: 2.441rem;
   line-height: 2.441rem;
-  font-weight: 500;
-  //@extend %bold;
 
   @include medium {
     font-size: 2rem;
@@ -53,7 +57,6 @@ $h1-size: 3.052rem;
   font-family: $heading-font;
   font-size: 1.953rem;
   line-height: 2rem;
-  @extend %bold;
 
   @include medium {
     font-size: 1.6rem;
@@ -65,21 +68,18 @@ $h1-size: 3.052rem;
   font-family: $heading-font;
   font-size: 1.563rem;
   line-height: 1.5rem;
-  @extend %bold;
 }
 
 .h5 {
   font-family: $heading-font;
   font-size: 1.25rem;
   line-height: 1.5rem;
-  @extend %bold;
 }
 
 .h6 {
   font-family: $heading-font;
   font-size: 1rem;
   line-height: 1.5rem;
-  @extend %bold;
 }
 
 .body {
