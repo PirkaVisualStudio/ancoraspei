@@ -792,6 +792,27 @@ hr {
   background: #f2aa3c;
 }
 
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 .hidden-fade {
   opacity: 0;
   -webkit-transform: translateY(20px);
@@ -1414,22 +1435,28 @@ header {
   -webkit-box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.1);
   background-color: none;
-  background-color: rgba(245, 245, 245, 0.6);
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
   z-index: 99;
+}
+
+.nav-bar {
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2.2rem;
-}
-@media screen and (max-width: 1024px) {
-  .logo-container {
-    padding-top: 1.2rem;
-  }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .nav {
@@ -1632,7 +1659,7 @@ header {
 @media screen and (max-width: 1024px) {
   .show-menu {
     display: block;
-    height: 100vh;
+    height: 100vh !important;
   }
 }
 

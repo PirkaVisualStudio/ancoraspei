@@ -16,6 +16,7 @@
     "astro-compress": "^2.0.14",
     "astro-icon": "^0.8.1",
     "astro-seo": "^0.7.6",
+    "locomotive-scroll": "^5.0.0-beta.13",
     "photoswipe": "^5.4.3",
     "sharp": "^0.32.5",
     "smooth-scrollbar": "^8.8.4",
