@@ -3,10 +3,13 @@
 import { Icon } from "astro-icon";
 
 const today = new Date();
+
+//import menu data
+import navMenu from "../data/navMenu.json";
 ---
 
 <footer>
-  <section class="footer section bg-dark clr-main-light">
+  <section class="footer bg-dark clr-main-light">
     <div class="footer-container wrapper center">
       <div class="footer-logo padt-700 flex-center">
         <img
@@ -17,63 +20,43 @@ const today = new Date();
       </div>
     </div>
 
-    <div class="flex-columns wrapper section center">
-      <div class="column-footer section">
-        <h3 class="txtLabel padb-100">LOCATION</h3>
+    <div class="flex-column wrapper section center">
+      <div class="column-footer">
+        <h3 class="txt-label padb-100">LOCATION</h3>
         <div class="line-acc-small marb-600"></div>
-        <p class="body-bold padb-100">Elamio d.o.o.</p>
-        <p class="padb-600">Đorđićeva 24, 21000, Split, Croatia</p>
-
-        <p class="body-bold padb-100">Home port</p>
-        <p>Marina Split</p>
-      </div>
-      <div class="column-footer section">
-        <h3 class="txtLabel padb-100">CONTACTS</h3>
-        <div class="line-acc-small marb-600"></div>
-        <p class="txtLabel padb-100">KARLO MIOLIN</p>
-        <p class="body">
-          Email: <a href="mailto:miolinkarlo@gmail.com" target="_blank"
-            >miolinkarlo@gmail.com</a
-          >
-        </p>
-        <p class="body padb-600">
-          Tel: <a href="tel:00385995924976">+ 385 99 592 4976</a>
-        </p>
-
-        <p class="txtLabel padb-100">RENATO MIOLIN</p>
-        <p class="body">
-          Email: <a href="mailto:renatomiolin@gmail.com" target="_blank"
-            >renatomiolin@gmail.com</a
-          >
-        </p>
-        <p class="body padb-100">
-          Tel: <a href="tel:0038598732136">+ 385 98 732 136</a>
+        <p class="body-bold padb-100">dPhoto Studio, obrt za usluge</p>
+        <p>
+          Alojzija Stepinca 13, <br /> 21000, Split, Croatia
         </p>
       </div>
-      <div class="column-footer section">
-        <h3 class="txtLabel padb-100">EXPLORE</h3>
+      <div class="column-footer">
+        <h3 class="txt-label padb-100">CONTACTS</h3>
+        <div class="line-acc-small marb-600"></div>
+        <p class="txtLabel padb-100">Frane Miro Dobrović</p>
+        <p class="body">
+          Email: <a href="mailto:info@pirka.hr" target="_blank">info@pirka.hr</a
+          >
+        </p>
+        <p class="body">
+          Tel: <a href="tel:00385995924976">+ 385 92 289 7458</a>
+        </p>
+      </div>
+      <div class="column-footer">
+        <h3 class="txt-label padb-100">EXPLORE</h3>
         <div class="line-acc-small marb-600"></div>
         <ul class="footer-list">
-          <a href="/"><li class="footer-link">Home</li></a>
-
-          <a href="/boat-fleet/"><li class="footer-link">Boat Fleet</li></a>
-
-          <a href="/excursions/"><li class="footer-link">Excursions</li></a>
-
-          <a href="/luxury-trips/"><li class="footer-link">Tailor made</li></a>
-
-          <a href="/cruises/"><li class="footer-link">Cruises</li></a>
-
-          <a href="/gallery/"><li class="footer-link">Gallery</li></a>
-
-          <a href="/reviews/"><li class="footer-link">Reviews</li></a>
-
-          <a href="/contact/"><li class="footer-link">Contact</li></a>
+          {
+            navMenu.map((i) => (
+              <a href={i.path}>
+                <li class="footer-link">{i.name}</li>
+              </a>
+            ))
+          }
         </ul>
       </div>
 
-      <div class="column-footer section">
-        <h3 class="txtLabel padb-100">SOCIAL</h3>
+      <div class="column-footer">
+        <h3 class="txt-label padb-100">SOCIAL</h3>
         <div class="line-acc-small marb-600"></div>
         <div class="footer-social padb-100">
           <a href="https://www.instagram.com/elamio/" target="_blank"
@@ -96,10 +79,10 @@ const today = new Date();
       </div>
     </div>
 
-    <div class="txt-center wrapper center">
+    <div class="txt-center wrapper center section">
       <hr class="marb-100" />
       <p class="txtLabel padb-100">
-        Copyright Elamio Yachting&copy; | {today.getFullYear()} | Design by <a
+        &copy; Pirka Visual Studio | {today.getFullYear()} | Design by <a
           href="http://pirka.hr"
           target="_blank">Pirka Visual Studio</a
         >

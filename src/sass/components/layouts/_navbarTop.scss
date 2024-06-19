@@ -5,6 +5,7 @@ $navHeight: 6rem;
 $navHeightSmall: 4rem;
 
 header {
+  user-select: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,6 +27,10 @@ header {
   justify-content: flex-start;
   align-items: center;
   height: 100%;
+
+  @include large {
+    height: $navHeightSmall;
+  }
 }
 
 .nav {
@@ -90,6 +95,8 @@ header {
 .nav-menu {
   opacity: 1;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   //background-color: rgba($color: #222222, $alpha: 0.8);
   border-radius: 1rem;
@@ -119,9 +126,10 @@ header {
   justify-content: flex-end;
 
   @include large {
-    padding-top: 1rem;
-    padding-right: 0rem;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
   }
 
   li {
@@ -147,15 +155,8 @@ header {
     color: $sec-acc;
   }
 
-  @include medium {
-    padding: 1.25rem 1rem;
-  }
-
   @include large {
-    &:hover {
-      scale: 1;
-      border-radius: 0;
-    }
+    font-size: 2rem;
   }
 }
 
@@ -182,6 +183,7 @@ header {
     right: 0;
     padding: 0rem;
     justify-content: center;
+    flex-direction: column;
     z-index: 99;
   }
 }

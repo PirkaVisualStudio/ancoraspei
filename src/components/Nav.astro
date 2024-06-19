@@ -42,7 +42,7 @@ import navMenu from "../data/navMenu.json";
     </div>
 
     <div class="nav-menu" id="listId">
-      <ul class="nav-list" id="navList">
+      <ul class="nav-list wrapper" id="navList">
         {
           navMenu.map((i) => (
             <a href={i.path}>
@@ -89,22 +89,25 @@ import navMenu from "../data/navMenu.json";
     </div>
 
     <div class="socialNav">
-      <a href="#" target="_blank"
-        ><Icon
-          class="socialNavIcon"
-          pack="ri"
-          name="instagram-fill"
-          width="28"
-        /></a
-      >
-      <a href="#" target="_blank"
-        ><Icon
-          class="socialNavIcon"
-          pack="ant-design"
-          name="facebook-filled"
-          width="30"
-        /></a
-      >
+      <div class="btn-nav-action-rounded marlr-200">ZATRAŽI PONUDU</div>
+      <div>
+        <a href="#" target="_blank"
+          ><Icon
+            class="socialNavIcon"
+            pack="ri"
+            name="instagram-fill"
+            width="28"
+          /></a
+        >
+        <a href="#" target="_blank"
+          ><Icon
+            class="socialNavIcon"
+            pack="ant-design"
+            name="facebook-filled"
+            width="30"
+          /></a
+        >
+      </div>
     </div>
   </nav>
 </header>

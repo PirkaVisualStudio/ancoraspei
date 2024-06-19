@@ -6,15 +6,19 @@
         "path": "/"
     },
     {
-        "name": "About",
+        "name": "O nama",
         "path": "/about/"
     },
     {
-        "name": "Contact",
-        "path": "/contact/"
+        "name": "Usluge",
+        "path": "/services/"
     },
     {
-        "name": "Services",
+        "name": "Radovi",
         "path": "/services/"
+    },
+    {
+        "name": "Kontakt",
+        "path": "/contact/"
     }
 ]
