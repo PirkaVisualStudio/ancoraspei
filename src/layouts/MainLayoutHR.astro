@@ -1,0 +1,143 @@
+---
+import Head from "../components/Head.astro";
+import Nav from "../components/NavHR.astro";
+import Footer from "../components/FooterHR.astro";
+import CookieBanner from "../components/CookieBanner.astro";
+
+//import main site data
+import siteInfo from "../data/siteInfo.json";
+
+//image compression
+import { Image } from "astro:assets";
+import defaultImage from "../images/default/seo.jpg";
+
+//URL for default image file
+const imageURL = new URL(
+  defaultImage.src,
+  `${siteInfo.map((i) => i.site_url)}`
+);
+
+//URL for default image file
+const canonicalURL = new URL(
+  Astro.url.pathname,
+  `${siteInfo.map((i) => i.site_url)}`
+);
+const { pageIndex } = Astro.props;
+const { pageIndexEn } = Astro.props;
+
+const {
+  title = `${siteInfo.map((i) => i.title)}` +
+    `${siteInfo.map((i) => i.brand_tag)}`,
+
+  charset = `${siteInfo.map((i) => i.charset)}`,
+  description = `${siteInfo.map((i) => i.description)}`,
+  canonical = `${canonicalURL}`,
+  lang = `${siteInfo.map((i) => i.main_lang)}`,
+  noindex,
+  nofollow,
+
+  openGraph = {
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${imageURL}`,
+      url: `${canonicalURL}`,
+      description: `${description}`,
+    },
+  },
+
+  languageAlternates = [
+    {
+      href: `${siteInfo.map((i) => i.site_url)}` + "en/" + `${pageIndexEn}`,
+      hrefLang: "en",
+    },
+    {
+      href: `${siteInfo.map((i) => i.site_url)}` + `${pageIndex}`,
+      hrefLang: "hr",
+    },
+  ],
+  extend = {
+    meta: [
+      {
+        property: "twitter:domain",
+        content: `${siteInfo.map((i) => i.site_url)}`,
+      },
+
+      {
+        property: "twitter:url",
+        content: `${canonicalURL}`,
+      },
+      {
+        name: "twitter:card",
+        content: "image_alt",
+      },
+
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+
+      {
+        name: "twitter:image",
+        content: `${imageURL}`,
+      },
+
+      {
+        name: "author",
+        content: "Pirka Visual Studio",
+      },
+
+      {
+        name: "keywords",
+        content:
+          "keyword1, keyword2, keyword3, keyword4, keyword5, keyword6, keyword7",
+      },
+    ],
+  },
+} = Astro.props;
+---
+
+<Head
+  {lang}
+  {title}
+  {charset}
+  {description}
+  {canonical}
+  {noindex}
+  {nofollow}
+  {openGraph}
+  {languageAlternates}
+  {extend}
+/>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src={"https://www.googletagmanager.com/ns.html?id=" +
+        `${siteInfo.map((i) => i.google_id)}`}
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"></iframe></noscript
+  >
+  <!-- End Google Tag Manager (noscript) -->
+  <CookieBanner />
+  <Nav />
+
+  <main>
+    <slot />
+    <Footer />
+  </main>
+
+  <script>
+    import "../scripts/navTop.js";
+    import "../scripts/animation.js";
+    import "../scripts/consent.js";
+    import "../scripts/loco.js";
+  </script>
+</body>

@@ -1,5 +1,5 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
+import MainLayout from "../layouts/MainLayoutHR.astro";
 
 //image compression
 import { Image } from "astro:assets";
@@ -30,12 +30,14 @@ const {
   noindex
   nofollow
 >
-  <section class="section-nav wrapper">
-    <h1 class="h1">404 Error</h1>
-    <p class="h5">
-      Unfortunatley this page does not exist. Please returno to <a href="/">
-        home</a
-      > or try something else.
-    </p>
+  <section class="section-nav wrapper center">
+    <div class="section">
+      <h1 class="h1">404 Error</h1>
+      <p class="h5">
+        Nažalost, ova stranica ne postoji. Molimo vratite se na <a href="/">
+          početak</a
+        > ili pokušajte nešto drugo.
+      </p>
+    </div>
   </section>
 </MainLayout>

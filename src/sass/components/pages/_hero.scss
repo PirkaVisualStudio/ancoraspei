@@ -9,14 +9,9 @@
   margin-top: $navHeight;
 }
 
-.hero {
-  padding-top: calc($navHeight + 3rem);
-  min-height: 100vh;
-
-  //background-image: url("../images/hero/hero.jpg");
-  //background-size: cover;
-  //background-repeat: no-repeat;
-  //background-position: center;
+.hero-content {
+  position: relative;
+  z-index: 98;
 }
 
 /*.hero img {
@@ -53,15 +48,11 @@
 }
 
 .hero-img {
-  position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
+  height: calc(100vh - $navHeight) !important;
   object-fit: cover;
-  height: calc(100vh - $navHeight);
-  z-index: 1;
   @include large {
-    object-position: 25% 50%;
+    height: calc(100vh - $navHeightSmall) !important;
   }
 }
 

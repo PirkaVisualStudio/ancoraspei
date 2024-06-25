@@ -1,0 +1,93 @@
+---
+//icons
+import { Icon } from "astro-icon";
+
+const today = new Date();
+
+//import menu data
+import navMenu from "../data/navMenuHR.json";
+---
+
+<footer>
+  <section class="footer bg-prim-acc clr-main-light">
+    <div class="footer-container wrapper center">
+      <div class="footer-logo padt-700 flex-center">
+        <img
+          id="footerLogo"
+          src="/images/logos/pirka_logo_badge.svg"
+          alt="pirka logo"
+        />
+      </div>
+    </div>
+
+    <div class="flex-column wrapper section center">
+      <div class="column-footer">
+        <h3 class="txt-label padb-100">LOCATION</h3>
+        <div class="line-acc-small marb-600"></div>
+        <p class="body-bold padb-100">dPhoto Studio, obrt za usluge</p>
+        <p>
+          Alojzija Stepinca 13, <br /> 21000, Split, Croatia
+        </p>
+      </div>
+      <div class="column-footer">
+        <h3 class="txt-label padb-100">CONTACTS</h3>
+        <div class="line-acc-small marb-600"></div>
+        <p class="txtLabel padb-100">Frane Miro Dobrović</p>
+        <p class="body">
+          Email: <a href="mailto:info@pirka.hr" target="_blank">info@pirka.hr</a
+          >
+        </p>
+        <p class="body">
+          Tel: <a href="tel:00385995924976">+ 385 92 289 7458</a>
+        </p>
+      </div>
+      <div class="column-footer">
+        <h3 class="txt-label padb-100">EXPLORE</h3>
+        <div class="line-acc-small marb-600"></div>
+        <ul class="footer-list">
+          {
+            navMenu.map((i) => (
+              <a href={i.path}>
+                <li class="footer-link">{i.name}</li>
+              </a>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="column-footer">
+        <h3 class="txt-label padb-100">SOCIAL</h3>
+        <div class="line-acc-small marb-600"></div>
+        <div class="footer-social padb-100">
+          <a href="https://www.instagram.com/elamio/" target="_blank"
+            ><Icon
+              class="socialNavIcon"
+              pack="ri"
+              name="instagram-fill"
+              width="28"
+            /></a
+          >
+          <a href="https://www.facebook.com/elamio" target="_blank"
+            ><Icon
+              class="socialNavIcon"
+              pack="ant-design"
+              name="facebook-filled"
+              width="30"
+            /></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="txt-center wrapper center section">
+      <hr class="marb-100" />
+      <p class="txtLabel padb-100">
+        &copy; Pirka Visual Studio | {today.getFullYear()} | Design by <a
+          href="http://pirka.hr"
+          target="_blank">Pirka Visual Studio</a
+        >
+      </p>
+      <a class="body-small" href="/polica/"> &nbspPravila privatnosti</a>
+    </div>
+  </section>
+</footer>

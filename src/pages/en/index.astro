@@ -1,11 +1,15 @@
 ---
-import MainLayout from "../../layouts/MainLayout.astro";
+import MainLayout from "../../layouts/MainLayoutEN.astro";
 
 //image compression
 import { Image } from "astro:assets";
 
 //icons
 import { Icon } from "astro-icon";
+
+//import images
+import hero from "../../images/hero/hero.jpg";
+import logoBadge from "../../images/logos/pirka_logo_badge.svg";
 
 const {
   title,
@@ -32,13 +36,57 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <section class="section flex-center txtOnLight padt-900 mart-900">
-    <div class="hero-container section">
-      <h1 class="h1 section">This is H1</h1>
-      <h2 class="h5">This is H5</h2>
-      <a href="/">HR</a>
-      <a href="/en/test/">TEST PAGE</a>
-      <a href="/en/thanks/">THANKS</a>
+  <section class="section-nav center hero bg-light">
+    <div
+      class="section-large hero-content wrapper flex-column-reverse center txt-left"
+    >
+      <div class="flex-left">
+        <h1 class="h1 padb-600">
+          Find your <br />
+          <span class="clr-prim-acc">identity</span>
+        </h1>
+        <h2 class="h3 padb-600">Digital soulutions for your business</h2>
+
+        <div>
+          <a href="#"><div class="btn-fill marr-200">GET QOUTE</div></a>
+          <a href="#"><div class="btn-fill">SERVICES</div></a>
+        </div>
+      </div>
+      <div class="flex-right">
+        <Image
+          src={logoBadge}
+          alt="pirka visual design"
+          format="avif"
+          loading="eager"
+          class=""
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrapper center">
+    <div class="flex-row">
+      <div class="flex-left padr-200">
+        <h1 class="h1 padb-600">Pirka Visual Studio</h1>
+        <h2 class="h4 padb-600">Digitalna rješenja za vaše poslovanje</h2>
+        <p class="body padb-900">
+          Kompletna ponuda digitalnih usluga. Videoprodukcija, fotografija,
+          grafički i web dizajn te digitalni marketing sve na jednom mjestu.
+        </p>
+        <div>
+          <a href="#"><div class="btn-fill marr-200">ZATRAŽI PONUDU</div></a>
+          <a href="#"><div class="btn-fill">USLUGE</div></a>
+        </div>
+      </div>
+      <div class="flex-right">
+        <Image
+          src={hero}
+          alt="pirka visual design"
+          format="avif"
+          loading="eager"
+          class="img-rounded"
+        />
+      </div>
     </div>
   </section>
 </MainLayout>

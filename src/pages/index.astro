@@ -1,6 +1,6 @@
 ---
 //Main Layout
-import MainLayout from "../layouts/MainLayout.astro";
+import MainLayout from "../layouts/MainLayoutHR.astro";
 
 //import main site data
 import siteInfo from "../data/siteInfo.json";
@@ -10,9 +10,15 @@ import { Image } from "astro:assets";
 
 //import images
 import hero from "../images/hero/hero.jpg";
+import hero2 from "../images/hero/hero2.jpg";
+import logoBadge from "../images/logos/pirka_logo_badge.svg";
+import poster from "../images/hero/poster.jpg";
 
 //import icons
 import { Icon } from "astro-icon";
+
+import ProjectsSlider from "../components/ProjectsSlider.astro";
+import ProjectsAll from "../components/ProjectsAll.astro";
 
 const {
   title,
@@ -40,45 +46,85 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <section class="section-nav wrapper center">
-    <div class="">
-      <Image
-        src={hero}
-        alt="pirka visual design"
-        format="avif"
-        loading="eager"
-        class="hero-img img-rounded mart-900"
-      />
-    </div>
-  </section>
+  <section class="section-nav center hero bg-light">
+    <div class="hero-content flex-column-reverse center txt-left">
+      <div class="flex-left section center">
+        <div class="text-padding">
+          <h1 class="h1 padb-600">
+            Pronađi svoj <br />
+            <span class="clr-prim-acc">identitet</span>
+          </h1>
+          <h2 class="h3 padb-600">Digitalna rješenja za vaše poslovanje</h2>
 
-  <section class="section wrapper center">
-    <div class="flex-row">
-      <div class="flex-left padr-200">
-        <h1 class="h1 padb-600" data-scroll data-scroll-speed="0.1">
-          Pirka Visual Studio
-        </h1>
-        <h2 class="h4 padb-600" data-scroll data-scroll-speed="0.13">
-          Digitalna rješenja za vaše poslovanje
-        </h2>
-        <p class="body padb-900" data-scroll data-scroll-speed="0.16">
-          Kompletna ponuda digitalnih usluga. Videoprodukcija, fotografija,
-          grafički i web dizajn te digitalni marketing sve na jednom mjestu.
-        </p>
-        <div data-scroll data-scroll-speed="0.20">
-          <a href="#"><div class="btn-fill marr-200">ZATRAŽI PONUDU</div></a>
-          <a href="#"><div class="btn-fill">USLUGE</div></a>
+          <div>
+            <a href="#"
+              ><div class="btn-fill marr-200 marb-200">ZATRAŽI PONUDU</div></a
+            >
+            <a href="#"><div class="btn-fill marb-200">USLUGE</div></a>
+          </div>
         </div>
       </div>
       <div class="flex-right">
         <Image
-          src={hero}
+          src={poster}
           alt="pirka visual design"
           format="avif"
           loading="eager"
-          class="img-rounded"
+          class="hero-img"
         />
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="flex-center">
+      <p class="body-bold">
+        <a href="/usluge/"> usluge</a> / <a href="/kontakt/">kontakt</a> /<a
+          href="/projekti/"
+        >
+          projekti</a
+        >
+      </p>
+    </div>
+
+    <div class="flex-center hero-social padb-900">
+      <a href="https://www.instagram.com/pirkavisualstudio/" target="_blank"
+        ><Icon
+          class="socialNavIcon"
+          pack="ri"
+          name="instagram-fill"
+          width="28"
+        /></a
+      >
+      <a href="https://www.facebook.com/pirkavisualstudio" target="_blank"
+        ><Icon
+          class="socialNavIcon"
+          pack="ant-design"
+          name="facebook-filled"
+          width="30"
+        /></a
+      >
+      <a href="https://www.behance.net/franemdobrovi/moodboards" target="_blank"
+        ><Icon class="socialNavIcon" pack="el" name="behance" width="24" /></a
+      >
+
+      <a
+        href="https://www.youtube.com/channel/UCvGwiHVAWCmZQiLfR9x85gQ"
+        target="_blank"
+        ><Icon
+          class="socialNavIcon"
+          pack="ri"
+          name="youtube-fill"
+          width="36"
+        /></a
+      >
+    </div>
+  </section>
+
+  <ProjectsSlider />
 </MainLayout>
+
+<!-- Slider script -->
+<script>
+  import "../scripts/slider.js";
+</script>

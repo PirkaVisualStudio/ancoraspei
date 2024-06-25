@@ -1,0 +1,24 @@
+
+
+[
+    {
+        "name": "Home",
+        "path": "/"
+    },
+    {
+        "name": "O nama",
+        "path": "/o-nama/"
+    },
+    {
+        "name": "Usluge",
+        "path": "/usluge/"
+    },
+    {
+        "name": "Projekti",
+        "path": "/projekti/"
+    },
+    {
+        "name": "Kontakt",
+        "path": "/kontakt/"
+    }
+]

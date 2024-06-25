@@ -1,5 +1,5 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
+import MainLayout from "../layouts/MainLayoutHR.astro";
 
 //import data
 import siteInfo from "../data/siteInfo.json";
@@ -12,6 +12,7 @@ import { Icon } from "astro-icon";
 
 const {
   title,
+  lang,
   brandTitle,
   charset,
   description,
@@ -25,7 +26,7 @@ const {
 ---
 
 <MainLayout
-  lang="en"
+  lang={lang}
   pageIndex="policy"
   pageIndexEn="policy"
   title={"Pravila privatnosti" + siteInfo.map((i) => i.brand_tag)}

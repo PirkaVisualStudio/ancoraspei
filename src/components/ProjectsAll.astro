@@ -1,0 +1,54 @@
+---
+//image compression
+import { Image } from "astro:assets";
+
+//projects collections
+import { getCollection, type CollectionEntry } from "astro:content";
+const projectPosts = await getCollection("projects", ({data}) => {
+  return !data.draft
+});
+
+//Slider css
+import "@splidejs/splide/css/sea-green";
+
+//icons
+import { Icon } from "astro-icon";
+---
+
+<section class="bg-dark
+          clr-main-light" id="projects">
+  <div class="wrapper center"><hr /></div>
+  {
+    projectPosts.map((post) => (
+      <>
+        <div class="project-container wrapper center flex-columns bg-dark hidden-fade">
+          <div class="flex-left">
+            <div class="project-title">
+              <p class="txtLabel padb-100 clr-sec-acc">{post.data.category}</p>
+              <h2 class="h2 padb-100">{post.data.title}</h2>
+              <p class="txtLabel padb-200 clr-sec-acc">{post.data.year}</p>
+              <p class="padb-400">{post.data.description}</p>
+              <a href={`/projekti/${post.slug}/`}>
+                <div class="btnFill">VIŠE</div>
+              </a>
+            </div>
+          </div>
+          <div class="flex-right">
+            <a href={`/projekti/${post.slug}/`}>
+              {" "}
+              <Image
+                src={post.data.image}
+                alt="alo"
+                format="avif"
+                loading="eager"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="wrapper center">
+          <hr />
+        </div>
+      </>
+    ))
+  }
+</section>
