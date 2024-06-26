@@ -13,12 +13,18 @@ import hero from "../images/hero/hero.jpg";
 import hero2 from "../images/hero/hero2.jpg";
 import logoBadge from "../images/logos/pirka_logo_badge.svg";
 import poster from "../images/hero/poster.jpg";
+import blue from "../images/kanban/blue.jpg";
+import red from "../images/kanban/red.jpg";
+import green from "../images/kanban/green.jpg";
+import yellow from "../images/kanban/yellow.jpg";
 
 //import icons
 import { Icon } from "astro-icon";
 
+//import components
 import ProjectsSlider from "../components/ProjectsSlider.astro";
 import ProjectsAll from "../components/ProjectsAll.astro";
+import ServiceBox from "../components/elements/ServiceBox.astro";
 
 const {
   title,
@@ -121,6 +127,34 @@ const {
     </div>
   </section>
 
+  <section class="kanban wrapper-medium clr-prim-acc">
+    <div class="item item-1">
+      <div>
+        <h2 class="h3 padb-200">
+          digitalni alati za svakoga <span class="clr-sec-acc">*</span>
+        </h2>
+        <p class="body-large">
+          usluga koju trebaš za svaki dan svoga poslovanja
+        </p>
+      </div>
+    </div>
+    <div class="item item-2"><ServiceBox /></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+
+    <div class="item item-5"></div>
+
+    <div class="item item-6">
+      <div>
+        <h2 class="h3 padb-200">
+          digitalni alati za svakoga <span class="clr-sec-acc">*</span>
+        </h2>
+        <p class="body-large">
+          usluga koju trebaš za svaki dan svoga poslovanja
+        </p>
+      </div>
+    </div>
+  </section>
   <ProjectsSlider />
 </MainLayout>
 

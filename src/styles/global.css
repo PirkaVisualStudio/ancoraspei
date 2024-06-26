@@ -260,8 +260,8 @@ html {
 }
 @media screen and (max-width: 480px) {
   .h2 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
+    font-size: 3rem;
+    line-height: 3.3rem;
   }
 }
 
@@ -272,8 +272,8 @@ html {
 }
 @media screen and (max-width: 480px) {
   .h3 {
-    font-size: 1.8rem;
-    line-height: 1.98rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 
@@ -1725,6 +1725,128 @@ html.lenis {
   font-weight: bold;
   margin: 0.2rem 0 0.4rem 0;
   z-index: 999;
+}
+
+.kanban {
+  display: grid;
+  gap: 0.5rem;
+  margin: auto;
+  grid-template-rows: repeat(5, 230px);
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 768px) {
+  .kanban {
+    grid-template-rows: repeat(10, 230px);
+    grid-template-columns: 1fr;
+  }
+}
+.kanban .item {
+  position: relative;
+  overflow: hidden;
+}
+.kanban .item-1,
+.kanban .item-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kanban .item-2,
+.kanban .item-3,
+.kanban .item-4,
+.kanban .item-5 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.item-1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-2 {
+  background: rgb(57, 99, 203);
+  background: linear-gradient(45deg, rgb(57, 99, 203) 0%, rgb(39, 82, 184) 100%);
+  grid-row: span 2;
+}
+
+.item-3 {
+  background: rgb(57, 99, 203);
+  background: linear-gradient(45deg, rgb(57, 99, 203) 0%, rgb(39, 82, 184) 100%);
+  grid-row: span 2;
+}
+
+.item-4 {
+  background: rgb(57, 99, 203);
+  background: linear-gradient(45deg, rgb(57, 99, 203) 0%, rgb(39, 82, 184) 100%);
+  grid-row: span 2;
+}
+
+.item-5 {
+  background: rgb(57, 99, 203);
+  background: linear-gradient(45deg, rgb(57, 99, 203) 0%, rgb(39, 82, 184) 100%);
+  grid-row: span 2;
+}
+
+.service-box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.4rem;
+}
+.service-box-container .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.service-box-container .link {
+  position: absolute;
+  bottom: 2rem;
+  color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+.service-box-container .link svg {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.service-box-container a:hover {
+  color: #f2aa3c;
+}
+.service-box-container a:hover svg {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+.service-box-container .image {
+  overflow: hidden !important;
+  position: absolute;
+  bottom: -60px;
+  right: -40px;
+  width: 240px;
+}
+.service-box-container .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header {

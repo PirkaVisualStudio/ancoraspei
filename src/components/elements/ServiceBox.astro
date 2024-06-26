@@ -1,0 +1,32 @@
+---
+//image compression
+import { Image } from "astro:assets";
+//import icons
+import { Icon } from "astro-icon";
+
+import clapboard from "../../images/kanban/clapboard.png";
+---
+
+<div class="clr-main-light service-box-container">
+  <div class="image">
+    <Image src={clapboard} alt="clapboard" format="avif" loading="eager" />
+  </div>
+  <div class="category padb-200">
+    <Icon pack="mdi" name="camera" width="28" />
+    <p class="body-bold upper">Fotografija</p>
+  </div>
+  <h1 class="h3 padb-200">pokaži se u najboljem svijetlu</h1>
+  <p class="body">
+    profesionalna fotografija za vaš brand, proizvod, event ili interijer.
+    Pokažite vašu priču cijelom svijetu.
+  </p>
+  <div>
+    <a href="/usluge/" class="link">
+      <p class="body">Saznaj više</p><Icon
+        pack="mdi"
+        name="arrow-right"
+        width="28"
+      /></a
+    >
+  </div>
+</div>
