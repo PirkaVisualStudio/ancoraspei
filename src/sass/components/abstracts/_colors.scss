@@ -26,6 +26,13 @@ $main-dark-30: color-mix(in srgb, $main-dark 70%, white);
 $main-dark-40: color-mix(in srgb, $main-dark 60%, white);
 $main-dark-50: color-mix(in srgb, $main-dark 50%, white);
 
+$prim-acc-5: color-mix(in srgb, $prim-acc 95%, black);
+$prim-acc-10: color-mix(in srgb, $prim-acc 90%, black);
+$prim-acc-20: color-mix(in srgb, $prim-acc 80%, black);
+$prim-acc-30: color-mix(in srgb, $prim-acc 70%, black);
+$prim-acc-40: color-mix(in srgb, $prim-acc 60%, black);
+$prim-acc-50: color-mix(in srgb, $prim-acc 50%, black);
+
 //projects colors
 $sugBg: #eae5db;
 $sugTxt: #1f3c44;

@@ -17,9 +17,10 @@ import blue from "../images/kanban/blue.jpg";
 import red from "../images/kanban/red.jpg";
 import green from "../images/kanban/green.jpg";
 import yellow from "../images/kanban/yellow.jpg";
+import clapboard from "../images/kanban/clapboard.png";
 
 //import icons
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 //import components
 import ProjectsSlider from "../components/ProjectsSlider.astro";
@@ -97,21 +98,26 @@ const {
       <a href="https://www.instagram.com/pirkavisualstudio/" target="_blank"
         ><Icon
           class="socialNavIcon"
-          pack="ri"
-          name="instagram-fill"
-          width="28"
+          name="ri:instagram-fill"
+          width={28}
+          height={28}
         /></a
       >
       <a href="https://www.facebook.com/pirkavisualstudio" target="_blank"
         ><Icon
           class="socialNavIcon"
-          pack="ant-design"
-          name="facebook-filled"
-          width="30"
+          name="ant-design:facebook-filled"
+          width={30}
+          height={30}
         /></a
       >
       <a href="https://www.behance.net/franemdobrovi/moodboards" target="_blank"
-        ><Icon class="socialNavIcon" pack="el" name="behance" width="24" /></a
+        ><Icon
+          class="socialNavIcon"
+          name="el:behance"
+          width={24}
+          height={24}
+        /></a
       >
 
       <a
@@ -119,32 +125,66 @@ const {
         target="_blank"
         ><Icon
           class="socialNavIcon"
-          pack="ri"
-          name="youtube-fill"
-          width="36"
+          name="ri:youtube-fill"
+          width={36}
+          height={36}
         /></a
       >
     </div>
   </section>
 
   <section class="kanban wrapper-medium clr-prim-acc">
-    <div class="item item-1">
+    <div class="item item-1 padl-100">
       <div>
-        <h2 class="h3 padb-200">
-          digitalni alati za svakoga <span class="clr-sec-acc">*</span>
+        <h2 class="h3">
+          izrada vizualnog identiteta <span class="clr-sec-acc">*</span>
         </h2>
-        <p class="body-large">
-          usluga koju trebaš za svaki dan svoga poslovanja
-        </p>
+        <p class="body-large">branding i izrada vizualnih elemenata</p>
       </div>
     </div>
-    <div class="item item-2"><ServiceBox /></div>
-    <div class="item item-3"></div>
-    <div class="item item-4"></div>
+    <div class="item item-2">
+      <ServiceBox
+        icon="mdi:camera"
+        category="fotografija"
+        title="pokaži se u najboljem svjetlu"
+        desc="Profesionalna fotografija za vaš brand, proizvod, event ili interijer. Pokažite vašu priču cijelom svijetu."
+        imageSrc={clapboard}
+        imageAlt="clapboard"
+      />
+    </div>
+    <div class="item item-3">
+      <ServiceBox
+        icon="mdi:video"
+        category="video"
+        title="snimi svoj promo materijal"
+        desc="Vrhunska video produkcija. Snimanje promo materijala, video za društvene mreže, snimanje iz zraka."
+        imageSrc={clapboard}
+        imageAlt="clapboard"
+      />
+    </div>
+    <div class="item item-4">
+      <ServiceBox
+        icon="mdi:pen"
+        category="dizajn"
+        title="promoviraj svoj brand"
+        desc="Izradi vizualni identitet svoga branda te povećaj vidljivost i prepoznatljivost"
+        imageSrc={clapboard}
+        imageAlt="clapboard"
+      />
+    </div>
 
-    <div class="item item-5"></div>
+    <div class="item item-5">
+      <ServiceBox
+        icon="marketing"
+        category="marketing"
+        title="pokaži svima što nudiš"
+        desc="Promocija putem društvenih mreža, Google Ads oglasi, marketinške kampanje"
+        imageSrc={clapboard}
+        imageAlt="clapboard"
+      />
+    </div>
 
-    <div class="item item-6">
+    <div class="item item-6 padl-100">
       <div>
         <h2 class="h3 padb-200">
           digitalni alati za svakoga <span class="clr-sec-acc">*</span>

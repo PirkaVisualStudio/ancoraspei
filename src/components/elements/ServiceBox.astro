@@ -2,30 +2,28 @@
 //image compression
 import { Image } from "astro:assets";
 //import icons
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
-import clapboard from "../../images/kanban/clapboard.png";
+const { icon, category, title, desc, imageSrc, imageAlt } = Astro.props;
 ---
 
 <div class="clr-main-light service-box-container">
   <div class="image">
-    <Image src={clapboard} alt="clapboard" format="avif" loading="eager" />
+    <Image src={imageSrc} alt={imageAlt} format="avif" loading="eager" />
   </div>
   <div class="category padb-200">
-    <Icon pack="mdi" name="camera" width="28" />
-    <p class="body-bold upper">Fotografija</p>
+    <Icon name={icon} width={28} height={28} />
+    <p class="body-bold upper">{category}</p>
   </div>
-  <h1 class="h3 padb-200">pokaži se u najboljem svijetlu</h1>
+  <h1 class="h3 padb-200">{title}</h1>
   <p class="body">
-    profesionalna fotografija za vaš brand, proizvod, event ili interijer.
-    Pokažite vašu priču cijelom svijetu.
+    {desc}
   </p>
   <div>
     <a href="/usluge/" class="link">
-      <p class="body">Saznaj više</p><Icon
-        pack="mdi"
-        name="arrow-right"
-        width="28"
+      <p class="txt-label">Saznaj više</p><Icon
+        name="mdi:arrow-right"
+        width={28}
       /></a
     >
   </div>

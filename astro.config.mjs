@@ -1,8 +1,8 @@
 import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
 
+import icon from "astro-icon";
 import { defineConfig } from "astro/config";
-
 //import site data
 import siteInfo from "./src/data/siteInfo.json";
 
@@ -10,6 +10,7 @@ import siteInfo from "./src/data/siteInfo.json";
 export default defineConfig({
   site: `${siteInfo.map((i) => i.site_url)}`,
   integrations: [
+    icon(),
     sitemap({
       filter: (page) =>
         page !== `${siteInfo.map((i) => i.not_included[0])}` &&

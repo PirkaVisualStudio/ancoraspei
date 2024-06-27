@@ -1743,6 +1743,7 @@ html.lenis {
 .kanban .item {
   position: relative;
   overflow: hidden;
+  border-radius: 1rem;
 }
 .kanban .item-1,
 .kanban .item-6 {
@@ -1815,6 +1816,9 @@ html.lenis {
 .service-box-container .link {
   position: absolute;
   bottom: 2rem;
+  border-radius: 4rem;
+  background-color: rgba(21, 22, 41, 0.8);
+  padding: 0.5rem 1rem;
   color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1823,6 +1827,8 @@ html.lenis {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .service-box-container .link svg {
   -webkit-transition: all 0.2s ease-in-out;
@@ -1830,6 +1836,7 @@ html.lenis {
 }
 .service-box-container a:hover {
   color: #f2aa3c;
+  scale: 1.05;
 }
 .service-box-container a:hover svg {
   -webkit-transform: translateX(8px);

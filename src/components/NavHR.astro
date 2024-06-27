@@ -1,5 +1,6 @@
 ---
-import { Icon } from "astro-icon";
+//import icons
+import { Icon } from "astro-icon/components";
 
 //import menu data
 import navMenu from "../data/navMenuHR.json";
@@ -36,8 +37,13 @@ import navMenu from "../data/navMenuHR.json";
         </a>
       </div>
       <div class="nav-toggle" id="navToggle">
-        <Icon class="nav-toggle-menu" pack="mdi" name="menu" width="28" />
-        <Icon class="nav-toggle-close" pack="mdi" name="close" width="28" />
+        <Icon class="nav-toggle-menu" name="mdi:menu" width={28} height={28} />
+        <Icon
+          class="nav-toggle-close"
+          name="mdi:close"
+          width={28}
+          height={28}
+        />
       </div>
     </div>
 
@@ -95,17 +101,17 @@ import navMenu from "../data/navMenuHR.json";
         <a href="#" target="_blank"
           ><Icon
             class="socialNavIcon"
-            pack="ri"
-            name="instagram-fill"
-            width="28"
+            name="ri:instagram-fill"
+            width={28}
+            height={28}
           /></a
         >
         <a href="#" target="_blank"
           ><Icon
             class="socialNavIcon"
-            pack="ant-design"
-            name="facebook-filled"
-            width="30"
+            name="ant-design:facebook-filled"
+            width={28}
+            height={28}
           /></a
         >
       </div>

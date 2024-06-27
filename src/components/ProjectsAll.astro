@@ -4,15 +4,15 @@ import { Image } from "astro:assets";
 
 //projects collections
 import { getCollection, type CollectionEntry } from "astro:content";
-const projectPosts = await getCollection("projects", ({data}) => {
-  return !data.draft
+const projectPosts = await getCollection("projects", ({ data }) => {
+  return !data.draft;
 });
 
 //Slider css
 import "@splidejs/splide/css/sea-green";
 
-//icons
-import { Icon } from "astro-icon";
+//import icons
+import { Icon } from "astro-icon/components";
 ---
 
 <section class="bg-dark

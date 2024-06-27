@@ -16,6 +16,7 @@
   .item {
     position: relative;
     overflow: hidden;
+    border-radius: 1rem;
   }
   .item-1,
   .item-6 {
@@ -88,11 +89,14 @@
   .link {
     position: absolute;
     bottom: 2rem;
-
+    border-radius: 4rem;
+    background-color: rgba($color: $main-dark, $alpha: 0.8);
+    padding: 0.5rem 1rem;
     color: $main-light;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
     svg {
       transition: all 0.2s ease-in-out;
     }
@@ -100,6 +104,7 @@
 
   a:hover {
     color: $sec-acc;
+    scale: 1.05;
     svg {
       transform: translateX(8px);
     }

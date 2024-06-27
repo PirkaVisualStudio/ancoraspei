@@ -1,6 +1,6 @@
 ---
 //icons
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const today = new Date();
 
@@ -9,7 +9,7 @@ import navMenu from "../../data/navMenuEN.json";
 ---
 
 <footer>
-  <section class="footer bg-dark clr-main-light">
+  <section class="footer bg-prim-acc clr-main-light">
     <div class="footer-container wrapper center">
       <div class="footer-logo padt-700 flex-center">
         <img
@@ -62,17 +62,15 @@ import navMenu from "../../data/navMenuEN.json";
           <a href="https://www.instagram.com/elamio/" target="_blank"
             ><Icon
               class="socialNavIcon"
-              pack="ri"
-              name="instagram-fill"
-              width="28"
+              name="ri:instagram-fill"
+              width={28}
             /></a
           >
           <a href="https://www.facebook.com/elamio" target="_blank"
             ><Icon
               class="socialNavIcon"
-              pack="ant-design"
-              name="facebook-filled"
-              width="30"
+              name="ant-design:facebook-filled"
+              width={30}
             /></a
           >
         </div>
