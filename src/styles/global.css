@@ -707,6 +707,10 @@ html {
   margin-right: 2.75rem;
 }
 
+.marl-50 {
+  margin-left: 0.4rem;
+}
+
 .marl-100 {
   margin-left: 0.8rem;
 }
@@ -2212,6 +2216,16 @@ header {
   }
 }
 
+.wrapper-large {
+  max-width: 860px;
+  padding: 0 2rem;
+}
+@media screen and (max-width: 480px) {
+  .wrapper-large {
+    padding: 0 1rem;
+  }
+}
+
 .wrapper-small {
   max-width: 570px;
   padding: 0 2rem;
@@ -2226,7 +2240,7 @@ header {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .section {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -2700,6 +2714,7 @@ footer a:hover {
 @media screen and (max-width: 1024px) {
   .hero-img {
     height: calc(100vh - 4rem) !important;
+    display: none;
   }
 }
 
@@ -2960,6 +2975,114 @@ footer a:hover {
 }
 #splideReviews p {
   width: 100%;
+}
+
+.section-logo {
+  background-color: #151629;
+  height: 200px;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.ribbon {
+  position: relative;
+  margin: 0 0 6rem 0;
+  background-color: #214fde;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .ribbon {
+    margin: 6rem 0 6rem 0;
+  }
+}
+.ribbon .container {
+  max-width: 900px;
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  grid-template-rows: repeat(1, 200px);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .ribbon .container {
+    grid-template-rows: repeat(3, 140px);
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+.ribbon .container h2 {
+  font-size: 2.5rem;
+}
+.ribbon .container .row2 {
+  grid-column: span 2;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .ribbon .container .row2 {
+    padding: 1rem;
+  }
+}
+.ribbon .container .row3 {
+  padding: 1rem;
+  justify-self: start;
+}
+.ribbon img {
+  position: relative;
+  left: 0;
+  width: 230px;
+  height: 230px;
+}
+@media screen and (max-width: 768px) {
+  .ribbon img {
+    top: -40px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.btn-ribbon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  padding: 1rem 0;
+  width: 180px;
+  border: solid 3px #151629;
+  -webkit-box-shadow: -8px 8px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: -8px 8px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.btn-ribbon svg {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.btn-ribbon:hover {
+  color: #214fde;
+  -webkit-transform: translate(-4px, 4px);
+          transform: translate(-4px, 4px);
+  -webkit-box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+.btn-ribbon:hover svg {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
 }
 
 body {

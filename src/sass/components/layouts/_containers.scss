@@ -33,6 +33,15 @@
   }
 }
 
+.wrapper-large {
+  max-width: 860px;
+  padding: 0 2rem;
+
+  @include medium {
+    padding: 0 1rem;
+  }
+}
+
 .wrapper-small {
   max-width: 570px;
   padding: 0 2rem;
@@ -45,7 +54,7 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
 
-  @include medium {
+  @include normal {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }

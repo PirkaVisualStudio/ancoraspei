@@ -53,6 +53,7 @@
   object-fit: cover;
   @include large {
     height: calc(100vh - $navHeightSmall) !important;
+    display: none;
   }
 }
 
@@ -301,5 +302,98 @@
 
   p {
     width: 100%;
+  }
+}
+
+//logo section
+.section-logo {
+  background-color: $main-dark;
+  height: 200px;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+//ribbon
+
+.ribbon {
+  position: relative;
+  margin: 0 0 6rem 0;
+  background-color: $prim-acc;
+  width: 100%;
+  height: 100%;
+  @include normal {
+    margin: 6rem 0 6rem 0;
+  }
+
+  .container {
+    max-width: 900px;
+    display: grid;
+    gap: 0.5rem;
+    width: 100%;
+    grid-template-rows: repeat(1, 200px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    @include normal {
+      grid-template-rows: repeat(3, 140px);
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    .row2 {
+      grid-column: span 2;
+      padding: 1rem;
+      @include normal {
+        padding: 1rem;
+      }
+    }
+    .row3 {
+      padding: 1rem;
+      justify-self: start;
+    }
+  }
+
+  img {
+    position: relative;
+    left: 0;
+
+    width: 230px;
+    height: 230px;
+    @include normal {
+      top: -40px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.btn-ribbon {
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  background-color: $main-light;
+  padding: 1rem 0;
+  width: 180px;
+  border: solid 3px $main-dark;
+  box-shadow: -8px 8px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+
+  svg {
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover {
+    color: $prim-acc;
+    transform: translate(-4px, 4px);
+    box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.4);
+    svg {
+      transform: translateX(4px);
+    }
   }
 }

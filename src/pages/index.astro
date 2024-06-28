@@ -53,6 +53,7 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
+  <!-- hero -->
   <section class="section-nav center hero bg-light">
     <div class="hero-content flex-column-reverse center txt-left">
       <div class="flex-left section center">
@@ -83,6 +84,7 @@ const {
     </div>
   </section>
 
+  <!-- links -->
   <section class="section">
     <div class="flex-center">
       <p class="body-bold">
@@ -94,7 +96,7 @@ const {
       </p>
     </div>
 
-    <div class="flex-center hero-social padb-900">
+    <div class="flex-center hero-social">
       <a href="https://www.instagram.com/pirkavisualstudio/" target="_blank"
         ><Icon
           class="socialNavIcon"
@@ -133,6 +135,41 @@ const {
     </div>
   </section>
 
+  <!-- logos 
+  <div class="section-logo"></div>-->
+
+  <!-- ribbon -->
+  <section class="ribbon">
+    <div class="container center">
+      <div class="row1">
+        <Image
+          src={logoBadge}
+          alt="pirka visual design"
+          format="avif"
+          loading="eager"
+        />
+      </div>
+      <div class="row2">
+        <h2 class="font-heading txt-on-dark">
+          Branding i izrada vizualnog identiteta
+        </h2>
+      </div>
+      <div class="row3">
+        <a href="#">
+          <button class="btn-ribbon"
+            >Saznaj više <Icon
+              name="mdi:arrow-right"
+              width={28}
+              height={28}
+              class="marl-50"
+            /></button
+          ></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
   <section class="kanban wrapper-medium clr-prim-acc">
     <div class="item item-1 padl-100">
       <div>
