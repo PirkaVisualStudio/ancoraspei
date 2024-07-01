@@ -2595,7 +2595,6 @@ footer a:hover {
 .column-footer {
   width: 25%;
   height: 100%;
-  padding: 2rem;
 }
 @media screen and (max-width: 1024px) {
   .column-footer {
