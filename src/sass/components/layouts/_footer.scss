@@ -17,7 +17,7 @@
   a {
     color: $prim-acc;
     &:hover {
-      color: $main-light;
+      color: $sec-acc;
     }
   }
 }
@@ -28,6 +28,13 @@ footer a {
   &:hover {
     color: $sec-acc;
   }
+}
+.flex-column-footer {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: flex-start;
 }
 
 .column-footer {
@@ -40,7 +47,7 @@ footer a {
   }
 
   h3 {
-    color: $main-light;
+    color: $main-dark;
   }
 }
 
@@ -54,8 +61,8 @@ footer a {
   align-items: flex-start;
 
   a {
-    color: $main-light;
-    font-weight: 400;
+    color: $main-dark;
+    font-weight: 800;
     &:hover {
       color: $prim-acc;
     }

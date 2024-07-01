@@ -1,12 +1,12 @@
 [
     {
-    "google_id": "G-12345678",
-    "site_url": "https://pirka2.netlify.app/",
+    "google_id": "GTM-MLG9BCW4",
+    "site_url": "https://pirka.hr",
     "main_lang": "hr",
     "charset": "UTF-8",
-    "title": "This is default title",
+    "title": "Digitalna produkcija",
     "brand_tag": " | Pirka Visual Studio", 
-    "description": "This is default description",
-    "not_included": ["https://www.url.com/hvala/", "2", "3", "4"]
+    "description": "Pirka Visual Studio - Agencija za digitalni marketing i produkciju. Video produkcija, fotografija, grafički dizajn i marketing.",
+    "not_included": ["https://www.pirka.hr/hvala/", "https://www.pirka.hr/styleguide/"]
 }
 ]

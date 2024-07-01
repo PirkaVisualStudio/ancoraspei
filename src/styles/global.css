@@ -246,7 +246,7 @@ html {
   font-size: 5.61rem;
   line-height: 6.171rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .h1 {
     font-size: 3.6rem;
     line-height: 3.96rem;
@@ -258,7 +258,7 @@ html {
   font-size: 4.209rem;
   line-height: 4.6299rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .h2 {
     font-size: 3rem;
     line-height: 3.3rem;
@@ -270,7 +270,7 @@ html {
   font-size: 3.157rem;
   line-height: 3.4727rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .h3 {
     font-size: 2.5rem;
     line-height: 2.75rem;
@@ -282,7 +282,7 @@ html {
   font-size: 2.369rem;
   line-height: 2.6059rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .h4 {
     font-size: 1.2rem;
     line-height: 1.32rem;
@@ -903,7 +903,7 @@ html.lenis {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .btn-fill {
     display: block !important;
     margin-left: auto;
@@ -928,7 +928,7 @@ html.lenis {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .btn-fill-rounded {
     display: block !important;
     margin-left: auto;
@@ -953,7 +953,7 @@ html.lenis {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .btn-stroke {
     display: block !important;
     margin-left: auto;
@@ -977,7 +977,7 @@ html.lenis {
   color: #f5f5f5;
   border: 2px solid #214fde;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .btn-stroke-rounded {
     display: block !important;
     margin-left: auto;
@@ -1002,7 +1002,7 @@ html.lenis {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .btn-nav-action {
     display: block !important;
     margin-left: auto;
@@ -1012,6 +1012,7 @@ html.lenis {
 .btn-nav-action-rounded {
   display: inline-block;
   width: auto;
+  min-width: 80px;
   text-align: center;
   background-color: #214fde;
   color: #f5f5f5;
@@ -1020,6 +1021,7 @@ html.lenis {
   font-size: 0.8rem;
   border: 2px solid #214fde;
   border-radius: 30px;
+  cursor: pointer;
 }
 .btn-nav-action-rounded:hover {
   background: rgba(0, 0, 0, 0);
@@ -1028,7 +1030,7 @@ html.lenis {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .btn-nav-action-rounded {
     display: block !important;
     margin-left: auto;
@@ -1066,7 +1068,7 @@ html.lenis {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .btn-consent {
     display: block !important;
   }
@@ -1091,7 +1093,7 @@ html.lenis {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .btn-consent-outline {
     display: block !important;
   }
@@ -1319,7 +1321,7 @@ html.lenis {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -1407,7 +1409,7 @@ html.lenis {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -1524,13 +1526,13 @@ html.lenis {
   display: block;
   text-align: left;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .subtitle {
     padding-bottom: 1rem !important;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   #btnFullWidth {
     width: initial !important;
   }
@@ -1778,11 +1780,65 @@ html.lenis {
   background: linear-gradient(45deg, rgb(57, 99, 203) 0%, rgb(39, 82, 184) 100%);
   grid-row: span 2;
 }
+.item-2 .image {
+  overflow: hidden !important;
+  position: absolute;
+  bottom: -60px;
+  right: -40px;
+  width: 240px;
+}
+.item-2 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .item-2 .image {
+    bottom: -90px;
+    right: -40px;
+    width: 340px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .item-2 .image {
+    bottom: -60px;
+    right: -40px;
+    width: 240px;
+  }
+}
 
 .item-3 {
   background: rgb(57, 99, 203);
   background: linear-gradient(45deg, rgb(57, 99, 203) 0%, rgb(39, 82, 184) 100%);
   grid-row: span 2;
+}
+.item-3 .image {
+  overflow: hidden !important;
+  position: absolute;
+  bottom: -60px;
+  right: -40px;
+  width: 240px;
+}
+.item-3 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .item-3 .image {
+    bottom: -160px;
+    right: -10px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .item-3 .image {
+    bottom: -90px;
+    right: -60px;
+    width: 300px;
+  }
 }
 
 .item-4 {
@@ -1790,11 +1846,65 @@ html.lenis {
   background: linear-gradient(45deg, rgb(57, 99, 203) 0%, rgb(39, 82, 184) 100%);
   grid-row: span 2;
 }
+.item-4 .image {
+  overflow: hidden !important;
+  position: absolute;
+  bottom: 0px;
+  right: -100px;
+  width: 440px;
+}
+.item-4 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .item-4 .image {
+    bottom: 0px;
+    right: -80px;
+    width: 440px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .item-4 .image {
+    bottom: 0px;
+    right: -150px;
+    width: 440px;
+  }
+}
 
 .item-5 {
   background: rgb(57, 99, 203);
   background: linear-gradient(45deg, rgb(57, 99, 203) 0%, rgb(39, 82, 184) 100%);
   grid-row: span 2;
+}
+.item-5 .image {
+  overflow: hidden !important;
+  position: absolute;
+  bottom: -90px;
+  right: -120px;
+  width: 440px;
+}
+.item-5 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .item-5 .image {
+    bottom: -160px;
+    right: -200px;
+    width: 640px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .item-5 .image {
+    bottom: -90px;
+    right: -120px;
+    width: 440px;
+  }
 }
 
 .service-box-container {
@@ -1845,19 +1955,6 @@ html.lenis {
 .service-box-container a:hover svg {
   -webkit-transform: translateX(8px);
           transform: translateX(8px);
-}
-.service-box-container .image {
-  overflow: hidden !important;
-  position: absolute;
-  bottom: -60px;
-  right: -40px;
-  width: 240px;
-}
-.service-box-container .image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 header {
@@ -2067,6 +2164,27 @@ header {
   }
 }
 
+.language-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+}
+
+.social-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .socialNav {
   width: 100%;
   display: -webkit-box;
@@ -2075,7 +2193,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   color: #214fde;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -2090,7 +2208,7 @@ header {
 @media screen and (max-width: 1024px) {
   .socialNav {
     position: absolute;
-    bottom: 9rem;
+    bottom: 4rem;
     left: 0;
     right: 0;
     padding: 0rem;
@@ -2210,7 +2328,7 @@ header {
   max-width: 768px;
   padding: 0 2rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .wrapper-medium {
     padding: 0 1rem;
   }
@@ -2220,7 +2338,7 @@ header {
   max-width: 860px;
   padding: 0 2rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .wrapper-large {
     padding: 0 1rem;
   }
@@ -2230,7 +2348,7 @@ header {
   max-width: 570px;
   padding: 0 2rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .wrapper-small {
     padding: 0 1rem;
   }
@@ -2441,7 +2559,7 @@ header {
   color: #214fde;
 }
 .footer-social a:hover {
-  color: #f5f5f5;
+  color: #f2aa3c;
 }
 
 footer a {
@@ -2450,6 +2568,19 @@ footer a {
 }
 footer a:hover {
   color: #f2aa3c;
+}
+
+.flex-column-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .column-footer {
@@ -2463,7 +2594,7 @@ footer a:hover {
   }
 }
 .column-footer h3 {
-  color: #f5f5f5;
+  color: #151629;
 }
 
 .footer-list {
@@ -2487,8 +2618,8 @@ footer a:hover {
           align-items: flex-start;
 }
 .footer-list a {
-  color: #f5f5f5;
-  font-weight: 400;
+  color: #151629;
+  font-weight: 800;
 }
 .footer-list a:hover {
   color: #214fde;
@@ -2504,7 +2635,7 @@ footer a:hover {
   display: block;
   height: 800px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .hero-project {
     height: 600px;
   }
@@ -2512,7 +2643,7 @@ footer a:hover {
 .hero-project h1 {
   padding-top: 15rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .hero-project h1 {
     padding-top: 10rem;
   }
@@ -2690,7 +2821,7 @@ footer a:hover {
   width: 300px;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   #heroLogo {
     width: 200px;
     margin-top: 100px;
@@ -2746,7 +2877,7 @@ footer a:hover {
   z-index: 98;
   padding: 10rem 3rem 0 3rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .heroContainer {
     padding: 4rem 3rem 0 3rem;
   }

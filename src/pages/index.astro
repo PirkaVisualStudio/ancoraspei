@@ -18,6 +18,9 @@ import red from "../images/kanban/red.jpg";
 import green from "../images/kanban/green.jpg";
 import yellow from "../images/kanban/yellow.jpg";
 import clapboard from "../images/kanban/clapboard.png";
+import google from "../images/kanban/google.png";
+import paintbrush from "../images/kanban/paintbrush.png";
+import r6 from "../images/kanban/r6.png";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -56,9 +59,9 @@ const {
   <!-- hero -->
   <section class="section-nav center hero bg-light">
     <div class="hero-content flex-column-reverse center txt-left">
-      <div class="flex-left section center">
+      <div class="flex-left center">
         <div class="text-padding">
-          <h1 class="h1 padb-600">
+          <h1 class="h1 padb-600 padt-900">
             Pronađi svoj <br />
             <span class="clr-prim-acc">identitet</span>
           </h1>
@@ -155,7 +158,7 @@ const {
         </h2>
       </div>
       <div class="row3">
-        <a href="#">
+        <a href="/usluge/">
           <button class="btn-ribbon"
             >Saznaj više <Icon
               name="mdi:arrow-right"
@@ -185,7 +188,7 @@ const {
         category="fotografija"
         title="pokaži se u najboljem svjetlu"
         desc="Profesionalna fotografija za vaš brand, proizvod, event ili interijer. Pokažite vašu priču cijelom svijetu."
-        imageSrc={clapboard}
+        imageSrc={r6}
         imageAlt="clapboard"
       />
     </div>
@@ -205,7 +208,7 @@ const {
         category="dizajn"
         title="promoviraj svoj brand"
         desc="Izradi vizualni identitet svoga branda te povećaj vidljivost i prepoznatljivost"
-        imageSrc={clapboard}
+        imageSrc={paintbrush}
         imageAlt="clapboard"
       />
     </div>
@@ -216,7 +219,7 @@ const {
         category="marketing"
         title="pokaži svima što nudiš"
         desc="Promocija putem društvenih mreža, Google Ads oglasi, marketinške kampanje"
-        imageSrc={clapboard}
+        imageSrc={google}
         imageAlt="clapboard"
       />
     </div>

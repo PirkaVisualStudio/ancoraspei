@@ -18,8 +18,8 @@ import { Icon } from "astro-icon/components";
 <section class="wrapper center section">
   <div class="title-container">
     <div>
-      <h2 class="h1 padb-200 title">Projekti</h2>
-      <h3 class="h3 subtitle padb-200">neki od naših projekata</h3>
+      <h2 class="h2 padb-200 title">Projekti</h2>
+      <h3 class="h5 subtitle padb-200">neki od naših projekata</h3>
     </div>
 
     <a href="/projekti/">
@@ -39,8 +39,18 @@ import { Icon } from "astro-icon/components";
               <a href={`/projekti/${post.slug}/`}>
                 <div class="card-container">
                   <div class="arrow">
-                    <Icon class="arrow-bg" name="projectArrowBG" />
-                    <Icon class="arrow-icon" name="projectArrow" />
+                    <Icon
+                      class="arrow-bg"
+                      name="projectArrowBG"
+                      width={50}
+                      height={50}
+                    />
+                    <Icon
+                      class="arrow-icon"
+                      name="projectArrow"
+                      width={50}
+                      height={50}
+                    />
                   </div>
 
                   <div class="card-img">

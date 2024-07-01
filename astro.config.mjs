@@ -14,9 +14,7 @@ export default defineConfig({
     sitemap({
       filter: (page) =>
         page !== `${siteInfo.map((i) => i.not_included[0])}` &&
-        page !== `${siteInfo.map((i) => i.not_included[1])}` &&
-        page !== `${siteInfo.map((i) => i.not_included[2])}` &&
-        page !== `${siteInfo.map((i) => i.not_included[3])}`,
+        page !== `${siteInfo.map((i) => i.not_included[1])}`,
     }),
     compress({
       CSS: false,
