@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kuzina.hr/sitemap-0.xml
+Sitemap: https://pirka.hr/sitemap-0.xml
