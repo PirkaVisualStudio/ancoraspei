@@ -2574,6 +2574,7 @@ footer a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2582,11 +2583,19 @@ footer a:hover {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .flex-column-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .column-footer {
   width: 25%;
   height: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem;
 }
 @media screen and (max-width: 1024px) {
   .column-footer {

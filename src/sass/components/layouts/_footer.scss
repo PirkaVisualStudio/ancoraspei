@@ -31,16 +31,19 @@ footer a {
 }
 .flex-column-footer {
   display: flex;
-
+  width: 100%;
   flex-direction: row;
-
   align-items: flex-start;
+
+  @include normal {
+    flex-direction: column;
+  }
 }
 
 .column-footer {
   width: calc(100% / 4);
   height: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem;
 
   @include large {
     width: 100%;
