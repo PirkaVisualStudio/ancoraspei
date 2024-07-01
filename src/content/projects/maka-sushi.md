@@ -18,9 +18,9 @@ draft: false
 
 <h2 class="h5 padb-100">Naš rad</h2>
 <div class="line-dark-small marb-900"></div>
-<h3 class="h1 thin padb-400">01. Dizajn</h3>
+<h3 class="h3 thin padb-400">01. Dizajn</h3>
 
-<h4 class="h4 padb-400">Vizualni identitet</h4>
+<h4 class="h5 padb-400">Vizualni identitet</h4>
 
 <p class="body padb-100">Početak projekta započeli smo detaljnim sastankom na kojem smo utvrdili osnovne vrijednosti i ciljeve projekta kao što su:</p>
 
@@ -44,7 +44,7 @@ draft: false
 
 </div>
 
-<h4 class="h4 padb-400">Logotip</h4>
+<h4 class="h5 padb-400">Logotip</h4>
 <p class="body">Izrada logotipa je bila zahtjevna te smo nakon mnoštvo različitih varijacija došli do konačnog rezultata.</p>
 <div class="project-showcase section">
 <div>
@@ -65,7 +65,7 @@ draft: false
 
 </div>
 
-<h4 class="h4 padb-400">Print</h4>
+<h4 class="h5 padb-400">Print</h4>
 <p class="body">Nakon izrade osnovnih elemenata vizualnog identiteta spremni smo za dizajn promotivnih materijala. Grafička priprema za vizitke i menu odražavaju unificirani vizualni identitet koji smo uspostavili te su materijali spremni za tisak. </p>
 
 <div class="project-showcase section">
@@ -87,8 +87,8 @@ draft: false
 
 </div>
 
-<h3 class="h1 thin padb-400 padt-900">02. Web dizajn</h3>
-<h4 class="h4 padb-400">Skiciranje i dizajn</h4>
+<h3 class="h3 thin padb-400 padt-900">02. Web dizajn</h3>
+<h4 class="h5 padb-400">Skiciranje i dizajn</h4>
 <p class="body">
 S obzirom da se radi o ugostiteljskoj ponudi, veliku pozornost kod dizajniranja web stranice posvetili smo vizualnim elementima. Shodno tome odradili smo fotografiranje jela i interijera samog restorana kako bi imali potrebne dizajn elemente. Osim toga smo i vodili računa o tome da stranica bude kvalitetno optimizirana i funkcionalna.
 </p>
@@ -111,7 +111,7 @@ S obzirom da se radi o ugostiteljskoj ponudi, veliku pozornost kod dizajniranja 
 
 </div>
 
-<h4 class="h4 padb-400">Razvoj</h4>
+<h4 class="h5 padb-400">Razvoj</h4>
 <p class="body">
 U razvoju stranice vodili smo računa da bude izgrađena po svim modernim standardima te optimizirana za rangiranje na pretraživačima. Također je obavljena integracija sa Google Analytics te Google Console servisima te booking sustav koji je implementiran preko treće strane.
 </p>

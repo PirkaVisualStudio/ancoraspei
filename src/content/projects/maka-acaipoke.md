@@ -18,9 +18,9 @@ draft: false
 
 <h2 class="h5 padb-100">Naš rad</h2>
 <div class="line-dark-small marb-900"></div>
-<h3 class="h1 thin padb-400">01. Dizajn</h3>
+<h3 class="h3 thin padb-400">01. Dizajn</h3>
 
-<h4 class="h4 padb-400">Vizualni identitet</h4>
+<h4 class="h5 padb-400">Vizualni identitet</h4>
 
 <p class="body padb-100">Kao i svaki projekt kreiranja vizualnog identiteta i izgradnje novog branda i ovaj smo započeli detaljnim briefingom na kojem smo ustanovili ključne smjernice za ostvarivanje cilja. </p>
 
@@ -44,7 +44,7 @@ draft: false
 
 </div>
 
-<h4 class="h4 padb-400">Logotip</h4>
+<h4 class="h5 padb-400">Logotip</h4>
 <p class="body">Neobična fuzija koju nudi ovaj restoran bila je izazov sam po sebi te smo u ovom slučaju kreirali nekolicinu različlitih varijacija logotipa dok klijent nije bio u potpunosti zadovoljan sa dostavljenim radom. Ciljana publika je mlađa generacija željna zabave u opuštenoj i idiličnoj atmosferi Splita odnosno Mediterana u fuziji sa sočnim i zdravima tropskim okusima. Savršena fuzija za ljetne i bezbrižne dane.</p>
 
 <div class="project-showcase section">
@@ -66,7 +66,7 @@ draft: false
 
 </div>
 
-<h4 class="h4 padb-400">Print</h4>
+<h4 class="h5 padb-400">Print</h4>
 <p class="body">Nakon izrade osnovnih elemenata vizualnog identiteta odradili smo i grafičku pripremu materijala za tisak koji predstavljaju unificirani vizualni identitet pomoću kojeg će ovaj brand biti lakše prepoznatljiv svojoj vlastitoj publici. </p>
 
 <div class="project-showcase section">
@@ -98,8 +98,8 @@ draft: false
 </div>
 </div>
 
-<h3 class="h1 thin padb-400 padt-900">02. Web dizajn</h3>
-<h4 class="h4 padb-400">Skiciranje i dizajn</h4>
+<h3 class="h3 thin padb-400 padt-900">02. Web dizajn</h3>
+<h4 class="h5 padb-400">Skiciranje i dizajn</h4>
 <p class="body">
 U fazi dizajniranja web stranice veliku pozornost smo posvetili namirnicama restorana koji osim što imaju atraktivan vizualni dojam ujedno i na osobit način predstavljaju publici svoju paletu vrlo dostupnih zdravih i ukusnih proizvoda. 
 </p>
@@ -122,7 +122,7 @@ U fazi dizajniranja web stranice veliku pozornost smo posvetili namirnicama rest
 
 </div>
 
-<h4 class="h4 padb-400">Razvoj</h4>
+<h4 class="h5 padb-400">Razvoj</h4>
 <p class="body">
 U razvoju stranice vodili smo računa da bude izgrađena po svim modernim standardima te optimizirana za rangiranje na pretraživačima. Također je obavljena integracija sa Google Analytics te Google Console servisima.
 </p>

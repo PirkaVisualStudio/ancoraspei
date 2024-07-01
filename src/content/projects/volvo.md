@@ -18,30 +18,30 @@ draft: false
 
 <h2 class="h5 padb-100">Naš rad</h2>
 <div class="line-dark-small marb-900"></div>
-<h3 class="h1 thin padb-400">01. Predprodukcija</h3>
-<h4 class="h4 padb-400">Scenarij</h4>
+<h3 class="h3 thin padb-400">01. Predprodukcija</h3>
+<h4 class="h5 padb-400">Scenarij</h4>
 <p class="body padb-400">
 Prije samog snimanja važno je bilo odraditi brifing sa klijentom kako bi se upoznali sa svim detaljima koje produkcija zahtjeva kao što su uvjeti sponzora i tehnički detalji snimanja. Potrebno je bilo odraditi i detaljan pregled lokacije snimanja kako bi utvrdili idealan vremenski okvir ali i napraviti testne kadrove.
 </p>
 
-<h4 class="h4 padb-400">Plan snimanja</h4>
+<h4 class="h5 padb-400">Plan snimanja</h4>
 <p class="body padb-900">
 Nakon toga napravljen je detaljan plan snimanja kako bi na terenu imali što manje neplaniranih iznenađenja. Iako ih je nemoguće izbjeći na ovaj način ih minimaliziramo kako bi se snimanje moglo izvršiti sa što manje komplikacija. Budući da se radi o snimanju na moru, projekt je zahtijevao i posebenu pažnju na detalje. Bilo je važno osigurati brod sa kojeg će se snimati kadrovi samog jedrenja, a to je značilo i osigurati kvalitetnu komunikaciju između snimatelja i subjekta kako bi usjpešno ostvarili potrebne kadrove koji će ući u finalnu montažu.
 </p>
 
-<h3 class="h1 thin padb-400 padt-900">02. Produkcija</h3>
-<h4 class="h4 padb-400">Snimanje</h4>
+<h3 class="h3 thin padb-400 padt-900">02. Produkcija</h3>
+<h4 class="h5 padb-400">Snimanje</h4>
 <p class="body padb-400">
 Na terenu je korištena jedna kamera, posebna oprema za audio snimanje, profesionalna rasvjeta za osvjetljenje te dron za snimanje iz zraka.
 Snimanje je uspješno realizirano sa malim vremenskim odmakom a svi materijali spremni su za post-produkciju u uredu.
 </p>
-<h4 class="h4 padb-400">Fotografija</h4>
+<h4 class="h5 padb-400">Fotografija</h4>
 <p class="body padb-900">
 Također smo osim video produkcije uspješno ukomponirali i fotografski dio projekta jer su vremenski uvjeti i kompleksnost samog snimanja zahtjevali da se projekt završi u jednom radnom danu.
 </p>
 
-<h3 class="h1 thin padb-400 padt-900">03. Post-produkcija</h3>
-<h4 class="h4 padb-400">Rezultati</h4>
+<h3 class="h3 thin padb-400 padt-900">03. Post-produkcija</h3>
+<h4 class="h5 padb-400">Rezultati</h4>
 <p class="body padb-400">
 Montaža je odrađena u DaVinci softwareu u studijskom okruženju kao i korekcija i balans boja.
 Za klijenta smo, po njegovom zahtjevu, dostavili materijal koji će se moći iskoristiti u razne svrhe kao što su YouToube kanal, društvene mreže ili bilo koji oblik digitalnog medija.

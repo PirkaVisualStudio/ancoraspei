@@ -19,9 +19,9 @@ draft: false
 <h2 class="h5 padb-100">Naš rad</h2>
 <div class="line-dark-small marb-900"></div>
 
-<h3 class="h1 thin padb-400">01. Dizajn</h3>
+<h3 class="h3 thin padb-400">01. Dizajn</h3>
 
-<h4 class="h4 padb-400">Identitet</h4>
+<h4 class="h5 padb-400">Identitet</h4>
 
 <p class="body padb-100">U početnoj fazi najvažniji je korak bio sam brifing sa klijentom kako bi zapravo mogli ustanoviti primarne čimbenike za kreiranje vizualnog identiteta kao što su: </p>
 
@@ -74,7 +74,7 @@ draft: false
 
 </div>
 
-<h4 class="h4 padb-400">Web</h4>
+<h4 class="h5 padb-400">Web</h4>
 
 <p class="body padb-100">
 Kod izrade web stranice fokusirali smo se na tri ključna faktora:
@@ -110,7 +110,7 @@ Također smo veliku pažnju posvetili svim potrebnim elementima SEO standarda ka
 
 </div>
 
-<h4 class="h4 padb-400">Print</h4>
+<h4 class="h5 padb-400">Print</h4>
 <p class="body">
 U zadnjoj fazi dizajniranja u potpunosti smo spremni odgovoriti na sve zahtjeve koje nam je uputio klijent kao izradu pripreme za vizitke, menue te sve vrste promo materijala koje će se koristiti u svrhu promocije samog branda. 
 </p>
@@ -126,25 +126,25 @@ U zadnjoj fazi dizajniranja u potpunosti smo spremni odgovoriti na sve zahtjeve 
 
 </div>
 
-<h3 class="h1 thin padb-400">02. Produkcija</h3>
-<h4 class="h4 padb-400">Video</h4>
+<h3 class="h3 thin padb-400">02. Produkcija</h3>
+<h4 class="h5 padb-400">Video</h4>
 <p class="body padb-900">
 Kao odgovor na sve brže rastuću konzumaciju materijala na društvenim mrežama i tu smo ponudili klijentu kvalitetno rješenje u vidu kreiranja video kampanja za potrebe na digitalnim platformama. U tu svrhu imali smo priliku sudjelovati u mnogo zanimljivih projekata sa klijentom pokazujući publici i onu stranu poslovanja koja nije tako očita na prvi pogled. Na taj smo način stvorili užu povezanost sa korisnicima te sa samim brandom.
 </p>
 <div class="project-video body padb-900 ">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-FDY2TFLn2g?si=E4oVvgdFDyHPK6A3" title="Restoran Šug" frameborder="0"  allowfullscreen></iframe>
 </div>
-<h4 class="h4 padb-400">Fotografija</h4>
+<h4 class="h5 padb-400">Fotografija</h4>
 <p class="body padb-900">
 Također smo sa klijentom ostvarili i suradnju u vidu izrade kvalitetnih i profesionalnih fotografija za sve potrebe restorana.
 </p>
 
-<h3 class="h1 thin padb-400 padt-900">03. Marketing</h3>
-<h4 class="h4 padb-400">Društvene mreže</h4>
+<h3 class="h3 thin padb-400 padt-900">03. Marketing</h3>
+<h4 class="h5 padb-400">Društvene mreže</h4>
 <p class="body padb-900">
 U zadnjoj fazi projekta te nakon izrade mnoštva vizuala s kojim smo sada potpuno spremni odgovoriti zahtjevu digitalnog svijeta pripremili smo klijentu ponudu za održavanje društvenih mreža kako bi ostao aktivan te ažuran u prenošenju informaciju sada već znatnoj publici koja redovito prati sve događaje i objave.
 </p>
-<h4 class="h4 padb-400">Google Ads</h4>
+<h4 class="h5 padb-400">Google Ads</h4>
 <p class="body padb-900">
 Osim društvenih mreža pokrenuli smo i posebno kreirane i postavljanje marketinške kampanje koje su integrirane kroz gore navede servise. Ovime smo omogučili klijentu da izravno prati kako i koliko novca troši s obzirom na dobivene rezultate. U ovoj fazi od iznimne je važnosti pravilna i kvalitetno konstruirana web stranica kako bi se sa točnom sigurnošću moglo pratiti sve vrste analitičkih podataka.
 </p>
