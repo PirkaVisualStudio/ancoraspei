@@ -284,8 +284,8 @@ html {
 }
 @media screen and (max-width: 540px) {
   .h4 {
-    font-size: 1.2rem;
-    line-height: 1.32rem;
+    font-size: 1.8rem;
+    line-height: 1.98rem;
   }
 }
 
@@ -1930,7 +1930,7 @@ html.lenis {
   }
 }
 
-.service-box-container {
+#kanbanServicesBox .service-box-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1941,7 +1941,7 @@ html.lenis {
           flex-direction: column;
   padding: 1.4rem;
 }
-.service-box-container .category {
+#kanbanServicesBox .service-box-container .category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1950,7 +1950,7 @@ html.lenis {
           align-items: center;
   gap: 1rem;
 }
-.service-box-container .link {
+#kanbanServicesBox .service-box-container .link {
   position: absolute;
   bottom: 2rem;
   border-radius: 4rem;
@@ -1967,15 +1967,135 @@ html.lenis {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.service-box-container .link svg {
+#kanbanServicesBox .service-box-container .link svg {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.service-box-container a:hover {
+#kanbanServicesBox .service-box-container a:hover {
   color: #f2aa3c;
   scale: 1.05;
 }
-.service-box-container a:hover svg {
+#kanbanServicesBox .service-box-container a:hover svg {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+.kanban-services {
+  display: grid;
+  gap: 0.5rem;
+  margin: auto;
+  grid-template-rows: repeat(5, 230px);
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 768px) {
+  .kanban-services {
+    grid-template-rows: repeat(10, 230px);
+    grid-template-columns: 1fr;
+  }
+}
+.kanban-services .item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.kanban-services .item-1,
+.kanban-services .item-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kanban-services .item-2,
+.kanban-services .item-3,
+.kanban-services .item-4,
+.kanban-services .item-5 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.kanban-services .item-2 .image,
+.kanban-services .item-3 .image,
+.kanban-services .item-4 .image,
+.kanban-services .item-5 .image {
+  overflow: hidden !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.kanban-services .item-2 .image img,
+.kanban-services .item-3 .image img,
+.kanban-services .item-4 .image img,
+.kanban-services .item-5 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#kanbanServices .service-box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.4rem;
+}
+#kanbanServices .service-box-container .category {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+#kanbanServices .service-box-container .title {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 12px;
+}
+#kanbanServices .service-box-container .desc {
+  position: relative;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 12px;
+}
+#kanbanServices .service-box-container .link {
+  position: absolute;
+  bottom: 2rem;
+  border-radius: 4rem;
+  background-color: rgba(21, 22, 41, 0.8);
+  padding: 0.5rem 1rem;
+  color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#kanbanServices .service-box-container .link svg {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#kanbanServices .service-box-container a:hover {
+  color: #f2aa3c;
+  scale: 1.05;
+}
+#kanbanServices .service-box-container a:hover svg {
   -webkit-transform: translateX(8px);
           transform: translateX(8px);
 }
@@ -3246,6 +3366,35 @@ footer a:hover {
 .btn-ribbon:hover svg {
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
+}
+
+.services .container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.services .container img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services .container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #151629;
+  color: #f5f5f5;
+  width: 100%;
+  height: 60px;
 }
 
 body {

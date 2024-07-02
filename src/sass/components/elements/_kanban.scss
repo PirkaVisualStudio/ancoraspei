@@ -167,7 +167,7 @@
 }
 
 //service boxes
-.service-box-container {
+#kanbanServicesBox .service-box-container {
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -179,6 +179,102 @@
     gap: 1rem;
   }
 
+  .link {
+    position: absolute;
+    bottom: 2rem;
+    border-radius: 4rem;
+    background-color: rgba($color: $main-dark, $alpha: 0.8);
+    padding: 0.5rem 1rem;
+    color: $main-light;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    svg {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  a:hover {
+    color: $sec-acc;
+    scale: 1.05;
+    svg {
+      transform: translateX(8px);
+    }
+  }
+}
+
+.kanban-services {
+  display: grid;
+  gap: 0.5rem;
+  margin: auto;
+  grid-template-rows: repeat(5, 230px);
+  grid-template-columns: 1fr 1fr;
+
+  @include normal {
+    grid-template-rows: repeat(10, 230px);
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  .item-1,
+  .item-6 {
+    display: flex;
+    align-items: center;
+  }
+
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5 {
+    align-items: flex-start;
+    .image {
+      overflow: hidden !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#kanbanServices .service-box-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 1.4rem;
+
+  .category {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .title {
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .desc {
+    position: relative;
+    margin-top: 1rem;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    padding: 1rem;
+    border-radius: 12px;
+  }
   .link {
     position: absolute;
     bottom: 2rem;

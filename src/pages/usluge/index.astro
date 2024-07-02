@@ -1,0 +1,109 @@
+---
+import MainLayout from "../../layouts/MainLayoutHR.astro";
+
+//import components
+
+import ProjectsSlider from "../../components/ProjectsSlider.astro";
+import Services from "../../components/elements/Services.astro";
+
+//image compression
+import { Image } from "astro:assets";
+import volvo from "../../images/projects/project-volvo.jpg";
+import video from "../../images/media/videoproduction.jpg";
+import design from "../../images/projects/makamakaAcai/makamakaAcaiMockup.jpg";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+//import main site data
+import siteInfo from "../../data/siteInfo.json";
+
+const {
+  title,
+  lang,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang={lang}
+  pageIndex="usluge"
+  pageIndexEn="services"
+  title={"Usluge" + siteInfo.map((i) => i.brand_tag)}
+  charset={charset}
+  description={"Pogledajte pregled naših usluge koje nudimo" +
+    siteInfo.map((i) => i.brand_tag)}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <div class="section-nav center">
+    <section class="kanban-services wrapper-medium section" id="kanbanServices">
+      <div class="item item-1">
+        <div class="padl-200">
+          <h1 class="h3 padb-200">
+            usluge<span class="clr-sec-acc">*</span>
+          </h1>
+          <p class="body-large">
+            što zapravo nudimo i što možete očekivati od nas
+          </p>
+        </div>
+      </div>
+      <div class="item item-2">
+        <Services
+          title="fotografija"
+          desc="Profesionalna fotografija za vaš brand, proizvod, event ili interijer. Pokažite vašu priču cijelom svijetu."
+          imageSrc={volvo}
+          imageAlt="clapboard"
+        />
+      </div>
+      <div class="item item-3">
+        <Services
+          title="video produkcija"
+          desc="Vrhunska video produkcija. Snimanje promo materijala, video za društvene mreže, snimanje iz zraka."
+          imageSrc={video}
+          imageAlt="clapboard"
+        />
+      </div>
+      <div class="item item-4">
+        <Services
+          title="grafički dizajn"
+          desc="Izradi vizualni identitet svoga branda te povećaj vidljivost i prepoznatljivost"
+          imageSrc={design}
+          imageAlt="clapboard"
+        />
+      </div>
+      <div class="item item-5">
+        <Services
+          title="marketing"
+          desc="Promocija putem društvenih mreža, Google Ads oglasi, marketinške kampanje"
+          imageSrc={volvo}
+          imageAlt="clapboard"
+        />
+      </div>
+      <div class="item item-6">
+        <div class="padl-200">
+          <h1 class="h3 padb-600">
+            <span class="clr-sec-acc">*</span> javite nam se
+          </h1>
+
+          <a href="/kontakt/"> <div class="btn-fill-rounded">KONTAKT</div> </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <ProjectsSlider />
+</MainLayout>
+
+<!-- Slider script -->
+<script>
+  import "../../scripts/slider.js";
+</script>
