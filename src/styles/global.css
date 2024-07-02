@@ -1110,10 +1110,18 @@ html.lenis {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  background-color: #ffffff;
+  border: solid 0.5px rgb(180, 180, 180);
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
   width: 100%;
+  max-width: 400px;
 }
 .contact-form label {
   width: 100%;
@@ -1173,35 +1181,42 @@ html.lenis {
   background-color: rgba(33, 79, 222, 0);
   outline: none;
   color: #214fde;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  border-radius: 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
   text-indent: 1rem;
   margin-bottom: 2rem;
 }
 
 .contact-form input:focus {
-  border-bottom: 1px solid #214fde;
+  border: 1px solid #f2aa3c;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form input::-webkit-input-placeholder {
   color: color-mix(in srgb, #151629 80%, white);
+  font-size: 0.8rem;
 }
 
 .contact-form input::-moz-placeholder {
   color: color-mix(in srgb, #151629 80%, white);
+  font-size: 0.8rem;
 }
 
 .contact-form input:-ms-input-placeholder {
   color: color-mix(in srgb, #151629 80%, white);
+  font-size: 0.8rem;
 }
 
 .contact-form input::-ms-input-placeholder {
   color: color-mix(in srgb, #151629 80%, white);
+  font-size: 0.8rem;
 }
 
 .contact-form input::placeholder {
   color: color-mix(in srgb, #151629 80%, white);
+  font-size: 0.8rem;
 }
 
 .contact-form input:-webkit-autofill,
@@ -1226,10 +1241,18 @@ html.lenis {
   color: #214fde;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  border-radius: 0px;
+  border-radius: 6px;
   text-indent: 1rem;
   padding-top: 1rem;
   resize: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-form textarea:focus {
+  border: 1px solid #f2aa3c;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer-form input,
