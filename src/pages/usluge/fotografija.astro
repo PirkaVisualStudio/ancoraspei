@@ -1,0 +1,60 @@
+---
+import MainLayout from "../../layouts/MainLayoutHR.astro";
+
+//import components
+import ProjectsSlider from "../../components/ProjectsSlider.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+//import main site data
+import siteInfo from "../../data/siteInfo.json";
+
+const {
+  title,
+  lang,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang={lang}
+  pageIndex="fotografija"
+  pageIndexEn="photography"
+  title={"Fotografija" + siteInfo.map((i) => i.brand_tag)}
+  charset={charset}
+  description={"Profesionalna fotografija" + siteInfo.map((i) => i.brand_tag)}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <section class="section-nav wrapper center">
+    <div class="">
+      <h1 class="h1 padt-900 padb-200">Oprostite.</h1>
+      <h2 class="h5 padb-200">
+        Više o našoj fotografiji saznajte uskoro. Ovaj dio weba je još u izradi.
+      </h2>
+      <p class="padb-200">
+        Molimo pogledajte ostale <a href="/usluge/">usluge</a> ili se vratite na
+        <a href="/">početak.</a>
+      </p>
+    </div>
+  </section>
+
+  <ProjectsSlider />
+</MainLayout>
+
+<!-- Slider script -->
+<script>
+  import "../../scripts/slider.js";
+</script>
