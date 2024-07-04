@@ -10,7 +10,8 @@ import Services from "../../components/elements/Services.astro";
 import { Image } from "astro:assets";
 import volvo from "../../images/projects/project-volvo.jpg";
 import video from "../../images/media/videoproduction.jpg";
-import design from "../../images/projects/makamakaAcai/makamakaAcaiMockup.jpg";
+import design from "../../images/projects/makamakaAcai/makamakaAcaiCard.jpg";
+import poster from "../../images/hero/poster.jpg";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -44,13 +45,33 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <div class="section-nav center">
+  <section class="section-nav center wrapper">
+    <div class="section">
+      <h1 class="h2 padb-400">Digitalni svijet ne mora biti zastrašujući</h1>
+      <h2 class="h4">
+        Vaš proizvod ili usluga zaslužuju <span class="clr-prim-acc"
+          >dobar glas</span
+        >
+      </h2>
+    </div>
+    <div class="indent">
+      <p class="body-large padb-100">
+        - svi potrebni alati za promociju Vašeg proizvoda ili branda.
+      </p>
+      <p class="body-large padb-100">- pomažemo malim i velikim tvrtkama</p>
+      <p class="body-large padb-400">
+        - ispričajte svoju priču i istaknite se u mnoštvu
+      </p>
+    </div>
+  </section>
+
+  <section class="section center">
     <section class="kanban-services wrapper-medium section" id="kanbanServices">
       <div class="item item-1">
         <div class="padl-200">
-          <h1 class="h3 padb-200">
+          <h2 class="h3 padb-200">
             usluge<span class="clr-sec-acc">*</span>
-          </h1>
+          </h2>
           <p class="body-large">
             što zapravo nudimo i što možete očekivati od nas
           </p>
@@ -62,6 +83,7 @@ const {
           desc="Profesionalna fotografija za vaš brand, proizvod, event ili interijer. Pokažite vašu priču cijelom svijetu."
           imageSrc={volvo}
           imageAlt="clapboard"
+          url="/usluge/fotografija/"
         />
       </div>
       <div class="item item-3">
@@ -70,6 +92,7 @@ const {
           desc="Vrhunska video produkcija. Snimanje promo materijala, video za društvene mreže, snimanje iz zraka."
           imageSrc={video}
           imageAlt="clapboard"
+          url="/usluge/fotografija/"
         />
       </div>
       <div class="item item-4">
@@ -78,14 +101,16 @@ const {
           desc="Izradi vizualni identitet svoga branda te povećaj vidljivost i prepoznatljivost"
           imageSrc={design}
           imageAlt="clapboard"
+          url="/usluge/fotografija/"
         />
       </div>
       <div class="item item-5">
         <Services
           title="marketing"
           desc="Promocija putem društvenih mreža, Google Ads oglasi, marketinške kampanje"
-          imageSrc={volvo}
+          imageSrc={poster}
           imageAlt="clapboard"
+          url="/usluge/drustvene-mreze/"
         />
       </div>
       <div class="item item-6">
@@ -98,7 +123,7 @@ const {
         </div>
       </div>
     </section>
-  </div>
+  </section>
 
   <ProjectsSlider />
 </MainLayout>

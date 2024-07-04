@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 //import icons
 import { Icon } from "astro-icon/components";
 
-const { title, desc, imageSrc, imageAlt } = Astro.props;
+const { title, desc, imageSrc, imageAlt, url } = Astro.props;
 ---
 
 <div class="clr-main-light service-box-container">
@@ -13,15 +13,15 @@ const { title, desc, imageSrc, imageAlt } = Astro.props;
   </div>
 
   <h1 class="h4 padb-200 title">{title}</h1>
-  <p class="body desc">
+  <!--  <p class="body desc">
     {desc}
-  </p>
-  <!-- <div>
-    <a href="/usluge/" class="link">
+  </p>-->
+  <div>
+    <a href={url} class="link">
       <p class="txt-label">Saznaj više</p><Icon
         name="mdi:arrow-right"
         width={28}
       /></a
     >
-  </div>-->
+  </div>
 </div>

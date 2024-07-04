@@ -1,7 +1,7 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/media-queries" as *;
 
-.contact-form {
+#formContact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,53 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 1rem;
+  }
+  input {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border: 1px solid $prim-acc;
+    background-color: rgba($color: $prim-acc, $alpha: 0);
+    outline: none;
+    color: $prim-acc;
+    transition: all 0.2s ease-in-out;
+    border-radius: 6px;
+    text-indent: 1rem;
+    margin-bottom: 2rem;
+  }
+  input:focus {
+    border: 1px solid $sec-acc;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+  }
+  input::placeholder {
+    color: $main-dark-50;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  textarea {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    height: 150px;
+    width: 100%;
+    border: none;
+    border: 1px solid $prim-acc;
+    background-color: transparent;
+    outline: none;
+    color: $prim-acc;
+    transition: 0.25s;
+    border-radius: 6px;
+    text-indent: 1rem;
+    padding-top: 1rem;
+    resize: none;
+    transition: all 0.2s ease-in-out;
+  }
+  textarea:focus {
+    border: 1px solid $sec-acc;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
   }
 }
 
@@ -46,100 +93,88 @@
   transition: all 0.3 ease;
 }
 
-.contact-form input {
+#formSocial {
+  position: relative;
   display: flex;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  height: 50px;
-  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  background-color: $main-light;
   border: none;
-  border: 1px solid $prim-acc;
-  background-color: rgba($color: $prim-acc, $alpha: 0);
-  outline: none;
-  color: $prim-acc;
-  transition: all 0.2s ease-in-out;
-  border-radius: 6px;
-  text-indent: 1rem;
-  margin-bottom: 2rem;
-}
+  border-radius: 0px;
 
-.contact-form input:focus {
-  border: 1px solid $sec-acc;
-  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
-}
-
-.contact-form input::placeholder {
-  color: $main-dark-20;
-  font-size: 0.8rem;
-}
-
-.contact-form input:-webkit-autofill,
-.contact-form input:-webkit-autofill:hover,
-.contact-form input:-webkit-autofill:focus,
-.contact-form input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px $prim-acc inset !important;
-}
-
-.contact-form textarea {
-  display: flex;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  height: 150px;
+  padding: 2rem 0;
   width: 100%;
-  border: none;
-  border: 1px solid $prim-acc;
-  background-color: transparent;
-  outline: none;
-  color: $prim-acc;
-  transition: 0.25s;
-  border-radius: 6px;
-  text-indent: 1rem;
-  padding-top: 1rem;
-  resize: none;
-  transition: all 0.2s ease-in-out;
+  max-width: 400px;
+  label {
+    padding: 0rem 0.8rem;
+    border-radius: 8px;
+    position: absolute;
+    left: 8px;
+    top: 24px;
+    background-color: $main-light;
+    transition: all 0.2s ease-in-out;
+  }
+  input {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border: 1px solid $prim-acc;
+    background-color: rgba($color: $prim-acc, $alpha: 0);
+    outline: none;
+    color: $prim-acc;
+    transition: all 0.2s ease-in-out;
+    border-radius: 6px;
+    text-indent: 1rem;
+    margin-bottom: 2rem;
+    &::placeholder {
+      color: $main-dark-50;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+  }
+
+  button {
+    background-color: $prim-acc;
+    color: $txt-on-dark;
+    border: 2px solid $prim-acc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 180px;
+    margin-left: 24px;
+    border-radius: 8px;
+
+    transition: all 0.3 ease;
+
+    &:hover {
+      background-color: $main-light;
+      color: $main-dark;
+      transition-duration: 0.2s;
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px $main-light inset !important;
+    -webkit-text-fill-color: $prim-acc !important;
+  }
 }
 
-.contact-form textarea:focus {
-  border: 1px solid $sec-acc;
-  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
-}
-
-.footer-form input,
-.footer-form textarea {
-  width: 100%;
-  max-width: 650px;
-  border-bottom: 1px solid #8486aa;
-  border-radius: 0;
-  margin-bottom: 24px;
-  height: 44px;
-  padding-left: 10px;
-  font-size: 0.8rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  background-color: #313353;
-  color: $txt-on-dark;
-  resize: none;
-}
-
-.footer-form textarea {
-  display: block;
-  background-color: #313353;
-  border-bottom: 1px solid #8486aa;
-  padding-top: 10px;
-  height: 200px;
-  color: $txt-on-dark;
-  resize: none;
-}
-
-.footer-form input::placeholder,
-.footer-form textarea::placeholder {
-  color: #8486aa;
-}
-
-.footer-form input:focus {
-  border-bottom: solid 1px $sec-acc;
-}
-
-.footer-form textarea:focus {
-  border-bottom: solid 1px $sec-acc;
+#formSocial:focus-within {
+  input {
+    border: 1px solid $sec-acc;
+  }
+  label {
+    transform: translateX(10px);
+  }
 }

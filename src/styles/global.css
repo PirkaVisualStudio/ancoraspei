@@ -238,7 +238,7 @@ html {
 }
 
 .font-body {
-  font-family: "Atkinson Hyperlegible", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .h1 {
@@ -302,33 +302,33 @@ html {
 }
 
 .body {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 .body-bold {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 .body-small {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   line-height: 1rem;
 }
 .body-large {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   line-height: 1.7rem;
 }
 .body-large-bold {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
 
 .txt-label {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   line-height: 1rem;
 }
@@ -1099,7 +1099,7 @@ html.lenis {
   }
 }
 
-.contact-form {
+#formContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1123,7 +1123,7 @@ html.lenis {
   width: 100%;
   max-width: 400px;
 }
-.contact-form label {
+#formContact label {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1136,6 +1136,82 @@ html.lenis {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-bottom: 1rem;
+}
+#formContact input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border: 1px solid #214fde;
+  background-color: rgba(33, 79, 222, 0);
+  outline: none;
+  color: #214fde;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+  text-indent: 1rem;
+  margin-bottom: 2rem;
+}
+#formContact input:focus {
+  border: 1px solid #f2aa3c;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formContact input::-webkit-input-placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#formContact input::-moz-placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#formContact input:-ms-input-placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#formContact input::-ms-input-placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#formContact input::placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#formContact textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  height: 150px;
+  width: 100%;
+  border: none;
+  border: 1px solid #214fde;
+  background-color: transparent;
+  outline: none;
+  color: #214fde;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  border-radius: 6px;
+  text-indent: 1rem;
+  padding-top: 1rem;
+  resize: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#formContact textarea:focus {
+  border: 1px solid #f2aa3c;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn-form {
@@ -1168,7 +1244,40 @@ html.lenis {
   transition: all 0.3 ease;
 }
 
-.contact-form input {
+#formSocial {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 0px;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+#formSocial label {
+  padding: 0rem 0.8rem;
+  border-radius: 8px;
+  position: absolute;
+  left: 8px;
+  top: 24px;
+  background-color: #f5f5f5;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#formSocial input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1187,128 +1296,74 @@ html.lenis {
   text-indent: 1rem;
   margin-bottom: 2rem;
 }
-
-.contact-form input:focus {
-  border: 1px solid #f2aa3c;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input::-webkit-input-placeholder {
-  color: color-mix(in srgb, #151629 80%, white);
+#formSocial input::-webkit-input-placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
   font-size: 0.8rem;
+  font-weight: 400;
 }
-
-.contact-form input::-moz-placeholder {
-  color: color-mix(in srgb, #151629 80%, white);
+#formSocial input::-moz-placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
   font-size: 0.8rem;
+  font-weight: 400;
 }
-
-.contact-form input:-ms-input-placeholder {
-  color: color-mix(in srgb, #151629 80%, white);
+#formSocial input:-ms-input-placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
   font-size: 0.8rem;
+  font-weight: 400;
 }
-
-.contact-form input::-ms-input-placeholder {
-  color: color-mix(in srgb, #151629 80%, white);
+#formSocial input::-ms-input-placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
   font-size: 0.8rem;
+  font-weight: 400;
 }
-
-.contact-form input::placeholder {
-  color: color-mix(in srgb, #151629 80%, white);
+#formSocial input::placeholder {
+  color: color-mix(in srgb, #151629 50%, white);
   font-size: 0.8rem;
+  font-weight: 400;
 }
-
-.contact-form input:-webkit-autofill,
-.contact-form input:-webkit-autofill:hover,
-.contact-form input:-webkit-autofill:focus,
-.contact-form input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px #214fde inset !important;
-}
-
-.contact-form textarea {
+#formSocial button {
+  background-color: #214fde;
+  color: #f5f5f5;
+  border: 2px solid #214fde;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  height: 150px;
-  width: 100%;
-  border: none;
-  border: 1px solid #214fde;
-  background-color: transparent;
-  outline: none;
-  color: #214fde;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  border-radius: 6px;
-  text-indent: 1rem;
-  padding-top: 1rem;
-  resize: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.contact-form textarea:focus {
-  border: 1px solid #f2aa3c;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.footer-form input,
-.footer-form textarea {
-  width: 100%;
-  max-width: 650px;
-  border-bottom: 1px solid #8486aa;
-  border-radius: 0;
-  margin-bottom: 24px;
-  height: 44px;
-  padding-left: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 0.8rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  background-color: #313353;
-  color: #f5f5f5;
-  resize: none;
+  cursor: pointer;
+  font-weight: bold;
+  height: 50px;
+  width: 180px;
+  margin-left: 24px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+#formSocial button:hover {
+  background-color: #f5f5f5;
+  color: #151629;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+#formSocial input:-webkit-autofill,
+#formSocial input:-webkit-autofill:hover,
+#formSocial input:-webkit-autofill:focus,
+#formSocial input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f5f5f5 inset !important;
+  -webkit-text-fill-color: #214fde !important;
 }
 
-.footer-form textarea {
-  display: block;
-  background-color: #313353;
-  border-bottom: 1px solid #8486aa;
-  padding-top: 10px;
-  height: 200px;
-  color: #f5f5f5;
-  resize: none;
+#formSocial:focus-within input {
+  border: 1px solid #f2aa3c;
 }
-
-.footer-form input::-webkit-input-placeholder, .footer-form textarea::-webkit-input-placeholder {
-  color: #8486aa;
-}
-
-.footer-form input::-moz-placeholder, .footer-form textarea::-moz-placeholder {
-  color: #8486aa;
-}
-
-.footer-form input:-ms-input-placeholder, .footer-form textarea:-ms-input-placeholder {
-  color: #8486aa;
-}
-
-.footer-form input::-ms-input-placeholder, .footer-form textarea::-ms-input-placeholder {
-  color: #8486aa;
-}
-
-.footer-form input::placeholder,
-.footer-form textarea::placeholder {
-  color: #8486aa;
-}
-
-.footer-form input:focus {
-  border-bottom: solid 1px #f2aa3c;
-}
-
-.footer-form textarea:focus {
-  border-bottom: solid 1px #f2aa3c;
+#formSocial:focus-within label {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .img-gallery {
@@ -2632,7 +2687,7 @@ header {
 .flex-left,
 .flex-right {
   width: 50%;
-  height: auto;
+  height: 100%;
 }
 @media screen and (max-width: 1024px) {
   .flex-left,
@@ -2643,7 +2698,23 @@ header {
 .flex-left img,
 .flex-right img {
   width: 100%;
-  height: 300px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.flex-left .flex-img-full,
+.flex-right .flex-img-full {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flex-img-back {
+  z-index: 0;
+  width: 100%;
+  scale: 1.2;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2672,6 +2743,12 @@ header {
 
 .text-padding {
   padding: 0 2rem;
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 #footerLogo {
@@ -2736,7 +2813,7 @@ footer a:hover {
 }
 
 .column-footer {
-  width: 25%;
+  width: 33.3333333333%;
   height: 100%;
   padding: 2rem 0;
 }
@@ -3301,9 +3378,6 @@ footer a:hover {
     justify-items: center;
   }
 }
-.ribbon .container h2 {
-  font-size: 2.5rem;
-}
 .ribbon .container .row2 {
   grid-column: span 2;
   padding: 1rem;
@@ -3398,7 +3472,7 @@ footer a:hover {
 }
 
 body {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f5f5f5;
   color: #151629;
   height: 100%;
