@@ -6,16 +6,22 @@ const today = new Date();
 
 //import menu data
 import navMenu from "../data/navMenuHR.json";
+
+//image compression
+import { Image } from "astro:assets";
+import logoBadge from "../images/logos/pirkaLogoBadgeTrans.svg";
 ---
 
 <footer>
   <section class="footer clr-main-dark">
     <div class="footer-container wrapper center">
       <div class="footer-logo padt-700 flex-center">
-        <img
+        <Image
+          src={logoBadge}
+          alt="pirka visual design"
+          format="avif"
+          loading="eager"
           id="footerLogo"
-          src="/images/logos/pirka_logo_badge.svg"
-          alt="pirka logo"
         />
       </div>
     </div>
@@ -30,7 +36,7 @@ import navMenu from "../data/navMenuHR.json";
           >
         </p>
         <p class="body">
-          Tel: <a href="tel:00385995924976">+ 385 92 289 7458</a>
+          Tel: <a href="tel:00385995924976">+ 385 97 6634 579</a>
         </p>
       </div>
       <div class="column-footer">

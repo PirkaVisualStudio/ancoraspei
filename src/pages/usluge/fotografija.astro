@@ -3,9 +3,14 @@ import MainLayout from "../../layouts/MainLayoutHR.astro";
 
 //import components
 import ProjectsSlider from "../../components/ProjectsSlider.astro";
+import PhotoBox from "../../components/elements/PhotographyBoxes.astro";
 
 //image compression
 import { Image } from "astro:assets";
+import photography from "../../images/pages/photography/photography.jpg";
+import wedding from "../../images/pages/photography/weddingFrane.jpg";
+import portrait from "../../images/pages/photography/portrait.jpg";
+import forketta from "../../images/pages/photography/forketta.jpg";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -38,23 +43,55 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <section class="section-nav wrapper center">
-    <div class="">
-      <h1 class="h1 padt-900 padb-200">Oprostite.</h1>
-      <h2 class="h5 padb-200">
-        Više o našoj fotografiji saznajte uskoro. Ovaj dio weba je još u izradi.
-      </h2>
-      <p class="padb-200">
-        Molimo pogledajte ostale <a href="/usluge/">usluge</a> ili se vratite na
-        <a href="/">početak.</a>
-      </p>
+  <section class="hero-photography txt-on-dark">
+    <Image
+      src={photography}
+      alt="pirka visual design fotografija"
+      format="avif"
+      loading="eager"
+    />
+    <div class="wrapper center container">
+      <div class="title">
+        <h1 class="h1 padb-200">Fotografija.</h1>
+        <h2 class="h5">Pogledaj neke od naših nedavnih projekata</h2>
+      </div>
     </div>
   </section>
+  <section class="photo-categories wrapper center section">
+    <div class="container">
+      <PhotoBox
+        title="FOOD"
+        desc="GARDEN | ŠUG"
+        imageSrc={photography}
+        imageAlt="sug restaurant"
+      />
+    </div>
 
-  <ProjectsSlider />
+    <div class="container">
+      <PhotoBox
+        title="LJUBAV NA OTOKU"
+        desc="ART | PEOPLE | WEDDING"
+        imageSrc={wedding}
+        imageAlt="sug restaurant"
+      />
+    </div>
+
+    <div class="container">
+      <PhotoBox
+        title="PORTRETI"
+        desc="OSOBE | DJECA"
+        imageSrc={portrait}
+        imageAlt="sug restaurant"
+      />
+    </div>
+
+    <div class="container">
+      <PhotoBox
+        title="FORKETTA"
+        desc="HOTEL | FOOD"
+        imageSrc={forketta}
+        imageAlt="forketta hotel fanat"
+      />
+    </div>
+  </section>
 </MainLayout>
-
-<!-- Slider script -->
-<script>
-  import "../../scripts/slider.js";
-</script>

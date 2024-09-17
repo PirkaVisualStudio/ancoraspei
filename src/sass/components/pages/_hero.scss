@@ -29,11 +29,14 @@
 #heroLogo {
   display: block;
   width: 300px;
-  margin-bottom: 30px;
 
+  @include large {
+    width: 200px;
+    margin: 60px 0 30px 0;
+  }
   @include medium {
     width: 200px;
-    margin-top: 100px;
+    margin-top: 40px;
   }
 }
 
@@ -69,6 +72,12 @@
   @include large {
     object-position: 25% 50%;
   }
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-rounded {
@@ -318,7 +327,7 @@
 .ribbon {
   position: relative;
   margin: 0 0 6rem 0;
-  background-color: $prim-acc;
+  background-color: $sec-acc;
   width: 100%;
   height: 100%;
   @include normal {
@@ -358,8 +367,8 @@
     position: relative;
     left: 0;
 
-    width: 230px;
-    height: 230px;
+    width: 240px;
+    height: 240px;
     @include normal {
       top: -40px;
       width: 200px;

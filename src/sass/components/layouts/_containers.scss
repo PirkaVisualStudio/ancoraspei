@@ -7,11 +7,11 @@
   padding: 0 2rem;
 
   @include medium {
-    // padding: 0 1rem;
+    padding: 0 1rem;
   }
   &-mobile {
     max-width: 1320px;
-    padding: 0 2rem;
+    padding: 0 1rem;
 
     @include large {
       padding: 0;

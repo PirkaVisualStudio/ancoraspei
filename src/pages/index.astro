@@ -11,7 +11,8 @@ import { Image } from "astro:assets";
 //import images
 import hero from "../images/hero/hero.jpg";
 import hero2 from "../images/hero/hero2.jpg";
-import logoBadge from "../images/logos/pirka_logo_badge.svg";
+import logoBadge from "../images/logos/pirkaLogoBadge.svg";
+import logoBadgeTrans from "../images/logos/pirkaLogoBadgeTrans.svg";
 import poster from "../images/hero/poster.jpg";
 import blue from "../images/kanban/blue.jpg";
 import red from "../images/kanban/red.jpg";
@@ -77,13 +78,13 @@ const {
           </div>
         </div>
       </div>
-      <div class="flex-right">
+      <div class="flex-right hero-right">
         <Image
-          src={poster}
+          src={logoBadge}
           alt="pirka visual design"
           format="avif"
           loading="eager"
-          class="hero-img"
+          id="heroLogo"
         />
       </div>
     </div>
@@ -155,7 +156,7 @@ const {
         />
       </div>
       <div class="row2">
-        <h2 class="h4 font-heading txt-on-dark">
+        <h2 class="h4 font-heading txt-on-light">
           Frustrira vas digitalni svijet? Možemo Vam pomoći
         </h2>
       </div>
