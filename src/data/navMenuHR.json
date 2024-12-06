@@ -18,6 +18,10 @@
         "path": "/projekti/"
     },
     {
+        "name": "Blog",
+        "path": "/blog/"
+    },
+    {
         "name": "Kontakt",
         "path": "/kontakt/"
     }

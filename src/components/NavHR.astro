@@ -6,58 +6,20 @@ import { Icon } from "astro-icon/components";
 import navMenu from "../data/navMenuHR.json";
 ---
 
-<header
-  id="navBar"
-  class="nav-bar"
-  data-scroll
-  data-scroll-repeat
-  data-scroll-ignore-fold
-  data-scroll-offset="-15%,-15%"
-  data-scroll-position="end,start"
-  data-scroll-call="scrollNavColor"
->
-  <nav
-    class="nav wrapper center noSelect"
-    id="navMenu"
-    data-scroll
-    data-scroll-repeat
-    data-scroll-ignore-fold
-    data-scroll-offset="-10%,-10%"
-    data-scroll-position="end,start"
-    data-scroll-call="scrollNavHeight"
-  >
-    <div class="nav-data">
-      <div class="logo-container">
-        <a href="/" class="nav-logo">
-          <img
-            id="headerLogo"
-            src="/images/logos/pirkalogo_dark.svg"
-            alt="pirka logo icon dark"
-          />
-        </a>
-      </div>
-      <div class="nav-toggle" id="navToggle">
-        <Icon class="nav-toggle-menu" name="mdi:menu" width={28} height={28} />
-        <Icon
-          class="nav-toggle-close"
-          name="mdi:close"
-          width={28}
-          height={28}
-        />
-      </div>
-    </div>
+<header>
+  <nav class="wrapper">
+    <div class="mobile-menu" id="mobileId">
+      <div class="mobile-container">
+        <ul class="mobile-list wrapper">
+          {
+            navMenu.map((i) => (
+              <a href={i.path}>
+                <li class="mobile-link">{i.name}</li>
+              </a>
+            ))
+          }
 
-    <div class="nav-menu" id="listId">
-      <ul class="nav-list wrapper" id="navList">
-        {
-          navMenu.map((i) => (
-            <a href={i.path}>
-              <li class="nav-link">{i.name}</li>
-            </a>
-          ))
-        }
-
-        <!-- ============= DROPDOWN ITEM 01 ============= 
+          <!-- ============= DROPDOWN ITEM 01 ============= 
 
         <li class="dropdown-item">
           <div class="nav-link dropdown-button">
@@ -91,33 +53,102 @@ import navMenu from "../data/navMenuHR.json";
             </div>
           </div>
         </li>-->
-      </ul>
+        </ul>
+      </div>
+      <div class="mobile-low-section"></div>
     </div>
+    <div class="container">
+      <div class="logo">
+        <a href="/">
+          <img
+            src="/images/logos/pirkalogo_dark.svg"
+            alt="pirka logo icon dark"
+          />
+        </a>
+      </div>
 
-    <div class="socialNav">
-      <a href="/kontakt/">
-        <div class="btn-nav-action-rounded">ZATRAŽI PONUDU</div></a
-      >
-      <!--  <div class="language-selector">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          {
+            navMenu.map((i) => (
+              <a href={i.path}>
+                <li class="nav-link">{i.name}</li>
+              </a>
+            ))
+          }
+
+          <!-- ============= DROPDOWN ITEM 01 ============= 
+
+        <li class="dropdown-item">
+          <div class="nav-link dropdown-button">
+            usluge
+            <Icon
+              class="dropdown-arrow"
+              pack="mdi"
+              name="chevron-down"
+              width="20"
+            />
+          </div>
+
+          <div class="dropdown-container">
+            <div class="dropdown-content">
+              <div class="dropdown-group">
+                <ul class="dropdown-list">
+                  <a href="/usluge/videoprodukcija/" class="dropdown-link"
+                    ><li></li>Video produkcija</a
+                  >
+                  <a href="/usluge/fotografija/" class="dropdown-link"
+                    ><li></li>Fotografija</a
+                  >
+                  <a href="/usluge/dizajn/" class="dropdown-link"
+                    ><li></li>Dizajn</a
+                  >
+                  <a href="/usluge/marketing/" class="dropdown-link"
+                    ><li></li>Digitalni marketing</a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>-->
+        </ul>
+      </div>
+
+      <div class="social-nav">
+        <a href="/kontakt/">
+          <div class="btn-nav-action-rounded">ZATRAŽI PONUDU</div></a
+        >
+        <!--  <div class="language-selector">
         <a href="/en/">EN</a> | <a href="/">HR</a>
       </div>-->
-      <div class="social-nav">
-        <a href="https://www.instagram.com/pirkavisualstudio/" target="_blank"
-          ><Icon
-            class="socialNavIcon"
-            name="ri:instagram-fill"
-            width={28}
-            height={28}
-          /></a
-        >
-        <a href="https://www.facebook.com/pirkavisualstudio" target="_blank"
-          ><Icon
-            class="socialNavIcon"
-            name="ant-design:facebook-filled"
-            width={28}
-            height={28}
-          /></a
-        >
+        <div>
+          <a href="https://www.instagram.com/pirkavisualstudio/" target="_blank"
+            ><Icon
+              class="socialNavIcon"
+              name="ri:instagram-fill"
+              width={28}
+              height={28}
+            /></a
+          >
+          <a href="https://www.facebook.com/pirkavisualstudio" target="_blank"
+            ><Icon
+              class="socialNavIcon"
+              name="ant-design:facebook-filled"
+              width={28}
+              height={28}
+            /></a
+          >
+        </div>
+      </div>
+
+      <div class="nav-toggle" id="navToggle">
+        <Icon class="nav-toggle-menu" name="mdi:menu" width={28} height={28} />
+        <Icon
+          class="nav-toggle-close"
+          name="mdi:close"
+          width={28}
+          height={28}
+        />
       </div>
     </div>
   </nav>

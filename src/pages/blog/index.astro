@@ -1,0 +1,50 @@
+---
+import MainLayout from "../../layouts/MainLayoutHR.astro";
+import ProjectsAll from "../../components/ProjectsAll.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+const {
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  pageIndex="projekti"
+  title="Projekti | Pirka Visual Studio"
+  charset={charset}
+  description="Pregled nekih od naših projekata na kojima smo dosada imali privilegiju raditi."
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <div class="section-nav center">
+    <div class="section wrapper">
+      <h1 class="h3">
+        prema svakom novom projektu pristupamo individualno kako bi uspješno
+        realizirali ono što svaki klijent želi.
+      </h1>
+      <h2 class="h5">pogledajte neke od naših nedavnih projekata</h2>
+    </div>
+  </div>
+
+  <section>
+    <div class="section center wrapper">
+      <h2 class="h4 padt-900 padb-900">
+        ovo su samo neki od naših posljednjih radova. Ukoliko tražite nekoga za
+        pomoć, pri stvaranju ili unaprijeđenju Vašeg poslovanja ili branda,
+        obratite nam se sa povjerenjem.
+      </h2>
+      <a href="/kontakt/"><div class="btn-fill marb-100">KONTAKT</div></a>
+    </div>
+  </section>
+</MainLayout>

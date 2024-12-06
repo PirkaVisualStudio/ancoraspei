@@ -1,14 +1,16 @@
-const showMenu = (toggleId, mobileId) => {
+const showMenu = (toggleId, navId, listId) => {
   const toggle = document.getElementById(toggleId),
-    mobile = document.getElementById(mobileId);
+    nav = document.getElementById(navId),
+    list = document.getElementById(listId);
 
   toggle.addEventListener("click", () => {
+    nav.classList.toggle("show-menu");
     toggle.classList.toggle("show-icon");
-    mobile.classList.toggle("show-mobile");
+    list.classList.toggle("show-list");
   });
 };
 
-showMenu("navToggle", "mobileId");
+showMenu("navToggle", "navMenu", "listId");
 
 /*=========== DROPDOWN SHOW/HIDE ===========*/
 
