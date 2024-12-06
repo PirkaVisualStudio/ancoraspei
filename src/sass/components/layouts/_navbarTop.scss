@@ -132,6 +132,9 @@ nav .container {
 
 .mobile-low-section {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   bottom: 200px;
   height: 200px;
   background-color: yellow;
