@@ -1,5 +1,5 @@
 ---
-import MainLayout from "../layouts/MainLayoutHR.astro";
+import MainLayout from "../../layouts/MainLayoutHR.astro";
 
 //image compression
 import { Image } from "astro:assets";
@@ -7,7 +7,7 @@ import { Image } from "astro:assets";
 import hero from "../images/hero/hero.jpg";
 
 //import main site data
-import siteInfo from "../data/siteInfo.json";
+import siteInfo from "../../data/siteInfo.json";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -44,12 +44,12 @@ const {
       <div class="section">
         <h1 class="h1 padb-100">Prijava</h1>
         <h3 class="body-bold body-large padb-400">
-          Prijavite se sa svojim podacima
+          Prijavite se na naš portal.
         </h3>
 
         <hr class="marb-900" />
 
-        <form id="create-account">
+        <form id="login-account">
           <label class="body-bold" for="name">Ime:</label>
 
           <label class="body-bold" for="email">E-mail:</label>
@@ -64,7 +64,7 @@ const {
           <label class="body-bold" for="password">Password</label>
           <input type="password" id="password" name="password" required />
 
-          <button type="submit" class="btn-form mart-900">POŠALJI</button>
+          <button type="submit" class="btn-form mart-900">PRIJAVA</button>
         </form>
       </div>
     </div>
@@ -74,14 +74,14 @@ const {
     import { isInputError } from "astro:actions";
     import { actions } from "astro:actions";
 
-    const createForm = document.querySelector(
-      "#create-account"
+    const loginForm = document.querySelector(
+      "#login-account"
     ) as HTMLFormElement;
 
-    createForm?.addEventListener("submit", async (e) => {
+    loginForm?.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const { error, data } = await actions.createAccount(
-        new FormData(createForm)
+      const { error, data } = await actions.loginAccount(
+        new FormData(loginForm)
       );
       if (error) {
         console.log(error);
@@ -91,7 +91,7 @@ const {
         return;
       }
 
-      window.location.reload();
+      window.location.href = "/";
     });
   </script>
 </MainLayout>
