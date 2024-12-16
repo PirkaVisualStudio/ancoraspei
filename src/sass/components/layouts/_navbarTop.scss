@@ -1,16 +1,21 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/media-queries" as *;
+@use "../abstracts/fonts" as *;
 
 $navHeight: 75px;
 $navHeightSmall: 4rem;
+$navMarginTop: 30px;
 
 //main header
 header {
-  margin-top: 30px;
+  position: fixed;
+  margin-top: $navMarginTop;
   user-select: none;
   width: 100%;
   background-color: white;
+  box-shadow: 0 5px 10px 0px rgba($color: #000000, $alpha: 0.1);
   z-index: 99;
+  font-family: $nav-font;
 }
 nav {
   height: $navHeight;

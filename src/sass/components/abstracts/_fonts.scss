@@ -11,12 +11,11 @@
   font-style: normal;
 }
 
-$heading-font: "recoletaalt-black", sans-serif;
+$heading-font: "The Seasons", sans-serif;
 
-//$body-font: "Atkinson Hyperlegible", sans-serif;
 $body-font: "Jost", sans-serif;
 
-$nav-font: "Jost", sans-serif;
+$nav-font: "The Seasons", sans-serif;
 
 $h1-size: 5.61rem;
 $h2-size: 4.209rem;
@@ -164,4 +163,8 @@ $h6-size-small: 1rem;
 
 .txt-right {
   text-align: right;
+}
+
+.italic {
+  font-style: italic !important;
 }

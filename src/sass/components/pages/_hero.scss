@@ -4,403 +4,105 @@
 @use "../abstracts/fonts" as *;
 
 .hero-full {
-  min-height: calc(100vh - $navHeight);
-  padding-top: calc($navHeight + 3rem);
-  margin-top: $navHeight;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 98;
-}
-
-/*.hero img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-*/
-
-#heroLogo {
-  display: block;
-  width: 300px;
-
-  @include large {
-    width: 200px;
-    margin: 60px 0 30px 0;
-  }
-  @include medium {
-    width: 200px;
-    margin-top: 40px;
-  }
-}
-
-.hero-social {
-  gap: 0.5rem;
-}
-
-.hero-social a {
-  &:hover {
-    color: $sec-acc;
-  }
-}
-
-.hero-img {
-  width: 100%;
-  height: calc(100vh - $navHeight) !important;
-  object-fit: cover;
-  @include large {
-    height: calc(100vh - $navHeightSmall) !important;
-    display: none;
-  }
-}
-
-.hero-img-rounded {
-  position: relative;
-  border-radius: 24px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-  height: calc(100vh - $navHeight);
-  z-index: 1;
-  @include large {
-    object-position: 25% 50%;
-  }
-}
-
-.hero-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-rounded {
-  border-radius: 24px;
-}
-
-.heroContainer {
-  display: block;
-  position: relative;
-  z-index: 98;
-  padding: 10rem 3rem 0 3rem;
-  @include medium {
-    padding: 4rem 3rem 0 3rem;
-  }
-}
-
-.heroContainer-default {
-  display: block;
-  position: relative;
-  z-index: 98;
-}
-
-.my-carousel-progress {
-  background: $sec-acc;
-}
-
-.my-carousel-progress-bar {
-  background: $prim-acc;
-  height: 4px;
-  transition: width 400ms ease;
-}
-
-.img-full {
-  width: 100%;
-  object-fit: cover;
-  height: 300px;
-}
-
-.menuContent {
-  position: relative;
-  display: block;
-  padding: 10rem 0 0 0;
-  z-index: 98;
-}
-
-//.cards-container {
-//background-image: url(../images/hero/hero2.jpg);
-//background-repeat: no-repeat;
-//background-position: center;
-// background-size: cover;
-//}
-
-.box {
-  position: relative;
-  height: 550px;
-
-  margin: 0.5rem;
-  border-radius: 1rem;
-  background-color: $prim-acc;
-}
-
-.arrow-container {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  //background-color: red;
-}
-
-.box-arrow {
-  position: relative;
-  float: right;
-  bottom: 16px;
-  right: 20px;
-  z-index: 98;
-  width: 22px;
-  color: $main-dark;
-  background-color: $main-light;
-  border: 0px solid $main-dark;
-  border-radius: 100%;
-  padding: 10px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    scale: 1.15;
-  }
-}
-
-.box > img {
-  position: absolute;
-  z-index: 80;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-.box > h3 {
-  position: absolute;
-  bottom: 0;
-  text-indent: 1rem;
-  z-index: 81;
-
-  color: $txt-on-light;
-  width: 100%;
-  padding: 1rem 0;
-  border-radius: 0 0 1rem 1rem;
-  background-color: rgba($color: $main-light, $alpha: 0.8);
-}
-
-.testimonials {
-  position: relative;
+  height: 100vh;
+  max-height: 900px;
 
   img {
-    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    max-height: 900px;
     object-fit: cover;
   }
-
-  h2 {
-    position: relative;
-    text-align: center;
-    z-index: 80;
-  }
 }
 
-.book-container img {
-  border-radius: 30px;
-}
-
-.book-text {
+#heroLogo {
   width: 100%;
-  padding-right: 2rem;
-  text-align: justify;
-
+  height: 160px;
+  object-fit: fill;
+  margin-bottom: 100px;
   @include large {
-    padding-right: 0;
+    height: 100px;
   }
 }
 
-.testimonial-container {
-  //background-color: rgba($color: #f5f5f5, $alpha: 0.7);
-  border: solid 1px rgb($color: $prim-acc, $alpha: 0.5);
-  margin: 2rem 1rem;
-  color: $main-light;
-  box-shadow: 0px 35px 30px -20px rgb($color: $bg-dark, $alpha: 0.2);
-  height: auto;
-
-  .icon {
+.hero-home {
+  .container {
     display: flex;
-    justify-content: start;
-  }
-
-  .icon-end {
-    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
     justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 120px;
   }
 
-  .quotes {
-    width: 50px;
-    fill: $prim-acc;
+  p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
   }
+}
 
-  .quotes-end {
-    width: 50px;
-    rotate: -180deg;
-    fill: $prim-acc;
+.examples {
+  background-color: $white;
+  padding: 6rem 3rem;
+  @include normal {
+    padding: 6rem 0;
   }
-
-  .content {
-    text-align: left;
-
-    line-height: 2rem;
-    font-weight: 500;
-  }
-
-  .user {
+  .columns {
     display: flex;
-    display: flex;
-    //background-color: #f0f1f4;
-    padding: 2rem;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    //background-color: rgb($color: #f0f1f4, $alpha: 1);
-    border-top: solid 1px rgb($color: $bg-dark, $alpha: 0.15);
-    padding: 2rem;
-
-    .user-profile {
-      position: relative;
-      width: 80px;
-      height: 80px;
-      margin-right: 1rem;
-
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin: auto;
+    @include normal {
+      flex-direction: column;
+    }
+    .box {
+      width: 100%;
       img {
-        position: absolute;
-        left: 0;
-        border-radius: 100%;
+        width: 100%;
+        height: 450px;
         object-fit: cover;
       }
     }
   }
-
-  .name {
-    text-align: left;
-  }
-
-  .city {
-    text-align: left;
-    color: $prim-acc;
-  }
 }
 
-.splide__slide {
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 3rem 0 !important;
-}
-
-#splideReviews {
-  display: relative;
-  z-index: 98;
-  margin-top: 2rem;
-
-  p {
-    width: 100%;
-  }
-}
-
-//logo section
-.section-logo {
-  background-color: $main-dark;
-  height: 200px;
-  width: 100%;
-  margin: 2rem 0;
-}
-
-//ribbon
-
-.ribbon {
-  position: relative;
-  margin: 0 0 6rem 0;
-  background-color: $sec-acc;
-  width: 100%;
-  height: 100%;
-  @include normal {
-    margin: 6rem 0 1rem 0;
-  }
-
+.message {
+  background-color: $prim-acc;
+  color: $main-light;
+  font-family: $heading-font;
+  padding: 12rem 0 12rem 0;
   .container {
-    max-width: 900px;
-    display: grid;
-    gap: 0.5rem;
-    width: 100%;
-    grid-template-rows: repeat(1, 200px);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
     @include normal {
-      grid-template-rows: repeat(3, 140px);
-      grid-template-columns: 1fr;
-      justify-items: center;
+      flex-direction: column;
     }
-
-    .row2 {
-      grid-column: span 2;
-      padding: 1rem;
+    .box {
+      padding: 2rem;
       @include normal {
-        padding: 1rem;
+        padding: 2rem 0;
       }
-    }
-    .row3 {
-      padding: 1rem;
-      justify-self: start;
-    }
-  }
-
-  img {
-    position: relative;
-    left: 0;
-
-    width: 240px;
-    height: 240px;
-    @include normal {
-      top: -40px;
-      width: 200px;
-      height: 200px;
-    }
-  }
-}
-
-.btn-ribbon {
-  display: flex;
-  font-size: 1rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  background-color: $main-light;
-  padding: 1rem 0;
-  width: 180px;
-  border: solid 3px $main-dark;
-  box-shadow: -8px 8px 0px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-
-  svg {
-    transition: all 0.2s ease-in;
-  }
-
-  &:hover {
-    color: $prim-acc;
-    transform: translate(-4px, 4px);
-    box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.4);
-    svg {
-      transform: translateX(4px);
+      h2 {
+        font-size: 100px;
+        @include normal {
+          font-size: 60px;
+        }
+        @include small {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-family: $body-font;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align: justify;
+      }
     }
   }
 }

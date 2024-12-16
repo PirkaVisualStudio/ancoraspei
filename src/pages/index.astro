@@ -7,6 +7,11 @@ import siteInfo from "../data/siteInfo.json";
 
 //image compression
 import { Image } from "astro:assets";
+import hero from "../images/default/seo.jpg";
+import logo from "../images/logos/zid_logo_full_accent.svg";
+import apartment1 from "../images/hero/apartment1.jpg";
+import apartment2 from "../images/hero/apartment2.jpg";
+import apartment3 from "../images/hero/apartment3.jpg";
 
 //import images
 
@@ -42,5 +47,72 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="center hero bg-light"></section>
+  <section class="center hero-full hero-home">
+    <div class="container wrapper center">
+      <Image
+        src={logo}
+        alt="zid interior design full logo"
+        format="avif"
+        loading="eager"
+        width={100}
+        height={100}
+        id="heroLogo"
+      />
+      <h1 class="h1 padb-800">Dizajniraj svoj dom</h1>
+      <p>jer dom je tamo gdje si ti</p>
+    </div>
+  </section>
+
+  <!-- example section -->
+  <section class="examples">
+    <p class="txt-label upper txt-center clr-prim-acc padb-400">Dom iz snova</p>
+    <h2 class="h2 txt-center padb-800">Naš rad</h2>
+    <div class="columns wrapper center">
+      <div class="box">
+        <Image
+          src={apartment1}
+          alt="zid interior apartment design"
+          format="webp"
+          loading="eager"
+        />
+      </div>
+      <div class="box">
+        <Image
+          src={apartment2}
+          alt="zid interior apartment design"
+          format="webp"
+          loading="eager"
+        />
+      </div>
+      <div class="box">
+        <Image
+          src={apartment3}
+          alt="zid interior apartment design"
+          format="webp"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- message-->
+  <section class="message">
+    <div class="wrapper center">
+      <div class="container">
+        <div class="box">
+          <h2 class="title">
+            kreiramo vaš <span class="italic">dom </span>iz snova
+          </h2>
+        </div>
+        <div class="box">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
+            deleniti quas distinctio eos culpa voluptate, reiciendis
+            necessitatibus accusamus earum porro aperiam eius nesciunt quam,
+            beatae dolorem cum dolores facilis iusto!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </MainLayout>
