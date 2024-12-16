@@ -42,10 +42,11 @@ nav .container {
   //menu items container
   .nav-list {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     text-transform: uppercase;
-    font-weight: 600;
+    letter-spacing: 2px;
+    font-weight: 900;
     flex-wrap: nowrap;
     white-space: nowrap;
     @include large {
@@ -140,9 +141,9 @@ nav .container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  bottom: 200px;
-  height: 200px;
-  background-color: yellow;
+  bottom: 300px;
+  height: 160px;
+  background-color: $sec-acc;
   width: 100%;
   z-index: 999;
 }
@@ -164,8 +165,9 @@ nav .container {
     color: $main-light;
     z-index: 999;
     font-size: 30px;
+    letter-spacing: 2px;
     &:hover {
-      color: $main-dark;
+      color: $sec-acc;
     }
   }
 }

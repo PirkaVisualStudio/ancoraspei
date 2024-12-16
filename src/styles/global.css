@@ -224,8 +224,8 @@ html {
 }
 
 @font-face {
-  font-family: "recoletaalt-black";
-  src: url("/fonts/recoletaalt-black.woff2") format("woff2"), url("/fonts/recoletaalt-black.woff") format("woff");
+  font-family: "The Seasons";
+  src: url("/fonts/theseasons-reg.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -2195,12 +2195,13 @@ nav .container .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  font-weight: 600;
+  letter-spacing: 2px;
+  font-weight: 900;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   white-space: nowrap;
@@ -2313,9 +2314,9 @@ nav .container .social-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: 200px;
-  height: 200px;
-  background-color: yellow;
+  bottom: 300px;
+  height: 160px;
+  background-color: #c3ae90;
   width: 100%;
   z-index: 999;
 }
@@ -2343,9 +2344,10 @@ nav .container .social-nav {
   color: #ddd9d5;
   z-index: 999;
   font-size: 30px;
+  letter-spacing: 2px;
 }
 .mobile-list a:hover {
-  color: #050505;
+  color: #c3ae90;
 }
 
 .wrapper {
