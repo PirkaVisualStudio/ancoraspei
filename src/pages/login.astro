@@ -1,0 +1,97 @@
+---
+import MainLayout from "../layouts/MainLayoutHR.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+import hero from "../images/hero/hero.jpg";
+
+//import main site data
+import siteInfo from "../data/siteInfo.json";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+const {
+  title,
+  description,
+  lang,
+  charset,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang={lang}
+  pageIndex="login"
+  pageIndexEn="login"
+  title={"Kontakt" + siteInfo.map((i) => i.brand_tag)}
+  charset={charset}
+  description={"Prijavite se" + siteInfo.map((i) => i.brand_tag)}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+  noindex
+  nofollow
+>
+  <div>
+    <div class="container wrapper-medium center section-nav">
+      <div class="section">
+        <h1 class="h1 padb-100">Prijava</h1>
+        <h3 class="body-bold body-large padb-400">
+          Prijavite se sa svojim podacima
+        </h3>
+
+        <hr class="marb-900" />
+
+        <form id="create-account">
+          <label class="body-bold" for="name">Ime:</label>
+
+          <label class="body-bold" for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="info@mail.hr"
+            required
+          />
+
+          <label class="body-bold" for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit" class="btn-form mart-900">POŠALJI</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { isInputError } from "astro:actions";
+    import { actions } from "astro:actions";
+
+    const createForm = document.querySelector(
+      "#create-account"
+    ) as HTMLFormElement;
+
+    createForm?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const { error, data } = await actions.createAccount(
+        new FormData(createForm)
+      );
+      if (error) {
+        console.log(error);
+        if (isInputError(error)) {
+          console.log(error.fields);
+        }
+        return;
+      }
+
+      window.location.reload();
+    });
+  </script>
+</MainLayout>

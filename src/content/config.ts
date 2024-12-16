@@ -23,9 +23,7 @@ const projects = defineCollection({
       description_og: z.string(),
       category: z.string(),
       year: z.string(),
-      image: image().refine((img) => img.width >= 1320, {
-          message: "Image must be at least 1320 px wide!",
-      }),
+      image: image(),
       imageAlt: z.string(),
       cilj: z.string(),
       ciljContent: z.string(),
@@ -47,9 +45,7 @@ const blog = defineCollection({
       category: z.enum(['dizajn', 'foto', 'video','marketing']),
       tags: z.array(z.string()),
       date: z.date(),
-      image: image().refine((img) => img.width >= 1320, {
-          message: "Image must be at least 1320 px wide!",
-      }),
+      image: image(),
       imageAlt: z.string(),
       keywords: z.string(),
       id: z.string(),

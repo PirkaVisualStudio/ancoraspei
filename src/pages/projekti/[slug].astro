@@ -14,6 +14,7 @@ export async function getStaticPaths() {
     props: { post },
   }));
 }
+export const prerender = true;
 
 interface Props {
   post: CollectionEntry<"projects">;
