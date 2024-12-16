@@ -2,8 +2,6 @@
 //Main Layout
 import MainLayout from "../layouts/MainLayoutHR.astro";
 
-import Modal from "../components/elements/modal.astro";
-
 //import main site data
 import siteInfo from "../data/siteInfo.json";
 
@@ -92,14 +90,6 @@ const {
       </div>
     </div>
   </section>
-
-  <Modal id="dialog" open="Open modal">
-    <main slot="main">
-      <p>Some extra content you would like here</p>
-      <hr />
-    </main>
-    <button slot="close">Close modal</button>
-  </Modal>
 
   <!-- links -->
   <section class="section">
