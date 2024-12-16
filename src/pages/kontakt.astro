@@ -4,8 +4,6 @@ import MainLayout from "../layouts/MainLayoutHR.astro";
 //image compression
 import { Image } from "astro:assets";
 
-import hero from "../images/hero/hero.jpg";
-
 //import main site data
 import siteInfo from "../data/siteInfo.json";
 
@@ -39,16 +37,6 @@ const {
   noindex
   nofollow
 >
-  <!--  <div class="hero_content txt-center flex-center">
-    <Image
-      src={hero}
-      alt="boat"
-      format="avif"
-      loading="lazy"
-      class="hero-img"
-    />
-  </div>-->
-
   <div>
     <div class="container wrapper-medium center section-nav">
       <div class="section">
@@ -98,11 +86,7 @@ const {
             Molimo potvrdite da niste robot zbog sprječavanja spam pošte:
           </label>
 
-          <div
-            class="g-recaptcha"
-            data-sitekey="6LfDLgopAAAAAPHMwvz14cWIszr8WzMIbd96cZhc"
-          >
-          </div>
+          <div class="g-recaptcha" data-sitekey=""></div>
 
           <button type="submit" class="btn-form mart-900">POŠALJI</button>
         </form>

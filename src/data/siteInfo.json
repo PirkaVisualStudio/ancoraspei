@@ -1,12 +1,12 @@
 [
     {
-    "google_id": "GTM-KQ9WZ4B",
-    "site_url": "https://pirka.hr",
+    "google_id": "",
+    "site_url": "https://ziddesign.netlify.app/",
     "main_lang": "hr",
     "charset": "UTF-8",
-    "title": "Digitalna produkcija",
-    "brand_tag": " | Pirka Visual Studio", 
-    "description": "Pirka Visual Studio - Agencija za digitalni marketing i produkciju. Video produkcija, fotografija, grafički dizajn i marketing.",
-    "not_included": ["https://www.pirka.hr/hvala/", "https://www.pirka.hr/styleguide/"]
+    "title": "Zorana Interior Design",
+    "brand_tag": " | ZID", 
+    "description": "ZID - Dizajn Interijera",
+    "not_included": ["https://ziddesign.netlify.app/hvala/", "https://ziddesign.netlify.app/styleguide/"]
 }
 ]

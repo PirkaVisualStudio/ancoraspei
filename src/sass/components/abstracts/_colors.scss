@@ -1,14 +1,14 @@
-$main-dark: #151629;
-$main-light: #f5f5f5;
-$bg-light: #f5f5f5;
-$bg-dark: #151629;
-$prim-acc: #214fde;
-$sec-acc: #f2aa3c;
+$main-dark: #050505;
+$main-light: #ddd9d5;
+$bg-light: #ddd9d5;
+$bg-dark: #050505;
+$prim-acc: #643521;
+$sec-acc: #c3ae90;
 $ter-acc: #23ce6b;
 $quar-acc: #fff;
 $disabled: #aaaaaa;
-$txt-on-dark: #f5f5f5;
-$txt-on-light: #151629;
+$txt-on-dark: #ddd9d5;
+$txt-on-light: #050505;
 $error: red;
 $success: #0350e7;
 
@@ -32,20 +32,6 @@ $prim-acc-20: color-mix(in srgb, $prim-acc 80%, black);
 $prim-acc-30: color-mix(in srgb, $prim-acc 70%, black);
 $prim-acc-40: color-mix(in srgb, $prim-acc 60%, black);
 $prim-acc-50: color-mix(in srgb, $prim-acc 50%, black);
-
-//projects colors
-$sugBg: #eae5db;
-$sugTxt: #1f3c44;
-$volvoBg: #253162;
-$volvoTxt: #fffffe;
-$hunkyBg: #2a57e3;
-$hunkyTxt: #ffffff;
-$sushiBg: #1c3d43;
-$sushiTxt: #e8e6e0;
-$acaiBg: #4fab9c;
-$acaiTxt: #f5f5f5;
-$mytransferBg: #232a30;
-$mytransferTxt: #ffffff;
 
 .clr-main-dark {
   color: $main-dark;

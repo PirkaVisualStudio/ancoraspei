@@ -9,27 +9,11 @@ import siteInfo from "../data/siteInfo.json";
 import { Image } from "astro:assets";
 
 //import images
-import hero from "../images/hero/hero.jpg";
-import hero2 from "../images/hero/hero2.jpg";
-import logoBadge from "../images/logos/pirkaLogoBadge.svg";
-import logoBadgeTrans from "../images/logos/pirkaLogoBadgeTrans.svg";
-import poster from "../images/hero/poster.jpg";
-import blue from "../images/kanban/blue.jpg";
-import red from "../images/kanban/red.jpg";
-import green from "../images/kanban/green.jpg";
-import yellow from "../images/kanban/yellow.jpg";
-import clapboard from "../images/kanban/clapboard.png";
-import google from "../images/kanban/google.png";
-import paintbrush from "../images/kanban/paintbrush.png";
-import r6 from "../images/kanban/r6.png";
 
 //import icons
 import { Icon } from "astro-icon/components";
 
 //import components
-import ProjectsSlider from "../components/ProjectsSlider.astro";
-import ProjectsAll from "../components/ProjectsAll.astro";
-import ServiceBox from "../components/elements/ServiceBox.astro";
 
 const {
   title,
@@ -58,94 +42,5 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="section-nav center hero bg-light">
-    <div class="hero-content flex-column-reverse center txt-left">
-      <div class="flex-left center">
-        <div class="text-padding">
-          <h1 class="h1 padb-600 padt-900">
-            Pronađi svoj <br />
-            <span class="clr-prim-acc">identitet</span>
-          </h1>
-          <h2 class="h4 padb-600 marb-900">
-            Branding, vizualni identitet, marketing i izrada strategije za vaš
-            posao
-          </h2>
-
-          <div>
-            <a href="/kontakt/"
-              ><div class="btn-fill marr-200 marb-200">ZATRAŽI PONUDU</div></a
-            >
-            <a href="/usluge/"><div class="btn-fill marb-200">USLUGE</div></a>
-          </div>
-        </div>
-      </div>
-      <div class="flex-right hero-right">
-        <Image
-          src={logoBadge}
-          alt="pirka visual design"
-          format="avif"
-          loading="eager"
-          id="heroLogo"
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- links -->
-  <section class="section">
-    <div class="flex-center">
-      <p class="body-bold">
-        <a href="/usluge/"> usluge</a> / <a href="/kontakt/">kontakt</a> /<a
-          href="/projekti/"
-        >
-          projekti</a
-        >
-      </p>
-    </div>
-
-    <div class="flex-center hero-social">
-      <a href="https://www.instagram.com/pirkavisualstudio/" target="_blank"
-        ><Icon
-          class="socialNavIcon"
-          name="ri:instagram-fill"
-          width={28}
-          height={28}
-        /></a
-      >
-      <a href="https://www.facebook.com/pirkavisualstudio" target="_blank"
-        ><Icon
-          class="socialNavIcon"
-          name="ant-design:facebook-filled"
-          width={30}
-          height={30}
-        /></a
-      >
-      <a href="https://www.behance.net/franemdobrovi/moodboards" target="_blank"
-        ><Icon
-          class="socialNavIcon"
-          name="el:behance"
-          width={24}
-          height={24}
-        /></a
-      >
-
-      <a
-        href="https://www.youtube.com/channel/UCvGwiHVAWCmZQiLfR9x85gQ"
-        target="_blank"
-        ><Icon
-          class="socialNavIcon"
-          name="ri:youtube-fill"
-          width={36}
-          height={36}
-        /></a
-      >
-    </div>
-  </section>
-
-  <ProjectsSlider />
+  <section class="center hero bg-light"></section>
 </MainLayout>
-
-<!-- Slider script -->
-<script>
-  import "../scripts/slider.js";
-</script>

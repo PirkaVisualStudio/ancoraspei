@@ -5,8 +5,9 @@ import { Icon } from "astro-icon/components";
 //import menu data
 import navMenu from "../data/navMenuHR.json";
 
-//auth firebase config
-const { userEmail } = Astro.locals;
+//image compression
+import { Image } from "astro:assets";
+import zidLogo from "../images/logos/zid_logo_submark_accent.svg";
 ---
 
 <header>
@@ -65,9 +66,11 @@ const { userEmail } = Astro.locals;
     <div class="container">
       <div class="logo">
         <a href="/">
-          <img
-            src="/images/logos/pirkalogo_dark.svg"
-            alt="pirka logo icon dark"
+          <Image
+            src={zidLogo}
+            alt="zid logo submark accent"
+            format="avif"
+            loading="eager"
           />
         </a>
       </div>
@@ -120,20 +123,9 @@ const { userEmail } = Astro.locals;
       </div>
 
       <div class="social-nav">
-        {
-          userEmail ? (
-            <form id="logout-form">
-              <button class="btn-nav-action-rounded">ODJAVA</button>
-            </form>
-          ) : (
-            <a href="/users/login/">
-              <div class="btn-nav-action-rounded">PRIJAVA</div>
-            </a>
-          )
-        }
-        <!--  <div class="language-selector">
-        <a href="/en/">EN</a> | <a href="/">HR</a>
-      </div>-->
+        <div class="language-selector marr-200">
+          <a href="/en/">EN</a> | <a href="/">HR</a>
+        </div>
         <div>
           <a href="https://www.instagram.com/pirkavisualstudio/" target="_blank"
             ><Icon
@@ -166,24 +158,3 @@ const { userEmail } = Astro.locals;
     </div>
   </nav>
 </header>
-
-<script>
-  import { isInputError } from "astro:actions";
-  import { actions } from "astro:actions";
-
-  const logout = document.querySelector("#logout-form") as HTMLFormElement;
-
-  logout?.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const { error, data } = await actions.logoutAccount();
-    if (error) {
-      console.log(error);
-      if (isInputError(error)) {
-        console.log(error.fields);
-      }
-      return;
-    }
-
-    window.location.reload();
-  });
-</script>
