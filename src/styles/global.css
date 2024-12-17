@@ -228,6 +228,7 @@ html {
   src: url("/fonts/theseasons-reg.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 .txt-label, .body-large-bold, .body-bold {
   font-weight: bold;
@@ -2632,7 +2633,7 @@ nav .container .social-nav {
   color: #643521;
 }
 .footer-social a:hover {
-  color: #c3ae90;
+  color: #050505;
 }
 
 footer a {
@@ -2640,7 +2641,7 @@ footer a {
   font-weight: 400;
 }
 footer a:hover {
-  color: #c3ae90;
+  color: #050505;
 }
 
 .flex-column-footer {

@@ -17,9 +17,9 @@ import zidLogo from "../images/logos/zid_logo_submark_accent.svg";
         <ul class="mobile-list wrapper">
           {
             navMenu.map((i) => (
-              <a href={i.path}>
-                <li class="mobile-link">{i.name}</li>
-              </a>
+              <li class="mobile-link">
+                <a href={i.path}>{i.name}</a>
+              </li>
             ))
           }
 
@@ -79,9 +79,9 @@ import zidLogo from "../images/logos/zid_logo_submark_accent.svg";
         <ul class="nav-list">
           {
             navMenu.map((i) => (
-              <a href={i.path}>
-                <li class="nav-link">{i.name}</li>
-              </a>
+              <li class="nav-link">
+                <a href={i.path}>{i.name}</a>
+              </li>
             ))
           }
 
