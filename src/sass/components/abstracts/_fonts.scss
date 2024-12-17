@@ -1,8 +1,6 @@
 @use "./colors" as *;
 @use "./media-queries" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-
 @font-face {
   font-family: "The Seasons";
   src: url("/fonts/theseasons-reg.otf") format("opentype");
