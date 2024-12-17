@@ -862,47 +862,67 @@ html.lenis {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #050505;
+  background-color: color-mix(in srgb, #ddd9d5 90%, black);
   color: #643521;
   cursor: pointer;
-  padding: 1rem 0;
+  padding: 1rem;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.4rem;
+  font-family: "The Seasons", sans-serif;
   font-weight: bold;
   text-align: justify;
   border: none;
   outline: none;
-  -webkit-transform: all 0.4s ease-in-out;
-          transform: all 0.4s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq-icon {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  color: #643521;
+.active .faq-icon {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #050505;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
+  padding-top: 1rem;
   text-align: justify;
   height: 0;
   display: block;
   overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-fill {
   display: inline-block;
+  cursor: pointer;
   width: auto;
   text-align: center;
-  background-color: #643521;
-  color: #ddd9d5;
+  background-color: #c3ae90;
+  color: #050505;
   padding: 0.8rem 1rem;
-  font-weight: 500;
+  font-weight: 900;
   border: 2px solid #643521;
+  border-radius: 40px;
 }
 .btn-fill:hover {
-  background: rgba(0, 0, 0, 0);
-  color: #643521;
+  background: #050505;
+  color: #c3ae90;
   border: 2px solid #643521;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -2854,6 +2874,24 @@ footer a:hover {
   font-size: 1.5rem;
   font-weight: 300;
   text-align: justify;
+}
+
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 3rem 0;
 }
 
 .services {

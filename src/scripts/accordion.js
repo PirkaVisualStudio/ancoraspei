@@ -9,10 +9,10 @@ for (i = 0; i < acc.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
-    if (panel.style.height === "100%") {
+    if (panel.style.height === "100px") {
       panel.style.height = "0";
     } else {
-      panel.style.height = "100%";
+      panel.style.height = "100px";
     }
   });
 }

@@ -56,15 +56,33 @@ const {
         loading="eager"
         id="heroLogo"
       />
-      <h1 class="h1 padb-800">Dizajniraj svoj dom</h1>
-      <p>jer dom je tamo gdje si ti</p>
+      <h1 class="h1 padb-800">
+        Dizajn po vašoj<span class="italic clr-prim-acc"> mjeri</span>
+      </h1>
+      <p>uredi svoj dom</p>
     </div>
   </section>
 
   <!-- example section -->
   <section class="examples">
-    <p class="txt-label upper txt-center clr-prim-acc padb-400">Dom iz snova</p>
-    <h2 class="h2 txt-center padb-800">Naš rad</h2>
+    <div class="wrapper">
+      <p class="txt-label upper txt-center clr-prim-acc padb-400">
+        umjetnost & dom
+      </p>
+      <h2 class="h2 txt-center padb-800">
+        Kvalitetno dizajniran dom <br /> je <span class="italic clr-prim-acc"
+          >umjetničko djelo</span
+        >
+      </h2>
+    </div>
+    <div class="wrapper-medium center">
+      <p class="body-large center padb-800">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum culpa
+        velit, fugiat adipisci repudiandae obcaecati id tempore a officiis modi
+        nulla quaerat nostrum magni possimus totam voluptate. Adipisci, optio
+        officia?
+      </p>
+    </div>
     <div class="columns wrapper center">
       <div class="box">
         <Image
@@ -103,14 +121,111 @@ const {
           </h2>
         </div>
         <div class="box">
-          <p>
+          <p class="padb-600">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
             deleniti quas distinctio eos culpa voluptate, reiciendis
             necessitatibus accusamus earum porro aperiam eius nesciunt quam,
             beatae dolorem cum dolores facilis iusto!
           </p>
+          <div class="btn-fill">KONTAKT</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ-->
+  <section class="faq">
+    <div class="wrapper-medium center">
+      <div class="container">
+        <h2 class="h2 padb-400">Česta pitanja</h2>
+        <p class="body-large padb-400">
+          Ako se niste prije susreli sa nama osobno ili ste novi u svijetu
+          dizajna interijera, ova pitanja Vam mogu pomoći.
+        </p>
+        <div class="question">
+          <div class="accordion">
+            Čime se bavite?<Icon
+              class="faq-icon"
+              name="mdi:plus"
+              width={28}
+              height={28}
+            />
+          </div>
+
+          <div class="panel">
+            <p class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab error,
+              aspernatur maxime dignissimos sint, perferendis illo doloremque
+              vero, fugit ullam sapiente nobis aliquid quas neque ipsam totam
+              quaerat provident tempore!
+            </p>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="accordion">
+            Čime se bavite?<Icon
+              class="faq-icon"
+              name="mdi:plus"
+              width={28}
+              height={28}
+            />
+          </div>
+
+          <div class="panel">
+            <p class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab error,
+              aspernatur maxime dignissimos sint, perferendis illo doloremque
+              vero, fugit ullam sapiente nobis aliquid quas neque ipsam totam
+              quaerat provident tempore!
+            </p>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="accordion">
+            Čime se bavite?<Icon
+              class="faq-icon"
+              name="mdi:plus"
+              width={28}
+              height={28}
+            />
+          </div>
+
+          <div class="panel">
+            <p class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab error,
+              aspernatur maxime dignissimos sint, perferendis illo doloremque
+              vero, fugit ullam sapiente nobis aliquid quas neque ipsam totam
+              quaerat provident tempore!
+            </p>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="accordion">
+            Čime se bavite?<Icon
+              class="faq-icon"
+              name="mdi:plus"
+              width={28}
+              height={28}
+            />
+          </div>
+
+          <div class="panel">
+            <p class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab error,
+              aspernatur maxime dignissimos sint, perferendis illo doloremque
+              vero, fugit ullam sapiente nobis aliquid quas neque ipsam totam
+              quaerat provident tempore!
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </MainLayout>
+
+<script>
+  import "../scripts/accordion.js";
+</script>
