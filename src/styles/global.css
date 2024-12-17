@@ -2190,6 +2190,7 @@ nav .container .logo {
 }
 nav .container .logo img {
   width: 40px;
+  height: 100%;
 }
 nav .container .nav-list {
   display: -webkit-box;
