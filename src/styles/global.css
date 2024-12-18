@@ -870,7 +870,7 @@ html.lenis {
   font-size: 1.4rem;
   font-family: "The Seasons", sans-serif;
   font-weight: bold;
-  text-align: justify;
+  text-align: left;
   border: none;
   outline: none;
   display: -webkit-box;
@@ -892,8 +892,8 @@ html.lenis {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active .faq-icon {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   color: #050505;
 }
 
@@ -906,6 +906,9 @@ html.lenis {
   overflow: hidden;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.panel p {
+  padding: 0 1rem;
 }
 
 .btn-fill {
@@ -2840,7 +2843,7 @@ footer a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .message .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2872,6 +2875,7 @@ footer a:hover {
 .message .container .box p {
   font-family: "Jost", sans-serif;
   font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 300;
   text-align: justify;
 }

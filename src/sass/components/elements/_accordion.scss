@@ -11,7 +11,7 @@
   font-size: 1.4rem;
   font-family: $heading-font;
   font-weight: bold;
-  text-align: justify;
+  text-align: left;
   border: none;
   outline: none;
   display: flex;
@@ -25,7 +25,7 @@
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
   .faq-icon {
-    transform: rotate(45deg);
+    transform: rotate(180deg);
     color: $main-dark;
   }
 }
@@ -38,4 +38,7 @@
   display: block;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
+  p {
+    padding: 0 1rem;
+  }
 }
