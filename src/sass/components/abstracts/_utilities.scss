@@ -24,13 +24,6 @@ a {
   }
 }
 
-hr {
-  display: inline-block;
-  width: 100%;
-  max-width: 1320px;
-  border: 1px solid $prim-acc;
-}
-
 ::selection {
   color: $txt-on-light;
   background: $sec-acc;

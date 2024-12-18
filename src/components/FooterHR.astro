@@ -13,28 +13,53 @@ import logoBadge from "../images/logos/zid_icon_dark.svg";
 ---
 
 <footer>
-  <section class="footer clr-main-dark">
-    <div class="footer-container wrapper center">
-      <div class="footer-logo padt-700 flex-center">
-        <Image
-          src={logoBadge}
-          alt="pirka visual design"
-          format="avif"
-          loading="eager"
-          id="footerLogo"
-        />
-      </div>
+  <section class="container">
+    <div class="wrapper center">
+      <Image
+        src={logoBadge}
+        alt="zid logo icon"
+        loading="eager"
+        id="footerLogo"
+      />
     </div>
+  </section>
 
-    <div class="txt-center wrapper center section">
-      <hr class="marb-100" />
-      <p class="txtLabel padb-100">
-        &copy; Zid Interior Design | {today.getFullYear()} | Design by <a
-          href="https://pirka.hr"
-          target="_blank">Pirka Visual Studio</a
-        >
-      </p>
-      <a class="body-small" href="/polica/"> &nbspPravila privatnosti</a>
+  <section class="wrapper">
+    <hr class="marb-100" />
+    <div class="copyright">
+      <div>
+        <p class="txtLabel padb-100">
+          &copy; Zid Interior Design | {today.getFullYear()} | Design by <a
+            href="https://pirka.hr"
+            target="_blank">Pirka Visual Studio</a
+          >
+        </p>
+        <a class="body-small" href="/polica/"> &nbspPravila privatnosti</a>
+      </div>
+
+      <div class="social-footer">
+        <div class="language-selector">
+          <a href="/en/">EN</a> | <a href="/">HR</a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/pirkavisualstudio/" target="_blank"
+            ><Icon
+              class="socialNavIcon"
+              name="ri:instagram-fill"
+              width={28}
+              height={28}
+            /></a
+          >
+          <a href="https://www.facebook.com/pirkavisualstudio" target="_blank"
+            ><Icon
+              class="socialNavIcon"
+              name="ant-design:facebook-filled"
+              width={28}
+              height={28}
+            /></a
+          >
+        </div>
+      </div>
     </div>
   </section>
 </footer>
