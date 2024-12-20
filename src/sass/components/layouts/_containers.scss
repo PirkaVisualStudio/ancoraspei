@@ -64,7 +64,7 @@
   }
 }
 .section-nav {
-  margin-top: $navHeight;
+  margin-top: calc($navHeight + $navMarginTop);
   max-width: 1320px;
 
   @include large {
@@ -104,6 +104,13 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flex-bottom {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .flex-row {
   display: flex;

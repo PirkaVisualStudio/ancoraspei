@@ -1,5 +1,6 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/fonts" as *;
+@use "../abstracts/media-queries" as *;
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -17,6 +18,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+  align-items: center;
 }
 .faq-icon {
   transition: all 0.2s ease-in-out;
@@ -24,21 +27,31 @@
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
+  background-color: $prim-acc;
+  color: $main-light;
+
   .faq-icon {
     transform: rotate(180deg);
-    color: $main-dark;
+    color: $main-light;
   }
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding-top: 1rem;
+
   text-align: justify;
   height: 0;
+
   display: block;
   overflow: hidden;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
   p {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem 1rem;
   }
+}
+
+.panel-active {
+  height: auto;
 }

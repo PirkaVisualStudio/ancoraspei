@@ -876,6 +876,11 @@ html.lenis {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .faq-icon {
@@ -884,10 +889,14 @@ html.lenis {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  background-color: #643521;
+  color: #ddd9d5;
+}
 .active .faq-icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  color: #050505;
+  color: #ddd9d5;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -897,11 +906,15 @@ html.lenis {
   height: 0;
   display: block;
   overflow: hidden;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .panel p {
-  padding: 0 1rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.panel-active {
+  height: auto;
 }
 
 .btn-fill {
@@ -2160,6 +2173,7 @@ html.lenis {
 
 header {
   position: fixed;
+  top: 0;
   margin-top: 30px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2437,12 +2451,12 @@ nav .container .social-nav {
 }
 
 .section-nav {
-  margin-top: 75px;
+  margin-top: 105px;
   max-width: 1320px;
 }
 @media screen and (max-width: 1024px) {
   .section-nav {
-    margin-top: 4rem;
+    margin-top: 75px;
   }
 }
 
@@ -2491,6 +2505,20 @@ nav .container .social-nav {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flex-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .flex-row {
@@ -2621,7 +2649,8 @@ nav .container .social-nav {
 }
 
 #footerLogo {
-  width: 100%;
+  width: 64px;
+  height: 64px;
 }
 
 footer {
@@ -2708,6 +2737,9 @@ footer a:hover {
   height: 100vh;
   max-height: 900px;
 }
+.hero-full .container {
+  padding: 40px 0;
+}
 
 #heroLogo {
   width: 180px;
@@ -2718,7 +2750,6 @@ footer a:hover {
 @media screen and (max-width: 1024px) {
   #heroLogo {
     width: 160px;
-    margin-top: 2000px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2744,6 +2775,7 @@ footer a:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-bottom: 120px;
+  padding-top: 160px;
 }
 .hero-home p {
   text-transform: uppercase;
@@ -2948,7 +2980,7 @@ footer a:hover {
 }
 @media screen and (max-width: 540px) {
   .hero-photography {
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 75px);
   }
 }
 .hero-photography img {
@@ -2960,7 +2992,7 @@ footer a:hover {
 }
 @media screen and (max-width: 540px) {
   .hero-photography img {
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 75px);
   }
 }
 .hero-photography .container {

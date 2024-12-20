@@ -9,6 +9,10 @@ for (i = 0; i < acc.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
-    panel.classList.toggle("panel-active");
+    if (panel.style.maxHeight === "500px") {
+      panel.style.maxHeight = "0";
+    } else {
+      panel.style.maxHeight = "500px"; //
+    }
   });
 }

@@ -10,9 +10,9 @@ const locomotiveScroll = new LocomotiveScroll({
     gestureOrientation: "vertical",
     smoothWheel: true,
     smoothTouch: false,
-    wheelMultiplier: 2,
+    wheelMultiplier: 3,
     touchMultiplier: 2,
-    normalizeWheel: true,
+    normalizeWheel: false,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
   },
 });
