@@ -1,0 +1,48 @@
+---
+//import icons
+import { Icon } from "astro-icon/components";
+
+//image compression
+import { Image } from "astro:assets";
+import woman1 from "../../images/people/woman1.jpg";
+---
+
+<div class="wrapper center">
+  <div class="">
+    <p class="txt-label upper txt-center clr-prim-acc padb-400">
+      što kažu drugi
+    </p>
+    <h2 class="h2 txt-center padb-800">
+      Naši klijenti <span class="italic clr-prim-acc">o nama</span>
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="box">
+      <div class="image">
+        <Image
+          src={woman1}
+          alt="woman portrait"
+          format="webp"
+          loading="eager"
+        />
+      </div>
+      <div class="content">
+        <div class="stars">
+          <Icon name="star" />
+          <Icon name="star" />
+          <Icon name="star" />
+          <Icon name="star" />
+          <Icon name="star" />
+        </div>
+        <div class="text">
+          <div class="body-bold padb-200">Ivana Dizajnić</div>
+          <p class="body-large">
+            Zorana je profesionalac u svome poslu! Ispunila je sva moja
+            očekivanja i savršeno pretočila moju viziju u stvarnost.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
