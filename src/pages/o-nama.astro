@@ -35,10 +35,42 @@ const {
   openGraph={openGraph}
   extend={extend}
 >
-  <section class="hero-full hero-home wrapper center">
+  <section class="wrapper center">
     <div class="container wrapper center">
       <h1 class="h1 padb-800">O nama</h1>
       <p>saznajte malo više o nama</p>
+      <form
+        name="contact"
+        id="formContact"
+        class="contact-form"
+        method="POST"
+        data-netlify="true"
+        action="/hvala/"
+      >
+        <label class="body-bold" for="name">Ime:</label>
+        <input type="text" id="name" name="name" placeholder="Ivo" required />
+        <label class="body-bold" for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="info@mail.hr"
+          required
+        />
+        <label class="body-bold" for="message">Poruka:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Zanima me..."
+          required></textarea>
+
+        <label class="body mart-900 marb-900 txt-center">
+          Molimo potvrdite da niste robot zbog sprječavanja spam pošte:
+        </label>
+
+        <button type="submit" class="btn-form mart-900">POŠALJI</button>
+      </form>
     </div>
   </section>
 </MainLayout>
