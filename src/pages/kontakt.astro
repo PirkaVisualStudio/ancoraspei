@@ -50,6 +50,39 @@ const {
         <hr class="marb-900" />
       </div>
     </div>
+    <form
+      name="contact"
+      id="formContact"
+      class="contact-form"
+      method="POST"
+      data-netlify="true"
+      action="/hvala/"
+    >
+      <input type="hidden" name="contact" value="name_of_my_form" />
+      <label class="body-bold" for="name">Ime:</label>
+      <input type="text" id="name" name="name" placeholder="Ivo" required />
+      <label class="body-bold" for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="info@mail.hr"
+        required
+      />
+      <label class="body-bold" for="message">Poruka:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Zanima me..."
+        required></textarea>
+
+      <label class="body mart-900 marb-900 txt-center">
+        Molimo potvrdite da niste robot zbog sprječavanja spam pošte:
+      </label>
+
+      <button type="submit" class="btn-form mart-900">POŠALJI</button>
+    </form>
   </div>
 </MainLayout>
 
