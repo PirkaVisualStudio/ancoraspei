@@ -57,6 +57,7 @@ const {
       method="POST"
       data-netlify="true"
       action="/hvala/"
+      data-netlify-recaptcha="true"
     >
       <input type="hidden" name="form-name" value="contact" />
       <label class="body-bold" for="name">Ime:</label>
@@ -80,6 +81,12 @@ const {
       <label class="body mart-900 marb-900 txt-center">
         Molimo potvrdite da niste robot zbog sprječavanja spam pošte:
       </label>
+
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LdMhb8qAAAAABsXSHht-lcUpFHVZ8s1rW1SwAzM"
+      >
+      </div>
 
       <button type="submit" class="btn-form mart-900">POŠALJI</button>
     </form>
