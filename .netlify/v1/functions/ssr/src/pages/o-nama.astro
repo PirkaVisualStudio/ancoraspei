@@ -1,0 +1,44 @@
+---
+import MainLayout from "../layouts/MainLayoutHR.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+//import main site data
+import siteInfo from "../data/siteInfo.json";
+
+const {
+  title,
+  lang,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang={lang}
+  pageIndex="o-nama"
+  pageIndexEn="about"
+  title={"O nama" + siteInfo.map((i) => i.brand_tag)}
+  charset={charset}
+  description={"Tko smo mi?" + siteInfo.map((i) => i.brand_tag)}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <section class="hero-full hero-home wrapper center">
+    <div class="container wrapper center">
+      <h1 class="h1 padb-800">O nama</h1>
+      <p>saznajte malo više o nama</p>
+    </div>
+  </section>
+</MainLayout>

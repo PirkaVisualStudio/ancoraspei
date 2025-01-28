@@ -1,0 +1,43 @@
+---
+import MainLayout from "../layouts/MainLayoutHR.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+const {
+  title,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang="hr"
+  pageIndex="404"
+  pageIndexEn="404"
+  title="404 Error | Pirka"
+  charset={charset}
+  description="Ova stranica ne postoji."
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+  noindex
+  nofollow
+>
+  <section class="hero-full wrapper center flex-bottom">
+    <div class="container">
+      <h1 class="h1">404 Error</h1>
+      <p class="h5">
+        Nažalost, ova stranica ne postoji. Molimo vratite se na <a href="/">
+          početak</a
+        > ili pokušajte nešto drugo.
+      </p>
+    </div>
+  </section>
+</MainLayout>
