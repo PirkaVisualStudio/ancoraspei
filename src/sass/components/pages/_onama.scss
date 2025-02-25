@@ -1,0 +1,39 @@
+.image-container {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 48px;
+}
+
+.onama-img {
+  width: calc(100% / 3);
+  height: 300px;
+  object-fit: cover;
+}
+
+.onama-hero {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.hero-onama {
+  height: 100vh;
+  max-height: 900px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+}
