@@ -2661,6 +2661,18 @@ footer a:hover {
   font-weight: 600;
   letter-spacing: 3px;
 }
+.hero-home .flex-right {
+  height: 100vh;
+}
+@media screen and (max-width: 768px) {
+  .hero-home .flex-right {
+    height: 400px;
+  }
+}
+.hero-home .flex-right img {
+  width: 100%;
+  height: 100%;
+}
 
 .examples {
   background-color: #fff;

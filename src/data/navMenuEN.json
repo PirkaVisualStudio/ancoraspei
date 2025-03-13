@@ -17,6 +17,11 @@
         "name": "Projects",
         "path": "/en/projects/"
     },
+
+    {
+        "name": "Gallery",
+        "path": "/en/gallery/"
+    },
     {
         "name": "Contact",
         "path": "/en/contact/"
