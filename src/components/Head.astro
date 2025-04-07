@@ -49,11 +49,12 @@ const {
   <meta name="generator" content={Astro.generator} />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <link href="/images/logos/kuzina_logo_icon_dark.svg" rel="apple-touch-icon" />
-
+  <!-- Local Font -->
   <link
     rel="preload"
     href="https://pirkatemplate.netlify.app/fonts/theseasons-reg.otf"
-    as="style"
+    as="font"
+    type="opentype"
     onload="this.onload=null;this.rel='stylesheet'"
   />
   <noscript>
