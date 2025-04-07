@@ -1,7 +1,15 @@
 @use "./colors" as *;
 @use "./media-queries" as *;
 
-$heading-font: "Jost", sans-serif;
+@font-face {
+  font-family: "The Seasons";
+  src: url("/fonts/theseasons-reg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$heading-font: "The Seasons", sans-serif;
 
 $body-font: "Jost", sans-serif;
 

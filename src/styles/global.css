@@ -222,12 +222,19 @@ html {
   background-color: #fff;
 }
 
+@font-face {
+  font-family: "The Seasons";
+  src: url("/fonts/theseasons-reg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .txt-label, .body-large-bold, .body-bold {
   font-weight: bold;
 }
 
 .font-heading {
-  font-family: "Jost", sans-serif !important;
+  font-family: "The Seasons", sans-serif !important;
 }
 
 .font-body {
@@ -235,7 +242,7 @@ html {
 }
 
 .h1 {
-  font-family: "Jost", sans-serif;
+  font-family: "The Seasons", sans-serif;
   font-size: 5.61rem;
   line-height: 6.171rem;
 }
@@ -247,7 +254,7 @@ html {
 }
 
 .h2 {
-  font-family: "Jost", sans-serif;
+  font-family: "The Seasons", sans-serif;
   font-size: 4.209rem;
   line-height: 4.6299rem;
 }
@@ -259,7 +266,7 @@ html {
 }
 
 .h3 {
-  font-family: "Jost", sans-serif;
+  font-family: "The Seasons", sans-serif;
   font-size: 3.157rem;
   line-height: 3.4727rem;
 }
@@ -271,7 +278,7 @@ html {
 }
 
 .h4 {
-  font-family: "Jost", sans-serif;
+  font-family: "The Seasons", sans-serif;
   font-size: 2.369rem;
   line-height: 2.6059rem;
 }
@@ -283,13 +290,13 @@ html {
 }
 
 .h5 {
-  font-family: "Jost", sans-serif;
+  font-family: "The Seasons", sans-serif;
   font-size: 1.777rem;
   line-height: 1.9547rem;
 }
 
 .h6 {
-  font-family: "Jost", sans-serif;
+  font-family: "The Seasons", sans-serif;
   font-size: 1.333rem;
   line-height: 1.4663rem;
 }
@@ -854,7 +861,7 @@ html.lenis {
   padding: 1rem;
   width: 100%;
   font-size: 1.4rem;
-  font-family: "Jost", sans-serif;
+  font-family: "The Seasons", sans-serif;
   font-weight: bold;
   text-align: left;
   border: none;
@@ -2712,7 +2719,7 @@ footer a:hover {
 .message {
   background-color: #643521;
   color: #ddd9d5;
-  font-family: "Jost", sans-serif;
+  font-family: "The Seasons", sans-serif;
   padding: 12rem 0 12rem 0;
 }
 .message .container {
