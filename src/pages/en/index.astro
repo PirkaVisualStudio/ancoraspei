@@ -1,26 +1,26 @@
 ---
 //Main Layout
-import MainLayout from "../layouts/MainLayoutHR.astro";
+import MainLayout from "../../layouts/MainLayoutEN.astro";
 
 //import main site data
-import siteInfo from "../data/siteInfo.json";
+import siteInfo from "../../data/siteInfo.json";
 
 //image compression
 import { Image } from "astro:assets";
 
 //import images
-import hero from "../images/default/seo.jpg";
-import logo from "../images/logos/zid_logo_full_accent.svg";
-import apartment1 from "../images/hero/apartment1.jpg";
-import apartment2 from "../images/hero/apartment2.jpg";
-import apartment3 from "../images/hero/apartment3.jpg";
-import poster from "../images/default/mockup poster v3.jpg";
+import hero from "../../images/default/seo.jpg";
+import logo from "../../images/logos/zid_logo_full_accent.svg";
+import apartment1 from "../../images/hero/apartment1.jpg";
+import apartment2 from "../../images/hero/apartment2.jpg";
+import apartment3 from "../../images/hero/apartment3.jpg";
+import poster from "../../images/default/mockup poster v3.jpg";
 
 //import icons
 import { Icon } from "astro-icon/components";
 
 //import components
-import TestimonialSlider from "../components/elements/TestimonialSlider.astro";
+import TestimonialSlider from "../../components/elements/TestimonialSlider.astro";
 
 const {
   title,
@@ -50,23 +50,34 @@ const {
 >
   <!-- hero -->
   <section class="center hero-home flex-column">
-    <div class="container wrapper center">
+    <div class="flex-left">
+      <div class="container wrapper center">
+        <Image
+          src={logo}
+          alt="zid interior design full logo"
+          format="avif"
+          loading="eager"
+          id="heroLogo"
+        />
+        <h1 class="h1 padb-800">
+          Dizajn interijera po vašoj<span class="italic clr-prim-acc">
+            mjeri</span
+          >
+        </h1>
+        <p class="body">
+          Pretvaramo vašu viziju u stvarnost, a vaš dom u mjesto u kojem
+          pripadate.
+        </p>
+      </div>
+    </div>
+    <div class="flex-right">
       <Image
-        src={logo}
-        alt="zid interior design full logo"
-        format="avif"
+        src={poster}
+        alt="zid interior apartment design"
+        format="webp"
         loading="eager"
-        id="heroLogo"
+        class="hero-img"
       />
-      <h1 class="h1 padb-800">
-        Dizajn interijera po vašoj<span class="italic clr-prim-acc">
-          mjeri</span
-        >
-      </h1>
-      <p class="body">
-        Pretvaramo vašu viziju u stvarnost, a vaš dom u mjesto u kojem
-        pripadate.
-      </p>
     </div>
   </section>
 
@@ -231,6 +242,6 @@ const {
 </MainLayout>
 
 <script>
-  import "../scripts/accordion.js";
-  import "../scripts/slider.js";
+  import "../../scripts/accordion.js";
+  import "../../scripts/slider.js";
 </script>
