@@ -222,6 +222,13 @@ html {
   background-color: #fff;
 }
 
+@font-face {
+  font-family: "The Seasons";
+  src: url("/fonts/theseasons-reg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .txt-label, .body-large-bold, .body-bold {
   font-weight: bold;
 }
