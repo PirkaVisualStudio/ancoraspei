@@ -10,13 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^6.0.0",
-    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/netlify": "^6.2.5",
+    "@astrojs/sitemap": "^3.3.0",
     "@iconify-json/ant-design": "^1.1.16",
     "@iconify-json/el": "^1.1.8",
     "@iconify-json/ri": "^1.1.21",
     "@splidejs/splide": "^4.1.4",
-    "astro": "^5.0.5",
+    "astro": "^5.6.1",
     "astro-compress": "^2.0.14",
     "astro-icon": "^1.1.0",
     "astro-seo": "^0.7.6",
