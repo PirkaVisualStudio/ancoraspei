@@ -1,13 +1,13 @@
 [
     {
     "google_id": "",
-    "site_url": "https://zidinterijeri.hr/",
+    "site_url": "https://pirkatemplate.netlify.app",
     "main_lang": "hr",
     "alt_lang": "en",
     "charset": "UTF-8",
     "title": "Zorana Interior Design",
     "brand_tag": " | ZID", 
     "description": "ZID - Dizajn Interijera",
-    "not_included": ["https://zidinterijeri.hr/hvala/", "https://zidinterijeri.hr/styleguide/"]
+    "not_included": ["https://pirkatemplate.netlify.app/hvala/", "https://pirkatemplate.netlify.app/styleguide/"]
 }
 ]
