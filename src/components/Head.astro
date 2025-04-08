@@ -10,6 +10,7 @@ import siteInfo from "../data/siteInfo.json";
 
 const googleId = `${siteInfo.map((i) => i.google_id)}`;
 
+//preload all css files
 const cssFiles = import.meta.glob("../**/*.css", {
   query: "?url",
   eager: true,
