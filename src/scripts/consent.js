@@ -97,42 +97,19 @@ function setConsent(consent) {
 const consentData = JSON.parse(localStorage.getItem("consentMode"));
 
 // LOAD THE DATA LAYER STATES ON INITIALIZATION
-if (consentData.funcionality_storage === "granted") {
-  dataLayer.push({
-    funcionality_storage: "true",
+if (consentData) {
+  const fields = [
+    "funcionality_storage",
+    "ad_storage",
+    "ad_user_data",
+    "ad_personalization",
+    "analytics_storage",
+  ];
 
-    event: "consentEvent",
-  });
-}
-
-if (consentData.ad_storage === "granted") {
-  dataLayer.push({
-    ad_storage: "true",
-
-    event: "consentEvent",
-  });
-}
-
-if (consentData.ad_user_data === "granted") {
-  dataLayer.push({
-    ad_user_data: "true",
-
-    event: "consentEvent",
-  });
-}
-
-if (consentData.ad_personalization === "granted") {
-  dataLayer.push({
-    ad_personalization: "true",
-
-    event: "consentEvent",
-  });
-}
-
-if (consentData.analytics_storage === "granted") {
-  dataLayer.push({
-    analytics_storage: "true",
-
-    event: "consentEvent",
+  fields.forEach((key) => {
+    dataLayer.push({
+      [key]: consentData[key] === "granted" ? "true" : "false",
+      event: "consentEvent",
+    });
   });
 }
