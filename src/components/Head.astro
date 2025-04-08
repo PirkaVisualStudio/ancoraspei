@@ -10,12 +10,13 @@ import siteInfo from "../data/siteInfo.json";
 
 const googleId = `${siteInfo.map((i) => i.google_id)}`;
 
-//find generated css files
-const cssFiles = import.meta.glob("/_astro/*.css", {
+const cssFiles = import.meta.glob("../**/*.css", {
   query: "?url",
   eager: true,
 }) as Record<string, { default: string }>;
-const cssHref = Object.values(cssFiles)[0]?.default;
+const cssHrefs = Object.values(cssFiles).map((file) => file.default);
+
+console.log("🚀 Preloaded CSS files:", cssHrefs);
 
 //SEO variables
 const {
@@ -47,12 +48,12 @@ const {
 
   <!-- preload css -->
   {
-    cssHref && (
+    cssHrefs.map((href) => (
       <>
-        <link rel="preload" href={cssHref} as="style" />
-        <link rel="stylesheet" href={cssHref} />
+        <link rel="preload" href={href} as="style" />
+        <link rel="stylesheet" href={href} />
       </>
-    )
+    ))
   }
   <link rel="preconnect" href={Astro.site} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
