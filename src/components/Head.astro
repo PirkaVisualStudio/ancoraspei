@@ -10,6 +10,13 @@ import siteInfo from "../data/siteInfo.json";
 
 const googleId = `${siteInfo.map((i) => i.google_id)}`;
 
+//find generated css files
+const cssFiles = import.meta.glob("/dist/_astro/*.css", {
+  query: "?url",
+  eager: true,
+}) as Record<string, { default: string }>;
+const cssHref = Object.values(cssFiles)[0]?.default;
+
 //SEO variables
 const {
   lang = "hr",
@@ -38,6 +45,15 @@ const {
     {extend}
   />
 
+  <!-- preload css -->
+  {
+    cssHref && (
+      <>
+        <link rel="preload" href={cssHref} as="style" />
+        <link rel="stylesheet" href={cssHref} />
+      </>
+    )
+  }
   <link rel="preconnect" href={Astro.site} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta http-equiv="Permissions-Policy" content="ch-ua-form-factor=()" />
@@ -49,6 +65,14 @@ const {
   <meta name="generator" content={Astro.generator} />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <link href="/images/logos/kuzina_logo_icon_dark.svg" rel="apple-touch-icon" />
+
+  <!-- Local Font -->
+  <link
+    rel="preload"
+    href="/fonts/theseasons-reg.otf"
+    as="font"
+    type="font/otf"
+  />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
