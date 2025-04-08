@@ -2540,8 +2540,9 @@ footer .container {
   padding: 2rem 0;
 }
 footer a {
-  color: #c3ae90;
+  color: #ddd9d5;
   font-weight: 400;
+  text-decoration: underline;
 }
 footer a:hover {
   color: #ddd9d5;

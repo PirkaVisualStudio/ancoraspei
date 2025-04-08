@@ -15,8 +15,9 @@ footer {
     padding: 2rem 0;
   }
   a {
-    color: $sec-acc;
+    color: $main-light;
     font-weight: 400;
+    text-decoration: underline;
 
     &:hover {
       color: $main-light;
