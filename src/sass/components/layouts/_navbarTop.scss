@@ -13,8 +13,8 @@ header {
   margin-top: $navMarginTop;
   user-select: none;
   width: 100%;
-  background-color: white;
-  box-shadow: 0 5px 10px 0px rgba($color: #000000, $alpha: 0.1);
+  background-color: $bg-dark;
+  box-shadow: 0 5px 10px 0px rgba($color: #000000, $alpha: 0);
   z-index: 99;
   font-family: $nav-font;
 }

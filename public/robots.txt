@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ziddesign.netlify.app/sitemap-0.xml
+Sitemap: https://pirka.hr/sitemap-0.xml

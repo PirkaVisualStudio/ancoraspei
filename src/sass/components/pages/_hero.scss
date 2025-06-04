@@ -180,3 +180,27 @@
 .cta {
   padding: 6rem 0;
 }
+
+.img-full {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.video {
+  width: calc(1080px / 4);
+  height: calc(1920px / 4);
+  object-fit: cover;
+}
+
+.videos {
+  .container {
+    padding-bottom: 10rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}

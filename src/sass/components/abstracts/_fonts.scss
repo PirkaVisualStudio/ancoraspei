@@ -2,18 +2,18 @@
 @use "./media-queries" as *;
 
 @font-face {
-  font-family: "The Seasons";
-  src: url("/fonts/theseasons-reg.otf") format("opentype");
+  font-family: "RecoletaAlt";
+  src: url("/fonts/recoletaalt-black.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-$heading-font: "Jost", sans-serif;
+$heading-font: "RecoletaAlt", sans-serif;
 
-$body-font: "Jost", sans-serif;
+$body-font: "Colfax", sans-serif;
 
-$nav-font: "The Seasons", sans-serif;
+$nav-font: "Colfax", sans-serif;
 
 $h1-size: 5.61rem;
 $h2-size: 4.209rem;

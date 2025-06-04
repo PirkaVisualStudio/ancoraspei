@@ -5,16 +5,7 @@
         "name": "Home",
         "path": "/"
     },
-    {
-        "name": "O nama",
-        "path": "/o-nama/"
-    },
 
-    {
-        "name": "Galerija",
-        "path": "/galerija/"
-    },
- 
     {
         "name": "Kontakt",
         "path": "/kontakt/"

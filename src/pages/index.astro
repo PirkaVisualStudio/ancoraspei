@@ -9,18 +9,16 @@ import siteInfo from "../data/siteInfo.json";
 import { Image } from "astro:assets";
 
 //import images
-import hero from "../images/default/seo.jpg";
-import logo from "../images/logos/zid_logo_full_accent.svg";
-import apartment1 from "../images/hero/apartment1.jpg";
-import apartment2 from "../images/hero/apartment2.jpg";
-import apartment3 from "../images/hero/apartment3.jpg";
-import poster from "../images/default/mockup poster v3.jpg";
+import logo from "../images/logos/pirka_logo_acc.svg";
+import peskarija from "../images/hero/peskarija.jpg";
+import billboard from "../images/hero/billboard.jpg";
+
+import vine from "../videos/wine tasting.mp4";
 
 //import icons
 import { Icon } from "astro-icon/components";
 
 //import components
-import TestimonialSlider from "../components/elements/TestimonialSlider.astro";
 
 const {
   title,
@@ -49,188 +47,43 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="center hero-home flex-column">
+  <section class="center hero-home flex-column bg-dark">
     <div class="container wrapper center">
       <Image
         src={logo}
-        alt="zid interior design full logo"
-        format="avif"
+        alt="pirka visual design logotip"
         loading="eager"
         id="heroLogo"
       />
-      <h1 class="h1 padb-800">
-        Dizajn interijera po vašoj<span class="italic clr-prim-acc">
-          mjeri</span
-        >
-      </h1>
-      <p class="body">
-        Pretvaramo vašu viziju u stvarnost, a vaš dom u mjesto u kojem
-        pripadate.
-      </p>
     </div>
   </section>
 
-  <!-- FAQ-->
-  <section class="faq section" id="faqa">
-    <div class="wrapper-medium center">
-      <div class="container">
-        <h2 class="h2 padb-400">Česta pitanja</h2>
-        <p class="body-large padb-400">
-          Ako se niste prije susreli sa nama osobno ili ste novi u svijetu
-          dizajna interijera, ova pitanja Vam mogu pomoći.
-        </p>
-        <div class="question">
-          <div class="accordion">
-            Zašto nemate cijene?<Icon
-              class="faq-icon"
-              name="mdi:keyboard-arrow-down"
-              width={28}
-              height={28}
-            />
-          </div>
+  <!-- video -->
+  <section class="videos bg-dark">
+    <div class="container">
+      <video loop autoplay muted class="video">
+        <source src={vine} type="video/mp4" />
+      </video>
 
-          <div class="panel">
-            <p class="body">
-              Svakom projektu pristupamo indivdualno jer i svaka osoba ima
-              određene zahtjeve. Shodno tome, kroz razgovor sa klijentom, radimo
-              poseban plan pripreme i ponude u kojem uključujemo cijenu svoje
-              usluge.
-            </p>
-          </div>
-        </div>
+      <video loop autoplay muted class="video">
+        <source src={vine} type="video/mp4" />
+      </video>
 
-        <div class="question">
-          <div class="accordion">
-            Kako ću znati koliko mogu potrošiti?<Icon
-              class="faq-icon"
-              name="mdi:keyboard-arrow-down"
-              width={28}
-              height={28}
-            />
-          </div>
-
-          <div class="panel">
-            <p class="body">
-              U našem inicijalnom dogovoru također možemo definirati određeni
-              budžet kako bi bili sigurni da će Vaš ukupni trošak ostati u
-              dozvoljenim granicama.
-            </p>
-          </div>
-        </div>
-
-        <div class="question">
-          <div class="accordion">
-            Što točno vi nudite?<Icon
-              class="faq-icon"
-              name="mdi:keyboard-arrow-down"
-              width={28}
-              height={28}
-            />
-          </div>
-
-          <div class="panel">
-            <p class="body">
-              Nudimo usluge dizajna vašeg interijera kao i nabavku svih
-              potrebnih elemenata za uređenje.
-            </p>
-          </div>
-        </div>
-
-        <div class="question">
-          <div class="accordion">
-            Što je sa izvođačkim radovima?<Icon
-              class="faq-icon"
-              name="mdi:keyboard-arrow-down"
-              width={28}
-              height={28}
-            />
-          </div>
-
-          <div class="panel">
-            <p class="body">
-              Konstrukcijski i građevinski radovi nisu dio naše usluge ali kao
-              dizajneri blisko surađujemo sa svim izvođačima kako bi bili
-              sigurni da će naša i Vaša vizija biti ispravno implementirana.
-            </p>
-          </div>
-        </div>
-      </div>
+      <video loop autoplay muted class="video">
+        <source src={vine} type="video/mp4" />
+      </video>
     </div>
   </section>
 
-  <!-- TESTIMONIALS-->
-  <section class="testimonial section">
-    <TestimonialSlider />
-  </section>
-
-  <!-- main cta -->
-  <section class="cta bg-prim-acc">
-    <div class="wrapper center">
-      <p class="txt-label upper txt-center clr-main-light padb-400">
-        besplatne konzultacije
-      </p>
-      <h2 class="h2 txt-center padb-800 clr-main-light">
-        Dizajnirajte svoj dom <br /> iz <span class="italic clr-sec-acc"
-          >snova</span
-        >
-      </h2>
-      <p class="body-large clr-main-light txt-center padb-400">
-        Javite nam se za besplatne konzultacije kako bi zajedno pronašli
-        optimalno rješenje za vas.
-      </p>
-    </div>
-    <div class="wrapper-medium flex-center">
-      <a href="/kontakt/"> <div class="btn-fill">KONTAKT</div></a>
-    </div>
-  </section>
-
-  <!-- example section -->
-  <section class="examples">
-    <div class="wrapper center">
-      <p class="txt-label upper txt-center clr-prim-acc padb-400">
-        umjetnost & dom
-      </p>
-      <h2 class="h2 txt-center padb-800">
-        Kvalitetno dizajniran dom <br /> je <span class="italic clr-prim-acc"
-          >umjetničko djelo</span
-        >
-      </h2>
-    </div>
-    <div class="wrapper-medium center txt-center">
-      <p class="body-large center padb-800">
-        Lijepo uređen dom nije samo pitanje estetike već i odraza onoga što nas
-        definira kao osobu. Naša osobnost, duh i karakter su značajke koje bitno
-        utječu na našu percepciju svijeta i okoline. Dopustite da prilagodimo
-        prostor u kojem živite upravo u onom tonu u kojem najbolje vladate.
-      </p>
-      <a href="/kontakt/"> <div class="btn-fill marb-900">KONTAKT</div></a>
-    </div>
-  </section>
-
-  <!-- message-->
-  <section class="message">
-    <div class="wrapper center">
-      <div class="container">
-        <div class="box">
-          <h2 class="title">
-            vaša <span class="italic clr-sec-acc">vizija</span> je naš cilj
-          </h2>
-        </div>
-        <div class="box">
-          <p class="padb-600 body">
-            Dom nije samo fizička lokacija na kojoj boravimo. On je puno više.
-            Naše je utočište u teškim vremenima ali i mjesto radosti i veselja
-            koje djelimo samo sa onima koji su nam najbliskiji. <br /><br /> Poklonite
-            svojim najmilijima toplinu i sigurnost istinskog doma.
-          </p>
-          <a href="/kontakt/"><div class="btn-fill">KONTAKT</div></a>
-        </div>
-      </div>
+  <!-- image -->
+  <section class="center bg-dark">
+    <div class="container center">
+      <Image
+        src={billboard}
+        alt="pirka visual design logotip"
+        loading="eager"
+        class="img-full"
+      />
     </div>
   </section>
 </MainLayout>
-
-<script>
-  import "../scripts/accordion.js";
-  import "../scripts/slider.js";
-</script>
