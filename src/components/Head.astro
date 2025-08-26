@@ -11,13 +11,13 @@ import siteInfo from "../data/siteInfo.json";
 const googleId = `${siteInfo.map((i) => i.google_id)}`;
 
 //preload all css files
-const cssFiles = import.meta.glob("../**/*.css", {
-  query: "?url",
-  eager: true,
-}) as Record<string, { default: string }>;
-const cssHrefs = Object.values(cssFiles).map((file) => file.default);
+//const cssFiles = import.meta.glob("../**/*.css", {
+// query: "?url",
+//// eager: true,
+//}) as Record<string, { default: string }>;
+//const cssHrefs = Object.values(cssFiles).map((file) => file.default);
 
-console.log("🚀 Preloaded CSS files:", cssHrefs);
+//console.log("🚀 Preloaded CSS files:", cssHrefs);
 
 //SEO variables
 const {
@@ -47,7 +47,7 @@ const {
     {extend}
   />
 
-  <!-- preload css -->
+  <!-- preload css 
   {
     cssHrefs.map((href) => (
       <>
@@ -55,7 +55,7 @@ const {
         <link rel="stylesheet" href={href} />
       </>
     ))
-  }
+  }-->
   <link rel="preconnect" href={Astro.site} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta http-equiv="Permissions-Policy" content="ch-ua-form-factor=()" />
@@ -71,9 +71,9 @@ const {
   <!-- Local Font -->
   <link
     rel="preload"
-    href="fonts/theseasons-reg.otf"
+    href="fonts/recoletaalt-black.woff"
     as="font"
-    type="font/otf"
+    type="font/woff"
   />
 
   <!-- Google Font -->
@@ -81,13 +81,13 @@ const {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
   />
   <noscript>
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
       type="text/css"
     />

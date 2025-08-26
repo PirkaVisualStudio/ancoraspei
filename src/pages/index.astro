@@ -9,11 +9,19 @@ import siteInfo from "../data/siteInfo.json";
 import { Image } from "astro:assets";
 
 //import images
-import logo from "../images/logos/pirka_logo_acc.svg";
+import logo from "../images/logos/pirka_logo_dark.svg";
 import peskarija from "../images/hero/peskarija.jpg";
 import billboard from "../images/hero/billboard.jpg";
 
 import vine from "../videos/wine tasting.mp4";
+import skampi from "../videos/skampi.mp4";
+import biftek from "../videos/biftek.mp4";
+import dorucak1 from "../videos/dorucak1.mp4";
+import grdobina from "../videos/grdobina.mp4";
+import juha from "../videos/juha.mp4";
+import kava from "../videos/kava.mp4";
+import kruska from "../videos/kruska.mp4";
+import put from "../videos/put.mp4";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -47,30 +55,45 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="center hero-home flex-column bg-dark">
+  <section class="center hero-home bg-light">
     <div class="container wrapper center">
       <Image
         src={logo}
         alt="pirka visual design logotip"
         loading="eager"
         id="heroLogo"
+        class="padb-900"
       />
+      <p class="body-bold">Next Level Video Production & photography.</p>
     </div>
   </section>
 
   <!-- video -->
-  <section class="videos bg-dark">
+  <section class="videos bg-light section">
+    <div class="wrapper-medium center txt-center">
+      <h1 class="h3 clr-prim-acc padb-400">
+        Profesionalna videoprodukcija i fotografija
+      </h1>
+      <p class="body-large clr-prim-acc">
+        Nudimo usluge video snimanja i fotografiranja kao i snimanje iz zraka za
+        vaš brand, proizvod, nekretninu ili eventove
+      </p>
+    </div>
     <div class="container">
       <video loop autoplay muted class="video">
         <source src={vine} type="video/mp4" />
       </video>
 
       <video loop autoplay muted class="video">
-        <source src={vine} type="video/mp4" />
+        <source src={skampi} type="video/mp4" />
       </video>
 
       <video loop autoplay muted class="video">
-        <source src={vine} type="video/mp4" />
+        <source src={kava} type="video/mp4" />
+      </video>
+
+      <video loop autoplay muted class="video">
+        <source src={put} type="video/mp4" />
       </video>
     </div>
   </section>

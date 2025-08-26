@@ -20,7 +20,7 @@ footer {
     text-decoration: underline;
 
     &:hover {
-      color: $main-light;
+      color: $prim-acc;
     }
   }
 }
@@ -31,6 +31,7 @@ footer {
   justify-content: space-between;
   width: 100%;
   padding: 0 0 2.4rem 0;
+  font-size: 12px;
   hr {
     display: inline-block;
     width: 100%;
@@ -50,6 +51,7 @@ footer {
 
   .language-selector {
     margin-right: 10px;
+
     @include normal {
       display: none;
     }

@@ -7,6 +7,15 @@
     },
 
     {
+        "name": "Portfolio",
+        "path": "/"
+    },
+    {
+        "name": "O meni",
+        "path": "/"
+    },
+
+    {
         "name": "Kontakt",
         "path": "/kontakt/"
     }

@@ -9,18 +9,13 @@ import navMenu from "../data/navMenuHR.json";
 
 //image compression
 import { Image } from "astro:assets";
-import logoBadge from "../images/logos/pirka_logo_acc.svg";
+import logoBadge from "../images/logos/pirka_logo_nav_acc.svg";
 ---
 
 <footer>
   <section class="container">
     <div class="wrapper center">
-      <Image
-        src={logoBadge}
-        alt="pirka logo full"
-        loading="eager"
-        id="footerLogo"
-      />
+      <Image src={logoBadge} alt="pirka logo" id="footerLogo" />
     </div>
   </section>
 

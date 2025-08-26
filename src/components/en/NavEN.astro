@@ -7,7 +7,7 @@ import navMenu from "../../data/navMenuEN.json";
 
 //image compression
 import { Image } from "astro:assets";
-import zidLogo from "../../images/logos/zid_logo_submark_accent.svg";
+import navLogo from "../../images/logos/pirka_logo_nav_dark.svg";
 ---
 
 <header>
@@ -66,12 +66,7 @@ import zidLogo from "../../images/logos/zid_logo_submark_accent.svg";
     <div class="container">
       <div class="logo">
         <a href="/">
-          <Image
-            src={zidLogo}
-            alt="zid logo submark accent"
-            format="avif"
-            loading="eager"
-          />
+          <Image src={navLogo} alt="pirka logo submark" />
         </a>
       </div>
 
@@ -123,7 +118,7 @@ import zidLogo from "../../images/logos/zid_logo_submark_accent.svg";
       </div>
 
       <div class="social-nav">
-        <div class="language-selector marr-200">
+        <div class="language-selector marr-200 body-bold">
           <a href="/en/">EN</a> | <a href="/">HR</a>
         </div>
         <div>
