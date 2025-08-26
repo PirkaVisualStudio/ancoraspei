@@ -6,16 +6,16 @@
   cursor: pointer;
   width: auto;
   text-align: center;
-  background-color: $sec-acc;
-  color: $main-dark;
+  background-color: $prim-acc;
+  color: $main-light;
   padding: 0.8rem 2rem;
   font-weight: 600;
   border: 2px solid $prim-acc;
-  border-radius: 40px;
+  border-radius: 0px;
 
   &:hover {
-    background: $main-dark;
-    color: $sec-acc;
+    background: $main-light;
+    color: $prim-acc;
     border: 2px solid $prim-acc;
     transition-duration: 0.2s;
   }

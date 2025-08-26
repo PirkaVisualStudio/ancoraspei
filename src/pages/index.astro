@@ -13,15 +13,7 @@ import logo from "../images/logos/pirka_logo_dark.svg";
 import peskarija from "../images/hero/peskarija.jpg";
 import billboard from "../images/hero/billboard.jpg";
 
-import vine from "../videos/wine tasting.mp4";
-import skampi from "../videos/skampi.mp4";
-import biftek from "../videos/biftek.mp4";
-import dorucak1 from "../videos/dorucak1.mp4";
-import grdobina from "../videos/grdobina.mp4";
-import juha from "../videos/juha.mp4";
-import kava from "../videos/kava.mp4";
-import kruska from "../videos/kruska.mp4";
-import put from "../videos/put.mp4";
+import tecada from "../videos/tecada.mp4";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -83,17 +75,29 @@ const {
     <div class="container"><VideoSlider /></div>
   </section>
 
-  <!-- image -->
-  <section class="center bg-dark">
+  <!-- video -->
+  <section class="center bg-light">
+    <div class="wrapper-medium center txt-center section">
+      <p class="txt-label padb-400">KONTAKTIRAJTE NAS</p>
+      <h1 class="h3 clr-prim-acc padb-400">Trebaš video? Ili fotografiju?</h1>
+      <p class="body-large clr-prim-ac padb-900">
+        Javit nam se i prepustite vaš projekt u naše ruke.
+      </p>
+      <a href="/kontakt"><div class="btn-fill">KONTAKT</div></a>
+    </div>
     <div class="container center">
-      <Image
-        src={billboard}
-        alt="pirka visual design logotip"
-        loading="eager"
-        class="img-full"
-      />
+      <video loop autoplay muted class="video_full">
+        <source src={tecada} type="video/mp4" />
+      </video>
     </div>
   </section>
+  <!-- video
+  <Image
+    src={peskarija}
+    alt="pirka visual design logotip"
+    loading="eager"
+    class="img-full"
+  />-->
 </MainLayout>
 
 <script>

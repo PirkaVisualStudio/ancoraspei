@@ -928,16 +928,16 @@ html.lenis {
   cursor: pointer;
   width: auto;
   text-align: center;
-  background-color: #c3ae90;
-  color: #1a1a1a;
+  background-color: #ff4811;
+  color: #fafafa;
   padding: 0.8rem 2rem;
   font-weight: 600;
   border: 2px solid #ff4811;
-  border-radius: 40px;
+  border-radius: 0px;
 }
 .btn-fill:hover {
-  background: #1a1a1a;
-  color: #c3ae90;
+  background: #fafafa;
+  color: #ff4811;
   border: 2px solid #ff4811;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -2079,6 +2079,10 @@ nav .container .social-nav a:hover {
   color: #c3ae90;
 }
 
+.lang-active {
+  color: #ff4811 !important;
+}
+
 .wrapper {
   max-width: 1320px;
   padding: 0 2rem;
@@ -2691,6 +2695,14 @@ footer a:hover {
 .video {
   width: 270px;
   height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0px solid #1a1a1a;
+}
+
+.video_full {
+  width: 100%;
+  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 0px solid #1a1a1a;

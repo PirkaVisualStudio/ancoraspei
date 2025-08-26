@@ -9,12 +9,17 @@ import siteInfo from "../../data/siteInfo.json";
 import { Image } from "astro:assets";
 
 //import images
-import logo from "../../images/logos/pirka_logo_acc.svg";
+import logo from "../../images/logos/pirka_logo_dark.svg";
+import peskarija from "../../images/hero/peskarija.jpg";
+import billboard from "../../images/hero/billboard.jpg";
+
+import tecada from "../../videos/tecada.mp4";
 
 //import icons
 import { Icon } from "astro-icon/components";
 
 //import components
+import VideoSlider from "../../components/elements/VideoSlider.astro";
 
 const {
   title,
@@ -43,14 +48,58 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="center hero-home flex-column bg-dark">
+  <section class="center hero-home bg-light">
     <div class="container wrapper center">
       <Image
         src={logo}
         alt="pirka visual design logotip"
         loading="eager"
         id="heroLogo"
+        class="padb-900"
       />
+      <p class="body-bold">Next Level Video Production & photography.</p>
     </div>
   </section>
+
+  <!-- VIDEO SLIDERS-->
+  <section class="videos bg-light section">
+    <div class="wrapper-medium center txt-center">
+      <h1 class="h3 clr-prim-acc padb-400">
+        Professional videoproduction & photography
+      </h1>
+      <p class="body-large clr-prim-acc">
+        We offer services of videoproduction and photography and aerial footage
+        for your brand, product, real estate or events.
+      </p>
+    </div>
+    <div class="container"><VideoSlider /></div>
+  </section>
+
+  <!-- video -->
+  <section class="center bg-light">
+    <div class="wrapper-medium center txt-center section">
+      <p class="txt-label padb-400">CONTACT US</p>
+      <h1 class="h3 clr-prim-acc padb-400">Need video? Or a photo?</h1>
+      <p class="body-large clr-prim-ac padb-900">
+        Get in touch with us and let your project into our hands.
+      </p>
+      <a href="/en/contact"><div class="btn-fill">CONTACT</div></a>
+    </div>
+    <div class="container center">
+      <video loop autoplay muted class="video_full">
+        <source src={tecada} type="video/mp4" />
+      </video>
+    </div>
+  </section>
+  <!-- video
+  <Image
+    src={peskarija}
+    alt="pirka visual design logotip"
+    loading="eager"
+    class="img-full"
+  />-->
 </MainLayout>
+
+<script>
+  import "../../scripts/slider.js";
+</script>

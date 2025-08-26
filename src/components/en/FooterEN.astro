@@ -6,86 +6,61 @@ const today = new Date();
 
 //import menu data
 import navMenu from "../../data/navMenuEN.json";
+
+//image compression
+import { Image } from "astro:assets";
+import logoBadge from "../../images/logos/pirka_logo_nav_acc.svg";
 ---
 
 <footer>
-  <section class="footer bg-prim-acc clr-main-light">
-    <div class="footer-container wrapper center">
-      <div class="footer-logo padt-700 flex-center">
-        <img
-          id="footerLogo"
-          src="/images/logos/pirka_logo_badge.svg"
-          alt="pirka logo"
-        />
-      </div>
+  <section class="container">
+    <div class="wrapper center">
+      <Image src={logoBadge} alt="pirka logo" id="footerLogo" />
     </div>
+  </section>
 
-    <div class="flex-column wrapper section center">
-      <div class="column-footer">
-        <h3 class="txt-label padb-100">LOCATION</h3>
-        <div class="line-acc-small marb-600"></div>
-        <p class="body-bold padb-100">dPhoto Studio, obrt za usluge</p>
-        <p>
-          Alojzija Stepinca 13, <br /> 21000, Split, Croatia
-        </p>
-      </div>
-      <div class="column-footer">
-        <h3 class="txt-label padb-100">CONTACTS</h3>
-        <div class="line-acc-small marb-600"></div>
-        <p class="txtLabel padb-100">Frane Miro Dobrović</p>
-        <p class="body">
-          Email: <a href="mailto:info@pirka.hr" target="_blank">info@pirka.hr</a
+  <section class="wrapper center">
+    <hr class="marb-100" />
+    <div class="copyright">
+      <div>
+        <p class="txtLabel padb-100">
+          &copy; Pirka Visual Studio | {today.getFullYear()} | Design by <a
+            href="https://pirka.hr"
+            target="_blank">Pirka</a
           >
         </p>
-        <p class="body">
-          Tel: <a href="tel:00385995924976">+ 385 92 289 7458</a>
-        </p>
-      </div>
-      <div class="column-footer">
-        <h3 class="txt-label padb-100">EXPLORE</h3>
-        <div class="line-acc-small marb-600"></div>
-        <ul class="footer-list">
-          {
-            navMenu.map((i) => (
-              <a href={i.path}>
-                <li class="footer-link">{i.name}</li>
-              </a>
-            ))
-          }
-        </ul>
+        <a class="body-small" href="/polica/"> &nbspPrivacy policy</a>
       </div>
 
-      <div class="column-footer">
-        <h3 class="txt-label padb-100">SOCIAL</h3>
-        <div class="line-acc-small marb-600"></div>
-        <div class="footer-social padb-100">
-          <a href="https://www.instagram.com/elamio/" target="_blank"
+      <div class="social-footer">
+        <div class="language-selector">
+          <a href="/en/" class="lang-active">EN</a> | <a href="/">HR</a>
+        </div>
+        <div>
+          <a
+            href="https://www.instagram.com/pirkavisualstudio/"
+            target="_blank"
+            aria-label="Link to Instagram page"
             ><Icon
               class="socialNavIcon"
               name="ri:instagram-fill"
               width={28}
+              height={28}
             /></a
           >
-          <a href="https://www.facebook.com/elamio" target="_blank"
+          <a
+            href="https://www.facebook.com/pirkavisualstudio"
+            target="_blank"
+            aria-label="Link to Facebook page"
             ><Icon
               class="socialNavIcon"
               name="ant-design:facebook-filled"
-              width={30}
+              width={28}
+              height={28}
             /></a
           >
         </div>
       </div>
-    </div>
-
-    <div class="txt-center wrapper center section">
-      <hr class="marb-100" />
-      <p class="txtLabel padb-100">
-        &copy; Pirka Visual Studio | {today.getFullYear()} | Design by <a
-          href="http://pirka.hr"
-          target="_blank">Pirka Visual Studio</a
-        >
-      </p>
-      <a class="body-small" href="/polica/"> &nbspPravila privatnosti</a>
     </div>
   </section>
 </footer>

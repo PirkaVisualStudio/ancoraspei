@@ -3,27 +3,12 @@
 [
     {
         "name": "Home",
-        "path": "/en/"
-    },
-    {
-        "name": "About",
-        "path": "/en/about/"
-    },
-    {
-        "name": "Services",
-        "path": "/en/services/"
-    },
-    {
-        "name": "Projects",
-        "path": "/en/projects/"
+        "path": "/en"
     },
 
-    {
-        "name": "Gallery",
-        "path": "/en/gallery/"
-    },
+
     {
         "name": "Contact",
-        "path": "/en/contact/"
+        "path": "/en/contact"
     }
 ]
