@@ -27,6 +27,7 @@ import put from "../videos/put.mp4";
 import { Icon } from "astro-icon/components";
 
 //import components
+import VideoSlider from "../components/elements/VideoSlider.astro";
 
 const {
   title,
@@ -68,7 +69,7 @@ const {
     </div>
   </section>
 
-  <!-- video -->
+  <!-- VIDEO SLIDERS-->
   <section class="videos bg-light section">
     <div class="wrapper-medium center txt-center">
       <h1 class="h3 clr-prim-acc padb-400">
@@ -79,23 +80,7 @@ const {
         vaš brand, proizvod, nekretninu ili eventove
       </p>
     </div>
-    <div class="container">
-      <video loop autoplay muted class="video">
-        <source src={vine} type="video/mp4" />
-      </video>
-
-      <video loop autoplay muted class="video">
-        <source src={skampi} type="video/mp4" />
-      </video>
-
-      <video loop autoplay muted class="video">
-        <source src={kava} type="video/mp4" />
-      </video>
-
-      <video loop autoplay muted class="video">
-        <source src={put} type="video/mp4" />
-      </video>
-    </div>
+    <div class="container"><VideoSlider /></div>
   </section>
 
   <!-- image -->
@@ -110,3 +95,7 @@ const {
     </div>
   </section>
 </MainLayout>
+
+<script>
+  import "../scripts/slider.js";
+</script>

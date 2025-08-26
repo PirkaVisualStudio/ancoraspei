@@ -4,8 +4,8 @@ var splide = new Splide(".splide", {
   type: "loop",
   drag: "free",
   snap: true,
-  perPage: 1,
-  gap: "0.5rem",
+  perPage: 4,
+  gap: "80px",
   focus: "center",
   updateOnMove: true,
 });

@@ -1,0 +1,91 @@
+---
+//Slider css
+import "@splidejs/splide/css/sea-green";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+//image compression
+import { Image } from "astro:assets";
+
+import vine from "../../videos/wine tasting.mp4";
+import skampi from "../../videos/skampi.mp4";
+import biftek from "../../videos/biftek.mp4";
+import dorucak1 from "../../videos/dorucak1.mp4";
+import grdobina from "../../videos/grdobina.mp4";
+import juha from "../../videos/juha.mp4";
+import kava from "../../videos/kava.mp4";
+import kruska from "../../videos/kruska.mp4";
+import put from "../../videos/put.mp4";
+---
+
+<section class="videos bg-light section">
+  <div class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <!--  Tesitominal 1 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={vine} type="video/mp4" />
+          </video>
+        </li>
+
+        <!--  Tesitominal 2 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={skampi} type="video/mp4" />
+          </video>
+        </li>
+
+        <!--  Tesitominal 3 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={kava} type="video/mp4" />
+          </video>
+        </li>
+
+        <!--  Tesitominal 4 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={put} type="video/mp4" />
+          </video>
+        </li>
+
+        <!--  Tesitominal 5 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={biftek} type="video/mp4" />
+          </video>
+        </li>
+
+        <!--  Tesitominal 6 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={dorucak1} type="video/mp4" />
+          </video>
+        </li>
+
+        <!--  Tesitominal 7 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={grdobina} type="video/mp4" />
+          </video>
+        </li>
+
+        <!--  Tesitominal 8 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={juha} type="video/mp4" />
+          </video>
+        </li>
+
+        <!--  Tesitominal 9 -->
+        <li class="splide__slide">
+          <video loop autoplay muted class="video">
+            <source src={kruska} type="video/mp4" />
+          </video>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

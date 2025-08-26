@@ -191,18 +191,3 @@
   object-fit: cover;
   border: 0px solid $main-dark;
 }
-
-.videos {
-  p {
-    padding-bottom: 80px;
-  }
-  .container {
-    padding-bottom: 10rem;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-}

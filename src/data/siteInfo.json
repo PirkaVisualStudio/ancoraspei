@@ -5,9 +5,9 @@
     "main_lang": "hr",
     "alt_lang": "en",
     "charset": "UTF-8",
-    "title": "Zorana Interior Design",
-    "brand_tag": " | ZID", 
-    "description": "ZID - Dizajn Interijera",
+    "title": "Pirka Studio",
+    "brand_tag": " | Pirka", 
+    "description": "Pirka Visual Studio za profesionalnu fotografiju i videoprodukciju",
     "not_included": ["https://pirkatemplate.netlify.app/hvala/", "https://pirkatemplate.netlify.app/styleguide/"]
 }
 ]
