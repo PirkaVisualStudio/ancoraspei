@@ -9,7 +9,7 @@ import siteInfo from "../../data/siteInfo.json";
 import { Image } from "astro:assets";
 
 //import images
-import logo from "../../images/logos/pirka_logo_dark.svg";
+import logo from "../../images/logos/pirka_logo_light.svg";
 import peskarija from "../../images/hero/peskarija.jpg";
 import billboard from "../../images/hero/billboard.jpg";
 
@@ -48,7 +48,7 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="center hero-home bg-light">
+  <section class="center hero-home bg-dark">
     <div class="container wrapper center">
       <Image
         src={logo}
@@ -57,12 +57,14 @@ const {
         id="heroLogo"
         class="padb-900"
       />
-      <p class="body-bold">Next Level Video Production & photography.</p>
+      <p class="body-bold clr-main-light">
+        Next Level Video Production & photography.
+      </p>
     </div>
   </section>
 
   <!-- VIDEO SLIDERS-->
-  <section class="videos bg-light section">
+  <section class="videos bg-dark section">
     <div class="wrapper-medium center txt-center">
       <h1 class="h3 clr-prim-acc padb-400">
         Professional videoproduction & photography
@@ -76,11 +78,11 @@ const {
   </section>
 
   <!-- video -->
-  <section class="center bg-light">
+  <section class="center bg-dark">
     <div class="wrapper-medium center txt-center section">
       <p class="txt-label padb-400">CONTACT US</p>
       <h2 class="h3 clr-prim-acc padb-400">Need video? Or a photo?</h2>
-      <p class="body-large clr-prim-ac padb-900">
+      <p class="body-large clr-prim-acc padb-900">
         Get in touch with us and let your project into our hands.
       </p>
       <a href="/en/contact/"><div class="btn-fill">CONTACT</div></a>

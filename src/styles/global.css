@@ -2045,9 +2045,12 @@ nav .container .social-nav a:hover {
           align-items: center;
   bottom: 300px;
   height: 160px;
-  background-color: #c3ae90;
+  background-color: #1a1a1a;
   width: 100%;
   z-index: 999;
+}
+.mobile-low-section p {
+  color: #fafafa;
 }
 
 .mobile-list {
@@ -2076,7 +2079,7 @@ nav .container .social-nav a:hover {
   letter-spacing: 2px;
 }
 .mobile-list a:hover {
-  color: #c3ae90;
+  color: #1a1a1a;
 }
 
 .lang-active {

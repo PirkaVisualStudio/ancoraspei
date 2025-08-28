@@ -159,9 +159,12 @@ nav .container {
   align-items: center;
   bottom: 300px;
   height: 160px;
-  background-color: $sec-acc;
+  background-color: $main-dark;
   width: 100%;
   z-index: 999;
+  p {
+    color: $main-light;
+  }
 }
 
 //mobile menu list styles
@@ -183,7 +186,7 @@ nav .container {
     font-size: 30px;
     letter-spacing: 2px;
     &:hover {
-      color: $sec-acc;
+      color: $main-dark;
     }
   }
 }
