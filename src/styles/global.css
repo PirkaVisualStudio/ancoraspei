@@ -936,7 +936,7 @@ html.lenis {
   border-radius: 0px;
 }
 .btn-fill:hover {
-  background: #fafafa;
+  background: #1a1a1a;
   color: #ff4811;
   border: 2px solid #ff4811;
   -webkit-transition-duration: 0.2s;
