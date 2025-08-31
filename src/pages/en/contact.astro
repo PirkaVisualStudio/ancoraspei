@@ -26,8 +26,8 @@ const {
 
 <MainLayout
   lang={lang}
-  pageIndex="kontakt"
-  pageIndexEn="contact"
+  pageIndex="kontakt/"
+  pageIndexEn="contact/"
   title={"Kontakt" + siteInfo.map((i) => i.brand_tag)}
   charset={charset}
   description={"Javite nam se sa upitom" + siteInfo.map((i) => i.brand_tag)}
@@ -52,7 +52,7 @@ const {
       class="contact-form"
       method="POST"
       data-netlify="true"
-      action="/hvala/"
+      action="/en/thanks/"
       data-netlify-recaptcha="true"
     >
       <label class="body-bold" for="name">Name:</label>
