@@ -2489,7 +2489,7 @@ footer a:hover {
           flex-direction: column;
   height: 100vh;
   width: 100%;
-  z-index: 999;
+  z-index: 50;
 }
 .hero-home p {
   text-align: center;
