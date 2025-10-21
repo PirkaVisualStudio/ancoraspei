@@ -936,8 +936,8 @@ html.lenis {
   border-radius: 0px;
 }
 .btn-fill:hover {
-  background: #1a1a1a;
-  color: #ff4811;
+  background: none;
+  color: #fafafa;
   border: 2px solid #ff4811;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -2711,6 +2711,13 @@ footer a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border: 0px solid #1a1a1a;
+}
+
+.slider-image {
+  width: 270px;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video_full {

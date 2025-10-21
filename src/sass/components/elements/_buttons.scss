@@ -14,8 +14,8 @@
   border-radius: 0px;
 
   &:hover {
-    background: $main-dark;
-    color: $prim-acc;
+    background: none;
+    color: $main-light;
     border: 2px solid $prim-acc;
     transition-duration: 0.2s;
   }
