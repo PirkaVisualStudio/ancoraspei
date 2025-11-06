@@ -8,10 +8,29 @@ import navMenu from "../../data/navMenuEN.json";
 //image compression
 import { Image } from "astro:assets";
 import navLogo from "../../images/logos/pirka_logo_nav_dark.svg";
+import navLogo2 from "../../images/logos/pirka_logo_nav_light.svg";
 ---
 
-<header>
-  <nav class="wrapper center">
+<header
+  id="navBar"
+  class="nav-bar"
+  data-scroll
+  data-scroll-repeat
+  data-scroll-ignore-fold
+  data-scroll-offset="-100%,-100%"
+  data-scroll-position="end,start"
+  data-scroll-call="scrollNavRemove"
+>
+  <nav
+    class="nav noSelect"
+    id="navMenu"
+    data-scroll
+    data-scroll-repeat
+    data-scroll-ignore-fold
+    data-scroll-offset="-10%,-10%"
+    data-scroll-position="end,start"
+    data-scroll-call="scrollNavChange"
+  >
     <div class="mobile-menu" id="mobileId">
       <div class="mobile-container">
         <ul class="mobile-list wrapper">
@@ -63,10 +82,15 @@ import navLogo from "../../images/logos/pirka_logo_nav_dark.svg";
         <p class="h4">MENU</p>
       </div>
     </div>
-    <div class="container">
-      <div class="logo">
+    <div class="container wrapper center">
+      <div class="logo logo-dark">
         <a href="/en/">
           <Image src={navLogo} alt="pirka logo submark" />
+        </a>
+      </div>
+      <div class="logo logo-light">
+        <a href="/en/">
+          <Image src={navLogo2} alt="pirka logo submark" />
         </a>
       </div>
 
@@ -118,10 +142,30 @@ import navLogo from "../../images/logos/pirka_logo_nav_dark.svg";
       </div>
 
       <div class="social-nav">
-        <div class="language-selector marr-200 body-bold">
+        <div class="theme">
+          <button
+            id="theme-toggle"
+            class="theme-switcher"
+            aria-label="Toggle theme"
+          >
+            <Icon
+              name="material-symbols:moon-stars-rounded"
+              width={24}
+              height={24}
+              class="moon"
+            />
+            <Icon
+              name="material-symbols:wb-sunny-outline-rounded"
+              width={24}
+              height={24}
+              class="sun"
+            />
+          </button>
+        </div>
+        <div class="language-selector body-bold">
           <a href="/en/" class="lang-active">EN</a> | <a href="/">HR</a>
         </div>
-        <div>
+        <div class="social-icons">
           <a
             href="https://www.instagram.com/pirkavisualstudio/"
             target="_blank"

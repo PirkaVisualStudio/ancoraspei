@@ -49,14 +49,14 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="center hero-home bg-dark">
+  <section class="center hero-home">
     <Image
       src={peskarija}
       alt="pirka visual studio peskarija split"
       loading="eager"
       class="hero_image"
     />
-    <div class="container wrapper center">
+    <div class="container wrapper center hidden-fade">
       <Image
         src={logo}
         alt="pirka visual design logotip"
@@ -64,7 +64,8 @@ const {
         id="heroLogo"
         class="padb-900"
       />
-      <p class="body-bold clr-main-light marb-900">
+
+      <p class="body-bold marb-900">
         Next Level Video Production & photography.
       </p>
       <a href="https://portal.pirka.hr" target="_blank"
@@ -74,26 +75,31 @@ const {
   </section>
 
   <!-- VIDEO SLIDERS-->
-  <section class="videos bg-dark section">
+  <section class="videos section">
     <div class="wrapper-medium center txt-center">
-      <p class="txt-label clr-prim-acc upper padb-200">What we do?</p>
-      <h1 class="h3 clr-prim-acc padb-400">
+      <p class="txt-label clr-prim-acc upper padb-200 hidden-fade delay1">
+        What we do?
+      </p>
+      <h1 class="h3 padb-400 hidden-fade delay2">
         Professional videoproduction & photography
       </h1>
-      <p class="body-large clr-prim-acc">
+      <p class="body-large hidden-fade delay3">
         We offer services of videoproduction and photography and aerial footage
         for your brand, product, real estate or events.
       </p>
     </div>
-    <div class="container"><PhotoSlider /></div>
   </section>
 
+  <div class="container"><PhotoSlider /></div>
+
   <!-- video -->
-  <section class="center bg-dark">
+  <section class="center">
     <div class="wrapper-medium center txt-center section">
-      <p class="txt-label padb-400">CONTACT US</p>
-      <h2 class="h3 clr-prim-acc padb-400">Need video? Or a photo?</h2>
-      <p class="body-large clr-prim-acc padb-900">
+      <p class="txt-label padb-400 clr-prim-acc hidden-fade delay1">
+        CONTACT US
+      </p>
+      <h2 class="h3 padb-400 hidden-fade delay2">Need video? Or a photo?</h2>
+      <p class="body-large padb-900 hidden-fade delay3">
         Get in touch with us and let your project into our hands.
       </p>
       <a href="/en/contact/"><div class="btn-fill">CONTACT</div></a>

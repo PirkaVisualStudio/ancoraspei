@@ -9,19 +9,11 @@
 footer {
   width: 100%;
 
-  background-color: $main-dark;
-  color: $main-light;
   .container {
     padding: 2rem 0;
   }
   a {
-    color: $main-light;
-    font-weight: 400;
     text-decoration: underline;
-
-    &:hover {
-      color: $prim-acc;
-    }
   }
 }
 

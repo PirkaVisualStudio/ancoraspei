@@ -14,6 +14,7 @@
     "@astrojs/sitemap": "^3.4.0",
     "@iconify-json/ant-design": "^1.1.16",
     "@iconify-json/el": "^1.1.8",
+    "@iconify-json/proicons": "^1.2.17",
     "@iconify-json/ri": "^1.1.21",
     "@splidejs/splide": "^4.1.4",
     "astro": "^5.8.0",
@@ -28,7 +29,7 @@
     "uikit": "^3.19.5-dev.68a7ed8e1"
   },
   "devDependencies": {
-    "@iconify-json/material-symbols": "^1.1.82",
+    "@iconify-json/material-symbols": "^1.2.44",
     "@iconify-json/mdi": "^1.1.67",
     "vite-plugin-html": "^3.2.2"
   }

@@ -109,3 +109,75 @@ $prim-acc-50: color-mix(in srgb, $prim-acc 50%, black);
 .bg-white {
   background-color: #fff;
 }
+
+html.theme-dark {
+  --bg-color: #1a1a1a;
+  --text-color: #fafafa;
+  --link-color: #ff4811;
+  --link-hover: #fafafa;
+}
+
+html.theme-light {
+  --bg-color: #fafafa;
+  --text-color: #1a1a1a;
+  --link-color: #ff4811;
+  --link-hover: #1a1a1a;
+}
+
+html.theme-light .logo-dark {
+  display: flex;
+}
+
+html.theme-dark .logo-light {
+  display: flex;
+}
+
+html.theme-light .sun {
+  display: inline;
+  opacity: 1;
+}
+
+html.theme-dark .moon {
+  display: inline;
+  opacity: 1;
+  color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.logo-light,
+.logo-dark {
+  transition: all 0.3 ease-in-out;
+  display: none;
+}
+
+.theme-switcher {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: none;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.sun,
+.moon {
+  border: 0;
+  background: none;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}

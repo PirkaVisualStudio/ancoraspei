@@ -18,23 +18,24 @@ const locomotiveScroll = new LocomotiveScroll({
 });
 
 /* Nav color */
-window.addEventListener("scrollNavColor", (e) => {
-  const { target, way } = e.detail;
-
-  if (way === "enter") {
-    target.style.backgroundColor = "";
-  } else {
-    target.style.backgroundColor = "rgba(255,255,255,0.7)";
-  }
-});
-
-/* nav height */
-window.addEventListener("scrollNavHeight", (e) => {
+window.addEventListener("scrollNavChange", (e) => {
   const { target, way } = e.detail;
 
   if (way === "enter") {
     target.style.height = "";
   } else {
-    target.style.height = "4rem";
+    target.style.height = "60px";
+  }
+});
+
+/* nav disappears */
+
+window.addEventListener("scrollNavRemove", (e) => {
+  const { target, way } = e.detail;
+
+  if (way === "enter") {
+    target.style.marginTop = "";
+  } else {
+    target.style.marginTop = "-60px";
   }
 });

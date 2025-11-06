@@ -16,15 +16,7 @@
   user-select: none;
 }
 
-a {
-  color: $prim-acc;
-
-  &:hover {
-    color: $txt-on-light;
-  }
-}
-
 ::selection {
   color: $txt-on-light;
-  background: $sec-acc;
+  background: $prim-acc;
 }
