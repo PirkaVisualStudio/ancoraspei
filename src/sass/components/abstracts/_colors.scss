@@ -111,17 +111,17 @@ $prim-acc-50: color-mix(in srgb, $prim-acc 50%, black);
 }
 
 html.theme-dark {
-  --bg-color: #1a1a1a;
-  --text-color: #fafafa;
-  --link-color: #ff4811;
-  --link-hover: #fafafa;
+  --bg-color: #1a1a1a !important;
+  --text-color: #fafafa !important;
+  --link-color: #ff4811 !important;
+  --link-hover: #fafafa !important;
 }
 
 html.theme-light {
-  --bg-color: #fafafa;
-  --text-color: #1a1a1a;
-  --link-color: #ff4811;
-  --link-hover: #1a1a1a;
+  --bg-color: #fafafa !important;
+  --text-color: #1a1a1a !important;
+  --link-color: #ff4811 !important;
+  --link-hover: #1a1a1a !important;
 }
 
 html.theme-light .logo-dark {
@@ -143,7 +143,10 @@ html.theme-dark .moon {
   color: white;
 }
 
-body {
+body,
+header,
+nav,
+.dropdown-container {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background 0.3s, color 0.3s;
