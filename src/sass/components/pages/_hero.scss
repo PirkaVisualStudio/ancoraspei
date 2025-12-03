@@ -37,15 +37,17 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
     height: 100vh;
     width: 100%;
     z-index: 50;
   }
 
   p {
-    text-align: center;
+    text-align: left;
 
     padding-bottom: 0px;
     width: 100%;

@@ -1,0 +1,86 @@
+---
+//Main Layout
+import MainLayout from "../../layouts/MainLayoutHR.astro";
+
+//import main site data
+import siteInfo from "../../data/siteInfo.json";
+
+//image compression
+import { Image } from "astro:assets";
+
+//import images
+import logo from "../../images/logos/pirka_logo_light.svg";
+import peskarija from "../../images/hero/peskarija.jpg";
+import billboard from "../../images/hero/billboard.jpg";
+
+import tecada from "../../videos/tecada.mp4";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+//import components
+
+import PhotoSlider from "../../components/elements/PhotoSlider.astro";
+
+const {
+  title,
+  lang,
+  charset,
+  description,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang={lang}
+  brandTitle,
+  pageIndex=""
+  pageIndexHr=""
+  title={title}
+  charset={charset}
+  description={description}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <!-- hero -->
+  <section class="center hero-home">
+    <!-- <Image src={hero} alt="maven mib" loading="eager" class="hero_image" />-->
+    <div class="container wrapper">
+      <p class="h1 marb-400">MAVEN MIB</p>
+      <p class="body-large">
+        A project management for your investment in Croatia.
+      </p>
+      <p class="body-large marb-900">
+        We handle the paperwork! You enjoy the view.
+      </p>
+      <a href="/kontakt/"><div class="btn-fill">CONTACT</div></a>
+    </div>
+  </section>
+
+  <!-- video -->
+  <section class="center">
+    <div class="wrapper-medium center txt-center section">
+      <p class="txt-label padb-400 clr-prim-acc hidden-fade delay1">
+        GET IN TOUCH
+      </p>
+      <h2 class="h3 padb-400 hidden-fade delay2">
+        You want to invest in Croatia? Don't know where to start?
+      </h2>
+      <p class="body-large padb-900 hidden-fade delay3">
+        We can help you get clear objectives and all the information for
+        starting a project!
+      </p>
+      <a href="/kontakt/"><div class="btn-fill">CONTACT</div></a>
+    </div>
+  </section>
+</MainLayout>
+
+<script>
+  import "../scripts/slider.js";
+</script>

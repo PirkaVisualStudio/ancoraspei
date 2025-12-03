@@ -1,6 +1,6 @@
 ---
 //Main Layout
-import MainLayout from "../layouts/MainLayoutHR.astro";
+import MainLayout from "../layouts/MainLayoutEN.astro";
 
 //import main site data
 import siteInfo from "../data/siteInfo.json";
@@ -12,6 +12,7 @@ import { Image } from "astro:assets";
 import logo from "../images/logos/pirka_logo_light.svg";
 import peskarija from "../images/hero/peskarija.jpg";
 import billboard from "../images/hero/billboard.jpg";
+import hero from "../images/hero/herocover.jpg";
 
 import tecada from "../videos/tecada.mp4";
 
@@ -19,7 +20,6 @@ import tecada from "../videos/tecada.mp4";
 import { Icon } from "astro-icon/components";
 
 //import components
-import VideoSlider from "../components/elements/VideoSlider.astro";
 import PhotoSlider from "../components/elements/PhotoSlider.astro";
 
 const {
@@ -40,7 +40,7 @@ const {
   lang={lang}
   brandTitle,
   pageIndex=""
-  pageIndexEn=""
+  pageIndexHr=""
   title={title}
   charset={charset}
   description={description}
@@ -50,82 +50,35 @@ const {
 >
   <!-- hero -->
   <section class="center hero-home">
-    <Image
-      src={peskarija}
-      alt="pirka visual studio peskarija split"
-      loading="eager"
-      class="hero_image"
-    />
-    <div class="container wrapper center hidden-fade">
-      <Image
-        src={logo}
-        alt="pirka visual design logotip"
-        loading="eager"
-        id="heroLogo"
-        class="padb-900"
-      />
-
-      <p class="body-bold marb-900">
-        Visokokvalitetna produkcija i fotografija.
+    <!-- <Image src={hero} alt="maven mib" loading="eager" class="hero_image" />-->
+    <div class="container wrapper">
+      <p class="h1 marb-400">MAVEN MIB</p>
+      <p class="body-large">
+        A project management for your investment in Croatia.
       </p>
-      <a href="https://portal.pirka.hr" target="_blank"
-        ><div class="btn-fill">PRIJAVI SE</div></a
-      >
+      <p class="body-large marb-900">
+        We handle the paperwork! You enjoy the view.
+      </p>
+      <a href="/contact/"><div class="btn-fill">CONTACT</div></a>
     </div>
   </section>
-
-  <!-- VIDEO SLIDERS-->
-  <section class="videos section">
-    <div class="wrapper-medium center txt-center">
-      <p class="txt-label clr-prim-acc upper padb-200 hidden-fade delay1">
-        Što nudimo?
-      </p>
-      <h1 class="h3 padb-400 hidden-fade delay2">
-        Profesionalna videoprodukcija i fotografija
-      </h1>
-      <p class="body-large hidden-fade delay3">
-        Nudimo usluge video snimanja i fotografiranja kao i snimanje iz zraka za
-        vaš brand, proizvod, nekretninu ili eventove.
-      </p>
-    </div>
-  </section>
-
-  <div class="container"><PhotoSlider /></div>
 
   <!-- video -->
   <section class="center">
     <div class="wrapper-medium center txt-center section">
       <p class="txt-label padb-400 clr-prim-acc hidden-fade delay1">
-        KONTAKTIRAJTE NAS
+        GET IN TOUCH
       </p>
       <h2 class="h3 padb-400 hidden-fade delay2">
-        Trebaš video? Ili fotografiju?
+        You want to invest in Croatia? Don't know where to start?
       </h2>
       <p class="body-large padb-900 hidden-fade delay3">
-        Javite nam se i prepustite vaš projekt u naše ruke.
+        We can help you get clear objectives and all the information for
+        starting a project!
       </p>
-      <a href="/kontakt/"><div class="btn-fill">KONTAKT</div></a>
-    </div>
-    <div class="container center">
-      <video
-        loop
-        autoplay
-        muted
-        playsinline
-        webkit-playsinline
-        class="video_full"
-      >
-        <source src={tecada} type="video/mp4" />
-      </video>
+      <a href="/kontakt/"><div class="btn-fill">CONTACT</div></a>
     </div>
   </section>
-  <!-- video
-  <Image
-    src={peskarija}
-    alt="pirka visual design logotip"
-    loading="eager"
-    class="img-full"
-  />-->
 </MainLayout>
 
 <script>

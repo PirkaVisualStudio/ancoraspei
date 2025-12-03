@@ -1,0 +1,92 @@
+---
+import MainLayout from "../../layouts/MainLayoutEN.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+//import main site data
+import siteInfo from "../../data/siteInfo.json";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+const {
+  title,
+  description,
+  lang,
+  charset,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang={lang}
+  pageIndex="kontakt/"
+  pageIndexHr="contact/"
+  title={"Kontakt" + siteInfo.map((i) => i.brand_tag)}
+  charset={charset}
+  description={"Javite nam se sa upitom" + siteInfo.map((i) => i.brand_tag)}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <div>
+    <div class="wrapper center">
+      <div class="section">
+        <h1 class="h1 padt-900 mart-900">Contact</h1>
+        <h3 class="body-bold body-large padb-400">
+          Send us inquiry about the service you are interested in.
+        </h3>
+        <p class="body padb-900">We'll try to answer as soon as possible.</p>
+        <hr class="marb-900" />
+      </div>
+    </div>
+    <form
+      name="kontakt-forma"
+      id="formContact"
+      class="contact-form"
+      method="POST"
+      data-netlify="true"
+      action="/en/thanks/"
+      data-netlify-recaptcha="true"
+    >
+      <label class="body-bold" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="John" required />
+      <label class="body-bold" for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="info@mail.com"
+        required
+      />
+      <label class="body-bold" for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="I want to know more about..."
+        required></textarea>
+
+      <label class="body mart-900 marb-900 txt-center">
+        Please check if you are not the robot so we can prevent spam mail:
+      </label>
+
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LfDLgopAAAAAPHMwvz14cWIszr8WzMIbd96cZhc"
+      >
+      </div>
+
+      <button type="submit" class="btn-form mart-900">SEND</button>
+    </form>
+  </div>
+</MainLayout>
+
+<!-- Google Captcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

@@ -10,12 +10,14 @@ import navMenu from "../../data/navMenuEN.json";
 //image compression
 import { Image } from "astro:assets";
 import logoBadge from "../../images/logos/pirka_logo_nav_acc.svg";
+import navLogo from "../../images/logos/maven_logo_dark.svg";
+import navLogo2 from "../../images/logos/maven_logo_light.svg";
 ---
 
 <footer>
   <section class="container">
     <div class="wrapper center">
-      <Image src={logoBadge} alt="pirka logo" id="footerLogo" />
+      <Image src={navLogo} alt="mavenmib logo" id="footerLogo" />
     </div>
   </section>
 
@@ -24,12 +26,12 @@ import logoBadge from "../../images/logos/pirka_logo_nav_acc.svg";
     <div class="copyright">
       <div>
         <p class="txt-label padb-100">
-          &copy; Pirka Visual Studio | {today.getFullYear()} | Design by <a
+          &copy; Maven MIB | {today.getFullYear()} | Design by <a
             href="https://pirka.hr"
             target="_blank">Pirka</a
           >
         </p>
-        <a class="body-small" href="/en/policy/">Privacy policy</a>
+        <a class="body-small" href="/polica/">Privacy policy</a>
       </div>
 
       <div class="social-footer">

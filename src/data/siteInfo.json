@@ -1,13 +1,13 @@
 [
     {
-    "google_id": "GTM-KQ9WZ4B",
-    "site_url": "https://pirka.hr",
+    "google_id": "",
+    "site_url": "https://mavenmib.com",
     "main_lang": "hr",
     "alt_lang": "en",
     "charset": "UTF-8",
-    "title": "Pirka Studio",
-    "brand_tag": " | Pirka", 
-    "description": "Pirka Visual Studio za profesionalnu fotografiju i videoprodukciju",
-    "not_included": ["https://pirka.hr/hvala/", "https://pirka.hr/styleguide/"]
+    "title": "MAVEN MIB",
+    "brand_tag": " | MAVEN MIB", 
+    "description": "Maven MIB projekti",
+    "not_included": ["https://mavenmib.com/hvala/", "https://mavenmib.com/styleguide/"]
 }
 ]

@@ -15,7 +15,7 @@ header {
   margin-top: $navMarginTop;
   user-select: none;
   width: 100%;
-  box-shadow: 0 5px 10px 0px rgba($color: #000000, $alpha: 0);
+  box-shadow: 0 5px 10px 0px rgba($color: #000000, $alpha: 0.5);
   z-index: 99;
   opacity: 1;
   font-family: $nav-font;
@@ -38,12 +38,12 @@ nav .container {
   .logo {
     align-items: center;
     height: 100%;
-    fill: red;
+    fill: $prim-acc;
 
     img {
-      width: 60px;
+      width: 100px;
       height: 100%;
-      color: red;
+      color: $prim-acc;
     }
   }
 
@@ -145,7 +145,7 @@ nav .container {
 
 //mobile menu style
 .mobile-menu {
-  background-color: $prim-acc;
+  background-color: $main-light;
   position: fixed;
   top: 0;
   //slides in from right side
@@ -157,9 +157,9 @@ nav .container {
   transition: all 0.1s, transform 0.4s ease-out;
   z-index: 998;
   a {
-    color: $main-dark;
+    color: $prim-acc;
     &:hover {
-      color: $main-light;
+      color: $main-dark;
     }
   }
 }
@@ -176,18 +176,16 @@ nav .container {
 }
 
 .mobile-low-section {
+  display: none;
   position: relative;
-  display: flex;
+  //display: flex;
   justify-content: flex-end;
   align-items: center;
   bottom: 300px;
   height: 160px;
-  background-color: $main-dark;
+
   width: 100%;
   z-index: 999;
-  p {
-    color: $main-light;
-  }
 }
 
 //mobile menu list styles
@@ -205,7 +203,7 @@ nav .container {
   white-space: nowrap;
   a {
     z-index: 999;
-    font-size: 30px;
+    font-size: 1rem;
     letter-spacing: 2px;
   }
 }

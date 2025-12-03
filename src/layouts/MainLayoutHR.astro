@@ -23,7 +23,7 @@ const canonicalURL = new URL(
   `${siteInfo.map((i) => i.site_url)}`
 );
 const { pageIndex } = Astro.props;
-const { pageIndexEn } = Astro.props;
+const { pageIndexHr } = Astro.props;
 
 const {
   title = `${siteInfo.map((i) => i.title)}` +
@@ -48,12 +48,12 @@ const {
 
   languageAlternates = [
     {
-      href: `${siteInfo.map((i) => i.site_url)}` + "/en/" + `${pageIndexEn}`,
-      hrefLang: "en",
+      href: `${siteInfo.map((i) => i.site_url)}` + "/hr/" + `${pageIndexHr}`,
+      hrefLang: "hr",
     },
     {
       href: `${siteInfo.map((i) => i.site_url)}` + "/" + `${pageIndex}`,
-      hrefLang: "hr",
+      hrefLang: "en",
     },
   ],
   extend = {

@@ -7,8 +7,8 @@ import navMenu from "../../data/navMenuEN.json";
 
 //image compression
 import { Image } from "astro:assets";
-import navLogo from "../../images/logos/pirka_logo_nav_dark.svg";
-import navLogo2 from "../../images/logos/pirka_logo_nav_light.svg";
+import navLogo from "../../images/logos/maven_logo_dark.svg";
+import navLogo2 from "../../images/logos/maven_logo_light.svg";
 ---
 
 <header
@@ -41,41 +41,34 @@ import navLogo2 from "../../images/logos/pirka_logo_nav_light.svg";
               </li>
             ))
           }
-
           <!-- ============= DROPDOWN ITEM 01 ============= 
+          <li class="dropdown-item">
+            <div class="nav-link dropdown-button">
+              usluge
+              <Icon class="dropdown-arrow" name="mdi:chevron-down" />
+            </div>
 
-        <li class="dropdown-item">
-          <div class="nav-link dropdown-button">
-            usluge
-            <Icon
-              class="dropdown-arrow"
-              pack="mdi"
-              name="chevron-down"
-              width="20"
-            />
-          </div>
-
-          <div class="dropdown-container">
-            <div class="dropdown-content">
-              <div class="dropdown-group">
-                <ul class="dropdown-list">
-                  <a href="/usluge/videoprodukcija/" class="dropdown-link"
-                    ><li></li>Video produkcija</a
-                  >
-                  <a href="/usluge/fotografija/" class="dropdown-link"
-                    ><li></li>Fotografija</a
-                  >
-                  <a href="/usluge/dizajn/" class="dropdown-link"
-                    ><li></li>Dizajn</a
-                  >
-                  <a href="/usluge/marketing/" class="dropdown-link"
-                    ><li></li>Digitalni marketing</a
-                  >
-                </ul>
+            <div class="dropdown-container">
+              <div class="dropdown-content">
+                <div class="dropdown-group">
+                  <ul class="dropdown-list">
+                    <a href="/usluge/videoprodukcija/"
+                      ><li class="dropdown-link">Video produkcija</li></a
+                    >
+                    <a href="/usluge/fotografija/"
+                      ><li class="dropdown-link">Fotografija</li></a
+                    >
+                    <a href="/usluge/dizajn/"
+                      ><li class="dropdown-link">Dizajn</li></a
+                    >
+                    <a href="/usluge/marketing/"
+                      ><li class="dropdown-link">Digitalni marketing</li></a
+                    >
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </li>-->
+          </li>-->
         </ul>
       </div>
       <div class="mobile-low-section wrapper">
@@ -84,13 +77,13 @@ import navLogo2 from "../../images/logos/pirka_logo_nav_light.svg";
     </div>
     <div class="container wrapper center">
       <div class="logo logo-dark">
-        <a href="/en/">
-          <Image src={navLogo} alt="pirka logo submark" />
+        <a href="/">
+          <Image src={navLogo} alt="maven logo submark" />
         </a>
       </div>
       <div class="logo logo-light">
-        <a href="/en/">
-          <Image src={navLogo2} alt="pirka logo submark" />
+        <a href="/">
+          <Image src={navLogo2} alt="maven logo submark" />
         </a>
       </div>
 
@@ -103,41 +96,34 @@ import navLogo2 from "../../images/logos/pirka_logo_nav_light.svg";
               </li>
             ))
           }
-
           <!-- ============= DROPDOWN ITEM 01 ============= 
+          <li class="dropdown-item">
+            <div class="nav-link dropdown-button">
+              usluge
+              <Icon class="dropdown-arrow" name="mdi:chevron-down" />
+            </div>
 
-        <li class="dropdown-item">
-          <div class="nav-link dropdown-button">
-            usluge
-            <Icon
-              class="dropdown-arrow"
-              pack="mdi"
-              name="chevron-down"
-              width="20"
-            />
-          </div>
-
-          <div class="dropdown-container">
-            <div class="dropdown-content">
-              <div class="dropdown-group">
-                <ul class="dropdown-list">
-                  <a href="/usluge/videoprodukcija/" class="dropdown-link"
-                    ><li></li>Video produkcija</a
-                  >
-                  <a href="/usluge/fotografija/" class="dropdown-link"
-                    ><li></li>Fotografija</a
-                  >
-                  <a href="/usluge/dizajn/" class="dropdown-link"
-                    ><li></li>Dizajn</a
-                  >
-                  <a href="/usluge/marketing/" class="dropdown-link"
-                    ><li></li>Digitalni marketing</a
-                  >
-                </ul>
+            <div class="dropdown-container">
+              <div class="dropdown-content">
+                <div class="dropdown-group">
+                  <ul class="dropdown-list">
+                    <a href="/usluge/videoprodukcija/"
+                      ><li class="dropdown-link">Video produkcija</li></a
+                    >
+                    <a href="/usluge/fotografija/"
+                      ><li class="dropdown-link">Fotografija</li></a
+                    >
+                    <a href="/usluge/dizajn/"
+                      ><li class="dropdown-link">Digitalni marketing</li></a
+                    >
+                    <a href="/usluge/marketing/"
+                      ><li class="dropdown-link">Dizajn</li></a
+                    >
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </li>-->
+          </li>-->
         </ul>
       </div>
 
@@ -163,7 +149,7 @@ import navLogo2 from "../../images/logos/pirka_logo_nav_light.svg";
           </button>
         </div>
         <div class="language-selector body-bold">
-          <a href="/en/" class="lang-active">EN</a> | <a href="/">HR</a>
+          <a href="/" class="lang-active">EN</a> | <a href="/hr/">HR</a>
         </div>
         <div class="social-icons">
           <a
