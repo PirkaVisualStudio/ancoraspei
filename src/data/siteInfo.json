@@ -1,13 +1,13 @@
 [
     {
     "google_id": "",
-    "site_url": "https://mavenmib.com",
+    "site_url": "https://mavenmib.netlify.app",
     "main_lang": "en",
     "alt_lang": "hr",
     "charset": "UTF-8",
     "title": "MAVEN MIB",
     "brand_tag": " | MAVEN MIB", 
     "description": "Maven MIB projekti",
-    "not_included": ["https://mavenmib.com/hvala/", "https://mavenmib.com/styleguide/"]
+    "not_included": ["https://mavenmib.netlify.app/hvala/", "https://mavenmib.netlify.app/styleguide/"]
 }
 ]
