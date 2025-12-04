@@ -115,6 +115,7 @@ html.theme-dark {
   --text-color: #eff4fb !important;
   --link-color: #eff4fb !important;
   --link-hover: #44586d !important;
+  --offcolor: color-mix(in srgb, var(--bg-color) 95%, white);
 }
 
 html.theme-light {
@@ -122,6 +123,7 @@ html.theme-light {
   --text-color: #07172a !important;
   --link-color: #44586d !important;
   --link-hover: #07172a !important;
+  --offcolor: color-mix(in srgb, var(--bg-color) 95%, black);
 }
 
 html.theme-light .logo-dark {
@@ -150,6 +152,14 @@ nav,
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background 0.3s, color 0.3s;
+}
+
+.theme-text {
+  color: var(--text-color);
+}
+
+.theme-container {
+  background-color: var(--offcolor);
 }
 
 a {

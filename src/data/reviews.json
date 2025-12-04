@@ -1,29 +1,40 @@
 [
     {
-        "name": "Marko Markić",
-        "from": "Toronto",
-        "review-full": "This is a full review post",
-        "review-short": "This is a short review post"
+        "name": "Ludi Maur",
+        "from": "Auckland, New Zealand",
+        "review": "Unga bunga!"
+      
     },
 
     {
-        "name": "Vlatko Vlatkić",
-        "from": "Zadar",
-        "review-full": "This is a full review post",
-        "review-short": "This is a short review post"
+        "name": "Marko Perković Thompson",
+        "from": "Toronto, Canada",
+        "review": "Za dom!"
+      
     },
-
     {
-        "name": "Janko Bobetko",
-        "from": "Šibenik",
-        "review-full": "This is a full review post",
-        "review-short": "This is a short review post"
+        "name": "Botica",
+        "from": "Split, Croatia",
+        "review": "Nadareni momci! Svaka čast"
+      
     },
-
     {
-        "name": "Zlatko Sudac",
-        "from": "Spain",
-        "review-full": "This is a full review post",
-        "review-short": "This is a short review post"
+        "name": "Plamen",
+        "from": "Madagaskar, Africa",
+        "review": "Ne sićan se ja ničega."
+      
+    },
+    {
+        "name": "Donald Trump",
+        "from": "WA DC,USA",
+        "review": "Make America great again"
+      
+    },
+    {
+        "name": "bl. Alojzije Stepinac",
+        "from": "Zagreb, Croatia",
+        "review": "Božji blagoslov!"
+      
     }
+
 ]

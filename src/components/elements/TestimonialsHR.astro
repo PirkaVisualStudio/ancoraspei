@@ -1,0 +1,49 @@
+---
+//Slider css
+import "@splidejs/splide/css/sea-green";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+//image compression
+import { Image } from "astro:assets";
+
+//import data
+//reviews data
+import reviewsJSON from "../../data/reviews.json";
+
+//md data
+import { getCollection } from "astro:content";
+
+const reviewPost = await getCollection("reviews");
+---
+
+<section class="section-2">
+  <div class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list testimonials">
+        <!--  Tesitominal -->
+        {
+          reviewsJSON.map((i) => (
+            <li class="splide__slide box theme-container ">
+              <div class="quotes">
+                <Icon
+                  name="quotes"
+                  width="60px"
+                  height="60px"
+                  fill="currentColor"
+                />
+              </div>
+              <div class="review theme-text">{i["review"]}</div>
+              <div class="name theme-text">{i["name"]}</div>
+              <div class="from theme-text">{i["from"]}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="my-carousel-progress">
+      <div class="my-carousel-progress-bar mart-900"></div>
+    </div>
+  </div>
+</section>

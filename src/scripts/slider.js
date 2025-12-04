@@ -4,7 +4,7 @@ var splide = new Splide(".splide", {
   type: "loop",
   drag: "free",
   snap: true,
-  perPage: 4,
+  perPage: 2,
   gap: "80px",
   focus: "center",
   updateOnMove: true,

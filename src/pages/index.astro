@@ -13,6 +13,8 @@ import logo from "../images/logos/pirka_logo_light.svg";
 import peskarija from "../images/hero/peskarija.jpg";
 import billboard from "../images/hero/billboard.jpg";
 import hero from "../images/hero/herocover.jpg";
+import vila from "../images/hero/vila.jpg";
+import vila2 from "../images/hero/vila2.jpg";
 
 import tecada from "../videos/tecada.mp4";
 
@@ -21,6 +23,7 @@ import { Icon } from "astro-icon/components";
 
 //import components
 import PhotoSlider from "../components/elements/PhotoSlider.astro";
+import ReviewsSlider from "../components/elements/TestimonialsHR.astro";
 
 const {
   title,
@@ -50,22 +53,51 @@ const {
 >
   <!-- hero -->
   <section class="center hero-home">
-    <!-- <Image src={hero} alt="maven mib" loading="eager" class="hero_image" />-->
+    <Image src={vila} alt="maven mib" loading="eager" class="hero_image" />
     <div class="container wrapper">
-      <p class="h1 marb-400">MAVEN MIB</p>
-      <p class="body-large">
+      <p class="h1 marb-400 clr-main-light">MAVEN MIB</p>
+      <p class="body-large clr-main-light">
         A project management for your investment in Croatia.
       </p>
-      <p class="body-large marb-900">
+      <p class="body-large marb-900 clr-main-light">
         We handle the paperwork! You enjoy the view.
       </p>
       <a href="/contact/"><div class="btn-fill">CONTACT</div></a>
     </div>
   </section>
 
-  <!-- video -->
+  <!-- services -->
+
+  <section class="section services center wrapper">
+    <h2 class="h2 padb-100">Services</h2>
+    <p class="body-large padb-100">What we do?</p>
+    <div class="line-acc-full marb-900"></div>
+    <div class="container center">
+      <div class="box 1">
+        <h2 class="body-large-bold">SURVEYING</h2>
+        <p class="body">Filed surveying and geodetic services</p>
+        <Image src={hero} alt="maven surveying" loading="eager" />
+      </div>
+      <div class="box 2">
+        <h2 class="body-large-bold">SURVEYING</h2>
+        <p class="body">Filed surveying and geodetic services</p>
+        <Image src={hero} alt="maven surveying" loading="eager" />
+      </div>
+      <div class="box 3">
+        <h2 class="body-large-bold">SURVEYING</h2>
+        <p class="body">Filed surveying and geodetic services</p>
+        <Image src={hero} alt="maven surveying" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials -->
+
+  <ReviewsSlider />
+
+  <!-- cta -->
   <section class="center">
-    <div class="wrapper-medium center txt-center section">
+    <div class="wrapper-medium center txt-center section-2">
       <p class="txt-label padb-400 clr-prim-acc hidden-fade delay1">
         GET IN TOUCH
       </p>
@@ -81,4 +113,6 @@ const {
   </section>
 </MainLayout>
 
-<script></script>
+<script>
+  import "../scripts/slider.js";
+</script>
