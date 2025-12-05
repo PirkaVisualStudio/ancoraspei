@@ -1,5 +1,5 @@
 ---
-import MainLayout from "../layouts/MainLayoutHR.astro";
+import MainLayout from "../layouts/MainLayoutEN.astro";
 
 //image compression
 import { Image } from "astro:assets";
@@ -39,9 +39,9 @@ const {
     <div class="wrapper center">
       <div class="section">
         <h1 class="h1 padt-900 mart-900">Contact</h1>
-        <h3 class="body-bold body-large padb-400">
+        <h2 class="body-bold body-large padb-400">
           Send us inquiry about the service you are interested in.
-        </h3>
+        </h2>
         <p class="body padb-900">We'll try to answer as soon as possible.</p>
         <hr class="marb-900" />
       </div>
@@ -77,11 +77,7 @@ const {
         Molimo potvrdite da niste robot zbog sprječavanja spam pošte:
       </label>
 
-      <div
-        class="g-recaptcha"
-        data-sitekey="6LfDLgopAAAAAPHMwvz14cWIszr8WzMIbd96cZhc"
-      >
-      </div>
+      <div class="g-recaptcha" data-sitekey=""></div>
 
       <button type="submit" class="btn-form mart-900">SEND</button>
     </form>

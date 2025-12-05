@@ -1,4 +1,5 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
 @use "../abstracts/media-queries" as *;
 
 .btn-fill {
@@ -9,13 +10,14 @@
   background-color: $prim-acc;
   color: $main-light;
   padding: 0.8rem 2rem;
+  font-family: $heading-font;
   font-weight: 600;
   border: 2px solid $prim-acc;
   border-radius: 0px;
 
   &:hover {
     background: none;
-    color: $main-dark;
+    color: $main-light;
     border: 2px solid $prim-acc;
     transition-duration: 0.2s;
   }

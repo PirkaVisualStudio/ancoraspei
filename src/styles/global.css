@@ -254,11 +254,17 @@ html.theme-light .sun {
   display: inline;
   opacity: 1;
 }
+html.theme-light .sun:hover {
+  color: rgb(192, 98, 15);
+}
 
 html.theme-dark .moon {
   display: inline;
   opacity: 1;
   color: white;
+}
+html.theme-dark .moon:hover {
+  color: rgb(255, 225, 0);
 }
 
 body,
@@ -1019,13 +1025,14 @@ html.lenis {
   background-color: #44586d;
   color: #eff4fb;
   padding: 0.8rem 2rem;
+  font-family: "Raleway", serif;
   font-weight: 600;
   border: 2px solid #44586d;
   border-radius: 0px;
 }
 .btn-fill:hover {
   background: none;
-  color: #07172a;
+  color: #eff4fb;
   border: 2px solid #44586d;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -2060,6 +2067,9 @@ nav .container .language-selector {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 3px;
 }
 nav .container .social-icons {
@@ -2068,6 +2078,22 @@ nav .container .social-icons {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+#to-hr,
+#to-en {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Raleway", serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: inherit;
+  border: none;
+  padding: 0rem;
+  cursor: pointer;
+}
+#to-hr:hover,
+#to-en:hover {
+  color: rgb(164, 21, 21);
 }
 
 .logo,

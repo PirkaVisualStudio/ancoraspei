@@ -1,8 +1,16 @@
 ---
-import MainLayout from "../layouts/MainLayoutHR.astro";
+import MainLayout from "../layouts/MainLayoutEN.astro";
 
 //image compression
 import { Image } from "astro:assets";
+
+//read langugae cookie --- ovo ne radi
+const cookieLang = Astro.cookies.get("lang")?.value;
+let lang = "en"; // default
+
+// Priority: URL prefix > cookie > default
+if (Astro.url.pathname.startsWith("/hr")) lang = "hr";
+else if (cookieLang === "hr") lang = "hr";
 
 const {
   title,
@@ -21,23 +29,46 @@ const {
   lang="hr"
   pageIndex="404"
   pageIndexEn="404"
-  title="404 Error | Pirka"
+  title="404 Error"
   charset={charset}
-  description="Ova stranica ne postoji."
+  description=""
   canonical={canonical}
   openGraph={openGraph}
   extend={extend}
   noindex
   nofollow
 >
-  <section class="hero-full wrapper center flex-bottom">
+  <section class="hero-full wrapper center flex-center">
     <div class="container">
-      <h1 class="h1">404 Error</h1>
-      <p class="h5">
-        Nažalost, ova stranica ne postoji. Molimo vratite se na <a href="/">
-          početak</a
-        > ili pokušajte nešto drugo.
-      </p>
+      <h1 class="h1 padb-400">404 Error</h1>
+      <p class="h5 padb-400" id="message">Page not found</p>
+      <a href="/" class="btn-fill" id="home-link">HOME</a>
     </div>
   </section>
 </MainLayout>
+
+<script>
+  // Read cookie
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(";").shift();
+    return null;
+  }
+
+  // Detect language
+  const lang = getCookie("lang") === "hr" ? "hr" : "en";
+
+  // Update message
+  document.getElementById("message").textContent =
+    lang === "hr"
+      ? "Nažalost, ova stranica ne postoji. Molimo vratite se na početak ili pokušajte nešto drugo."
+      : "This page doesn't exist. Please get back home or try something else.";
+
+  // Change href if language is Croatian
+  const homeLink = document.getElementById("home-link");
+  if (lang === "hr") {
+    homeLink.href = "/hr";
+    homeLink.textContent = "POČETNA"; // optional: change text too
+  }
+</script>
