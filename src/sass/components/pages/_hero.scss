@@ -109,7 +109,6 @@
 .testimonials {
   .box {
     padding: 3rem;
-    width: 450px !important;
 
     .quotes {
       color: $prim-acc;
@@ -137,4 +136,14 @@
   width: 100%;
   height: 400px;
   object-fit: cover;
+}
+
+.cta {
+  .container {
+    .flex-column {
+      .flex-right {
+        padding: 1rem;
+      }
+    }
+  }
 }

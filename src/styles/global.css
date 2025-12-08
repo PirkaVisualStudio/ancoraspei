@@ -1575,18 +1575,21 @@ html.lenis {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 270px !important;
 }
 
 .splide {
   padding: 1rem 0 !important;
+}
+@media screen and (max-width: 1024px) {
+  .splide {
+    margin: 0 1rem !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .splide {
     padding: 0rem 0rem !important;
   }
 }
-
 .splide__track {
   padding: 3rem 0;
 }
@@ -2765,7 +2768,6 @@ footer a {
 
 .testimonials .box {
   padding: 3rem;
-  width: 450px !important;
 }
 .testimonials .box .quotes {
   color: #44586d;
@@ -2791,6 +2793,10 @@ footer a {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.cta .container .flex-column .flex-right {
+  padding: 1rem;
 }
 
 body {

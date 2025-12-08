@@ -9,14 +9,20 @@
   margin-right: 20px !important;
 
   flex-direction: column;
-  width: calc(1080px / 4) !important;
 }
 
 .splide {
   padding: 1rem 0 !important;
 
+  @include large {
+    margin: 0 1rem !important;
+  }
+
   @include normal {
     padding: 0rem 0rem !important;
+  }
+
+  @include medium {
   }
 }
 
