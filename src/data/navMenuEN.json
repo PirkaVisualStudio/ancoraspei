@@ -16,6 +16,11 @@
         "path": "/services/"
     },
 
+    {
+        "name": "Portfolio",
+        "path": "/portfolio/"
+    },
+
 
     {
         "name": "Contact",

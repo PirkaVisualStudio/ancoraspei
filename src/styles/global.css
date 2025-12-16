@@ -435,9 +435,13 @@ a:hover {
 }
 
 .txt-label {
-  font-family: "Lora", sans-serif;
+  font-family: "Raleway", serif;
   font-size: 0.8rem;
   line-height: 1rem;
+}
+
+.txt-bold {
+  font-weight: 600;
 }
 
 .upper {
@@ -1029,13 +1033,13 @@ html.lenis {
   font-weight: 600;
   border: 2px solid #44586d;
   border-radius: 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .btn-fill:hover {
   background: none;
   color: #eff4fb;
   border: 2px solid #44586d;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
 }
 @media screen and (max-width: 540px) {
   .btn-fill {
@@ -1050,10 +1054,12 @@ html.lenis {
   text-align: center;
   background-color: #44586d;
   color: #eff4fb;
-  padding: 0.8rem 1rem;
-  font-weight: 500;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
   border: 2px solid #44586d;
   border-radius: 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .btn-fill-rounded:hover {
   background: rgba(0, 0, 0, 0);
@@ -1076,9 +1082,11 @@ html.lenis {
   text-align: center;
   background: rgba(0, 0, 0, 0);
   color: #eff4fb;
-  padding: 0.8rem 1rem;
-  font-weight: 500;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
   border: 2px solid #44586d;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .btn-stroke:hover {
   background-color: #44586d;
@@ -1097,14 +1105,16 @@ html.lenis {
 
 .btn-stroke-rounded {
   display: inline-block;
-  width: 120px;
+  width: auto;
   text-align: center;
   background-color: #eff4fb;
   color: #44586d;
-  padding: 0.8rem 1rem;
-  font-weight: bold;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
   border: 2px solid #44586d;
   border-radius: 24px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .btn-stroke-rounded:hover {
   background-color: #44586d;
@@ -2003,7 +2013,7 @@ nav .container .logo {
   fill: #44586d;
 }
 nav .container .logo img {
-  width: 100px;
+  width: 135px;
   height: 100%;
   color: #44586d;
 }
@@ -2553,7 +2563,7 @@ nav .container .social-icons {
 
 #footerLogo {
   width: 120px;
-  height: 120px;
+  height: 80px;
 }
 
 footer {
@@ -2700,6 +2710,10 @@ footer a {
 .hero-home .flex-right img {
   width: 100%;
   height: 100%;
+}
+
+.hero-standard {
+  padding-top: 150px;
 }
 
 .services {

@@ -1,0 +1,52 @@
+---
+import MainLayout from "../layouts/MainLayoutEN.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+//import main site data
+import siteInfo from "../data/siteInfo.json";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+//import images
+import vila from "../images/hero/vila.jpg";
+
+const {
+  title,
+  description,
+  lang,
+  charset,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang={lang}
+  pageIndex="about/"
+  pageIndexHr="about/"
+  title={"About us" + siteInfo.map((i) => i.brand_tag)}
+  charset={charset}
+  description={"Get to know us, what we do and how did we end up here" +
+    siteInfo.map((i) => i.brand_tag)}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <!-- hero -->
+  <section class="hero-standard">
+    <div class="container wrapper center">
+      <h1 class="h1 marb-400">PORTFOLIO</h1>
+      <Image src={vila} alt="maven mib" loading="eager" class="img-full" />
+    </div>
+  </section>
+</MainLayout>
+
+<!-- Google Captcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
