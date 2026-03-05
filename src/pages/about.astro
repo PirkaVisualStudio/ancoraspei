@@ -40,13 +40,84 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="hero-standard">
+  <section class="hero-standard bg-prim-acc clr-main-light">
     <div class="container wrapper center">
-      <h1 class="h1 marb-400">ABOUT US</h1>
-      <Image src={vila} alt="maven mib" loading="eager" class="img-full" />
+      <h1 class="txt-label marb-400">ABOUT US</h1>
+      <h2 class="h3 padb-900">
+        Find out more about us. Our mission, values and all the things that
+        matter to us.
+      </h2>
+    </div>
+  </section>
+
+  <section class="numbers section">
+    <div class="container wrapper center txt-center">
+      <p class="txt-label padb-200 padt-600">NUMBERS</p>
+      <h2 class="h4 padb-200">Our story in numbers</h2>
+    </div>
+
+    <div class="stats wrapper center">
+      <div class="box">
+        <div class="number">20+</div>
+        <div class="title">PROJECTS</div>
+        <div class="text">
+          Currently more that 20 projects are completed or active at this moment
+        </div>
+      </div>
+      <div class="box">
+        <div class="number">15+</div>
+        <div class="title">YEARS</div>
+        <div class="text">
+          We have more that 15 years of experience in the business
+        </div>
+      </div>
+      <div class="box">
+        <div class="number">3+</div>
+        <div class="title">COUNTRIES</div>
+        <div class="text">
+          Our work has been recognized accross 3 world countries
+        </div>
+      </div>
+      <div class="box">
+        <div class="number">200k+</div>
+        <div class="title">IN VALUE</div>
+        <div class="text">
+          We worked on high valued projects that estimate more than 200k in
+          value
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section profiles">
+    <div class="container wrapper center txt-center">
+      <p class="txt-label">PROFILES</p>
+      <h2 class="h3 padb-900">Who are we?</h2>
+      <div class="flex-container">
+        <div class="image">
+          <div class="profile-image">
+            <Image
+              src={vila}
+              alt="maven mib"
+              loading="eager"
+              class="img-full"
+            />
+          </div>
+          <div class="text">
+            <p class="name">Mijo Kačić Bartulović</p>
+            <p class="title">CEO</p>
+          </div>
+          <div class="line-acc-full"></div>
+        </div>
+        <div class="cv">
+          <p class="title">Meet Mijo</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+            vero possimus tempora, ipsam iusto at a id, libero ratione dolorem
+            quos consequatur vel commodi amet. Quasi autem magnam iure ullam.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 </MainLayout>
-
-<!-- Google Captcha -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
