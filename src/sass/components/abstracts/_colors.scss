@@ -4,7 +4,7 @@ $bg-light: #eff4fb;
 $bg-dark: #07172a;
 $prim-acc: #44586d;
 $sec-acc: #c3ae90;
-$ter-acc: #23ce6b;
+$ter-acc: #0881c7;
 $quar-acc: #fff;
 $disabled: #aaaaaa;
 $txt-on-dark: #eff4fb;
@@ -157,7 +157,9 @@ nav,
 .dropdown-container {
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .theme-text {

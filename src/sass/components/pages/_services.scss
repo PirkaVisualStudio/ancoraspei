@@ -1,0 +1,53 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/media-queries" as *;
+@use "../layouts/navbarTop" as *;
+@use "../abstracts/fonts" as *;
+
+.services-index {
+  padding-top: 4rem;
+  .container {
+    ul {
+      padding-top: 12px;
+      padding-left: 30px;
+      padding-bottom: 40px;
+    }
+
+    li {
+      font-weight: bold;
+      padding-bottom: 8px;
+      list-style: disc;
+      a {
+        color: $ter-acc;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.services-content {
+  h3 {
+    padding-bottom: 24px;
+  }
+  .container {
+    .title {
+      padding-bottom: 12px;
+    }
+
+    .description {
+      line-height: 1.5;
+    }
+    .flex-column {
+      align-items: flex-start;
+      padding-bottom: 40px;
+      .flex-left {
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        @include large {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

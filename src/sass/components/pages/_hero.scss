@@ -33,7 +33,7 @@
   .hero-mask {
     position: absolute;
     inset: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 95%, 20% 100%, 0 90%);
   }
 
   .hero_image {
@@ -74,11 +74,13 @@
 
 .hero-standard {
   padding-top: 150px;
+  min-height: 500px;
 }
 
 .services {
   height: 100%;
   width: 100%;
+  overflow: hidden;
   .container {
     display: flex;
     flex-direction: row;
@@ -87,23 +89,57 @@
     @include normal {
       flex-direction: column;
     }
+
     .box {
+      position: relative;
       width: calc(100% / 3);
       height: 100%;
       @include normal {
         width: 100%;
       }
+
       h2 {
         padding-bottom: 4px;
       }
       p {
         padding-bottom: 18px;
       }
-      img {
-        width: 100%;
+
+      .imagebox {
+        display: block;
+        position: relative;
         height: 300px;
-        border-radius: 10px;
-        object-fit: cover;
+        width: 100%;
+        &:hover .slide {
+          opacity: 1;
+        }
+        img {
+          width: 100%;
+          height: 300px;
+          border-radius: 10px;
+          object-fit: cover;
+          transition: all 0.2s ease-out;
+          &:hover {
+            box-shadow: 0px 0px 30px 10px rgba($color: #000000, $alpha: 0.1);
+          }
+        }
+        .slide {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 40px;
+          color: $txt-on-dark;
+          background-color: rgba($color: #000000, $alpha: 0.6);
+          text-align: center;
+          padding-bottom: 0;
+          border-radius: 0px 0px 10px 10px;
+          z-index: 90;
+          bottom: 0;
+          opacity: 0;
+          transition: all 0.2s ease-out;
+        }
       }
     }
   }

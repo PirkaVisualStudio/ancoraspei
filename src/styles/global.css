@@ -2673,7 +2673,7 @@ footer a {
 .hero-home .hero-mask {
   position: absolute;
   inset: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 95%, 20% 100%, 0 90%);
 }
 .hero-home .hero_image {
   width: 100%;
@@ -2722,11 +2722,13 @@ footer a {
 
 .hero-standard {
   padding-top: 150px;
+  min-height: 500px;
 }
 
 .services {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 .services .container {
   display: -webkit-box;
@@ -2748,6 +2750,7 @@ footer a {
   }
 }
 .services .container .box {
+  position: relative;
   width: 33.3333333333%;
   height: 100%;
 }
@@ -2762,12 +2765,51 @@ footer a {
 .services .container .box p {
   padding-bottom: 18px;
 }
-.services .container .box img {
+.services .container .box .imagebox {
+  display: block;
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+.services .container .box .imagebox:hover .slide {
+  opacity: 1;
+}
+.services .container .box .imagebox img {
   width: 100%;
   height: 300px;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.services .container .box .imagebox img:hover {
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+}
+.services .container .box .imagebox .slide {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 40px;
+  color: #eff4fb;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding-bottom: 0;
+  border-radius: 0px 0px 10px 10px;
+  z-index: 90;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .faq {
@@ -2819,6 +2861,51 @@ footer a {
 
 .cta .container .flex-column .flex-right {
   padding: 1rem;
+}
+
+.services-index {
+  padding-top: 4rem;
+}
+.services-index .container ul {
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+.services-index .container li {
+  font-weight: bold;
+  padding-bottom: 8px;
+  list-style: disc;
+}
+.services-index .container li a {
+  color: #0881c7;
+}
+.services-index .container li a:hover {
+  text-decoration: underline;
+}
+
+.services-content h3 {
+  padding-bottom: 24px;
+}
+.services-content .container .title {
+  padding-bottom: 12px;
+}
+.services-content .container .description {
+  line-height: 1.5;
+}
+.services-content .container .flex-column {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 40px;
+}
+.services-content .container .flex-column .flex-left {
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .services-content .container .flex-column .flex-left {
+    padding-right: 0;
+  }
 }
 
 body {
