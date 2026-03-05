@@ -898,12 +898,12 @@ a:hover {
 }
 
 ::-moz-selection {
-  color: #07172a;
+  color: #eff4fb;
   background: #44586d;
 }
 
 ::selection {
-  color: #07172a;
+  color: #eff4fb;
   background: #44586d;
 }
 
@@ -2670,10 +2670,23 @@ footer a {
   min-height: 600px;
   overflow: visible;
 }
+.hero-home .icon-wrap {
+  width: 100%;
+}
+.hero-home .icon-wrap .mask {
+  color: #eff4fb;
+}
+.hero-home .icon-wrap svg {
+  position: absolute;
+  display: block;
+  height: auto;
+  width: 100%;
+  bottom: -10px;
+  z-index: 88;
+}
 .hero-home .hero-mask {
   position: absolute;
   inset: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 90%, 20% 100%, 0 85%);
 }
 .hero-home .hero_image {
   width: 100%;

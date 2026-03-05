@@ -29,11 +29,26 @@
   position: relative;
   min-height: 600px;
   overflow: visible;
+  .icon-wrap {
+    width: 100%;
+    .mask {
+      color: $main-light;
+    }
+    svg {
+      position: absolute;
+      display: block;
+      height: auto;
+      width: 100%;
+      bottom: -10px;
+      z-index: 88;
+    }
+  }
 
   .hero-mask {
     position: absolute;
+
     inset: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 90%, 20% 100%, 0 85%);
+    //clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 90%, 20% 100%, 0 85%);
   }
 
   .hero_image {

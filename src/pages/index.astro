@@ -11,7 +11,7 @@ import { Image } from "astro:assets";
 //import images
 
 import hero from "../images/hero/herocover.jpg";
-import vila from "../images/hero/vila.jpg";
+import vila from "../images/hero/vilaLQ.jpg";
 import vila2 from "../images/hero/vila2.jpg";
 
 //import icons
@@ -49,6 +49,10 @@ const {
 >
   <!-- hero -->
   <section class="center hero-home">
+    <div class="icon-wrap">
+      <Icon class="mask" name="mask" fill="#eff4fb" />
+    </div>
+
     <div class="hero-mask">
       <Image src={vila} alt="maven mib" loading="eager" class="hero_image" />
     </div>
