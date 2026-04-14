@@ -5,9 +5,9 @@
     "main_lang": "en",
     "alt_lang": "hr",
     "charset": "UTF-8",
-    "title": "MAVEN MIB",
-    "brand_tag": " | MAVEN MIB", 
-    "description": "Maven MIB projekti",
+    "title": "Pusti me proć",
+    "brand_tag": " | Konoba", 
+    "description": "Autohtona konoba u centru Splita",
     "not_included": ["https://mavenmib.netlify.app/hvala/", "https://mavenmib.netlify.app/styleguide/"]
 }
 ]

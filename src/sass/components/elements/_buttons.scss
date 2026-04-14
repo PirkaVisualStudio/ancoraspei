@@ -7,12 +7,12 @@
   cursor: pointer;
   width: auto;
   text-align: center;
-  background-color: $prim-acc;
-  color: $main-light;
+  background-color: $main-light;
+  color: $main-dark;
   padding: 0.8rem 2rem;
   font-family: $heading-font;
   font-weight: 600;
-  border: 2px solid $prim-acc;
+  border: 2px solid $main-light;
   border-radius: 0px;
   transition: all 0.2s ease-in-out;
 

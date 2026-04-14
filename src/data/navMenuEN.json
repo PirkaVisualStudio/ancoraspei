@@ -12,13 +12,8 @@
     },
 
     {
-        "name": "Services",
+        "name": "Menu",
         "path": "/services/"
-    },
-
-    {
-        "name": "Portfolio",
-        "path": "/portfolio/"
     },
 
 

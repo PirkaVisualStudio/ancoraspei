@@ -1,14 +1,14 @@
-$main-dark: #07172a;
-$main-light: #eff4fb;
-$bg-light: #eff4fb;
-$bg-dark: #07172a;
-$prim-acc: #44586d;
-$sec-acc: #c3ae90;
+$main-dark: #455374;
+$main-light: #ddd3ce;
+$bg-light: #ddd3ce;
+$bg-dark: #455374;
+$prim-acc: #455374;
+$sec-acc: #6b0f1f;
 $ter-acc: #0881c7;
 $quar-acc: #fff;
 $disabled: #aaaaaa;
-$txt-on-dark: #eff4fb;
-$txt-on-light: #07172a;
+$txt-on-dark: #ddd3ce;
+$txt-on-light: #455374;
 $error: red;
 $success: #0350e7;
 $white: #fff;
@@ -110,95 +110,11 @@ $prim-acc-50: color-mix(in srgb, $prim-acc 50%, black);
   background-color: #fff;
 }
 
-html.theme-dark {
-  --bg-color: #07172a !important;
-  --text-color: #eff4fb !important;
-  --link-color: #eff4fb !important;
-  --link-hover: #44586d !important;
-  --offcolor: color-mix(in srgb, var(--bg-color) 95%, white);
-}
-
-html.theme-light {
-  --bg-color: #eff4fb !important;
-  --text-color: #07172a !important;
-  --link-color: #44586d !important;
-  --link-hover: #07172a !important;
-  --offcolor: color-mix(in srgb, var(--bg-color) 95%, black);
-}
-
-html.theme-light .logo-dark {
-  display: flex;
-}
-
-html.theme-dark .logo-light {
-  display: flex;
-}
-
-html.theme-light .sun {
-  display: inline;
-  opacity: 1;
-  &:hover {
-    color: rgb(192, 98, 15);
-  }
-}
-
-html.theme-dark .moon {
-  display: inline;
-  opacity: 1;
-  color: white;
-  &:hover {
-    color: rgb(255, 225, 0);
-  }
-}
-
-body,
-header,
-nav,
-.dropdown-container {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition:
-    background 0.3s,
-    color 0.3s;
-}
-
-.theme-text {
-  color: var(--text-color);
-}
-
-.theme-container {
-  background-color: var(--offcolor);
-}
-
 a {
-  color: var(--link-color);
+  color: $main-light;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: var(--link-hover);
-}
-
-.logo-light,
-.logo-dark {
-  transition: all 0.3 ease-in-out;
-  display: none;
-}
-
-.theme-switcher {
-  position: relative;
-  top: 0;
-  left: 0;
-  background: none;
-  border: 0;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.sun,
-.moon {
-  border: 0;
-  background: none;
-  display: none;
-  transition: all 0.3s ease-in-out;
+  color: $sec-acc;
 }

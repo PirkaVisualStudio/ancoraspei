@@ -13,15 +13,16 @@
 
 #heroLogo {
   width: 280px;
-
+  height: auto;
+  padding-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
   @include large {
-    width: 160px;
+    width: 200px;
   }
 
   @include normal {
-    width: 120px;
+    width: 160px;
   }
 }
 
@@ -29,20 +30,6 @@
   position: relative;
   min-height: 600px;
   overflow: visible;
-  .icon-wrap {
-    width: 100%;
-    .mask {
-      color: $main-light;
-    }
-    svg {
-      position: absolute;
-      display: block;
-      height: auto;
-      width: 100%;
-      bottom: -10px;
-      z-index: 88;
-    }
-  }
 
   .hero-mask {
     position: absolute;
@@ -60,7 +47,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
@@ -70,9 +57,9 @@
   }
 
   p {
-    text-align: left;
+    text-align: center;
 
-    padding-bottom: 0px;
+    padding-bottom: 16px;
     width: 100%;
   }
   .flex-right {
@@ -95,69 +82,6 @@
 .services {
   height: 100%;
   width: 100%;
-  overflow: hidden;
-  .container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 40px;
-    @include normal {
-      flex-direction: column;
-    }
-
-    .box {
-      position: relative;
-      width: calc(100% / 3);
-      height: 100%;
-      @include normal {
-        width: 100%;
-      }
-
-      h2 {
-        padding-bottom: 4px;
-      }
-      p {
-        padding-bottom: 18px;
-      }
-
-      .imagebox {
-        display: block;
-        position: relative;
-        height: 300px;
-        width: 100%;
-        &:hover .slide {
-          opacity: 1;
-        }
-        img {
-          width: 100%;
-          height: 300px;
-          border-radius: 10px;
-          object-fit: cover;
-          transition: all 0.2s ease-out;
-          &:hover {
-            box-shadow: 0px 0px 20px 5px rgba($color: #000000, $alpha: 0.1);
-          }
-        }
-        .slide {
-          position: absolute;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 40px;
-          color: $txt-on-dark;
-          background-color: rgba($color: #000000, $alpha: 0.6);
-          text-align: center;
-          padding-bottom: 0;
-          border-radius: 0px 0px 10px 10px;
-          z-index: 90;
-          bottom: 0;
-          opacity: 0;
-          transition: all 0.2s ease-out;
-        }
-      }
-    }
-  }
 }
 
 .faq {
@@ -170,27 +94,31 @@
 }
 
 .testimonials {
+  background-color: $main-light;
   .box {
     padding: 3rem;
+    text-align: center;
 
-    .quotes {
-      color: $prim-acc;
+    .star {
       padding-bottom: 30px;
     }
 
     .review {
       height: 150px;
+      color: $main-light;
     }
     .name {
       font-size: 16px;
       font-weight: bold;
       text-transform: uppercase;
       padding-bottom: 8px;
+      color: $main-light;
     }
     .from {
       font-size: 12px;
       font-weight: bold;
       text-transform: uppercase;
+      color: $main-light;
     }
   }
 }

@@ -10,9 +10,10 @@ import { Image } from "astro:assets";
 
 //import images
 
-import hero from "../images/hero/herocover.jpg";
+import hero from "../images/hero/hero.jpg";
 import vila from "../images/hero/vilaLQ.jpg";
 import vila2 from "../images/hero/vila2.jpg";
+import logo from "../images/logos/pusti_logo_ext_light.svg";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -49,64 +50,31 @@ const {
 >
   <!-- hero -->
   <section class="center hero-home">
-    <div class="icon-wrap">
-      <Icon class="mask" name="mask" />
-    </div>
-
     <div class="hero-mask">
-      <Image src={vila} alt="maven mib" loading="eager" class="hero_image" />
+      <Image src={hero} alt="maven mib" loading="eager" class="hero_image" />
     </div>
     <div class="container wrapper">
-      <p class="h1 marb-400 clr-main-light">MAVEN MIB</p>
-      <p class="body-large clr-main-light">
-        A real estate project management for your investment in Croatia.
-      </p>
-      <p class="body-large marb-900 clr-main-light">
-        We handle the paperwork! You enjoy the view.
-      </p>
+      <Image
+        src={logo}
+        alt="pusti me proc logo"
+        loading="eager"
+        id="heroLogo"
+      />
+
       <a href="/contact/"><div class="btn-fill">CONTACT</div></a>
     </div>
   </section>
 
   <!-- services -->
 
-  <section class="section services center wrapper hidden-fade">
-    <h2 class="h2 padb-100">Services</h2>
-    <p class="body-large padb-100">What we do?</p>
-    <div class="line-acc-full marb-900"></div>
-    <div class="container center">
-      <div class="box 1">
-        <h2 class="body-large-bold">SURVEYING</h2>
-        <p class="body">Filed surveying and geodetic services</p>
-
-        <div class="imagebox">
-          <p class="slide">MORE</p>
-          <a href="/services/"
-            ><Image src={hero} alt="maven surveying" loading="eager" /></a
-          >
-        </div>
-      </div>
-      <div class="box 2">
-        <h2 class="body-large-bold">SURVEYING</h2>
-        <p class="body">Filed surveying and geodetic services</p>
-        <div class="imagebox">
-          <p class="slide">MORE</p>
-          <a href="/services/"
-            ><Image src={hero} alt="maven surveying" loading="eager" /></a
-          >
-        </div>
-      </div>
-      <div class="box 3">
-        <h2 class="body-large-bold">SURVEYING</h2>
-        <p class="body">Filed surveying and geodetic services</p>
-        <a href="/services/"
-          ><div class="imagebox">
-            <p class="slide">MORE</p>
-            <Image src={hero} alt="maven surveying" loading="eager" />
-          </div></a
-        >
-      </div>
-    </div>
+  <section class="section center wrapper txt-center">
+    <p class="txt-label padb-400">PAUSE HERE</p>
+    <h1 class="h3 padb-100">Authentic food in a heart of Split</h1>
+    <p class="body-large padb-100">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ut dolor
+      quos earum quas sit tempore recusandae in excepturi pariatur ullam
+      distinctio rerum et dolore facilis nam similique, labore magni.
+    </p>
   </section>
 
   <!-- testimonials -->
@@ -116,121 +84,18 @@ const {
   <!-- cta 1-->
   <section class="center">
     <div class="wrapper-medium center txt-center section-2">
-      <p class="txt-label padb-400 clr-prim-acc hidden-fade delay1">
-        GET IN TOUCH
-      </p>
-      <h2 class="h3 padb-400 hidden-fade delay2">
-        You want to invest in Croatia? Don't know where to start?
-      </h2>
+      <p class="txt-label padb-400 hidden-fade delay1">PAUSE HERE</p>
+      <h2 class="h3 padb-400 hidden-fade delay2">Life moves slow</h2>
       <p class="body-large padb-900 hidden-fade delay3">
-        We can help you get clear objectives and all the information for
-        starting a project! We offer complete services that you might need when
-        investing in real estate business in Croatia. You want to build a house,
-        buy a property or invest? We can help you!
+        Enjoy our authentic Croatian food in a cozy atmosphere
       </p>
       <a href="/kontakt/"><div class="btn-fill">CONTACT</div></a>
     </div>
   </section>
 
-  <!-- faq -->
-
-  <section class="faq section hidden-fade" id="faqa">
-    <div class="wrapper center">
-      <div class="container">
-        <h2 class="h2 padb-400">FAQ's</h2>
-        <p class="body-large padb-400">
-          Frequently asked questions! If you want to know more please contact us <a
-            href="/contact/"
-          >
-            HERE!</a
-          >
-        </p>
-        <div class="question">
-          <div class="accordion">
-            Question 1<Icon
-              class="faq-icon"
-              name="mdi:keyboard-arrow-down"
-              width={28}
-              height={28}
-            />
-          </div>
-
-          <div class="panel">
-            <p class="body">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis aut aspernatur neque reiciendis debitis quae enim,
-              similique aliquam est consequuntur illum iste illo maxime autem
-              iure cupiditate nesciunt quas pariatur.
-            </p>
-          </div>
-        </div>
-
-        <div class="question">
-          <div class="accordion">
-            Question 2<Icon
-              class="faq-icon"
-              name="mdi:keyboard-arrow-down"
-              width={28}
-              height={28}
-            />
-          </div>
-
-          <div class="panel">
-            <p class="body">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis aut aspernatur neque reiciendis debitis quae enim,
-              similique aliquam est consequuntur illum iste illo maxime autem
-              iure cupiditate nesciunt quas pariatur.
-            </p>
-          </div>
-        </div>
-
-        <div class="question">
-          <div class="accordion">
-            Question 3<Icon
-              class="faq-icon"
-              name="mdi:keyboard-arrow-down"
-              width={28}
-              height={28}
-            />
-          </div>
-
-          <div class="panel">
-            <p class="body">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis aut aspernatur neque reiciendis debitis quae enim,
-              similique aliquam est consequuntur illum iste illo maxime autem
-              iure cupiditate nesciunt quas pariatur.
-            </p>
-          </div>
-        </div>
-
-        <div class="question">
-          <div class="accordion">
-            Question 4<Icon
-              class="faq-icon"
-              name="mdi:keyboard-arrow-down"
-              width={28}
-              height={28}
-            />
-          </div>
-
-          <div class="panel">
-            <p class="body">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis aut aspernatur neque reiciendis debitis quae enim,
-              similique aliquam est consequuntur illum iste illo maxime autem
-              iure cupiditate nesciunt quas pariatur.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- img -->
   <section class="hidden-fade section">
-    <Image src={vila} alt="maven mib" loading="eager" class="img-full" />
+    <Image src={hero} alt="maven mib" loading="eager" class="img-full" />
   </section>
 
   <!-- cta 2-->
@@ -255,7 +120,7 @@ const {
     <div class="container">
       <div class="flex-column">
         <div class="flex-left">
-          <Image src={vila} alt="maven mib" loading="eager" class="img-full" />
+          <Image src={hero} alt="maven mib" loading="eager" class="img-full" />
         </div>
         <div class="flex-right">
           <h2 class="h2 padb-400">What is your dream home?</h2>

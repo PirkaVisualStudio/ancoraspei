@@ -14,13 +14,13 @@ import defaultImage from "../images/default/seo.jpg";
 //URL for default image file
 const imageURL = new URL(
   defaultImage.src,
-  `${siteInfo.map((i) => i.site_url)}`
+  `${siteInfo.map((i) => i.site_url)}`,
 );
 
 //URL for default image file
 const canonicalURL = new URL(
   Astro.url.pathname,
-  `${siteInfo.map((i) => i.site_url)}`
+  `${siteInfo.map((i) => i.site_url)}`,
 );
 const { pageIndex } = Astro.props;
 const { pageIndexHr } = Astro.props;
@@ -139,7 +139,7 @@ const {
     import "../scripts/animation.js";
     import "../scripts/consent.js";
     import "../scripts/loco.js";
-    import "../scripts/theme.js";
+
     import "../scripts/lang.js";
   </script>
 </body>
