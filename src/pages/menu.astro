@@ -29,12 +29,11 @@ const {
 
 <MainLayout
   lang={lang}
-  pageIndex="about/"
-  pageIndexHr="about/"
-  title={"About us" + siteInfo.map((i) => i.brand_tag)}
+  pageIndex="menu/"
+  pageIndexHr="menu/"
+  title={"Menu" + siteInfo.map((i) => i.brand_tag)}
   charset={charset}
-  description={"Get to know us, what we do and how did we end up here" +
-    siteInfo.map((i) => i.brand_tag)}
+  description={"Check out our offer" + siteInfo.map((i) => i.brand_tag)}
   canonical={canonical}
   openGraph={openGraph}
   extend={extend}
@@ -42,11 +41,8 @@ const {
   <!-- hero -->
   <section class="hero-standard bg-prim-acc clr-main-light">
     <div class="container wrapper center">
-      <h1 class="txt-label marb-400">ABOUT US</h1>
-      <h2 class="h3 padb-900">
-        Find out more about us. Our mission, values and all the things that
-        matter to us.
-      </h2>
+      <h1 class="txt-label marb-400">MENU</h1>
+      <h2 class="h3 padb-900">Check out our menu and our offer.</h2>
     </div>
   </section>
 </MainLayout>

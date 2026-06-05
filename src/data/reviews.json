@@ -1,40 +1,11 @@
 [
     {
-        "name": "Ludi Maur",
+        "name": "Mate",
         "from": "Auckland, New Zealand",
-        "review": "Unga bunga!"
-      
-    },
-
-    {
-        "name": "Marko Perković Thompson",
-        "from": "Toronto, Canada",
-        "review": "Za dom!"
-      
-    },
-    {
-        "name": "Botica",
-        "from": "Split, Croatia",
-        "review": "Nadareni momci! Svaka čast"
-      
-    },
-    {
-        "name": "Plamen",
-        "from": "Madagaskar, Africa",
-        "review": "Ne sićan se ja ničega."
-      
-    },
-    {
-        "name": "Donald Trump",
-        "from": "WA DC,USA",
-        "review": "Make America great again"
-      
-    },
-    {
-        "name": "bl. Alojzije Stepinac",
-        "from": "Zagreb, Croatia",
-        "review": "Božji blagoslov!"
+        "review": "Great food!"
       
     }
+
+    
 
 ]
