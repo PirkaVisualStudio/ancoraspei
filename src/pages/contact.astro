@@ -38,8 +38,8 @@ const {
   <div>
     <div class="wrapper center">
       <div class="section">
-        <h1 class="h1 padt-900 mart-900">Contact</h1>
-        <h2 class="body-bold body-large padb-400">
+        <h1 class="h1 padt-900 mart-900 padb-400">Contact</h1>
+        <h2 class="body-bold body-large padb-200">
           Send us inquiry about the service you are interested in.
         </h2>
         <p class="body padb-900">We'll try to answer as soon as possible.</p>
@@ -55,8 +55,14 @@ const {
       action="/thanks/"
       data-netlify-recaptcha="true"
     >
-      <label class="body-bold" for="name">Ime:</label>
-      <input type="text" id="name" name="name" placeholder="Ivo" required />
+      <label class="body-bold" for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="John Doe"
+        required
+      />
       <label class="body-bold" for="email">E-mail:</label>
       <input
         type="email"
@@ -65,16 +71,16 @@ const {
         placeholder="info@mail.hr"
         required
       />
-      <label class="body-bold" for="message">Poruka:</label>
+      <label class="body-bold" for="message">Message:</label>
       <textarea
         id="message"
         name="message"
         rows="4"
-        placeholder="Zanima me..."
+        placeholder="I want to know more about..."
         required></textarea>
 
       <label class="body mart-900 marb-900 txt-center">
-        Molimo potvrdite da niste robot zbog sprječavanja spam pošte:
+        Please confirm that you are not a robot:
       </label>
 
       <div class="g-recaptcha" data-sitekey=""></div>

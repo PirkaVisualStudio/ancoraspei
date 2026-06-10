@@ -1195,15 +1195,15 @@ html.lenis {
   height: 50px;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #455374;
-  background-color: rgba(69, 83, 116, 0);
+  border-bottom: 1px solid #ddd3ce;
+  background-color: rgba(221, 211, 206, 0);
   outline: none;
-  color: #455374;
+  color: #ddd3ce;
   text-indent: 1rem;
   margin-bottom: 2rem;
 }
 #formContact input:focus {
-  border: 1px solid #455374;
+  border: 1px solid #6b0f1f;
 }
 #formContact input::-webkit-input-placeholder {
   color: color-mix(in srgb, #455374 50%, white);
@@ -1239,21 +1239,21 @@ html.lenis {
   height: 150px;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #455374;
+  border-bottom: 1px solid #ddd3ce;
   background-color: transparent;
   outline: none;
-  color: #455374;
+  color: #ddd3ce;
   text-indent: 1rem;
   padding-top: 1rem;
   resize: none;
 }
 #formContact textarea:focus {
-  border: 1px solid #455374;
+  border: 1px solid #6b0f1f;
 }
 
 .btn-form {
-  background-color: #455374;
-  color: #ddd3ce;
+  background-color: #ddd3ce;
+  color: #455374;
   white-space: nowrap;
   border: none;
   display: -webkit-box;
@@ -2078,14 +2078,24 @@ nav .container .social-icons {
   z-index: 998;
 }
 .mobile-menu a {
-  color: #455374;
+  color: #ddd3ce;
 }
 .mobile-menu a:hover {
-  color: #455374;
+  color: #6b0f1f;
 }
 
 .show-mobile {
   right: 0;
+}
+
+.mobile-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 32px;
+}
+.mobile-logo img {
+  width: 80px;
+  height: 80px;
 }
 
 .mobile-container {
@@ -2130,7 +2140,7 @@ nav .container .social-icons {
 }
 .mobile-list a {
   z-index: 999;
-  font-size: 1rem;
+  font-size: 2rem;
   letter-spacing: 2px;
 }
 

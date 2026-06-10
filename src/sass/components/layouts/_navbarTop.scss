@@ -172,9 +172,9 @@ nav .container {
     transform 0.4s ease-out;
   z-index: 998;
   a {
-    color: $prim-acc;
+    color: $main-light;
     &:hover {
-      color: $main-dark;
+      color: $sec-acc;
     }
   }
 }
@@ -182,6 +182,16 @@ nav .container {
 .show-mobile {
   //position of the menu when clicked
   right: 0;
+}
+
+.mobile-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 32px;
+  img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .mobile-container {
@@ -218,7 +228,7 @@ nav .container {
   white-space: nowrap;
   a {
     z-index: 999;
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: 2px;
   }
 }

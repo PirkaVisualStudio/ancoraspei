@@ -1,13 +1,13 @@
 [
     {
     "google_id": "",
-    "site_url": "https://mavenmib.netlify.app",
+    "site_url": "https://pustimeproc.netlify.app",
     "main_lang": "en",
     "alt_lang": "hr",
     "charset": "UTF-8",
     "title": "Pusti me proć",
     "brand_tag": " | Konoba", 
     "description": "Autohtona konoba u centru Splita",
-    "not_included": ["https://mavenmib.netlify.app/hvala/", "https://mavenmib.netlify.app/styleguide/"]
+    "not_included": ["https://pustimeproc.netlify.app/hvala/", "https://pustimeproc.netlify.app/styleguide/"]
 }
 ]

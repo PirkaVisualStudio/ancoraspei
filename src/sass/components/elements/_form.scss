@@ -24,16 +24,16 @@
     height: 50px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid $prim-acc;
-    background-color: rgba($color: $prim-acc, $alpha: 0);
+    border-bottom: 1px solid $main-light;
+    background-color: rgba($color: $main-light, $alpha: 0);
     outline: none;
-    color: $prim-acc;
+    color: $main-light;
 
     text-indent: 1rem;
     margin-bottom: 2rem;
   }
   input:focus {
-    border: 1px solid $prim-acc;
+    border: 1px solid $sec-acc;
   }
   input::placeholder {
     color: $main-dark-50;
@@ -47,23 +47,23 @@
     height: 150px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid $prim-acc;
+    border-bottom: 1px solid $main-light;
     background-color: transparent;
     outline: none;
-    color: $prim-acc;
+    color: $main-light;
 
     text-indent: 1rem;
     padding-top: 1rem;
     resize: none;
   }
   textarea:focus {
-    border: 1px solid $prim-acc;
+    border: 1px solid $sec-acc;
   }
 }
 
 .btn-form {
-  background-color: $prim-acc;
-  color: $txt-on-dark;
+  background-color: $main-light;
+  color: $txt-on-light;
   white-space: nowrap;
   border: none;
   display: flex;
