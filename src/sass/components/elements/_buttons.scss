@@ -7,19 +7,19 @@
   cursor: pointer;
   width: auto;
   text-align: center;
-  background-color: $main-light;
-  color: $main-dark;
+  background-color: $ter-acc;
+  color: $main-light;
   padding: 0.8rem 2rem;
   font-family: $heading-font;
   font-weight: 600;
-  border: 2px solid $main-light;
+  border: 2px solid $ter-acc;
   border-radius: 0px;
   transition: all 0.2s ease-in-out;
 
   &:hover {
     background: none;
-    color: $main-light;
-    border: 2px solid $prim-acc;
+    color: $ter-acc;
+    border: 2px solid $ter-acc;
   }
 
   @include medium {

@@ -24,7 +24,7 @@
     height: 50px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid $main-light;
+    border-bottom: 1px solid $ter-acc;
     background-color: rgba($color: $main-light, $alpha: 0);
     outline: none;
     color: $main-light;
@@ -33,7 +33,7 @@
     margin-bottom: 2rem;
   }
   input:focus {
-    border: 1px solid $sec-acc;
+    border: 1px solid $ter-acc;
   }
   input::placeholder {
     color: $main-dark-50;
@@ -47,7 +47,7 @@
     height: 150px;
     width: 100%;
     border: none;
-    border-bottom: 1px solid $main-light;
+    border-bottom: 1px solid $ter-acc;
     background-color: transparent;
     outline: none;
     color: $main-light;
@@ -57,13 +57,13 @@
     resize: none;
   }
   textarea:focus {
-    border: 1px solid $sec-acc;
+    border: 1px solid $ter-acc;
   }
 }
 
 .btn-form {
-  background-color: $main-light;
-  color: $txt-on-light;
+  background-color: $ter-acc;
+  color: $txt-on-dark;
   white-space: nowrap;
   border: none;
   display: flex;

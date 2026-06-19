@@ -10,7 +10,9 @@ import { Image } from "astro:assets";
 
 //import images
 
-import hero from "../images/hero/hero.jpg";
+import hero from "../images/hero/hero3.jpg";
+import tece from "../images/hero/tece.jpg";
+import kuzina from "../images/hero/kuzina.jpg";
 import vila from "../images/hero/vilaLQ.jpg";
 import vila2 from "../images/hero/vila2.jpg";
 import logo from "../images/logos/pusti_logo_ext_light.svg";
@@ -51,7 +53,12 @@ const {
   <!-- hero -->
   <section class="center hero-home">
     <div class="hero-mask">
-      <Image src={hero} alt="maven mib" loading="eager" class="hero_image" />
+      <Image
+        src={hero}
+        alt="pusti me proc"
+        loading="eager"
+        class="hero_image"
+      />
     </div>
     <div class="container wrapper">
       <Image
@@ -67,22 +74,28 @@ const {
 
   <!-- services -->
 
-  <section class="section center wrapper txt-center">
+  <section class="section center wrapper txt-center bg-light clr-ter-acc">
     <p class="txt-label padb-400">PAUSE HERE</p>
     <h1 class="h3 padb-100">Authentic food in a heart of Split</h1>
-    <p class="body-large padb-100">
+    <p class="body-large padb-900">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ut dolor
       quos earum quas sit tempore recusandae in excepturi pariatur ullam
       distinctio rerum et dolore facilis nam similique, labore magni.
     </p>
+    <a href="/menu/"><div class="btn-fill">MENU</div></a>
   </section>
 
   <!-- testimonials -->
 
   <ReviewsSlider />
 
+  <!-- img -->
+  <section class="hidden-fade section">
+    <Image src={tece} alt="pusti me proc" loading="eager" class="img-full" />
+  </section>
+
   <!-- cta 1-->
-  <section class="center">
+  <section class="center bg-light clr-ter-acc">
     <div class="wrapper-medium center txt-center section-2">
       <p class="txt-label padb-400 hidden-fade delay1">PAUSE HERE</p>
       <h2 class="h3 padb-400 hidden-fade delay2">Life moves slow</h2>
@@ -95,41 +108,23 @@ const {
 
   <!-- img -->
   <section class="hidden-fade section">
-    <Image src={hero} alt="maven mib" loading="eager" class="img-full" />
+    <Image
+      src={kuzina}
+      alt="pusti me proc kuzina"
+      loading="eager"
+      class="img-full2"
+    />
   </section>
 
   <!-- cta 2-->
-  <section class="center section">
+  <section class="center section bg-light clr-ter-acc">
     <div class="wrapper-medium center txt-center section-2">
-      <p class="txt-label padb-400 clr-prim-acc hidden-fade delay1">
-        THE FOOD CHOICE
-      </p>
+      <p class="txt-label padb-400 hidden-fade delay1">THE FOOD CHOICE</p>
       <h2 class="h3 padb-400 hidden-fade delay2">Check out our menu!</h2>
       <p class="body-large padb-900 hidden-fade delay3">
         Check out our menu and find out our prices.
       </p>
       <a href="/kontakt/"><div class="btn-fill">MENU</div></a>
-    </div>
-  </section>
-
-  <!-- cta 3-->
-  <section class="cta section center wrapper hidden-fade">
-    <div class="container">
-      <div class="flex-column">
-        <div class="flex-left">
-          <Image src={hero} alt="maven mib" loading="eager" class="img-full" />
-        </div>
-        <div class="flex-right">
-          <h2 class="h2 padb-400">Title 3</h2>
-          <p class="body padb-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dicta
-            maiores quo quod adipisci officiis esse incidunt temporibus est vel,
-            assumenda quasi, veniam quisquam cum, consequuntur cumque ullam
-            tempore maxime!
-          </p>
-          <a href="/contact/"><div class="btn-fill">CONTACT</div></a>
-        </div>
-      </div>
     </div>
   </section>
 </MainLayout>

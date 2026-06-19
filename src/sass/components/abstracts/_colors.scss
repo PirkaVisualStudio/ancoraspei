@@ -1,13 +1,13 @@
 $main-dark: #455374;
-$main-light: #ddd3ce;
-$bg-light: #ddd3ce;
+$main-light: #fbf6eb;
+$bg-light: #fbf6eb;
 $bg-dark: #455374;
 $prim-acc: #455374;
 $sec-acc: #6b0f1f;
-$ter-acc: #0881c7;
+$ter-acc: #d87147;
 $quar-acc: #fff;
 $disabled: #aaaaaa;
-$txt-on-dark: #ddd3ce;
+$txt-on-dark: #fbf6eb;
 $txt-on-light: #455374;
 $error: red;
 $success: #0350e7;
@@ -106,15 +106,19 @@ $prim-acc-50: color-mix(in srgb, $prim-acc 50%, black);
   color: $sec-acc;
 }
 
+.clr-ter-acc {
+  color: $ter-acc;
+}
+
 .bg-white {
   background-color: #fff;
 }
 
 a {
-  color: $main-light;
+  color: $ter-acc;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: $sec-acc;
+  color: $main-dark;
 }
