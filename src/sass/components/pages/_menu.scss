@@ -1,0 +1,19 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/media-queries" as *;
+@use "../layouts/navbarTop" as *;
+@use "../abstracts/fonts" as *;
+
+.menu-links {
+  ul {
+    li {
+      padding-bottom: 10px;
+      a {
+        color: $main-light;
+        font-size: 24px;
+        &:hover {
+          color: $ter-acc;
+        }
+      }
+    }
+  }
+}

@@ -2759,6 +2759,17 @@ footer a {
   }
 }
 
+.menu-links ul li {
+  padding-bottom: 10px;
+}
+.menu-links ul li a {
+  color: #fbf6eb;
+  font-size: 24px;
+}
+.menu-links ul li a:hover {
+  color: #d87147;
+}
+
 body {
   font-family: "Lora", sans-serif;
   background-color: #fbf6eb;
