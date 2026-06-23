@@ -75,8 +75,17 @@
 }
 
 .hero-standard {
-  padding-top: 150px;
+  display: flex;
+  /* padding-top: 150px; */
   min-height: 500px;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin-top: $navHeight;
+  .container {
+    text-align: left;
+  }
 }
 
 .services {

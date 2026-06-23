@@ -2641,8 +2641,24 @@ footer a {
 }
 
 .hero-standard {
-  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* padding-top: 150px; */
   min-height: 500px;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 75px;
+}
+.hero-standard .container {
+  text-align: left;
 }
 
 .services {
