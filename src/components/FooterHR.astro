@@ -10,13 +10,38 @@ import navMenu from "../data/navMenuHR.json";
 //image compression
 import { Image } from "astro:assets";
 import logoBadge from "../images/logos/pirka_logo_nav_acc.svg";
-import navLogo from "../images/logos/pusti_logo_light.svg";
+import navLogo from "../images/logos/pusti_logo_orange.svg";
 ---
 
 <footer>
   <section class="container">
     <div class="wrapper center">
-      <Image src={navLogo} alt="mavenmib logo" id="footerLogo" />
+      <Image src={navLogo} alt="pusti me proc logo" id="footerLogo" />
+      <p class="h6 txt-bold upper padb-400">Autentična spiza u srcu Splita.</p>
+      <div>
+        <a
+          href="https://www.instagram.com/pirkavisualstudio/"
+          target="_blank"
+          aria-label="Link to Instagram page"
+          ><Icon
+            class="socialNavIcon"
+            name="ri:instagram-fill"
+            width={28}
+            height={28}
+          /></a
+        >
+        <a
+          href="https://www.facebook.com/pirkavisualstudio"
+          target="_blank"
+          aria-label="Link to Facebook page"
+          ><Icon
+            class="socialNavIcon"
+            name="ant-design:facebook-filled"
+            width={28}
+            height={28}
+          /></a
+        >
+      </div>
     </div>
   </section>
 
@@ -36,30 +61,6 @@ import navLogo from "../images/logos/pusti_logo_light.svg";
       <div class="social-footer">
         <div class="language-selector">
           <a href="/en/" class="lang-active">EN</a> | <a href="/">HR</a>
-        </div>
-        <div>
-          <a
-            href="https://www.instagram.com/pirkavisualstudio/"
-            target="_blank"
-            aria-label="Link to Instagram page"
-            ><Icon
-              class="socialNavIcon"
-              name="ri:instagram-fill"
-              width={28}
-              height={28}
-            /></a
-          >
-          <a
-            href="https://www.facebook.com/pirkavisualstudio"
-            target="_blank"
-            aria-label="Link to Facebook page"
-            ><Icon
-              class="socialNavIcon"
-              name="ant-design:facebook-filled"
-              width={28}
-              height={28}
-            /></a
-          >
         </div>
       </div>
     </div>
