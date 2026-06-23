@@ -7,8 +7,7 @@ import navMenu from "../data/navMenuHR.json";
 
 //image compression
 import { Image } from "astro:assets";
-import navLogo from "../images/logos/maven_logo_dark.svg";
-import navLogo2 from "../images/logos/maven_logo_light.svg";
+import navLogo from "../images/logos/pusti_logo_orange.svg";
 ---
 
 <header
@@ -34,6 +33,11 @@ import navLogo2 from "../images/logos/maven_logo_light.svg";
     <div class="mobile-menu" id="mobileId">
       <div class="mobile-container">
         <ul class="mobile-list wrapper">
+          <div class="mobile-logo">
+            <a href="/hr/">
+              <Image src={navLogo} alt="pusti me proc logo submark" />
+            </a>
+          </div>
           {
             navMenu.map((i) => (
               <li class="mobile-link">
@@ -77,8 +81,8 @@ import navLogo2 from "../images/logos/maven_logo_light.svg";
     </div>
     <div class="container wrapper center">
       <div class="logo">
-        <a href="/">
-          <Image src={navLogo} alt="maven logo submark" />
+        <a href="/hr/">
+          <Image src={navLogo} alt="pusti me proc logo submark" />
         </a>
       </div>
 
@@ -123,38 +127,21 @@ import navLogo2 from "../images/logos/maven_logo_light.svg";
       </div>
 
       <div class="social-nav">
-        <div class="theme">
-          <button
-            id="theme-toggle"
-            class="theme-switcher"
-            aria-label="Toggle theme"
-          >
-            <Icon
-              name="material-symbols:moon-stars-rounded"
-              width={24}
-              height={24}
-              class="moon"
-            />
-            <Icon
-              name="material-symbols:wb-sunny-outline-rounded"
-              width={24}
-              height={24}
-              class="sun"
-            />
-          </button>
-        </div>
         <div class="language-selector body-bold">
           <button id="to-en">EN</button>
           <p>|</p>
 
           <button id="to-hr">HR</button>
-          <!-- 
 
-          <a href="/">EN</a> | <a href="/hr/" class="lang-active">HR</a>-->
+          <!--  
+          <a href="/" class="lang-active" id="to-en">EN</a> | <a
+            href="/hr/"
+            id="to-hr">HR</a
+          >-->
         </div>
         <div class="social-icons">
           <a
-            href="https://www.instagram.com/pirkavisualstudio/"
+            href="https://www.instagram.com/konoba_pustimeproc/"
             target="_blank"
             aria-label="Link to Instagram page"
             ><Icon
@@ -165,7 +152,7 @@ import navLogo2 from "../images/logos/maven_logo_light.svg";
             /></a
           >
           <a
-            href="https://www.facebook.com/pirkavisualstudio"
+            href="https://www.facebook.com/PustiMeProc/"
             target="_blank"
             aria-label="Link to Facebook page"
             ><Icon

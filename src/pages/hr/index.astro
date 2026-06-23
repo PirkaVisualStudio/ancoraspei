@@ -9,9 +9,11 @@ import siteInfo from "../../data/siteInfo.json";
 import { Image } from "astro:assets";
 
 //import images
-import hero from "../../images/hero/herocover.jpg";
-import vila from "../../images/hero/vila.jpg";
-import vila2 from "../../images/hero/vila2.jpg";
+
+import logo from "../../images/logos/pusti_logo_ext_light.svg";
+import hero from "../../images/hero/hero3.jpg";
+import tece from "../../images/hero/tece.jpg";
+import kuzina from "../../images/hero/kuzina.jpg";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -47,62 +49,81 @@ const {
 >
   <!-- hero -->
   <section class="center hero-home">
-    <Image src={vila} alt="maven mib" loading="eager" class="hero_image" />
+    <div class="hero-mask">
+      <Image
+        src={hero}
+        alt="pusti me proc"
+        loading="eager"
+        class="hero_image"
+      />
+    </div>
     <div class="container wrapper">
-      <p class="h1 marb-400 clr-main-light">MAVEN MIB</p>
-      <p class="body-large clr-main-light">
-        Izrada projekata za izradu nekretnina u Hrvatskoj.
-      </p>
-      <p class="body-large marb-900 clr-main-light">
-        Mi se brinemo o papirologiji! Vi uživajte u pogledu.
-      </p>
-      <a href="/contact/"><div class="btn-fill">KONTAKT</div></a>
+      <Image
+        src={logo}
+        alt="pusti me proc logo"
+        loading="eager"
+        id="heroLogo"
+      />
+
+      <div class="hero-cta-btn">
+        <a href="/contact/"><div class="btn-fill">CONTACT</div></a>
+        <a href="/menu/"><div class="btn-fill">MENU</div></a>
+      </div>
     </div>
   </section>
 
   <!-- services -->
 
-  <section class="section services center wrapper">
-    <h2 class="h2 padb-100">Services</h2>
-    <p class="body-large padb-100">What we do?</p>
-    <div class="line-acc-full marb-900"></div>
-    <div class="container center">
-      <div class="box 1">
-        <h2 class="body-large-bold">SURVEYING</h2>
-        <p class="body">Filed surveying and geodetic services</p>
-        <Image src={hero} alt="maven surveying" loading="eager" />
-      </div>
-      <div class="box 2">
-        <h2 class="body-large-bold">SURVEYING</h2>
-        <p class="body">Filed surveying and geodetic services</p>
-        <Image src={hero} alt="maven surveying" loading="eager" />
-      </div>
-      <div class="box 3">
-        <h2 class="body-large-bold">SURVEYING</h2>
-        <p class="body">Filed surveying and geodetic services</p>
-        <Image src={hero} alt="maven surveying" loading="eager" />
-      </div>
-    </div>
+  <section class="section center wrapper txt-center bg-light clr-ter-acc">
+    <p class="txt-label padb-400">PAUSE HERE</p>
+    <h1 class="h3 padb-100">Authentic food in a heart of Split</h1>
+    <p class="body-large padb-900">
+      A restaurant inspired by one of the narrowest streets in Split, where
+      getting stuck is part of the experience.
+    </p>
+    <a href="/menu/"><div class="btn-fill">MENU</div></a>
   </section>
 
   <!-- testimonials -->
 
   <ReviewsSlider />
 
-  <!-- cta -->
-  <section class="center">
+  <!-- img -->
+  <section class="hidden-fade section">
+    <Image src={tece} alt="pusti me proc" loading="eager" class="img-full2" />
+  </section>
+
+  <!-- cta 1-->
+  <section class="center bg-light clr-ter-acc">
     <div class="wrapper-medium center txt-center section-2">
-      <p class="txt-label padb-400 clr-prim-acc hidden-fade delay1">
-        GET IN TOUCH
-      </p>
-      <h2 class="h3 padb-400 hidden-fade delay2">
-        You want to invest in Croatia? Don't know where to start?
-      </h2>
+      <p class="txt-label padb-400 hidden-fade delay1">PAUSE HERE</p>
+      <h2 class="h3 padb-400 hidden-fade delay2">Life moves slow</h2>
       <p class="body-large padb-900 hidden-fade delay3">
-        We can help you get clear objectives and all the information for
-        starting a project!
+        Enjoy our authentic Croatian food in a cozy atmosphere
       </p>
-      <a href="/kontakt/"><div class="btn-fill">CONTACT</div></a>
+      <a href="/contact/"><div class="btn-fill">CONTACT</div></a>
+    </div>
+  </section>
+
+  <!-- img -->
+  <section class="hidden-fade section">
+    <Image
+      src={kuzina}
+      alt="pusti me proc kuzina"
+      loading="eager"
+      class="img-full2"
+    />
+  </section>
+
+  <!-- cta 2-->
+  <section class="center section bg-light clr-ter-acc">
+    <div class="wrapper-medium center txt-center section-2">
+      <p class="txt-label padb-400 hidden-fade delay1">THE FOOD CHOICE</p>
+      <h2 class="h3 padb-400 hidden-fade delay2">Check out our menu!</h2>
+      <p class="body-large padb-900 hidden-fade delay3">
+        Check out our menu and find out our prices.
+      </p>
+      <a href="/menu/"><div class="btn-fill">MENU</div></a>
     </div>
   </section>
 </MainLayout>

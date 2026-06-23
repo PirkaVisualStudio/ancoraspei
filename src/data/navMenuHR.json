@@ -3,12 +3,22 @@
 [
     {
         "name": "Home",
-        "path": "/"
+        "path": "/hr/"
+    },
+
+    {
+        "name": "O nama",
+        "path": "/hr/o-nama/"
+    },
+
+    {
+        "name": "Jelovnik",
+        "path": "/hr/menu/"
     },
 
 
     {
-        "name": "Kontakt",
-        "path": "/kontakt/"
+        "name": "kontakt",
+        "path": "/hr/kontakt/"
     }
 ]

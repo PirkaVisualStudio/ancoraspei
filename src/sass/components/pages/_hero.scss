@@ -76,15 +76,16 @@
 
 .hero-standard {
   display: flex;
-  /* padding-top: 150px; */
   min-height: 500px;
   width: 100%;
-  justify-content: flex-start;
-  align-content: center;
   align-items: center;
   margin-top: $navHeight;
   .container {
-    text-align: left;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }
 
@@ -151,5 +152,14 @@
         padding: 1rem;
       }
     }
+  }
+}
+
+.hero-cta-btn {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  @include medium {
+    flex-direction: column;
   }
 }

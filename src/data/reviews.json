@@ -1,10 +1,46 @@
 [
     {
-        "name": "Mate",
+        "name": "Jake Legaspi",
         "from": "Auckland, New Zealand",
-        "review": "Great food!"
+        "review": "Really great food and service!"
+      
+    },
+    {
+        "name": "Matteo Paunović",
+        "from": "Auckland, New Zealand",
+        "review": "The food and service are top notch. All praise."
+      
+    },
+
+     {
+        "name": "Mario Trogrlić",
+        "from": "Auckland, New Zealand",
+        "review": "The best pasticada in town."
+      
+    },
+
+    {
+        "name": "Annamária Fehér",
+        "from": "Auckland, New Zealand",
+        "review": "Fantastic service, the food is very delicious! Highly recommended!"
+      
+    },
+
+    {
+        "name": "Petra Guša",
+        "from": "Auckland, New Zealand",
+        "review": "A place that completely delighted us – from the ambiance to every dish. Highly recommended."
+      
+    },
+
+
+    {
+        "name": "Dora Percic",
+        "from": "Auckland, New Zealand",
+        "review": "Pleasant atmosphere and great food!"
       
     }
+
 
     
 

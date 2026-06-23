@@ -12,6 +12,8 @@ import { Icon } from "astro-icon/components";
 
 //import images
 import vila from "../images/hero/vilaLQ.jpg";
+import kuzina from "../images/hero/kuzina.jpg";
+import menu from "../images/hero/menu.jpg";
 
 const {
   title,
@@ -39,17 +41,26 @@ const {
   extend={extend}
 >
   <!-- hero -->
+
   <section class="hero-standard bg-prim-acc clr-main-light">
     <div class="container wrapper center">
-      <h1 class="txt-label marb-400">MENU</h1>
-      <h2 class="h3 padb-900">Check out our menu and our offer.</h2>
-      <div class="menu-links">
-        <ul>
-          <li><a href="/media/jelovnik.pdf">A la carte menu</a></li>
-          <li><a href="">Wine card</a></li>
-          <li><a href="">Drinks menu</a></li>
-        </ul>
+      <div class="content">
+        <h1 class="txt-label marb-400">MENU</h1>
+        <h2 class="h3 padb-900">Check out our menu and our offer.</h2>
+        <div class="menu-links">
+          <ul>
+            <li><a href="/media/jelovnik.pdf">A la carte menu</a></li>
+            <li><a href="/media/vinska_karta.pdf">Wine card</a></li>
+            <li><a href="/media/pice.pdf">Drinks menu</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
+  <Image
+    src={menu}
+    alt="pusti me proc kuzina"
+    loading="eager"
+    class="img-full"
+  />
 </MainLayout>
