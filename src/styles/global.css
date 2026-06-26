@@ -1202,7 +1202,7 @@ html.lenis {
   border-bottom: 1px solid #d87147;
   background-color: rgba(251, 246, 235, 0);
   outline: none;
-  color: #fbf6eb;
+  color: #455374;
   text-indent: 1rem;
   margin-bottom: 2rem;
 }
@@ -1246,7 +1246,7 @@ html.lenis {
   border-bottom: 1px solid #d87147;
   background-color: transparent;
   outline: none;
-  color: #fbf6eb;
+  color: #455374;
   text-indent: 1rem;
   padding-top: 1rem;
   resize: none;
@@ -2113,18 +2113,36 @@ nav .container .social-icons {
 }
 
 .mobile-low-section {
-  display: none;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   bottom: 300px;
   height: 160px;
   width: 100%;
   z-index: 999;
+}
+.mobile-low-section .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .mobile-list {
