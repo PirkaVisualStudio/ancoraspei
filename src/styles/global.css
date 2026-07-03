@@ -938,7 +938,7 @@ html.lenis {
 .btn-fill {
   display: inline-block;
   cursor: pointer;
-  width: 140px;
+  min-width: 140px;
   text-align: center;
   background-color: #d87147;
   color: #fbf6eb;
@@ -2760,6 +2760,7 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  white-space: nowrap;
 }
 @media screen and (max-width: 540px) {
   .hero-cta-btn {

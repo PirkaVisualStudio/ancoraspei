@@ -5,7 +5,7 @@
 .btn-fill {
   display: inline-block;
   cursor: pointer;
-  width: 140px;
+  min-width: 140px;
   text-align: center;
   background-color: $ter-acc;
   color: $main-light;

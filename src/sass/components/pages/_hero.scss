@@ -159,6 +159,7 @@
   display: flex;
   gap: 20px;
   flex-direction: row;
+  white-space: nowrap;
   @include medium {
     flex-direction: column;
   }
