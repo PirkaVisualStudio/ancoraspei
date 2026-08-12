@@ -1,5 +1,5 @@
 ---
-import MainLayout from "../layouts/MainLayoutEN.astro";
+import MainLayout from "../layouts/MainLayoutHR.astro";
 
 //image compression
 import { Image } from "astro:assets";
@@ -28,9 +28,9 @@ const {
   lang={lang}
   pageIndex="contact/"
   pageIndexHr="kontakt/"
-  title={"Contact" + siteInfo.map((i) => i.brand_tag)}
+  title={"Kontakt" + siteInfo.map((i) => i.brand_tag)}
   charset={charset}
-  description={"Get in touch" + siteInfo.map((i) => i.brand_tag)}
+  description={"Javite nam se" + siteInfo.map((i) => i.brand_tag)}
   canonical={canonical}
   openGraph={openGraph}
   extend={extend}
@@ -38,20 +38,21 @@ const {
   <div>
     <div class="wrapper center">
       <div class="section">
-        <h1 class="h1 padt-900 mart-900 padb-400">Contact</h1>
+        <h1 class="h1 padt-900 mart-900 padb-400">Kontakt</h1>
         <h2 class="body-bold body-large padb-200">
-          Use a form below to send us inquiry about the service you are
-          interested in or use the contact details.
+          Pošaljite nam upit uz pomoć forme ili koristite kontakt INFORMACIJE.
         </h2>
-        <p class="body padb-900">We'll try to answer as soon as possible.</p>
-        <p class="body-bold padb-100">CONTACT INFO</p>
+        <p class="body padb-900">
+          Potrudit ćemo se odgovoriti u što kraćem roku
+        </p>
+        <p class="body-bold padb-100">KONTAKT INFORMACIJE</p>
         <p class="padb-100">
           mail: <a href="mailto:pustimeproc.st@gmail.com"
             >pustimeproc.st@gmail.com</a
           >
         </p>
         <p class="padb-400">
-          phone: <a href="tel:0038521675015">+385 21 675 015</a>
+          telefon: <a href="tel:0038521675015">+385 21 675 015</a>
         </p>
         <hr class="marb-900" />
       </div>
@@ -62,15 +63,15 @@ const {
       class="contact-form"
       method="POST"
       data-netlify="true"
-      action="/thanks/"
+      action="/hvala/"
       data-netlify-recaptcha="true"
     >
-      <label class="body-bold" for="name">Name:</label>
+      <label class="body-bold" for="name">Ime:</label>
       <input
         type="text"
         id="name"
         name="name"
-        placeholder="John Doe"
+        placeholder="Ivan Ivić"
         required
       />
       <label class="body-bold" for="email">E-mail:</label>
@@ -81,25 +82,22 @@ const {
         placeholder="info@mail.hr"
         required
       />
-      <label class="body-bold" for="message">Message:</label>
+      <label class="body-bold" for="message">Poruka:</label>
       <textarea
         id="message"
         name="message"
         rows="4"
-        placeholder="I want to know more about..."
+        placeholder="Zanima me..."
         required></textarea>
 
-      <label class="body mart-900 marb-900 txt-center">
-        Please confirm that you are not a robot:
+      <label class="body
+        mart-900
+        marb-900
+        txt-center">
+        Molimo potvrdite da niste robot:
       </label>
-
-      <div
-        class="g-recaptcha"
-        data-sitekey="6Ld7OC8tAAAAANlIJLgQy9FtdahPdANIas0IOJ4u"
-      >
-      </div>
-
-      <button type="submit" class="btn-form mart-900">SEND</button>
+      <div class="g-recaptcha" data-sitekey=""></div>
+      <button type="submit" class="btn-form mart-900">POŠALJI</button>
     </form>
   </div>
 </MainLayout>

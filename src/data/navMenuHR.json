@@ -2,23 +2,23 @@
 
 [
     {
-        "name": "Home",
-        "path": "/hr/"
+        "name": "Početna",
+        "path": "/"
     },
 
     {
         "name": "O nama",
-        "path": "/hr/o-nama/"
+        "path": "/o-nama/"
     },
 
     {
         "name": "Jelovnik",
-        "path": "/hr/menu/"
+        "path": "/menu/"
     },
 
 
     {
         "name": "kontakt",
-        "path": "/hr/kontakt/"
+        "path": "/kontakt/"
     }
 ]

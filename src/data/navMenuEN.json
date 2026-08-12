@@ -3,22 +3,22 @@
 [
     {
         "name": "Home",
-        "path": "/"
+        "path": "/en/"
     },
 
     {
         "name": "About",
-        "path": "/about/"
+        "path": "/en/about/"
     },
 
     {
         "name": "Menu",
-        "path": "/menu/"
+        "path": "/en/menu/"
     },
 
 
     {
         "name": "Contact",
-        "path": "/contact/"
+        "path": "/en/contact/"
     }
 ]

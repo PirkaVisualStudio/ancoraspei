@@ -1,13 +1,13 @@
 [
     {
-    "google_id": "GTM-PQJV23Q2",
-    "site_url": "https://pustimeproc.hr",
-    "main_lang": "en",
-    "alt_lang": "hr",
+    "google_id": "",
+    "site_url": "https://ancoraspei.hr",
+    "main_lang": "hr",
+    "alt_lang": "en",
     "charset": "UTF-8",
-    "title": "Pusti me proć",
-    "brand_tag": " | Konoba", 
-    "description": "Autohtona konoba u centru Splita",
-    "not_included": ["https://pustimeproc.hr/thanks/", "https://pustimeproc.hr/hr/hvala/"]
+    "title": "Ancora Spei",
+    "brand_tag": " | Boating academy", 
+    "description": "Instrukcije upravljanja brodom i praksa na moru",
+    "not_included": ["https://ancoraspei.hr/hvala/", "https://ancoraspei.hr/en/thanks/"]
 }
 ]

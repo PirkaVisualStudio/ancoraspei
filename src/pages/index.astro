@@ -1,6 +1,6 @@
 ---
 //Main Layout
-import MainLayout from "../layouts/MainLayoutEN.astro";
+import MainLayout from "../layouts/MainLayoutHR.astro";
 
 //import main site data
 import siteInfo from "../data/siteInfo.json";
@@ -10,12 +10,12 @@ import { Image } from "astro:assets";
 
 //import images
 
-import hero from "../images/hero/hero3.jpg";
+import hero from "../images/hero/hero.jpg";
 import tece from "../images/hero/tece.jpg";
 import kuzina from "../images/hero/kuzina.jpg";
 import vila from "../images/hero/vilaLQ.jpg";
 import vila2 from "../images/hero/vila2.jpg";
-import logo from "../images/logos/pusti_logo_ext_light.svg";
+import logo from "../images/logos/ancora_logo_full_prim.svg";
 
 //import icons
 import { Icon } from "astro-icon/components";
@@ -67,75 +67,78 @@ const {
         loading="eager"
         id="heroLogo"
       />
-
+      <h1 class="h5 padb-900">Instrukcije upravljanja brodom</h1>
       <div class="hero-cta-btn">
         <a
           href="https://bookmeatable.com/restaurants/konoba-pusti-me-proc-118?lang=en-gb
 "
-          target="_blank"><div class="btn-fill">BOOK NOW</div></a
-        >
-        <a href="/menu/"><div class="btn-fill">MENU</div></a>
+          target="_blank"
+          ><div class="btn-fill">REZERVIRAJ TERMIN</div>
+          <a href="/menu/"><div class="btn-fill">CIJENIK</div></a>
+        </a>
       </div>
     </div>
-  </section>
 
-  <!-- services -->
+    <!-- services -->
 
-  <section class="section center wrapper txt-center bg-light clr-ter-acc">
-    <p class="txt-label padb-400">LET ME PASS</p>
-    <h1 class="h3 padb-100">Authentic food in a heart of Split</h1>
-    <p class="body-large padb-900">
-      A restaurant inspired by one of the narrowest streets in Split, where
-      getting stuck is part of the experience.
-    </p>
-    <a href="/menu/"><div class="btn-fill">MENU</div></a>
-  </section>
-
-  <!-- testimonials -->
-
-  <ReviewsSlider />
-
-  <!-- img -->
-  <section class="hidden-fade section">
-    <Image src={tece} alt="pusti me proc" loading="eager" class="img-full2" />
-  </section>
-
-  <!-- cta 1-->
-  <section class="center bg-light clr-ter-acc">
-    <div class="wrapper-medium center txt-center section-2">
-      <p class="txt-label padb-400 hidden-fade delay1">PAUSE HERE</p>
-      <h2 class="h3 padb-400 hidden-fade delay2">Life moves slow</h2>
-      <p class="body-large padb-900 hidden-fade delay3">
-        Enjoy our authentic Croatian food in a cozy atmosphere
+    <section class="section center wrapper txt-center bg-light clr-ter-acc">
+      <p class="txt-label padb-400">AJ PRISTANI VIŠE</p>
+      <h2 class="h3 padb-100">Instrukcije upravljanja brodom</h2>
+      <p class="body-large padb-900">
+        Naučite upravljati brodom i budite sigurni u navigaciji i plovidbom
+        Jadranom
       </p>
-      <a href="/contact/"><div class="btn-fill">CONTACT</div></a>
-    </div>
+      <a href="/menu/"><div class="btn-fill">REZERVIRAJ</div></a>
+    </section>
+
+    <!-- testimonials -->
+
+    <ReviewsSlider />
+
+    <!-- img -->
+    <section class="hidden-fade section">
+      <Image src={hero} alt="ancora spei" loading="eager" class="img-full2" />
+    </section>
+
+    <!-- cta 1-->
+    <section class="center bg-light clr-ter-acc">
+      <div class="wrapper-medium center txt-center section-2">
+        <p class="txt-label padb-400 hidden-fade delay1">
+          BUDI SIGURAN NA MORU
+        </p>
+        <h2 class="h3 padb-400 hidden-fade delay2">
+          Instrukcije upravljanja brodom
+        </h2>
+        <p class="body-large padb-900 hidden-fade delay3">
+          U Ancora Spei očekujte vrhunsko iskustvo učenja upravljanja brodom.
+          Naši instruktori imaju višegodišnje maritimno iskustvo upravljanja
+          brodom u svim vremenskim uvjetima na Jadranskom moru.
+        </p>
+        <a href="/contact/"><div class="btn-fill">KONTAKT</div></a>
+      </div>
+    </section>
+
+    <!-- img -->
+    <section class="hidden-fade section">
+      <Image src={hero} alt="ancora spei" loading="eager" class="img-full2" />
+    </section>
+
+    <!-- cta 2-->
+    <section class="center section bg-light clr-ter-acc">
+      <div class="wrapper-medium center txt-center section-2">
+        <p class="txt-label padb-400 hidden-fade delay1">KONOPI</p>
+        <h2 class="h3 padb-400 hidden-fade delay2">Nauči pravi čvor</h2>
+        <p class="body-large padb-900 hidden-fade delay3">
+          Osim iskustva na moru nudimo i nezamjenjivo znanje koje svaki
+          moreplovac mora imati kako bi sigurno plovio.
+        </p>
+        <a href="/menu/"><div class="btn-fill">USLUGE</div></a>
+      </div>
+    </section>
   </section>
 
-  <!-- img -->
-  <section class="hidden-fade section">
-    <Image
-      src={kuzina}
-      alt="pusti me proc kuzina"
-      loading="eager"
-      class="img-full2"
-    />
-  </section>
-
-  <!-- cta 2-->
-  <section class="center section bg-light clr-ter-acc">
-    <div class="wrapper-medium center txt-center section-2">
-      <p class="txt-label padb-400 hidden-fade delay1">THE FOOD CHOICE</p>
-      <h2 class="h3 padb-400 hidden-fade delay2">Check out our menu!</h2>
-      <p class="body-large padb-900 hidden-fade delay3">
-        Check out our menu and find out our prices.
-      </p>
-      <a href="/menu/"><div class="btn-fill">MENU</div></a>
-    </div>
-  </section>
+  <script>
+    import "../scripts/slider.js";
+    import "../scripts/accordion.js";
+  </script>
 </MainLayout>
-
-<script>
-  import "../scripts/slider.js";
-  import "../scripts/accordion.js";
-</script>
