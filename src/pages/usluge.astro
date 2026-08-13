@@ -1,0 +1,101 @@
+---
+import MainLayout from "../layouts/MainLayoutHR.astro";
+
+//image compression
+import { Image } from "astro:assets";
+
+//import main site data
+import siteInfo from "../data/siteInfo.json";
+
+//import icons
+import { Icon } from "astro-icon/components";
+
+//import images
+import vila from "../images/hero/vilaLQ.jpg";
+import kuzina from "../images/hero/kuzina.jpg";
+import ulica from "../images/hero/hero.jpg";
+import svi from "../images/hero/hero.jpg";
+
+const {
+  title,
+  description,
+  lang,
+  charset,
+  canonical,
+  noindex,
+  nofollow,
+  openGraph,
+  languageAlternates,
+  extend,
+} = Astro.props;
+---
+
+<MainLayout
+  lang={lang}
+  pageIndex="services/"
+  pageIndexHr="usluge/"
+  title={"Usluge" + siteInfo.map((i) => i.brand_tag)}
+  charset={charset}
+  description={"Popis usluga koje pružamo" + siteInfo.map((i) => i.brand_tag)}
+  canonical={canonical}
+  openGraph={openGraph}
+  extend={extend}
+>
+  <!-- hero -->
+  <section class="hero-standard bg-prim-acc clr-main-light">
+    <div class="container wrapper center">
+      <h1 class="txt-label marb-400">Usluge</h1>
+      <h2 class="h3 padb-900">
+        Instrukcije upravljanja brodom i praksa na moru
+      </h2>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container wrapper center">
+      <div class="flex-column">
+        <div class="flex-left section wrapper">
+          <h2 class="txt-label marb-400">NAVIGACIJA</h2>
+          <h3 class="body-large padb-900">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+            nostrum accusamus magni cupiditate esse minus illum ullam
+            voluptates, soluta animi id, sequi quam pariatur, aspernatur
+            expedita veniam ipsam blanditiis non.
+          </h3>
+        </div>
+        <div class="flex-right">
+          <Image
+            src={ulica}
+            alt="pusti me proc"
+            loading="eager"
+            class="img-full"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container wrapper center">
+      <div class="flex-column-reverse">
+        <div class="flex-left">
+          <Image
+            src={svi}
+            alt="pusti me proc"
+            loading="eager"
+            class="img-full"
+          />
+        </div>
+        <div class="flex-right section wrapper">
+          <h2 class="txt-label marb-400">MARITIMNE VJEŠTINE</h2>
+          <h3 class="body-large padb-900">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+            temporibus blanditiis alias eaque aspernatur est voluptas sequi id
+            accusamus. Pariatur dolor nemo quos fugit quisquam nisi quibusdam
+            voluptates ab nam.
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
