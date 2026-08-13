@@ -10,8 +10,8 @@ import { Image } from "astro:assets";
 
 //import images
 
-import logo from "../../images/logos/pusti_logo_ext_light.svg";
-import hero from "../../images/hero/hero3.jpg";
+import logo from "../../images/logos/ancora_logo_full_prim.svg";
+import hero from "../../images/hero/hero.jpg";
 import tece from "../../images/hero/tece.jpg";
 import kuzina from "../../images/hero/kuzina.jpg";
 
@@ -52,84 +52,78 @@ const {
     <div class="hero-mask">
       <Image
         src={hero}
-        alt="pusti me proc"
+        alt="ancora spei splitska vrata"
         loading="eager"
         class="hero_image"
       />
     </div>
-    <div class="container wrapper">
-      <Image
-        src={logo}
-        alt="pusti me proc logo"
-        loading="eager"
-        id="heroLogo"
-      />
-
+    <div class="container wrapper txt-center">
+      <Image src={logo} alt="ancora spei logo" loading="eager" id="heroLogo" />
+      <h1 class="h5 padb-900">Boating instructions</h1>
       <div class="hero-cta-btn">
-        <a
-          href="https://bookmeatable.com/restaurants/konoba-pusti-me-proc-118?lang=hr-hr"
-          target="_blank"><div class="btn-fill">REZERVIRAJ</div></a
-        >
-        <a href="/hr/menu/"><div class="btn-fill">MENU</div></a>
+        <a href="/services/" target="_blank"
+          ><div class="btn-fill">SERVICES</div>
+          <a href="/services/"><div class="btn-fill">PRICING</div></a>
+        </a>
       </div>
     </div>
-  </section>
 
-  <!-- services -->
+    <!-- services -->
 
-  <section class="section center wrapper txt-center bg-light clr-ter-acc">
-    <p class="txt-label padb-400">PUSTI ME PROĆ</p>
-    <h1 class="h3 padb-100">Autentična spiza u srcu Splita</h1>
-    <p class="body-large padb-900">
-      Restoran inspiriran jednom od najužih splitskih ulica, gdje je
-      zaglavljivanje dio iskustva.
-    </p>
-    <a href="/hr/menu/"><div class="btn-fill">MENU</div></a>
-  </section>
-
-  <!-- testimonials -->
-
-  <ReviewsSlider />
-
-  <!-- img -->
-  <section class="hidden-fade section">
-    <Image src={tece} alt="pusti me proc" loading="eager" class="img-full2" />
-  </section>
-
-  <!-- cta 1-->
-  <section class="center bg-light clr-ter-acc">
-    <div class="wrapper-medium center txt-center section-2">
-      <p class="txt-label padb-400 hidden-fade delay1">PUSTI ME IST</p>
-      <h2 class="h3 padb-400 hidden-fade delay2">Uspori malo.</h2>
-      <p class="body-large padb-900 hidden-fade delay3">
-        Guštaj u friškoj ribi i domaćoj spizi u laganom okruženju.
+    <section class="section center wrapper txt-center bg-light clr-ter-acc">
+      <p class="txt-label padb-400">AJ PRISTANI VIŠE</p>
+      <h2 class="h3 padb-100">Instrukcije upravljanja brodom</h2>
+      <p class="body-large padb-900">
+        Naučite upravljati brodom i budite sigurni u navigaciji i plovidbom
+        Jadranom
       </p>
-      <a href="/hr/kontakt/"><div class="btn-fill">KONTAKT</div></a>
-    </div>
-  </section>
+      <a href="/services/"><div class="btn-fill">RESERVATION</div></a>
+    </section>
 
-  <!-- img -->
-  <section class="hidden-fade section">
-    <Image
-      src={kuzina}
-      alt="pusti me proc kuzina"
-      loading="eager"
-      class="img-full2"
-    />
-  </section>
+    <!-- testimonials -->
 
-  <!-- cta 2-->
-  <section class="center section bg-light clr-ter-acc">
-    <div class="wrapper-medium center txt-center section-2">
-      <p class="txt-label padb-400 hidden-fade delay1">IZBOR HRANE</p>
-      <h2 class="h3 padb-400 hidden-fade delay2">Provjeri naš jelovnik!</h2>
-      <p class="body-large padb-900 hidden-fade delay3">
-        Check out our menu and find out our prices. Provjeri naš jelovnik i
-        cijene, a uz a la carte ponudu također imamo i svakodnevne domaće
-        marende.
-      </p>
-      <a href="/hr/menu/"><div class="btn-fill">MENU</div></a>
-    </div>
+    <ReviewsSlider />
+
+    <!-- img -->
+    <section class="hidden-fade section">
+      <Image src={hero} alt="ancora spei" loading="eager" class="img-full2" />
+    </section>
+
+    <!-- cta 1-->
+    <section class="center bg-light clr-ter-acc">
+      <div class="wrapper-medium center txt-center section-2">
+        <p class="txt-label padb-400 hidden-fade delay1">
+          BUDI SIGURAN NA MORU
+        </p>
+        <h2 class="h3 padb-400 hidden-fade delay2">
+          Instrukcije upravljanja brodom
+        </h2>
+        <p class="body-large padb-900 hidden-fade delay3">
+          U Ancora Spei očekujte vrhunsko iskustvo učenja upravljanja brodom.
+          Naši instruktori imaju višegodišnje maritimno iskustvo upravljanja
+          brodom u svim vremenskim uvjetima na Jadranskom moru.
+        </p>
+        <a href="/contact/"><div class="btn-fill">KONTAKT</div></a>
+      </div>
+    </section>
+
+    <!-- img -->
+    <section class="hidden-fade section">
+      <Image src={hero} alt="ancora spei" loading="eager" class="img-full2" />
+    </section>
+
+    <!-- cta 2-->
+    <section class="center section bg-light clr-ter-acc">
+      <div class="wrapper-medium center txt-center section-2">
+        <p class="txt-label padb-400 hidden-fade delay1">KONOPI</p>
+        <h2 class="h3 padb-400 hidden-fade delay2">Nauči pravi čvor</h2>
+        <p class="body-large padb-900 hidden-fade delay3">
+          Osim iskustva na moru nudimo i nezamjenjivo znanje koje svaki
+          moreplovac mora imati kako bi sigurno plovio.
+        </p>
+        <a href="/services/"><div class="btn-fill">SERVICES</div></a>
+      </div>
+    </section>
   </section>
 </MainLayout>
 
