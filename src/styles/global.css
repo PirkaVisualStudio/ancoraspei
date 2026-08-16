@@ -951,9 +951,9 @@ html.lenis {
   transition: all 0.2s ease-in-out;
 }
 .btn-fill:hover {
-  background: none;
+  background: #f4f4f0;
   color: #002a38;
-  border: 2px solid #002a38;
+  border: 2px solid #f4f4f0;
 }
 @media screen and (max-width: 540px) {
   .btn-fill {

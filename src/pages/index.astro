@@ -11,6 +11,8 @@ import { Image } from "astro:assets";
 //import images
 
 import hero from "../images/hero/hero.jpg";
+import boat from "../images/hero/ancora_boat.jpg";
+import pajet from "../images/hero/pajet.jpg";
 import tece from "../images/hero/tece.jpg";
 import kuzina from "../images/hero/kuzina.jpg";
 import vila from "../images/hero/vilaLQ.jpg";
@@ -66,73 +68,67 @@ const {
         Praktična edukacija na moru za sigurno upravljanje plovilom
       </h1>
       <div class="hero-cta-btn">
-        <a href="/usluge/" target="_blank"
-          ><div class="btn-fill">USLUGE</div>
-          <a href="/usluge/"><div class="btn-fill">CJENIK</div></a>
-        </a>
+        <a href="/kontakt/"><div class="btn-fill">KONTAKT</div> </a>
       </div>
     </div>
+  </section>
+  <!-- services -->
 
-    <!-- services -->
-
-    <section class="section center wrapper txt-center bg-light clr-ter-acc">
-      <p class="txt-label padb-400">AJ PRISTANI VIŠE</p>
-      <h2 class="h3 padb-100">Instrukcije upravljanja brodom</h2>
-      <p class="body-large padb-900">
-        Naučite upravljati brodom i budite sigurni u navigaciji i plovidbom
-        Jadranom
-      </p>
-      <a href="/usluge/"><div class="btn-fill">REZERVIRAJ</div></a>
-    </section>
-
-    <!-- testimonials -->
-
-    <ReviewsSlider />
-
-    <!-- img -->
-    <section class="hidden-fade section">
-      <Image src={hero} alt="ancora spei" loading="eager" class="img-full2" />
-    </section>
-
-    <!-- cta 1-->
-    <section class="center bg-light clr-ter-acc">
-      <div class="wrapper-medium center txt-center section-2">
-        <p class="txt-label padb-400 hidden-fade delay1">
-          BUDI SIGURAN NA MORU
-        </p>
-        <h2 class="h3 padb-400 hidden-fade delay2">
-          Instrukcije upravljanja brodom
-        </h2>
-        <p class="body-large padb-900 hidden-fade delay3">
-          U Ancora Spei očekujte vrhunsko iskustvo učenja upravljanja brodom.
-          Naši instruktori imaju višegodišnje maritimno iskustvo upravljanja
-          brodom u svim vremenskim uvjetima na Jadranskom moru.
-        </p>
-        <a href="/kontakt/"><div class="btn-fill">KONTAKT</div></a>
-      </div>
-    </section>
-
-    <!-- img -->
-    <section class="hidden-fade section">
-      <Image src={hero} alt="ancora spei" loading="eager" class="img-full2" />
-    </section>
-
-    <!-- cta 2-->
-    <section class="center section bg-light clr-ter-acc">
-      <div class="wrapper-medium center txt-center section-2">
-        <p class="txt-label padb-400 hidden-fade delay1">KONOPI</p>
-        <h2 class="h3 padb-400 hidden-fade delay2">Nauči pravi čvor</h2>
-        <p class="body-large padb-900 hidden-fade delay3">
-          Osim iskustva na moru nudimo i nezamjenjivo znanje koje svaki
-          moreplovac mora imati kako bi sigurno plovio.
-        </p>
-        <a href="/usluge/"><div class="btn-fill">USLUGE</div></a>
-      </div>
-    </section>
+  <section class="section center wrapper txt-center bg-light clr-ter-acc">
+    <p class="txt-label padb-400">BUDI SIGURAN</p>
+    <h2 class="h3 padb-100">Samostalno upravljaj brodom</h2>
+    <p class="body-large padb-900">
+      Naučite samostalno upravljati brodom i budite sigurni u navigaciji i
+      plovidbom na moru.
+    </p>
+    <a href="/usluge/"><div class="btn-fill">USLUGE</div></a>
   </section>
 
-  <script>
-    import "../scripts/slider.js";
-    import "../scripts/accordion.js";
-  </script>
+  <!-- testimonials -->
+
+  <ReviewsSlider />
+
+  <!-- img -->
+  <section class="hidden-fade section">
+    <Image src={boat} alt="ancora spei" loading="eager" class="img-full2" />
+  </section>
+
+  <!-- cta 1-->
+  <section class="center bg-light clr-ter-acc">
+    <div class="wrapper-medium center txt-center section-2">
+      <p class="txt-label padb-400 hidden-fade delay1">ISKUSTVO</p>
+      <h2 class="h3 padb-400 hidden-fade delay2">
+        Učite u stvarnim situacijama
+      </h2>
+      <p class="body-large padb-900 hidden-fade delay3">
+        U Ancora Spei očekujte vrhunsko iskustvo učenja upravljanja brodom. Naši
+        instruktori imaju višegodišnje maritimno iskustvo upravljanja brodom u
+        svim vremenskim uvjetima na Jadranskom moru.
+      </p>
+      <a href="/kontakt/"><div class="btn-fill">KONTAKT</div></a>
+    </div>
+  </section>
+
+  <!-- img -->
+  <section class="hidden-fade section">
+    <Image src={pajet} alt="ancora spei" loading="eager" class="img-full2" />
+  </section>
+
+  <!-- cta 2-->
+  <section class="center section bg-light clr-ter-acc">
+    <div class="wrapper-medium center txt-center section-2">
+      <p class="txt-label padb-400 hidden-fade delay1">KONOPI</p>
+      <h2 class="h3 padb-400 hidden-fade delay2">Nauči pravi čvor</h2>
+      <p class="body-large padb-900 hidden-fade delay3">
+        Osim iskustva na moru nudimo i nezamjenjivo znanje koje svaki moreplovac
+        mora imati kako bi sigurno plovio.
+      </p>
+      <a href="/usluge/"><div class="btn-fill">USLUGE</div></a>
+    </div>
+  </section>
 </MainLayout>
+
+<script>
+  import "../scripts/slider.js";
+  import "../scripts/accordion.js";
+</script>

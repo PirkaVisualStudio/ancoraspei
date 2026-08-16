@@ -15,6 +15,8 @@ import vila from "../images/hero/vilaLQ.jpg";
 import kuzina from "../images/hero/kuzina.jpg";
 import ulica from "../images/hero/hero.jpg";
 import svi from "../images/hero/hero.jpg";
+import boat from "../images/hero/ancora_boat.jpg";
+import pajet from "../images/hero/pajet.jpg";
 
 const {
   title,
@@ -44,10 +46,10 @@ const {
   <!-- hero -->
   <section class="hero-standard bg-prim-acc clr-main-light">
     <div class="container wrapper center">
-      <h1 class="txt-label marb-400">Usluge</h1>
-      <h2 class="h3 padb-900">
-        Instrukcije upravljanja brodom i praksa na moru
-      </h2>
+      <div class="txt-left">
+        <h1 class="txt-label marb-400">Usluge</h1>
+        <h2 class="h3 padb-900 txt-left">Što možete naučiti kod nas?</h2>
+      </div>
     </div>
   </section>
 
@@ -56,17 +58,12 @@ const {
       <div class="flex-column">
         <div class="flex-left section wrapper">
           <h2 class="txt-label marb-400">NAVIGACIJA</h2>
-          <h3 class="body-large padb-900">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            nostrum accusamus magni cupiditate esse minus illum ullam
-            voluptates, soluta animi id, sequi quam pariatur, aspernatur
-            expedita veniam ipsam blanditiis non.
-          </h3>
+          <h3 class="body-large padb-900">Naučite manevrirati brodom</h3>
         </div>
         <div class="flex-right">
           <Image
-            src={ulica}
-            alt="pusti me proc"
+            src={boat}
+            alt="ancora spei na brodu"
             loading="eager"
             class="img-full"
           />
@@ -80,8 +77,8 @@ const {
       <div class="flex-column-reverse">
         <div class="flex-left">
           <Image
-            src={svi}
-            alt="pusti me proc"
+            src={pajet}
+            alt="ancora spei vezanje pajeta"
             loading="eager"
             class="img-full"
           />

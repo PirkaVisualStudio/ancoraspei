@@ -17,9 +17,9 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background: none;
+    background: $main-light;
     color: $ter-acc;
-    border: 2px solid $ter-acc;
+    border: 2px solid $main-light;
   }
 
   @include medium {
