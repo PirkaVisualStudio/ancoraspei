@@ -15,6 +15,7 @@ import vila from "../images/hero/vilaLQ.jpg";
 import kuzina from "../images/hero/kuzina.jpg";
 import ulica from "../../images/hero/ulica.jpg";
 import svi from "../../images/hero/svi.jpg";
+import franebozo from "../../images/hero/franeibozo.jpg";
 
 const {
   title,
@@ -47,9 +48,40 @@ const {
     <div class="container wrapper center">
       <h1 class="txt-label marb-400">ABOUT US</h1>
       <h2 class="h3 padb-900">
-        Instructors with many years of experience working at sea in all weather
-        conditions and skills learned in real situations and practice at sea.
+        Instructors with many years of experience sailing at sea.
       </h2>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container wrapper center">
+      <div class="flex-column">
+        <div class="flex-left section wrapper">
+          <h2 class="txt-label marb-100">WHO ARE WE?</h2>
+          <h3 class="h5 padb-400">Professionals and sea lovers</h3>
+          <p class="body padb-900">
+            Ancora Spei is a project of two friends who have acquired their
+            professional knowledge and experience through years of work at sea
+            as skippers. Our love for the sea and this profession led us to the
+            idea of ​​sharing our knowledge and experience with those who want
+            more than theory - real experience that can only be gained by
+            sailing at sea in order to overcome fear and gain confidence in
+            independent sailing. Aware that there is a need to learn skills that
+            cannot be learned from a book, we started this project to give
+            everyone who wants to sail a boat the opportunity to dare to set
+            sail, gain experience and find safety at the helm.
+          </p>
+          <a href="/kontakt/"><div class="btn-fill">KONTAKT</div></a>
+        </div>
+        <div class="flex-right">
+          <Image
+            src={franebozo}
+            alt="ancora spei na brodu"
+            loading="eager"
+            class="img-full"
+          />
+        </div>
+      </div>
     </div>
   </section>
 </MainLayout>

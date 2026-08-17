@@ -15,6 +15,7 @@ import vila from "../../images/hero/vilaLQ.jpg";
 import kuzina from "../../images/hero/kuzina.jpg";
 import ulica from "../../images/hero/hero.jpg";
 import svi from "../../images/hero/hero.jpg";
+import boat from "../../images/hero/ancora_boat.jpg";
 
 const {
   title,
@@ -42,10 +43,12 @@ const {
   extend={extend}
 >
   <!-- hero -->
-  <section class="hero-standard bg-prim-acc clr-main-light">
-    <div class="container wrapper center">
-      <h1 class="txt-label marb-400">Services</h1>
-      <h2 class="h3 padb-900">Boating instructions and practice at sea</h2>
+  <section class="hero-standard services bg-prim-acc clr-main-light">
+    <div class="container center wrapper">
+      <div class="txt-left">
+        <h1 class="txt-label marb-400">SERVICES</h1>
+        <h2 class="h3 padb-900 txt-left">What can you learn from us?</h2>
+      </div>
     </div>
   </section>
 
@@ -53,40 +56,28 @@ const {
     <div class="container wrapper center">
       <div class="flex-column">
         <div class="flex-left section wrapper">
-          <h2 class="txt-label marb-400">NAVIGATION</h2>
-          <h3 class="body-large padb-900">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            nostrum accusamus magni cupiditate esse minus illum ullam
-            voluptates, soluta animi id, sequi quam pariatur, aspernatur
-            expedita veniam ipsam blanditiis non.
+          <h2 class="txt-label marb-100">WHAT DO WE OFFER?</h2>
+          <h3 class="h5 padb-400">
+            Practical training at sea for safe and independent boat handling
           </h3>
+          <p class="body padb-900">
+            Our services are related to practical training in boat maneuvering
+            as well as learning other skills necessary for safe and independent
+            navigation at sea. Ancora Spei does not issue any licenses or
+            permits for boat captain training, but only offers the service of
+            concrete practice at sea. <br /><br /> This site is still under construction,
+            so for all information, please contact us via the information available
+            on this website or our social networks.
+          </p>
+          <a href="/en/contact/"><div class="btn-fill">CONTACT</div></a>
         </div>
         <div class="flex-right">
           <Image
-            src={ulica}
-            alt="ancora spei"
+            src={boat}
+            alt="ancora spei na brodu"
             loading="eager"
             class="img-full"
           />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="">
-    <div class="container wrapper center">
-      <div class="flex-column-reverse">
-        <div class="flex-left">
-          <Image src={svi} alt="ancora spei" loading="eager" class="img-full" />
-        </div>
-        <div class="flex-right section wrapper">
-          <h2 class="txt-label marb-400">MARITIME SKILLS</h2>
-          <h3 class="body-large padb-900">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-            temporibus blanditiis alias eaque aspernatur est voluptas sequi id
-            accusamus. Pariatur dolor nemo quos fugit quisquam nisi quibusdam
-            voluptates ab nam.
-          </h3>
         </div>
       </div>
     </div>
