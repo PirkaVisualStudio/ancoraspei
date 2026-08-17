@@ -953,7 +953,7 @@ html.lenis {
 .btn-fill:hover {
   background: #f4f4f0;
   color: #002a38;
-  border: 2px solid #f4f4f0;
+  border: 2px solid #002a38;
 }
 @media screen and (max-width: 540px) {
   .btn-fill {
@@ -2771,49 +2771,18 @@ footer a {
   }
 }
 
-.services-index {
-  padding-top: 4rem;
-}
-.services-index .container ul {
-  padding-top: 12px;
-  padding-left: 30px;
-  padding-bottom: 40px;
-}
-.services-index .container li {
-  font-weight: bold;
-  padding-bottom: 8px;
-  list-style: disc;
-}
-.services-index .container li a {
-  color: #002a38;
-}
-.services-index .container li a:hover {
-  text-decoration: underline;
-}
-
-.services-content h3 {
-  padding-bottom: 24px;
-}
-.services-content .container .title {
-  padding-bottom: 12px;
-}
-.services-content .container .description {
-  line-height: 1.5;
-}
-.services-content .container .flex-column {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-bottom: 40px;
-}
-.services-content .container .flex-column .flex-left {
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-}
-@media screen and (max-width: 1024px) {
-  .services-content .container .flex-column .flex-left {
-    padding-right: 0;
-  }
+.services .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .menu-links ul li {

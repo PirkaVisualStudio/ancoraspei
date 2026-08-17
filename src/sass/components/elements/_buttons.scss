@@ -12,14 +12,14 @@
   padding: 0.8rem 2rem;
   font-family: $heading-font;
   font-weight: 600;
-  border: 2px solid $ter-acc;
+  border: 2px solid $prim-acc;
   border-radius: 0px;
   transition: all 0.2s ease-in-out;
 
   &:hover {
     background: $main-light;
-    color: $ter-acc;
-    border: 2px solid $main-light;
+    color: $prim-acc;
+    border: 2px solid $prim-acc;
   }
 
   @include medium {
