@@ -103,6 +103,13 @@
   padding: 3rem 0;
 }
 
+.groups {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .testimonials {
   background-color: $main-light;
   .box {
